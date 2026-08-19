@@ -19,21 +19,14 @@ const FEATURES = [
 ];
 
 const COUNTRIES = [
-  { emoji: '🇺🇸', name: 'United States', slug: 'united-states' },
-  { emoji: '🇬🇧', name: 'United Kingdom', slug: 'united-kingdom' },
-  { emoji: '🇨🇦', name: 'Canada', slug: 'canada' },
-  { emoji: '🇩🇪', name: 'Germany', slug: 'germany' },
-  { emoji: '🇦🇺', name: 'Australia', slug: 'australia' },
-  { emoji: '🇳🇱', name: 'Netherlands', slug: 'netherlands' },
-  { emoji: '🇨🇭', name: 'Switzerland', slug: 'switzerland' },
-  { emoji: '🇸🇬', name: 'Singapore', slug: 'singapore' },
-  { emoji: '🇯🇵', name: 'Japan', slug: 'japan' },
-  { emoji: '🇰🇷', name: 'South Korea', slug: 'south-korea' },
-  { emoji: '🇮🇪', name: 'Ireland', slug: 'ireland' },
-  { emoji: '🇫🇷', name: 'France', slug: 'france' },
-  { emoji: '🇸🇪', name: 'Sweden', slug: 'sweden' },
-  { emoji: '🇮🇹', name: 'Italy', slug: 'italy' },
-  { emoji: '🇳🇿', name: 'New Zealand', slug: 'new-zealand' },
+  { emoji: '🇺🇸', name: 'United States', city: 'New York City', sector: 'Technology & Innovation', slug: 'united-states', image: 'https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=85' },
+  { emoji: '🇬🇧', name: 'United Kingdom', city: 'London', sector: 'Finance & Business', slug: 'united-kingdom', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=85' },
+  { emoji: '🇨🇦', name: 'Canada', city: 'Toronto', sector: 'Technology & Healthcare', slug: 'canada', image: 'https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=900&q=85' },
+  { emoji: '🇩🇪', name: 'Germany', city: 'Berlin', sector: 'Engineering & Automotive', slug: 'germany', image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=900&q=85' },
+  { emoji: '🇦🇺', name: 'Australia', city: 'Sydney', sector: 'Healthcare & Mining', slug: 'australia', image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=85' },
+  { emoji: '🇮🇪', name: 'Ireland', city: 'Dublin', sector: 'Technology & Life Sciences', slug: 'ireland', image: 'https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=900&q=85' },
+  { emoji: '🇸🇬', name: 'Singapore', city: 'Singapore', sector: 'Finance & Technology', slug: 'singapore', image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=85' },
+  { emoji: '🇦🇪', name: 'United Arab Emirates', city: 'Dubai', sector: 'Business & Hospitality', slug: 'united-arab-emirates', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85' },
 ];
 
 const STEPS = [
@@ -95,7 +88,7 @@ export default function Landing() {
               />
             </div>
             <Link to="/register" className="btn btn-primary btn-lg hero-cta">
-              Get Started Free →
+              Get Started →
             </Link>
           </div>
 
@@ -111,15 +104,42 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── Countries Ticker ────────────────────── */}
-      <section className="countries-ticker">
-        <div className="ticker-track">
-          {[...COUNTRIES, ...COUNTRIES].map((c, i) => (
-            <Link key={i} to={`/countries/${c.slug}`} className="ticker-item">
-              <span className="ticker-emoji">{c.emoji}</span>
-              <span>{c.name}</span>
-            </Link>
-          ))}
+      {/* ── Study Destinations ──────────────────── */}
+      <section className="destinations-section">
+        <div className="container">
+          <div className="destinations-header">
+            <span className="section-badge">Study destinations</span>
+            <h2 className="section-title">Explore Your Next<br /><span className="hero-gradient">Global Opportunity</span></h2>
+            <p className="section-subtitle">
+              See the cities students love, and the industries where graduates can make their mark.
+            </p>
+          </div>
+        </div>
+
+        <div className="destinations-viewport" aria-label="Popular study destinations">
+          <div className="destinations-track">
+            {[0, 1].map(set => (
+              <div className="destinations-group" key={set}>
+                {COUNTRIES.map(country => (
+                  <Link key={`${set}-${country.slug}`} to={`/countries/${country.slug}`} className="destination-card">
+                    <div className="destination-image-wrap">
+                      <img src={country.image} alt={`${country.city}, ${country.name}`} className="destination-image" />
+                      <span className="destination-city">{country.city}</span>
+                    </div>
+                    <div className="destination-card-content">
+                      <div className="destination-country">
+                        <span className="destination-flag" aria-hidden="true">{country.emoji}</span>
+                        <h3>{country.name}</h3>
+                      </div>
+                      <p className="destination-sector-label">Leading job sector</p>
+                      <p className="destination-sector">{country.sector}</p>
+                      <span className="destination-link">Explore destination <span aria-hidden="true">→</span></span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -179,7 +199,7 @@ export default function Landing() {
             </p>
             <div className="cta-actions">
               <Link to="/register" className="btn btn-primary btn-lg">
-                Create Free Account →
+                Create Account →
               </Link>
               <Link to="/universities" className="btn btn-secondary btn-lg">
                 Browse Universities
