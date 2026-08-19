@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import api from '../../lib/api';
-import './DataPages.css';
+import '../DataPages.css';
 
 export default function Universities() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -86,7 +86,7 @@ export default function Universities() {
       {/* Results */}
       {loading ? (
         <div className="cards-grid stagger-children">
-          {[1,2,3,4,5,6].map(i => (
+          {[1, 2, 3, 4, 5, 6].map(i => (
             <div key={i} className="skeleton" style={{ height: 240, borderRadius: 16 }} />
           ))}
         </div>
