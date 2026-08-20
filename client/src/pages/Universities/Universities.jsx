@@ -40,7 +40,7 @@ export default function Universities() {
     <div className="page container">
       <div className="page-header">
         <h1 className="page-title">🏛️ Explore Universities</h1>
-        <p className="page-subtitle">Discover world-class institutions across 15+ countries</p>
+        <p className="page-subtitle">Discover world-class institutions across 25+ countries</p>
       </div>
 
       {/* Filters */}
@@ -57,21 +57,34 @@ export default function Universities() {
 
         <select className="form-input filter-select" value={country} onChange={(e) => setCountry(e.target.value)}>
           <option value="">All Countries</option>
-          <option value="united-states">🇺🇸 United States</option>
-          <option value="united-kingdom">🇬🇧 United Kingdom</option>
-          <option value="canada">🇨🇦 Canada</option>
-          <option value="germany">🇩🇪 Germany</option>
-          <option value="australia">🇦🇺 Australia</option>
-          <option value="netherlands">🇳🇱 Netherlands</option>
-          <option value="switzerland">🇨🇭 Switzerland</option>
-          <option value="singapore">🇸🇬 Singapore</option>
-          <option value="japan">🇯🇵 Japan</option>
-          <option value="south-korea">🇰🇷 South Korea</option>
-          <option value="ireland">🇮🇪 Ireland</option>
-          <option value="france">🇫🇷 France</option>
-          <option value="sweden">🇸🇪 Sweden</option>
-          <option value="italy">🇮🇹 Italy</option>
-          <option value="new-zealand">🇳🇿 New Zealand</option>
+          <option value="united-states">United States</option>
+          <option value="united-kingdom">United Kingdom</option>
+          <option value="canada">Canada</option>
+          <option value="germany">Germany</option>
+          <option value="australia">Australia</option>
+          <option value="netherlands">Netherlands</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="singapore">Singapore</option>
+          <option value="japan">Japan</option>
+          <option value="south-korea">South Korea</option>
+          <option value="ireland">Ireland</option>
+          <option value="france">France</option>
+          <option value="sweden">Sweden</option>
+          <option value="italy">Italy</option>
+          <option value="new-zealand">New Zealand</option>
+          <option value="norway">Norway</option>
+          <option value="finland">Finland</option>
+          <option value="belgium">Belgium</option>
+          <option value="china">China</option>
+          <option value="austria">Austria</option>
+          <option value="denmark">Denmark</option>
+          <option value="russia">Russia</option>
+          <option value="spain">Spain</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="portugal">Portugal</option>
+          <option value="poland">Poland</option>
+          <option value="uae">UAE</option>
+          <option value="luxembourg">Luxembourg</option>
         </select>
 
         <select className="form-input filter-select" value={type} onChange={(e) => setType(e.target.value)}>

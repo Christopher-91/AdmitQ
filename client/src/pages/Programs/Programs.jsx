@@ -54,14 +54,34 @@ export default function Programs() {
 
         <select className="form-input filter-select" value={country} onChange={(e) => setCountry(e.target.value)}>
           <option value="">All Countries</option>
-          <option value="united-states">🇺🇸 USA</option>
-          <option value="united-kingdom">🇬🇧 UK</option>
-          <option value="canada">🇨🇦 Canada</option>
-          <option value="germany">🇩🇪 Germany</option>
-          <option value="australia">🇦🇺 Australia</option>
-          <option value="netherlands">🇳🇱 Netherlands</option>
-          <option value="switzerland">🇨🇭 Switzerland</option>
-          <option value="singapore">🇸🇬 Singapore</option>
+          <option value="united-states">USA</option>
+          <option value="united-kingdom">UK</option>
+          <option value="canada">Canada</option>
+          <option value="germany">Germany</option>
+          <option value="australia">Australia</option>
+          <option value="netherlands">Netherlands</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="singapore">Singapore</option>
+          <option value="japan">Japan</option>
+          <option value="south-korea">South Korea</option>
+          <option value="ireland">Ireland</option>
+          <option value="france">France</option>
+          <option value="sweden">Sweden</option>
+          <option value="italy">Italy</option>
+          <option value="new-zealand">New Zealand</option>
+          <option value="norway">Norway</option>
+          <option value="finland">Finland</option>
+          <option value="belgium">Belgium</option>
+          <option value="china">China</option>
+          <option value="austria">Austria</option>
+          <option value="denmark">Denmark</option>
+          <option value="russia">Russia</option>
+          <option value="spain">Spain</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="portugal">Portugal</option>
+          <option value="poland">Poland</option>
+          <option value="uae">UAE</option>
+          <option value="luxembourg">Luxembourg</option>
         </select>
 
         <span className="filter-count text-sm text-muted">{total} programs</span>
@@ -69,7 +89,7 @@ export default function Programs() {
 
       {loading ? (
         <div className="cards-grid">
-          {[1,2,3,4,5,6].map(i => <div key={i} className="skeleton" style={{ height: 200, borderRadius: 16 }} />)}
+          {[1, 2, 3, 4, 5, 6].map(i => <div key={i} className="skeleton" style={{ height: 200, borderRadius: 16 }} />)}
         </div>
       ) : programs.length > 0 ? (
         <div className="cards-grid stagger-children">

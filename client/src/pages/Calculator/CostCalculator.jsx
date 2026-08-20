@@ -3,21 +3,21 @@ import api from '../../lib/api';
 import '../DataPages.css';
 
 const COUNTRIES = [
-  { slug: 'united-states', name: '🇺🇸 United States' },
-  { slug: 'united-kingdom', name: '🇬🇧 United Kingdom' },
-  { slug: 'canada', name: '🇨🇦 Canada' },
-  { slug: 'germany', name: '🇩🇪 Germany' },
-  { slug: 'australia', name: '🇦🇺 Australia' },
-  { slug: 'netherlands', name: '🇳🇱 Netherlands' },
-  { slug: 'switzerland', name: '🇨🇭 Switzerland' },
-  { slug: 'singapore', name: '🇸🇬 Singapore' },
-  { slug: 'japan', name: '🇯🇵 Japan' },
-  { slug: 'south-korea', name: '🇰🇷 South Korea' },
-  { slug: 'ireland', name: '🇮🇪 Ireland' },
-  { slug: 'france', name: '🇫🇷 France' },
-  { slug: 'sweden', name: '🇸🇪 Sweden' },
-  { slug: 'italy', name: '🇮🇹 Italy' },
-  { slug: 'new-zealand', name: '🇳🇿 New Zealand' },
+  { slug: 'united-states', name: 'United States' },
+  { slug: 'united-kingdom', name: 'United Kingdom' },
+  { slug: 'canada', name: 'Canada' },
+  { slug: 'germany', name: 'Germany' },
+  { slug: 'australia', name: 'Australia' },
+  { slug: 'netherlands', name: 'Netherlands' },
+  { slug: 'switzerland', name: 'Switzerland' },
+  { slug: 'singapore', name: 'Singapore' },
+  { slug: 'japan', name: 'Japan' },
+  { slug: 'south-korea', name: 'South Korea' },
+  { slug: 'ireland', name: 'Ireland' },
+  { slug: 'france', name: 'France' },
+  { slug: 'sweden', name: 'Sweden' },
+  { slug: 'italy', name: 'Italy' },
+  { slug: 'new-zealand', name: 'New Zealand' },
 ];
 
 const CURRENCIES = ['USD', 'EUR', 'GBP', 'CAD', 'AUD', 'CHF', 'SGD', 'JPY', 'KRW', 'INR'];

@@ -28,7 +28,7 @@ export default function Dashboard() {
     return (
       <div className="page container">
         <div className="dashboard-skeleton">
-          {[1,2,3,4].map(i => (
+          {[1, 2, 3, 4].map(i => (
             <div key={i} className="skeleton" style={{ height: 120, borderRadius: 16 }} />
           ))}
         </div>
@@ -180,7 +180,7 @@ export default function Dashboard() {
       {/* Recommendations Teaser */}
       <div className="card mt-6 dashboard-recs animate-fadeInUp">
         <div className="recs-content">
-          <h2 className="text-lg font-bold">🎯 Get Personalized Recommendations</h2>
+          <h2 className="text-lg font-bold">Get Personalized Recommendations</h2>
           <p className="text-muted text-sm mt-1">
             Complete your profile to receive AI-powered program recommendations matched to your goals.
           </p>

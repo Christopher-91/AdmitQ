@@ -10,9 +10,13 @@ import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Universities from './pages/Universities/Universities';
+import UniversityDetail from './pages/Universities/UniversityDetail';
 import Programs from './pages/Programs/Programs';
+import ProgramDetail from './pages/Programs/ProgramDetail';
 import Countries from './pages/Countries/Countries';
+import CountryDetail from './pages/Countries/CountryDetail';
 import Scholarships from './pages/Scholarships/Scholarships';
+import ScholarshipDetail from './pages/Scholarships/ScholarshipDetail';
 import Careers from './pages/Careers/Careers';
 import CostCalculator from './pages/Calculator/CostCalculator';
 
@@ -31,9 +35,13 @@ function App() {
 
           {/* Data Pages (public) */}
           <Route path="/universities" element={<Universities />} />
+          <Route path="/universities/:slug" element={<UniversityDetail />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/programs/:slug" element={<ProgramDetail />} />
           <Route path="/countries" element={<Countries />} />
+          <Route path="/countries/:slug" element={<CountryDetail />} />
           <Route path="/scholarships" element={<Scholarships />} />
+          <Route path="/scholarships/:slug" element={<ScholarshipDetail />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/calculator" element={<CostCalculator />} />
 

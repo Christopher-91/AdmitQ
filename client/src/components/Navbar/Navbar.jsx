@@ -34,6 +34,7 @@ export default function Navbar() {
     { path: '/countries', label: 'Countries' },
     { path: '/scholarships', label: 'Scholarships' },
     { path: '/careers', label: 'Careers' },
+    { path: '/calculator', label: '🧮 Calculator' },
   ];
 
   return (

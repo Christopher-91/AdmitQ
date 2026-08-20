@@ -30,14 +30,14 @@ import malaysiaFlag from '../../assets/flags/my.webp';
 import './Landing.css';
 
 const HERO_STATS = [
-  { value: '15+', label: 'Countries' },
+  { value: '25+', label: 'Countries' },
   { value: '30+', label: 'Universities' },
   { value: '150+', label: 'Programs' },
   { value: '16+', label: 'Scholarships' },
 ];
 
 const FEATURES = [
-  { icon: '🔍', title: 'Smart Discovery', desc: 'AI-powered matching across 15+ countries. Find programs that fit your profile, budget, and career goals.' },
+  { icon: '🔍', title: 'Smart Discovery', desc: 'AI-powered matching across 25+ countries. Find programs that fit your profile, budget, and career goals.' },
   { icon: '🎯', title: 'Match Scoring', desc: 'Safe / Target / Reach categorization for every program. Know your chances before you apply.' },
   { icon: '💰', title: 'Cost Calculator', desc: 'Comprehensive cost breakdowns including tuition, living expenses, visa fees, and hidden costs.' },
   { icon: '🎓', title: 'Scholarship Finder', desc: 'Discover scholarships you qualify for — from Fulbright to DAAD to university-specific awards.' },
@@ -300,7 +300,7 @@ export default function Landing() {
             <div className="cta-glow" />
             <h2 className="cta-title">Ready to Find Your Perfect University?</h2>
             <p className="cta-subtitle">
-              Join thousands of students who've already found their ideal program. 
+              Join thousands of students who've already found their ideal program.
               Create your free profile and get personalized recommendations in minutes.
             </p>
             <div className="cta-actions">

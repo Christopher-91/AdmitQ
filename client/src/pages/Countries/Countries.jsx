@@ -17,13 +17,13 @@ export default function Countries() {
   return (
     <div className="page container">
       <div className="page-header">
-        <h1 className="page-title">🌍 Explore Countries</h1>
-        <p className="page-subtitle">Compare education systems, costs, and visa requirements across 15+ destinations</p>
+        <h1 className="page-title">Explore Countries</h1>
+        <p className="page-subtitle">Compare education systems, costs, and visa requirements across 25+ destinations</p>
       </div>
 
       {loading ? (
         <div className="cards-grid">
-          {[1,2,3,4,5,6].map(i => <div key={i} className="skeleton" style={{ height: 200, borderRadius: 16 }} />)}
+          {[1, 2, 3, 4, 5, 6].map(i => <div key={i} className="skeleton" style={{ height: 200, borderRadius: 16 }} />)}
         </div>
       ) : (
         <div className="cards-grid stagger-children" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
@@ -48,10 +48,10 @@ export default function Countries() {
 
               <div className="flex gap-2 flex-wrap" style={{ justifyContent: 'center' }}>
                 {c.postStudyWorkDuration && (
-                  <span className="badge badge-accent">🛂 {c.postStudyWorkDuration} post-study</span>
+                  <span className="badge badge-accent">{c.postStudyWorkDuration} post-study</span>
                 )}
                 {c.workHoursPerWeek && (
-                  <span className="badge badge-primary">⏰ {c.workHoursPerWeek}hrs/week</span>
+                  <span className="badge badge-primary">{c.workHoursPerWeek}hrs/week</span>
                 )}
               </div>
             </Link>
