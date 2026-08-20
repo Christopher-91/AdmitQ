@@ -49,7 +49,7 @@ export default function ProgramDetail() {
             </div>
             <h1 className="detail-title">{program.name}</h1>
             <p className="detail-subtitle">
-              {program.university?.country?.flagEmoji} {program.university?.name} · {program.university?.city}, {program.university?.country?.name}
+              {program.university?.country && <img src={`/flags/${program.university.country.code.toLowerCase()}.webp`} alt={program.university.country.name} style={{ width: '1.2em', verticalAlign: 'middle', marginRight: '4px' }} />} {program.university?.name} · {program.university?.city}, {program.university?.country?.name}
             </p>
           </div>
 

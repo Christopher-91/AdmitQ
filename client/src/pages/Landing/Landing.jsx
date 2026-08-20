@@ -1,39 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import unitedStatesFlag from '../../assets/flags/us.webp';
-import unitedKingdomFlag from '../../assets/flags/gb.webp';
-import canadaFlag from '../../assets/flags/ca.webp';
-import germanyFlag from '../../assets/flags/de.webp';
-import australiaFlag from '../../assets/flags/au.webp';
-import irelandFlag from '../../assets/flags/ie.webp';
-import singaporeFlag from '../../assets/flags/sg.webp';
-import unitedArabEmiratesFlag from '../../assets/flags/ae.webp';
-import finlandFlag from '../../assets/flags/fi.webp';
-import norwayFlag from '../../assets/flags/no.webp';
-import swedenFlag from '../../assets/flags/se.webp';
-import denmarkFlag from '../../assets/flags/dk.webp';
-import newZealandFlag from '../../assets/flags/nz.webp';
-import switzerlandFlag from '../../assets/flags/ch.webp';
-import netherlandsFlag from '../../assets/flags/nl.webp';
-import japanFlag from '../../assets/flags/jp.webp';
-import southKoreaFlag from '../../assets/flags/kr.webp';
-import franceFlag from '../../assets/flags/fr.webp';
-import austriaFlag from '../../assets/flags/at.webp';
-import belgiumFlag from '../../assets/flags/be.webp';
-import chinaFlag from '../../assets/flags/cn.webp';
-import portugalFlag from '../../assets/flags/pt.webp';
-import italyFlag from '../../assets/flags/it.webp';
-import russiaFlag from '../../assets/flags/ru.webp';
-import polandFlag from '../../assets/flags/pl.webp';
-import spainFlag from '../../assets/flags/es.webp';
-import malaysiaFlag from '../../assets/flags/my.webp';
 import './Landing.css';
-
 const HERO_STATS = [
   { value: '25+', label: 'Countries' },
-  { value: '30+', label: 'Universities' },
-  { value: '150+', label: 'Programs' },
-  { value: '16+', label: 'Scholarships' },
+  { value: '190+', label: 'Universities' },
+  { value: '750+', label: 'Programs' },
+  { value: '200+', label: 'Scholarships' },
 ];
 
 const FEATURES = [
@@ -46,33 +18,33 @@ const FEATURES = [
 ];
 
 const COUNTRIES = [
-  { name: 'United States', city: 'New York City', sector: 'Technology | Innovation', slug: 'united-states', flag: unitedStatesFlag, image: 'https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=85' },
-  { name: 'United Kingdom', city: 'London', sector: 'Finance | Business', slug: 'united-kingdom', flag: unitedKingdomFlag, image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Canada', city: 'Toronto', sector: 'Technology | Healthcare', slug: 'canada', flag: canadaFlag, image: 'https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Germany', city: 'Berlin', sector: 'Engineering | Automotive', slug: 'germany', flag: germanyFlag, image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Australia', city: 'Sydney', sector: 'Healthcare | Mining', slug: 'australia', flag: australiaFlag, image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Ireland', city: 'Dublin', sector: 'Technology | Life Sciences', slug: 'ireland', flag: irelandFlag, image: 'https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Singapore', city: 'Singapore', sector: 'Finance | Technology', slug: 'singapore', flag: singaporeFlag, image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=85' },
-  { name: 'United Arab Emirates', city: 'Dubai', sector: 'Business | Hospitality', slug: 'united-arab-emirates', flag: unitedArabEmiratesFlag, image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Finland', city: 'Helsinki', sector: 'Technology | Clean Energy', slug: 'finland', flag: finlandFlag, image: 'https://images.unsplash.com/photo-1683119167545-c7ba61e6c6c6?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Norway', city: 'Oslo', sector: 'Energy | Maritime', slug: 'norway', flag: norwayFlag, image: 'https://images.unsplash.com/photo-1433757741270-94a3bcadc2f3?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Sweden', city: 'Stockholm', sector: 'Technology | Sustainability', slug: 'sweden', flag: swedenFlag, image: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Denmark', city: 'Copenhagen', sector: 'Life Sciences | Renewable Energy', slug: 'denmark', flag: denmarkFlag, image: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=900&q=85' },
-  { name: 'New Zealand', city: 'Auckland', sector: 'Agriculture | Technology', slug: 'new-zealand', flag: newZealandFlag, image: 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Switzerland', city: 'Zurich', sector: 'Finance | Life Sciences', slug: 'switzerland', flag: switzerlandFlag, image: 'https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Netherlands', city: 'Amsterdam', sector: 'Technology | Logistics', slug: 'netherlands', flag: netherlandsFlag, image: 'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Japan', city: 'Tokyo', sector: 'Engineering | Robotics', slug: 'japan', flag: japanFlag, image: 'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=900&q=85' },
-  { name: 'South Korea', city: 'Seoul', sector: 'Technology | Electronics', slug: 'south-korea', flag: southKoreaFlag, image: 'https://images.unsplash.com/photo-1702738684583-8bdb8ca121bf?auto=format&fit=crop&w=900&q=85' },
-  { name: 'France', city: 'Paris', sector: 'Luxury | Aerospace', slug: 'france', flag: franceFlag, image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Austria', city: 'Vienna', sector: 'Engineering | Tourism', slug: 'austria', flag: austriaFlag, image: 'https://images.unsplash.com/photo-1681493162127-c9148f64f938?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Belgium', city: 'Brussels', sector: 'Life Sciences | International Trade', slug: 'belgium', flag: belgiumFlag, image: 'https://images.unsplash.com/photo-1690747072873-6a62628edf0b?auto=format&fit=crop&w=900&q=85' },
-  { name: 'China', city: 'Shanghai', sector: 'Technology | Manufacturing', slug: 'china', flag: chinaFlag, image: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Portugal', city: 'Lisbon', sector: 'Technology | Tourism', slug: 'portugal', flag: portugalFlag, image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Italy', city: 'Rome', sector: 'Fashion | Manufacturing', slug: 'italy', flag: italyFlag, image: 'https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Russia', city: 'Moscow', sector: 'Engineering | Energy', slug: 'russia', flag: russiaFlag, image: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Poland', city: 'Warsaw', sector: 'Technology | Business Services', slug: 'poland', flag: polandFlag, image: 'https://images.unsplash.com/photo-1573157268862-704a1e780907?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Spain', city: 'Barcelona', sector: 'Tourism | Renewable Energy', slug: 'spain', flag: spainFlag, image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=85' },
-  { name: 'Malaysia', city: 'Kuala Lumpur', sector: 'Technology | Finance', slug: 'malaysia', flag: malaysiaFlag, image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=85' },
+  { name: 'United States', city: 'New York City', sector: 'Technology | Innovation', slug: 'united-states', flag: '/flags/us.webp', image: 'https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=85' },
+  { name: 'United Kingdom', city: 'London', sector: 'Finance | Business', slug: 'united-kingdom', flag: '/flags/gb.webp', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Canada', city: 'Toronto', sector: 'Technology | Healthcare', slug: 'canada', flag: '/flags/ca.webp', image: 'https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Germany', city: 'Berlin', sector: 'Engineering | Automotive', slug: 'germany', flag: '/flags/de.webp', image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Australia', city: 'Sydney', sector: 'Healthcare | Mining', slug: 'australia', flag: '/flags/au.webp', image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Ireland', city: 'Dublin', sector: 'Technology | Life Sciences', slug: 'ireland', flag: '/flags/ie.webp', image: 'https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Singapore', city: 'Singapore', sector: 'Finance | Technology', slug: 'singapore', flag: '/flags/sg.webp', image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=85' },
+  { name: 'United Arab Emirates', city: 'Dubai', sector: 'Business | Hospitality', slug: 'united-arab-emirates', flag: '/flags/ae.webp', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Finland', city: 'Helsinki', sector: 'Technology | Clean Energy', slug: 'finland', flag: '/flags/fi.webp', image: 'https://images.unsplash.com/photo-1683119167545-c7ba61e6c6c6?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Norway', city: 'Oslo', sector: 'Energy | Maritime', slug: 'norway', flag: '/flags/no.webp', image: 'https://images.unsplash.com/photo-1433757741270-94a3bcadc2f3?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Sweden', city: 'Stockholm', sector: 'Technology | Sustainability', slug: 'sweden', flag: '/flags/se.webp', image: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Denmark', city: 'Copenhagen', sector: 'Life Sciences | Renewable Energy', slug: 'denmark', flag: '/flags/dk.webp', image: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=900&q=85' },
+  { name: 'New Zealand', city: 'Auckland', sector: 'Agriculture | Technology', slug: 'new-zealand', flag: '/flags/nz.webp', image: 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Switzerland', city: 'Zurich', sector: 'Finance | Life Sciences', slug: 'switzerland', flag: '/flags/ch.webp', image: 'https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Netherlands', city: 'Amsterdam', sector: 'Technology | Logistics', slug: 'netherlands', flag: '/flags/nl.webp', image: 'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Japan', city: 'Tokyo', sector: 'Engineering | Robotics', slug: 'japan', flag: '/flags/jp.webp', image: 'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=900&q=85' },
+  { name: 'South Korea', city: 'Seoul', sector: 'Technology | Electronics', slug: 'south-korea', flag: '/flags/kr.webp', image: 'https://images.unsplash.com/photo-1702738684583-8bdb8ca121bf?auto=format&fit=crop&w=900&q=85' },
+  { name: 'France', city: 'Paris', sector: 'Luxury | Aerospace', slug: 'france', flag: '/flags/fr.webp', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Austria', city: 'Vienna', sector: 'Engineering | Tourism', slug: 'austria', flag: '/flags/at.webp', image: 'https://images.unsplash.com/photo-1681493162127-c9148f64f938?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Belgium', city: 'Brussels', sector: 'Life Sciences | International Trade', slug: 'belgium', flag: '/flags/be.webp', image: 'https://images.unsplash.com/photo-1690747072873-6a62628edf0b?auto=format&fit=crop&w=900&q=85' },
+  { name: 'China', city: 'Shanghai', sector: 'Technology | Manufacturing', slug: 'china', flag: '/flags/cn.webp', image: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Portugal', city: 'Lisbon', sector: 'Technology | Tourism', slug: 'portugal', flag: '/flags/pt.webp', image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Italy', city: 'Rome', sector: 'Fashion | Manufacturing', slug: 'italy', flag: '/flags/it.webp', image: 'https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Russia', city: 'Moscow', sector: 'Engineering | Energy', slug: 'russia', flag: '/flags/ru.webp', image: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Poland', city: 'Warsaw', sector: 'Technology | Business Services', slug: 'poland', flag: '/flags/pl.webp', image: 'https://images.unsplash.com/photo-1573157268862-704a1e780907?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Spain', city: 'Barcelona', sector: 'Tourism | Renewable Energy', slug: 'spain', flag: '/flags/es.webp', image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Malaysia', city: 'Kuala Lumpur', sector: 'Technology | Finance', slug: 'malaysia', flag: '/flags/my.webp', image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=85' },
 ];
 
 const STEPS = [

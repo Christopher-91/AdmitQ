@@ -34,7 +34,7 @@ export default function Navbar() {
     { path: '/countries', label: 'Countries' },
     { path: '/scholarships', label: 'Scholarships' },
     { path: '/careers', label: 'Careers' },
-    { path: '/calculator', label: '🧮 Calculator' },
+    { path: '/calculator', label: 'Calculator' },
   ];
 
   return (
@@ -42,7 +42,6 @@ export default function Navbar() {
       <div className="navbar-inner container">
         {/* Logo */}
         <Link to={isAuthenticated ? '/dashboard' : '/'} className="navbar-logo">
-          <span className="logo-icon">🎓</span>
           <span className="logo-text">Admit<span className="logo-highlight">Q</span></span>
         </Link>
 
@@ -121,7 +120,7 @@ export default function Navbar() {
                     📋 Applications
                   </Link>
                   <Link to="/calculator" className="dropdown-item" onClick={() => setProfileOpen(false)}>
-                    🧮 Cost Calculator
+                    Cost Calculator
                   </Link>
                   {user?.role === 'admin' && (
                     <Link to="/admin" className="dropdown-item" onClick={() => setProfileOpen(false)}>
@@ -137,8 +136,8 @@ export default function Navbar() {
             </div>
           ) : (
             <div className="auth-buttons">
-              <Link to="/login" className="btn btn-ghost">Log in</Link>
-              <Link to="/register" className="btn btn-primary btn-sm">Get Started</Link>
+              <Link to="/register" className="btn btn-ghost">Register</Link>
+              <Link to="/login" className="btn btn-primary btn-sm">Login</Link>
             </div>
           )}
 
@@ -166,8 +165,8 @@ export default function Navbar() {
           ))}
           {!isAuthenticated && (
             <div className="mobile-auth">
-              <Link to="/login" className="btn btn-secondary w-full" onClick={() => setMobileOpen(false)}>Log in</Link>
-              <Link to="/register" className="btn btn-primary w-full" onClick={() => setMobileOpen(false)}>Get Started</Link>
+              <Link to="/register" className="btn btn-secondary w-full" onClick={() => setMobileOpen(false)}>Register</Link>
+              <Link to="/login" className="btn btn-primary w-full" onClick={() => setMobileOpen(false)}>Login</Link>
             </div>
           )}
         </div>

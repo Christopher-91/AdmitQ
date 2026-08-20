@@ -59,4 +59,4839 @@ const universities = [
   { name: 'Politecnico di Milano', slug: 'polimi', countrySlug: 'italy', city: 'Milan', website: 'https://www.polimi.it', universityType: 'public', foundedYear: 1863, description: 'Italy\'s best technical university, internationally recognized for engineering, architecture, and design.', faculties: ['Engineering', 'Architecture', 'Design', 'Urban Planning'], totalStudents: 47000, internationalStudentsPct: 25, intakes: ['September', 'February'], qsRanking: 111, theRanking: 175, applicationFeeUsd: 35, avgTuitionUsd: 4000, avgLivingCostUsd: 10800, minGpa: 3.0, minIelts: 6.0, minToefl: 78, sourceUrl: 'https://www.polimi.it', verificationStatus: 'verified' },
 ];
 
+
+const generatedUniversities = [
+  {
+    "name": "UC Berkeley",
+    "slug": "uc-berkeley",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.uc-berkeley.edu",
+    "universityType": "public",
+    "foundedYear": 1901,
+    "description": "A top public university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 33159,
+    "internationalStudentsPct": 22,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 437,
+    "applicationFeeUsd": 74,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UCLA",
+    "slug": "ucla",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.ucla.edu",
+    "universityType": "public",
+    "foundedYear": 1916,
+    "description": "A top public university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24945,
+    "internationalStudentsPct": 17,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 285,
+    "applicationFeeUsd": 144,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Michigan",
+    "slug": "university-of-michigan",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.university-of-michigan.edu",
+    "universityType": "public",
+    "foundedYear": 1989,
+    "description": "A top public university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 11321,
+    "internationalStudentsPct": 11,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 441,
+    "applicationFeeUsd": 98,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Washington",
+    "slug": "university-of-washington",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.university-of-washington.edu",
+    "universityType": "public",
+    "foundedYear": 1952,
+    "description": "A top public university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13537,
+    "internationalStudentsPct": 36,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 399,
+    "applicationFeeUsd": 51,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UNC Chapel Hill",
+    "slug": "unc-chapel-hill",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.unc-chapel-hill.edu",
+    "universityType": "public",
+    "foundedYear": 1965,
+    "description": "A top public university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 30265,
+    "internationalStudentsPct": 39,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 268,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Harvard University",
+    "slug": "harvard-university",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.harvard-university.edu",
+    "universityType": "private",
+    "foundedYear": 1943,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 21885,
+    "internationalStudentsPct": 19,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 176,
+    "applicationFeeUsd": 142,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Caltech",
+    "slug": "caltech",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.caltech.edu",
+    "universityType": "private",
+    "foundedYear": 1980,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 29211,
+    "internationalStudentsPct": 26,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 61,
+    "applicationFeeUsd": 96,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Princeton University",
+    "slug": "princeton-university",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.princeton-university.edu",
+    "universityType": "private",
+    "foundedYear": 1948,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14070,
+    "internationalStudentsPct": 31,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 20,
+    "applicationFeeUsd": 55,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Yale University",
+    "slug": "yale-university",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.yale-university.edu",
+    "universityType": "private",
+    "foundedYear": 1914,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 16808,
+    "internationalStudentsPct": 32,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 431,
+    "applicationFeeUsd": 84,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Columbia University",
+    "slug": "columbia-university",
+    "countrySlug": "united-states",
+    "city": "Major City",
+    "website": "https://www.columbia-university.edu",
+    "universityType": "private",
+    "foundedYear": 1974,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 36978,
+    "internationalStudentsPct": 16,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 244,
+    "applicationFeeUsd": 131,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Edinburgh",
+    "slug": "university-of-edinburgh",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.university-of-edinburgh.edu",
+    "universityType": "public",
+    "foundedYear": 1995,
+    "description": "A top public university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 38837,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 160,
+    "applicationFeeUsd": 67,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "King's College London",
+    "slug": "king-s-college-london",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.king-s-college-london.edu",
+    "universityType": "public",
+    "foundedYear": 1953,
+    "description": "A top public university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20274,
+    "internationalStudentsPct": 25,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 419,
+    "applicationFeeUsd": 128,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "LSE",
+    "slug": "lse",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.lse.edu",
+    "universityType": "public",
+    "foundedYear": 1914,
+    "description": "A top public university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 19738,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 208,
+    "applicationFeeUsd": 124,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Manchester",
+    "slug": "university-of-manchester",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.university-of-manchester.edu",
+    "universityType": "public",
+    "foundedYear": 1984,
+    "description": "A top public university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 19331,
+    "internationalStudentsPct": 39,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 470,
+    "applicationFeeUsd": 88,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Warwick",
+    "slug": "university-of-warwick",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.university-of-warwick.edu",
+    "universityType": "public",
+    "foundedYear": 1923,
+    "description": "A top public university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 11975,
+    "internationalStudentsPct": 31,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 310,
+    "applicationFeeUsd": 100,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Buckingham",
+    "slug": "university-of-buckingham",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.university-of-buckingham.edu",
+    "universityType": "private",
+    "foundedYear": 1965,
+    "description": "A top private university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13967,
+    "internationalStudentsPct": 28,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 65,
+    "applicationFeeUsd": 66,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "BPP University",
+    "slug": "bpp-university",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.bpp-university.edu",
+    "universityType": "private",
+    "foundedYear": 1932,
+    "description": "A top private university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20594,
+    "internationalStudentsPct": 13,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 190,
+    "applicationFeeUsd": 88,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Regent's University London",
+    "slug": "regent-s-university-london",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.regent-s-university-london.edu",
+    "universityType": "private",
+    "foundedYear": 1967,
+    "description": "A top private university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 36085,
+    "internationalStudentsPct": 12,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 400,
+    "applicationFeeUsd": 132,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Richmond American University",
+    "slug": "richmond-american-university",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.richmond-american-university.edu",
+    "universityType": "private",
+    "foundedYear": 1974,
+    "description": "A top private university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 17240,
+    "internationalStudentsPct": 19,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 183,
+    "applicationFeeUsd": 104,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Arden University",
+    "slug": "arden-university",
+    "countrySlug": "united-kingdom",
+    "city": "Major City",
+    "website": "https://www.arden-university.edu",
+    "universityType": "private",
+    "foundedYear": 1996,
+    "description": "A top private university located in united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13533,
+    "internationalStudentsPct": 14,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 86,
+    "applicationFeeUsd": 91,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "McMaster University",
+    "slug": "mcmaster-university",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.mcmaster-university.edu",
+    "universityType": "public",
+    "foundedYear": 1999,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 11622,
+    "internationalStudentsPct": 38,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 395,
+    "applicationFeeUsd": 107,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Waterloo",
+    "slug": "university-of-waterloo",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.university-of-waterloo.edu",
+    "universityType": "public",
+    "foundedYear": 1985,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 29356,
+    "internationalStudentsPct": 13,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 406,
+    "applicationFeeUsd": 117,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Alberta",
+    "slug": "university-of-alberta",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.university-of-alberta.edu",
+    "universityType": "public",
+    "foundedYear": 1997,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 28233,
+    "internationalStudentsPct": 33,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 486,
+    "applicationFeeUsd": 86,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Montreal",
+    "slug": "university-of-montreal",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.university-of-montreal.edu",
+    "universityType": "public",
+    "foundedYear": 1961,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34540,
+    "internationalStudentsPct": 37,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 242,
+    "applicationFeeUsd": 99,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Calgary",
+    "slug": "university-of-calgary",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.university-of-calgary.edu",
+    "universityType": "public",
+    "foundedYear": 1915,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13154,
+    "internationalStudentsPct": 34,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 169,
+    "applicationFeeUsd": 73,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Trinity Western University",
+    "slug": "trinity-western-university",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.trinity-western-university.edu",
+    "universityType": "private",
+    "foundedYear": 1990,
+    "description": "A top private university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24007,
+    "internationalStudentsPct": 35,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 500,
+    "applicationFeeUsd": 126,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Quest University",
+    "slug": "quest-university",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.quest-university.edu",
+    "universityType": "private",
+    "foundedYear": 1941,
+    "description": "A top private university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34691,
+    "internationalStudentsPct": 14,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 91,
+    "applicationFeeUsd": 62,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Yorkville University",
+    "slug": "yorkville-university",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.yorkville-university.edu",
+    "universityType": "private",
+    "foundedYear": 1901,
+    "description": "A top private university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 26328,
+    "internationalStudentsPct": 30,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 263,
+    "applicationFeeUsd": 129,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Crandall University",
+    "slug": "crandall-university",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.crandall-university.edu",
+    "universityType": "private",
+    "foundedYear": 1909,
+    "description": "A top private university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 21052,
+    "internationalStudentsPct": 19,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 412,
+    "applicationFeeUsd": 92,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "St. Mary's University",
+    "slug": "st-mary-s-university",
+    "countrySlug": "canada",
+    "city": "Major City",
+    "website": "https://www.st-mary-s-university.edu",
+    "universityType": "private",
+    "foundedYear": 1955,
+    "description": "A top private university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 30567,
+    "internationalStudentsPct": 35,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 260,
+    "applicationFeeUsd": 84,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UNSW Sydney",
+    "slug": "unsw-sydney",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.unsw-sydney.edu",
+    "universityType": "public",
+    "foundedYear": 1943,
+    "description": "A top public university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 21584,
+    "internationalStudentsPct": 19,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 321,
+    "applicationFeeUsd": 127,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "ANU",
+    "slug": "anu",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.anu.edu",
+    "universityType": "public",
+    "foundedYear": 1912,
+    "description": "A top public university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 22516,
+    "internationalStudentsPct": 29,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 192,
+    "applicationFeeUsd": 96,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Queensland",
+    "slug": "university-of-queensland",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.university-of-queensland.edu",
+    "universityType": "public",
+    "foundedYear": 1985,
+    "description": "A top public university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 23459,
+    "internationalStudentsPct": 24,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 227,
+    "applicationFeeUsd": 64,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Monash University",
+    "slug": "monash-university",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.monash-university.edu",
+    "universityType": "public",
+    "foundedYear": 1904,
+    "description": "A top public university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 31091,
+    "internationalStudentsPct": 22,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 148,
+    "applicationFeeUsd": 64,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UWA",
+    "slug": "uwa",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.uwa.edu",
+    "universityType": "public",
+    "foundedYear": 1991,
+    "description": "A top public university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 31630,
+    "internationalStudentsPct": 24,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 101,
+    "applicationFeeUsd": 126,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Bond University",
+    "slug": "bond-university",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.bond-university.edu",
+    "universityType": "private",
+    "foundedYear": 1966,
+    "description": "A top private university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 39590,
+    "internationalStudentsPct": 17,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 145,
+    "applicationFeeUsd": 137,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Torrens University",
+    "slug": "torrens-university",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.torrens-university.edu",
+    "universityType": "private",
+    "foundedYear": 1965,
+    "description": "A top private university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 12572,
+    "internationalStudentsPct": 32,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 375,
+    "applicationFeeUsd": 120,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Notre Dame Australia",
+    "slug": "university-of-notre-dame-australia",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.university-of-notre-dame-australia.edu",
+    "universityType": "private",
+    "foundedYear": 1928,
+    "description": "A top private university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 18001,
+    "internationalStudentsPct": 29,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 253,
+    "applicationFeeUsd": 93,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Avondale University",
+    "slug": "avondale-university",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.avondale-university.edu",
+    "universityType": "private",
+    "foundedYear": 1975,
+    "description": "A top private university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14694,
+    "internationalStudentsPct": 37,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 79,
+    "applicationFeeUsd": 58,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Macleay College",
+    "slug": "macleay-college",
+    "countrySlug": "australia",
+    "city": "Major City",
+    "website": "https://www.macleay-college.edu",
+    "universityType": "private",
+    "foundedYear": 1900,
+    "description": "A top private university located in australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 37895,
+    "internationalStudentsPct": 39,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 45,
+    "applicationFeeUsd": 128,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Heidelberg University",
+    "slug": "heidelberg-university",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.heidelberg-university.edu",
+    "universityType": "public",
+    "foundedYear": 1923,
+    "description": "A top public university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 38734,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 27,
+    "applicationFeeUsd": 105,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Humboldt University",
+    "slug": "humboldt-university",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.humboldt-university.edu",
+    "universityType": "public",
+    "foundedYear": 1959,
+    "description": "A top public university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20217,
+    "internationalStudentsPct": 38,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 487,
+    "applicationFeeUsd": 114,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Free University of Berlin",
+    "slug": "free-university-of-berlin",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.free-university-of-berlin.edu",
+    "universityType": "public",
+    "foundedYear": 1926,
+    "description": "A top public university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24664,
+    "internationalStudentsPct": 30,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 329,
+    "applicationFeeUsd": 57,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Tübingen",
+    "slug": "university-of-t-bingen",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.university-of-t-bingen.edu",
+    "universityType": "public",
+    "foundedYear": 1946,
+    "description": "A top public university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 33683,
+    "internationalStudentsPct": 25,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 340,
+    "applicationFeeUsd": 88,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Bonn",
+    "slug": "university-of-bonn",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.university-of-bonn.edu",
+    "universityType": "public",
+    "foundedYear": 1978,
+    "description": "A top public university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 30675,
+    "internationalStudentsPct": 14,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 208,
+    "applicationFeeUsd": 142,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Frankfurt School of Finance & Management",
+    "slug": "frankfurt-school-of-finance-management",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.frankfurt-school-of-finance-management.edu",
+    "universityType": "private",
+    "foundedYear": 1977,
+    "description": "A top private university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 38437,
+    "internationalStudentsPct": 22,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 12,
+    "applicationFeeUsd": 52,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "WHU - Otto Beisheim",
+    "slug": "whu-otto-beisheim",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.whu-otto-beisheim.edu",
+    "universityType": "private",
+    "foundedYear": 1906,
+    "description": "A top private university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 11324,
+    "internationalStudentsPct": 19,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 15,
+    "applicationFeeUsd": 142,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "GISMA Business School",
+    "slug": "gisma-business-school",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.gisma-business-school.edu",
+    "universityType": "private",
+    "foundedYear": 1912,
+    "description": "A top private university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 31887,
+    "internationalStudentsPct": 24,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 416,
+    "applicationFeeUsd": 52,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Munich Business School",
+    "slug": "munich-business-school",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.munich-business-school.edu",
+    "universityType": "private",
+    "foundedYear": 1999,
+    "description": "A top private university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 12989,
+    "internationalStudentsPct": 13,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 486,
+    "applicationFeeUsd": 146,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SRH Berlin",
+    "slug": "srh-berlin",
+    "countrySlug": "germany",
+    "city": "Major City",
+    "website": "https://www.srh-berlin.edu",
+    "universityType": "private",
+    "foundedYear": 1993,
+    "description": "A top private university located in germany.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 19160,
+    "internationalStudentsPct": 34,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 143,
+    "applicationFeeUsd": 99,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Otago",
+    "slug": "university-of-otago",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.university-of-otago.edu",
+    "universityType": "public",
+    "foundedYear": 1968,
+    "description": "A top public university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24911,
+    "internationalStudentsPct": 28,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 408,
+    "applicationFeeUsd": 120,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Victoria University of Wellington",
+    "slug": "victoria-university-of-wellington",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.victoria-university-of-wellington.edu",
+    "universityType": "public",
+    "foundedYear": 1911,
+    "description": "A top public university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 19114,
+    "internationalStudentsPct": 12,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 66,
+    "applicationFeeUsd": 117,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Canterbury",
+    "slug": "university-of-canterbury",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.university-of-canterbury.edu",
+    "universityType": "public",
+    "foundedYear": 1919,
+    "description": "A top public university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24482,
+    "internationalStudentsPct": 27,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 321,
+    "applicationFeeUsd": 90,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Massey University",
+    "slug": "massey-university",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.massey-university.edu",
+    "universityType": "public",
+    "foundedYear": 1903,
+    "description": "A top public university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 35181,
+    "internationalStudentsPct": 35,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 363,
+    "applicationFeeUsd": 90,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Waikato",
+    "slug": "university-of-waikato",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.university-of-waikato.edu",
+    "universityType": "public",
+    "foundedYear": 1912,
+    "description": "A top public university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13936,
+    "internationalStudentsPct": 12,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 215,
+    "applicationFeeUsd": 99,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Auckland Institute of Studies",
+    "slug": "auckland-institute-of-studies",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.auckland-institute-of-studies.edu",
+    "universityType": "private",
+    "foundedYear": 1991,
+    "description": "A top private university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 16381,
+    "internationalStudentsPct": 34,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 222,
+    "applicationFeeUsd": 135,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "IPU New Zealand",
+    "slug": "ipu-new-zealand",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.ipu-new-zealand.edu",
+    "universityType": "private",
+    "foundedYear": 1964,
+    "description": "A top private university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 36690,
+    "internationalStudentsPct": 24,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 137,
+    "applicationFeeUsd": 86,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Whitecliffe College",
+    "slug": "whitecliffe-college",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.whitecliffe-college.edu",
+    "universityType": "private",
+    "foundedYear": 1985,
+    "description": "A top private university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 22922,
+    "internationalStudentsPct": 18,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 483,
+    "applicationFeeUsd": 139,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Media Design School",
+    "slug": "media-design-school",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.media-design-school.edu",
+    "universityType": "private",
+    "foundedYear": 1947,
+    "description": "A top private university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24819,
+    "internationalStudentsPct": 32,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 17,
+    "applicationFeeUsd": 90,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "NZTC",
+    "slug": "nztc",
+    "countrySlug": "new-zealand",
+    "city": "Major City",
+    "website": "https://www.nztc.edu",
+    "universityType": "private",
+    "foundedYear": 1976,
+    "description": "A top private university located in new-zealand.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20719,
+    "internationalStudentsPct": 23,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 320,
+    "applicationFeeUsd": 96,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Seoul National University",
+    "slug": "seoul-national-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.seoul-national-university.edu",
+    "universityType": "public",
+    "foundedYear": 1982,
+    "description": "A top public university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24506,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 161,
+    "applicationFeeUsd": 138,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Pusan National University",
+    "slug": "pusan-national-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.pusan-national-university.edu",
+    "universityType": "public",
+    "foundedYear": 1900,
+    "description": "A top public university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24580,
+    "internationalStudentsPct": 16,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 83,
+    "applicationFeeUsd": 51,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Kyungpook National University",
+    "slug": "kyungpook-national-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.kyungpook-national-university.edu",
+    "universityType": "public",
+    "foundedYear": 1957,
+    "description": "A top public university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24744,
+    "internationalStudentsPct": 25,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 91,
+    "applicationFeeUsd": 85,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UNIST",
+    "slug": "unist",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.unist.edu",
+    "universityType": "public",
+    "foundedYear": 1941,
+    "description": "A top public university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 32966,
+    "internationalStudentsPct": 21,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 194,
+    "applicationFeeUsd": 135,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Chonnam National University",
+    "slug": "chonnam-national-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.chonnam-national-university.edu",
+    "universityType": "public",
+    "foundedYear": 1973,
+    "description": "A top public university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 22563,
+    "internationalStudentsPct": 11,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 75,
+    "applicationFeeUsd": 63,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Korea University",
+    "slug": "korea-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.korea-university.edu",
+    "universityType": "private",
+    "foundedYear": 1912,
+    "description": "A top private university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34098,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 101,
+    "applicationFeeUsd": 126,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Yonsei University",
+    "slug": "yonsei-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.yonsei-university.edu",
+    "universityType": "private",
+    "foundedYear": 1929,
+    "description": "A top private university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 26162,
+    "internationalStudentsPct": 16,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 84,
+    "applicationFeeUsd": 54,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Sungkyunkwan University",
+    "slug": "sungkyunkwan-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.sungkyunkwan-university.edu",
+    "universityType": "private",
+    "foundedYear": 1971,
+    "description": "A top private university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 19395,
+    "internationalStudentsPct": 12,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 345,
+    "applicationFeeUsd": 135,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hanyang University",
+    "slug": "hanyang-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.hanyang-university.edu",
+    "universityType": "private",
+    "foundedYear": 1998,
+    "description": "A top private university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34490,
+    "internationalStudentsPct": 38,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 156,
+    "applicationFeeUsd": 88,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Kyung Hee University",
+    "slug": "kyung-hee-university",
+    "countrySlug": "south-korea",
+    "city": "Major City",
+    "website": "https://www.kyung-hee-university.edu",
+    "universityType": "private",
+    "foundedYear": 1963,
+    "description": "A top private university located in south-korea.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 18240,
+    "internationalStudentsPct": 36,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 234,
+    "applicationFeeUsd": 104,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Kyoto University",
+    "slug": "kyoto-university",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.kyoto-university.edu",
+    "universityType": "public",
+    "foundedYear": 1935,
+    "description": "A top public university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34186,
+    "internationalStudentsPct": 30,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 236,
+    "applicationFeeUsd": 112,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Osaka University",
+    "slug": "osaka-university",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.osaka-university.edu",
+    "universityType": "public",
+    "foundedYear": 1981,
+    "description": "A top public university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 19115,
+    "internationalStudentsPct": 12,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 483,
+    "applicationFeeUsd": 103,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tohoku University",
+    "slug": "tohoku-university",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.tohoku-university.edu",
+    "universityType": "public",
+    "foundedYear": 1948,
+    "description": "A top public university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 11444,
+    "internationalStudentsPct": 31,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 274,
+    "applicationFeeUsd": 56,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Nagoya University",
+    "slug": "nagoya-university",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.nagoya-university.edu",
+    "universityType": "public",
+    "foundedYear": 1932,
+    "description": "A top public university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 28338,
+    "internationalStudentsPct": 24,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 125,
+    "applicationFeeUsd": 144,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hokkaido University",
+    "slug": "hokkaido-university",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.hokkaido-university.edu",
+    "universityType": "public",
+    "foundedYear": 1952,
+    "description": "A top public university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 29545,
+    "internationalStudentsPct": 28,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 398,
+    "applicationFeeUsd": 145,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Keio University",
+    "slug": "keio-university",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.keio-university.edu",
+    "universityType": "private",
+    "foundedYear": 1921,
+    "description": "A top private university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13755,
+    "internationalStudentsPct": 37,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 154,
+    "applicationFeeUsd": 98,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Waseda University",
+    "slug": "waseda-university",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.waseda-university.edu",
+    "universityType": "private",
+    "foundedYear": 1978,
+    "description": "A top private university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14329,
+    "internationalStudentsPct": 23,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 267,
+    "applicationFeeUsd": 118,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Sophia University",
+    "slug": "sophia-university",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.sophia-university.edu",
+    "universityType": "private",
+    "foundedYear": 1953,
+    "description": "A top private university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 11536,
+    "internationalStudentsPct": 38,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 240,
+    "applicationFeeUsd": 109,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "ICU",
+    "slug": "icu",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.icu.edu",
+    "universityType": "private",
+    "foundedYear": 1976,
+    "description": "A top private university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34182,
+    "internationalStudentsPct": 23,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 245,
+    "applicationFeeUsd": 56,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tokyo University of Science",
+    "slug": "tokyo-university-of-science",
+    "countrySlug": "japan",
+    "city": "Major City",
+    "website": "https://www.tokyo-university-of-science.edu",
+    "universityType": "private",
+    "foundedYear": 1947,
+    "description": "A top private university located in japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14791,
+    "internationalStudentsPct": 13,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 379,
+    "applicationFeeUsd": 113,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SMU",
+    "slug": "smu",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.smu.edu",
+    "universityType": "public",
+    "foundedYear": 1971,
+    "description": "A top public university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 18347,
+    "internationalStudentsPct": 14,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 287,
+    "applicationFeeUsd": 54,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SUTD",
+    "slug": "sutd",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.sutd.edu",
+    "universityType": "public",
+    "foundedYear": 1955,
+    "description": "A top public university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 30171,
+    "internationalStudentsPct": 17,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 69,
+    "applicationFeeUsd": 53,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SIT",
+    "slug": "sit",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.sit.edu",
+    "universityType": "public",
+    "foundedYear": 1977,
+    "description": "A top public university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 11413,
+    "internationalStudentsPct": 36,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 178,
+    "applicationFeeUsd": 88,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SUSS",
+    "slug": "suss",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.suss.edu",
+    "universityType": "public",
+    "foundedYear": 1945,
+    "description": "A top public university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 33419,
+    "internationalStudentsPct": 29,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 422,
+    "applicationFeeUsd": 101,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Singapore Polytechnic",
+    "slug": "singapore-polytechnic",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.singapore-polytechnic.edu",
+    "universityType": "public",
+    "foundedYear": 1926,
+    "description": "A top public university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24279,
+    "internationalStudentsPct": 12,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 246,
+    "applicationFeeUsd": 78,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SIM Global Education",
+    "slug": "sim-global-education",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.sim-global-education.edu",
+    "universityType": "private",
+    "foundedYear": 1984,
+    "description": "A top private university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34122,
+    "internationalStudentsPct": 13,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 408,
+    "applicationFeeUsd": 137,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Kaplan Higher Education",
+    "slug": "kaplan-higher-education",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.kaplan-higher-education.edu",
+    "universityType": "private",
+    "foundedYear": 1959,
+    "description": "A top private university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 17496,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 379,
+    "applicationFeeUsd": 52,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "MDIS",
+    "slug": "mdis",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.mdis.edu",
+    "universityType": "private",
+    "foundedYear": 1964,
+    "description": "A top private university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14912,
+    "internationalStudentsPct": 39,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 396,
+    "applicationFeeUsd": 85,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "PSB Academy",
+    "slug": "psb-academy",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.psb-academy.edu",
+    "universityType": "private",
+    "foundedYear": 1924,
+    "description": "A top private university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 38576,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 231,
+    "applicationFeeUsd": 94,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "James Cook University Singapore",
+    "slug": "james-cook-university-singapore",
+    "countrySlug": "singapore",
+    "city": "Major City",
+    "website": "https://www.james-cook-university-singapore.edu",
+    "universityType": "private",
+    "foundedYear": 1972,
+    "description": "A top private university located in singapore.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 37997,
+    "internationalStudentsPct": 33,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 426,
+    "applicationFeeUsd": 80,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "United Arab Emirates University",
+    "slug": "united-arab-emirates-university",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.united-arab-emirates-university.edu",
+    "universityType": "public",
+    "foundedYear": 1953,
+    "description": "A top public university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13623,
+    "internationalStudentsPct": 36,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 174,
+    "applicationFeeUsd": 84,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Zayed University",
+    "slug": "zayed-university",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.zayed-university.edu",
+    "universityType": "public",
+    "foundedYear": 1916,
+    "description": "A top public university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14134,
+    "internationalStudentsPct": 33,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 242,
+    "applicationFeeUsd": 85,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Higher Colleges of Technology",
+    "slug": "higher-colleges-of-technology",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.higher-colleges-of-technology.edu",
+    "universityType": "public",
+    "foundedYear": 1924,
+    "description": "A top public university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 38339,
+    "internationalStudentsPct": 18,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 397,
+    "applicationFeeUsd": 73,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Khalifa University",
+    "slug": "khalifa-university",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.khalifa-university.edu",
+    "universityType": "public",
+    "foundedYear": 1930,
+    "description": "A top public university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34331,
+    "internationalStudentsPct": 22,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 49,
+    "applicationFeeUsd": 83,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Abu Dhabi University",
+    "slug": "abu-dhabi-university",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.abu-dhabi-university.edu",
+    "universityType": "public",
+    "foundedYear": 1947,
+    "description": "A top public university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 35600,
+    "internationalStudentsPct": 34,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 318,
+    "applicationFeeUsd": 69,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "American University of Sharjah",
+    "slug": "american-university-of-sharjah",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.american-university-of-sharjah.edu",
+    "universityType": "private",
+    "foundedYear": 1931,
+    "description": "A top private university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 28395,
+    "internationalStudentsPct": 29,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 299,
+    "applicationFeeUsd": 88,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "American University in Dubai",
+    "slug": "american-university-in-dubai",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.american-university-in-dubai.edu",
+    "universityType": "private",
+    "foundedYear": 1974,
+    "description": "A top private university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13690,
+    "internationalStudentsPct": 38,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 245,
+    "applicationFeeUsd": 92,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Sharjah",
+    "slug": "university-of-sharjah",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.university-of-sharjah.edu",
+    "universityType": "private",
+    "foundedYear": 1950,
+    "description": "A top private university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20966,
+    "internationalStudentsPct": 30,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 495,
+    "applicationFeeUsd": 105,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Canadian University Dubai",
+    "slug": "canadian-university-dubai",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.canadian-university-dubai.edu",
+    "universityType": "private",
+    "foundedYear": 1975,
+    "description": "A top private university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 32460,
+    "internationalStudentsPct": 13,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 458,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Middlesex University Dubai",
+    "slug": "middlesex-university-dubai",
+    "countrySlug": "uae",
+    "city": "Major City",
+    "website": "https://www.middlesex-university-dubai.edu",
+    "universityType": "private",
+    "foundedYear": 1981,
+    "description": "A top private university located in uae.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 16338,
+    "internationalStudentsPct": 16,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 238,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Sorbonne University",
+    "slug": "sorbonne-university",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.sorbonne-university.edu",
+    "universityType": "public",
+    "foundedYear": 1909,
+    "description": "A top public university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14431,
+    "internationalStudentsPct": 22,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 400,
+    "applicationFeeUsd": 109,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Université Paris-Saclay",
+    "slug": "universit-paris-saclay",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.universit-paris-saclay.edu",
+    "universityType": "public",
+    "foundedYear": 1970,
+    "description": "A top public university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 35226,
+    "internationalStudentsPct": 25,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 483,
+    "applicationFeeUsd": 59,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "École Polytechnique",
+    "slug": "cole-polytechnique",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.cole-polytechnique.edu",
+    "universityType": "public",
+    "foundedYear": 1956,
+    "description": "A top public university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 22034,
+    "internationalStudentsPct": 11,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 192,
+    "applicationFeeUsd": 113,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Université de Paris",
+    "slug": "universit-de-paris",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.universit-de-paris.edu",
+    "universityType": "public",
+    "foundedYear": 1959,
+    "description": "A top public university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 32265,
+    "internationalStudentsPct": 27,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 374,
+    "applicationFeeUsd": 107,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Aix-Marseille University",
+    "slug": "aix-marseille-university",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.aix-marseille-university.edu",
+    "universityType": "public",
+    "foundedYear": 1987,
+    "description": "A top public university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34402,
+    "internationalStudentsPct": 31,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 139,
+    "applicationFeeUsd": 122,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "HEC Paris",
+    "slug": "hec-paris",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.hec-paris.edu",
+    "universityType": "private",
+    "foundedYear": 1907,
+    "description": "A top private university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 28045,
+    "internationalStudentsPct": 38,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 24,
+    "applicationFeeUsd": 79,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "INSEAD",
+    "slug": "insead",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.insead.edu",
+    "universityType": "private",
+    "foundedYear": 1997,
+    "description": "A top private university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13625,
+    "internationalStudentsPct": 19,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 64,
+    "applicationFeeUsd": 83,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "ESSEC Business School",
+    "slug": "essec-business-school",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.essec-business-school.edu",
+    "universityType": "private",
+    "foundedYear": 1991,
+    "description": "A top private university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 15416,
+    "internationalStudentsPct": 26,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 261,
+    "applicationFeeUsd": 107,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "ESCP Europe",
+    "slug": "escp-europe",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.escp-europe.edu",
+    "universityType": "private",
+    "foundedYear": 1947,
+    "description": "A top private university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 22685,
+    "internationalStudentsPct": 30,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 411,
+    "applicationFeeUsd": 83,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "EDHEC Business School",
+    "slug": "edhec-business-school",
+    "countrySlug": "france",
+    "city": "Major City",
+    "website": "https://www.edhec-business-school.edu",
+    "universityType": "private",
+    "foundedYear": 1973,
+    "description": "A top private university located in france.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 13537,
+    "internationalStudentsPct": 36,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 153,
+    "applicationFeeUsd": 87,
+    "avgTuitionUsd": 40000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Lomonosov Moscow State University",
+    "slug": "lomonosov-moscow-state-university",
+    "countrySlug": "russia",
+    "city": "Major City",
+    "website": "https://www.lomonosov-moscow-state-university.edu",
+    "universityType": "public",
+    "foundedYear": 1959,
+    "description": "A top public university located in russia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 32142,
+    "internationalStudentsPct": 17,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 317,
+    "applicationFeeUsd": 90,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Saint Petersburg State University",
+    "slug": "saint-petersburg-state-university",
+    "countrySlug": "russia",
+    "city": "Major City",
+    "website": "https://www.saint-petersburg-state-university.edu",
+    "universityType": "public",
+    "foundedYear": 1910,
+    "description": "A top public university located in russia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 12448,
+    "internationalStudentsPct": 34,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 48,
+    "applicationFeeUsd": 148,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Novosibirsk State University",
+    "slug": "novosibirsk-state-university",
+    "countrySlug": "russia",
+    "city": "Major City",
+    "website": "https://www.novosibirsk-state-university.edu",
+    "universityType": "public",
+    "foundedYear": 1911,
+    "description": "A top public university located in russia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14786,
+    "internationalStudentsPct": 17,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 483,
+    "applicationFeeUsd": 110,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tsinghua University",
+    "slug": "tsinghua-university",
+    "countrySlug": "china",
+    "city": "Major City",
+    "website": "https://www.tsinghua-university.edu",
+    "universityType": "public",
+    "foundedYear": 1916,
+    "description": "A top public university located in china.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 35554,
+    "internationalStudentsPct": 35,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 173,
+    "applicationFeeUsd": 52,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Peking University",
+    "slug": "peking-university",
+    "countrySlug": "china",
+    "city": "Major City",
+    "website": "https://www.peking-university.edu",
+    "universityType": "public",
+    "foundedYear": 1930,
+    "description": "A top public university located in china.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 25866,
+    "internationalStudentsPct": 12,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 276,
+    "applicationFeeUsd": 93,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Fudan University",
+    "slug": "fudan-university",
+    "countrySlug": "china",
+    "city": "Major City",
+    "website": "https://www.fudan-university.edu",
+    "universityType": "public",
+    "foundedYear": 1926,
+    "description": "A top public university located in china.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 29157,
+    "internationalStudentsPct": 16,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 227,
+    "applicationFeeUsd": 123,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Wageningen University",
+    "slug": "wageningen-university",
+    "countrySlug": "netherlands",
+    "city": "Major City",
+    "website": "https://www.wageningen-university.edu",
+    "universityType": "public",
+    "foundedYear": 1957,
+    "description": "A top public university located in netherlands.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 10799,
+    "internationalStudentsPct": 21,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 59,
+    "applicationFeeUsd": 78,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Leiden University",
+    "slug": "leiden-university",
+    "countrySlug": "netherlands",
+    "city": "Major City",
+    "website": "https://www.leiden-university.edu",
+    "universityType": "public",
+    "foundedYear": 1946,
+    "description": "A top public university located in netherlands.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24882,
+    "internationalStudentsPct": 22,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 140,
+    "applicationFeeUsd": 79,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Utrecht University",
+    "slug": "utrecht-university",
+    "countrySlug": "netherlands",
+    "city": "Major City",
+    "website": "https://www.utrecht-university.edu",
+    "universityType": "public",
+    "foundedYear": 1968,
+    "description": "A top public university located in netherlands.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20746,
+    "internationalStudentsPct": 29,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 427,
+    "applicationFeeUsd": 73,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "KU Leuven",
+    "slug": "ku-leuven",
+    "countrySlug": "belgium",
+    "city": "Major City",
+    "website": "https://www.ku-leuven.edu",
+    "universityType": "public",
+    "foundedYear": 1926,
+    "description": "A top public university located in belgium.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 28262,
+    "internationalStudentsPct": 17,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 88,
+    "applicationFeeUsd": 114,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Ghent University",
+    "slug": "ghent-university",
+    "countrySlug": "belgium",
+    "city": "Major City",
+    "website": "https://www.ghent-university.edu",
+    "universityType": "public",
+    "foundedYear": 1922,
+    "description": "A top public university located in belgium.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 15692,
+    "internationalStudentsPct": 11,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 424,
+    "applicationFeeUsd": 114,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Université catholique de Louvain",
+    "slug": "universit-catholique-de-louvain",
+    "countrySlug": "belgium",
+    "city": "Major City",
+    "website": "https://www.universit-catholique-de-louvain.edu",
+    "universityType": "public",
+    "foundedYear": 1937,
+    "description": "A top public university located in belgium.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 28019,
+    "internationalStudentsPct": 14,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 113,
+    "applicationFeeUsd": 137,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Warsaw",
+    "slug": "university-of-warsaw",
+    "countrySlug": "poland",
+    "city": "Major City",
+    "website": "https://www.university-of-warsaw.edu",
+    "universityType": "public",
+    "foundedYear": 1953,
+    "description": "A top public university located in poland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 18266,
+    "internationalStudentsPct": 11,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 116,
+    "applicationFeeUsd": 87,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Jagiellonian University",
+    "slug": "jagiellonian-university",
+    "countrySlug": "poland",
+    "city": "Major City",
+    "website": "https://www.jagiellonian-university.edu",
+    "universityType": "public",
+    "foundedYear": 1947,
+    "description": "A top public university located in poland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24004,
+    "internationalStudentsPct": 14,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 342,
+    "applicationFeeUsd": 118,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Warsaw University of Technology",
+    "slug": "warsaw-university-of-technology",
+    "countrySlug": "poland",
+    "city": "Major City",
+    "website": "https://www.warsaw-university-of-technology.edu",
+    "universityType": "public",
+    "foundedYear": 1971,
+    "description": "A top public university located in poland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 38159,
+    "internationalStudentsPct": 39,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 164,
+    "applicationFeeUsd": 62,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Vienna",
+    "slug": "university-of-vienna",
+    "countrySlug": "austria",
+    "city": "Major City",
+    "website": "https://www.university-of-vienna.edu",
+    "universityType": "public",
+    "foundedYear": 1956,
+    "description": "A top public university located in austria.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 12655,
+    "internationalStudentsPct": 38,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 378,
+    "applicationFeeUsd": 89,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "TU Wien",
+    "slug": "tu-wien",
+    "countrySlug": "austria",
+    "city": "Major City",
+    "website": "https://www.tu-wien.edu",
+    "universityType": "public",
+    "foundedYear": 1979,
+    "description": "A top public university located in austria.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 36426,
+    "internationalStudentsPct": 22,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 62,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Medical University of Vienna",
+    "slug": "medical-university-of-vienna",
+    "countrySlug": "austria",
+    "city": "Major City",
+    "website": "https://www.medical-university-of-vienna.edu",
+    "universityType": "public",
+    "foundedYear": 1949,
+    "description": "A top public university located in austria.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 39624,
+    "internationalStudentsPct": 17,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 494,
+    "applicationFeeUsd": 82,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Zurich",
+    "slug": "university-of-zurich",
+    "countrySlug": "switzerland",
+    "city": "Major City",
+    "website": "https://www.university-of-zurich.edu",
+    "universityType": "public",
+    "foundedYear": 1999,
+    "description": "A top public university located in switzerland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 12202,
+    "internationalStudentsPct": 22,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 481,
+    "applicationFeeUsd": 70,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Geneva",
+    "slug": "university-of-geneva",
+    "countrySlug": "switzerland",
+    "city": "Major City",
+    "website": "https://www.university-of-geneva.edu",
+    "universityType": "public",
+    "foundedYear": 1966,
+    "description": "A top public university located in switzerland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20536,
+    "internationalStudentsPct": 26,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 373,
+    "applicationFeeUsd": 76,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Bern",
+    "slug": "university-of-bern",
+    "countrySlug": "switzerland",
+    "city": "Major City",
+    "website": "https://www.university-of-bern.edu",
+    "universityType": "public",
+    "foundedYear": 1962,
+    "description": "A top public university located in switzerland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 14089,
+    "internationalStudentsPct": 14,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 171,
+    "applicationFeeUsd": 143,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Lisbon",
+    "slug": "university-of-lisbon",
+    "countrySlug": "portugal",
+    "city": "Major City",
+    "website": "https://www.university-of-lisbon.edu",
+    "universityType": "public",
+    "foundedYear": 1921,
+    "description": "A top public university located in portugal.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20404,
+    "internationalStudentsPct": 27,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 146,
+    "applicationFeeUsd": 94,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Porto",
+    "slug": "university-of-porto",
+    "countrySlug": "portugal",
+    "city": "Major City",
+    "website": "https://www.university-of-porto.edu",
+    "universityType": "public",
+    "foundedYear": 1937,
+    "description": "A top public university located in portugal.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 21288,
+    "internationalStudentsPct": 29,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 432,
+    "applicationFeeUsd": 62,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Coimbra",
+    "slug": "university-of-coimbra",
+    "countrySlug": "portugal",
+    "city": "Major City",
+    "website": "https://www.university-of-coimbra.edu",
+    "universityType": "public",
+    "foundedYear": 1966,
+    "description": "A top public university located in portugal.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 30502,
+    "internationalStudentsPct": 34,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 244,
+    "applicationFeeUsd": 79,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Barcelona",
+    "slug": "university-of-barcelona",
+    "countrySlug": "spain",
+    "city": "Major City",
+    "website": "https://www.university-of-barcelona.edu",
+    "universityType": "public",
+    "foundedYear": 1961,
+    "description": "A top public university located in spain.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 21645,
+    "internationalStudentsPct": 13,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 374,
+    "applicationFeeUsd": 123,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Autonomous University of Madrid",
+    "slug": "autonomous-university-of-madrid",
+    "countrySlug": "spain",
+    "city": "Major City",
+    "website": "https://www.autonomous-university-of-madrid.edu",
+    "universityType": "public",
+    "foundedYear": 1966,
+    "description": "A top public university located in spain.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 20479,
+    "internationalStudentsPct": 31,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 168,
+    "applicationFeeUsd": 135,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Complutense University of Madrid",
+    "slug": "complutense-university-of-madrid",
+    "countrySlug": "spain",
+    "city": "Major City",
+    "website": "https://www.complutense-university-of-madrid.edu",
+    "universityType": "public",
+    "foundedYear": 1901,
+    "description": "A top public university located in spain.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 23252,
+    "internationalStudentsPct": 23,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 496,
+    "applicationFeeUsd": 103,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University College Dublin",
+    "slug": "university-college-dublin",
+    "countrySlug": "ireland",
+    "city": "Major City",
+    "website": "https://www.university-college-dublin.edu",
+    "universityType": "public",
+    "foundedYear": 1953,
+    "description": "A top public university located in ireland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 19306,
+    "internationalStudentsPct": 32,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 121,
+    "applicationFeeUsd": 139,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "National University of Ireland Galway",
+    "slug": "national-university-of-ireland-galway",
+    "countrySlug": "ireland",
+    "city": "Major City",
+    "website": "https://www.national-university-of-ireland-galway.edu",
+    "universityType": "public",
+    "foundedYear": 1944,
+    "description": "A top public university located in ireland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 35422,
+    "internationalStudentsPct": 27,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 157,
+    "applicationFeeUsd": 72,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UCC",
+    "slug": "ucc",
+    "countrySlug": "ireland",
+    "city": "Major City",
+    "website": "https://www.ucc.edu",
+    "universityType": "public",
+    "foundedYear": 1996,
+    "description": "A top public university located in ireland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 39277,
+    "internationalStudentsPct": 36,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 211,
+    "applicationFeeUsd": 108,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Karolinska Institute",
+    "slug": "karolinska-institute",
+    "countrySlug": "sweden",
+    "city": "Major City",
+    "website": "https://www.karolinska-institute.edu",
+    "universityType": "public",
+    "foundedYear": 1937,
+    "description": "A top public university located in sweden.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 15325,
+    "internationalStudentsPct": 18,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 139,
+    "applicationFeeUsd": 146,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Lund University",
+    "slug": "lund-university",
+    "countrySlug": "sweden",
+    "city": "Major City",
+    "website": "https://www.lund-university.edu",
+    "universityType": "public",
+    "foundedYear": 1922,
+    "description": "A top public university located in sweden.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 12117,
+    "internationalStudentsPct": 18,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 439,
+    "applicationFeeUsd": 87,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Uppsala University",
+    "slug": "uppsala-university",
+    "countrySlug": "sweden",
+    "city": "Major City",
+    "website": "https://www.uppsala-university.edu",
+    "universityType": "public",
+    "foundedYear": 1972,
+    "description": "A top public university located in sweden.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 28359,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 168,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Bologna",
+    "slug": "university-of-bologna",
+    "countrySlug": "italy",
+    "city": "Major City",
+    "website": "https://www.university-of-bologna.edu",
+    "universityType": "public",
+    "foundedYear": 1986,
+    "description": "A top public university located in italy.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 27523,
+    "internationalStudentsPct": 24,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 4,
+    "applicationFeeUsd": 135,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Sapienza University of Rome",
+    "slug": "sapienza-university-of-rome",
+    "countrySlug": "italy",
+    "city": "Major City",
+    "website": "https://www.sapienza-university-of-rome.edu",
+    "universityType": "public",
+    "foundedYear": 1933,
+    "description": "A top public university located in italy.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34076,
+    "internationalStudentsPct": 32,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 24,
+    "applicationFeeUsd": 95,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Padua",
+    "slug": "university-of-padua",
+    "countrySlug": "italy",
+    "city": "Major City",
+    "website": "https://www.university-of-padua.edu",
+    "universityType": "public",
+    "foundedYear": 1982,
+    "description": "A top public university located in italy.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 16921,
+    "internationalStudentsPct": 21,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 478,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Oslo",
+    "slug": "university-of-oslo",
+    "countrySlug": "norway",
+    "city": "Major City",
+    "website": "https://www.university-of-oslo.edu",
+    "universityType": "public",
+    "foundedYear": 1952,
+    "description": "A top public university located in norway.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 31934,
+    "internationalStudentsPct": 39,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 474,
+    "applicationFeeUsd": 96,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Bergen",
+    "slug": "university-of-bergen",
+    "countrySlug": "norway",
+    "city": "Major City",
+    "website": "https://www.university-of-bergen.edu",
+    "universityType": "public",
+    "foundedYear": 1937,
+    "description": "A top public university located in norway.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 37104,
+    "internationalStudentsPct": 34,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 348,
+    "applicationFeeUsd": 70,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "NTNU",
+    "slug": "ntnu",
+    "countrySlug": "norway",
+    "city": "Major City",
+    "website": "https://www.ntnu.edu",
+    "universityType": "public",
+    "foundedYear": 1941,
+    "description": "A top public university located in norway.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24602,
+    "internationalStudentsPct": 33,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 282,
+    "applicationFeeUsd": 139,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Helsinki",
+    "slug": "university-of-helsinki",
+    "countrySlug": "finland",
+    "city": "Major City",
+    "website": "https://www.university-of-helsinki.edu",
+    "universityType": "public",
+    "foundedYear": 1983,
+    "description": "A top public university located in finland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34031,
+    "internationalStudentsPct": 35,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 284,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Aalto University",
+    "slug": "aalto-university",
+    "countrySlug": "finland",
+    "city": "Major City",
+    "website": "https://www.aalto-university.edu",
+    "universityType": "public",
+    "foundedYear": 1964,
+    "description": "A top public university located in finland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34343,
+    "internationalStudentsPct": 34,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 348,
+    "applicationFeeUsd": 56,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Turku",
+    "slug": "university-of-turku",
+    "countrySlug": "finland",
+    "city": "Major City",
+    "website": "https://www.university-of-turku.edu",
+    "universityType": "public",
+    "foundedYear": 1943,
+    "description": "A top public university located in finland.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 36949,
+    "internationalStudentsPct": 39,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 355,
+    "applicationFeeUsd": 102,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Copenhagen",
+    "slug": "university-of-copenhagen",
+    "countrySlug": "denmark",
+    "city": "Major City",
+    "website": "https://www.university-of-copenhagen.edu",
+    "universityType": "public",
+    "foundedYear": 1963,
+    "description": "A top public university located in denmark.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 10167,
+    "internationalStudentsPct": 21,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 264,
+    "applicationFeeUsd": 144,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Technical University of Denmark",
+    "slug": "technical-university-of-denmark",
+    "countrySlug": "denmark",
+    "city": "Major City",
+    "website": "https://www.technical-university-of-denmark.edu",
+    "universityType": "public",
+    "foundedYear": 1986,
+    "description": "A top public university located in denmark.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 29205,
+    "internationalStudentsPct": 12,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 216,
+    "applicationFeeUsd": 137,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Aarhus University",
+    "slug": "aarhus-university",
+    "countrySlug": "denmark",
+    "city": "Major City",
+    "website": "https://www.aarhus-university.edu",
+    "universityType": "public",
+    "foundedYear": 1951,
+    "description": "A top public university located in denmark.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 16188,
+    "internationalStudentsPct": 37,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 438,
+    "applicationFeeUsd": 69,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Universiti Malaya",
+    "slug": "universiti-malaya",
+    "countrySlug": "malaysia",
+    "city": "Major City",
+    "website": "https://www.universiti-malaya.edu",
+    "universityType": "public",
+    "foundedYear": 1999,
+    "description": "A top public university located in malaysia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 34674,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 14,
+    "applicationFeeUsd": 103,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Universiti Putra Malaysia",
+    "slug": "universiti-putra-malaysia",
+    "countrySlug": "malaysia",
+    "city": "Major City",
+    "website": "https://www.universiti-putra-malaysia.edu",
+    "universityType": "public",
+    "foundedYear": 1921,
+    "description": "A top public university located in malaysia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 27637,
+    "internationalStudentsPct": 18,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 125,
+    "applicationFeeUsd": 147,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Universiti Kebangsaan Malaysia",
+    "slug": "universiti-kebangsaan-malaysia",
+    "countrySlug": "malaysia",
+    "city": "Major City",
+    "website": "https://www.universiti-kebangsaan-malaysia.edu",
+    "universityType": "public",
+    "foundedYear": 1998,
+    "description": "A top public university located in malaysia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 24633,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 282,
+    "applicationFeeUsd": 132,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Luxembourg",
+    "slug": "university-of-luxembourg",
+    "countrySlug": "luxembourg",
+    "city": "Major City",
+    "website": "https://www.university-of-luxembourg.edu",
+    "universityType": "public",
+    "foundedYear": 1955,
+    "description": "A top public university located in luxembourg.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 38626,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 266,
+    "applicationFeeUsd": 132,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Luxembourg School of Business",
+    "slug": "luxembourg-school-of-business",
+    "countrySlug": "luxembourg",
+    "city": "Major City",
+    "website": "https://www.luxembourg-school-of-business.edu",
+    "universityType": "public",
+    "foundedYear": 1962,
+    "description": "A top public university located in luxembourg.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 32908,
+    "internationalStudentsPct": 27,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 7,
+    "applicationFeeUsd": 118,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "LUNEX University",
+    "slug": "lunex-university",
+    "countrySlug": "luxembourg",
+    "city": "Major City",
+    "website": "https://www.lunex-university.edu",
+    "universityType": "public",
+    "foundedYear": 1932,
+    "description": "A top public university located in luxembourg.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 23704,
+    "internationalStudentsPct": 23,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 312,
+    "applicationFeeUsd": 101,
+    "avgTuitionUsd": 15000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...generatedUniversities);
+
 export default universities;

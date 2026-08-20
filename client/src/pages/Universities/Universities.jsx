@@ -21,7 +21,7 @@ export default function Universities() {
       if (type) params.type = type;
       const res = await api.get('/universities', { params });
       setUniversities(res.data.data || []);
-      setTotal(res.data.pagination?.total || 0);
+      setTotal(res.data.meta?.pagination?.total || 0);
     } catch {
       setUniversities([]);
     } finally {
@@ -109,12 +109,18 @@ export default function Universities() {
             <Link key={u.id} to={`/universities/${u.slug}`} className="uni-card card">
               <div className="uni-card-header">
                 <div className="uni-logo">
-                  {u.logoUrl ? <img src={u.logoUrl} alt={u.name} /> : <span className="uni-logo-placeholder">{u.name[0]}</span>}
+                  <img 
+                    src={u.logoUrl || (u.website ? `https://logo.clearbit.com/${new URL(u.website).hostname}` : '')} 
+                    alt={u.name} 
+                    onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }} 
+                    style={{ display: (u.logoUrl || u.website) ? 'block' : 'none' }}
+                  />
+                  <span className="uni-logo-placeholder" style={{ display: (u.logoUrl || u.website) ? 'none' : 'flex' }}>{u.name[0]}</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="uni-name">{u.name}</h3>
                   <p className="uni-location text-sm text-muted">
-                    {u.country?.flagEmoji} {u.city}, {u.country?.name}
+                    {u.country && <img src={`/flags/${u.country.code.toLowerCase()}.webp`} alt={u.country.name} style={{ width: '1.2em', verticalAlign: 'middle', marginRight: '4px' }} />} {u.city}, {u.country?.name}
                   </p>
                 </div>
               </div>

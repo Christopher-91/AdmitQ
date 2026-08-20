@@ -51,7 +51,7 @@ export default function UniversityDetail() {
             <div style={{ flex: 1, minWidth: 200 }}>
               <h1 className="detail-title">{uni.name}</h1>
               <p className="detail-subtitle">
-                {uni.country?.flagEmoji} {uni.city}{uni.stateProvince ? `, ${uni.stateProvince}` : ''} · {uni.country?.name}
+                {uni.country && <img src={`/flags/${uni.country.code.toLowerCase()}.webp`} alt={uni.country.name} style={{ width: '1.2em', verticalAlign: 'middle', marginRight: '4px' }} />} {uni.city}{uni.stateProvince ? `, ${uni.stateProvince}` : ''} · {uni.country?.name}
               </p>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 12 }}>
                 <span className="badge badge-primary">{uni.universityType}</span>
@@ -178,7 +178,7 @@ export default function UniversityDetail() {
               <Link to={`/countries/${uni.country?.slug}`} className="card" style={{ padding: 20, textDecoration: 'none', display: 'block' }}>
                 <p className="text-xs text-muted font-semibold mb-2">COUNTRY INFO</p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <span style={{ fontSize: '2rem' }}>{uni.country?.flagEmoji}</span>
+                  {uni.country && <img src={`/flags/${uni.country.code.toLowerCase()}.webp`} alt={uni.country.name} style={{ width: '2rem', verticalAlign: 'middle' }} />}
                   <div>
                     <p style={{ fontWeight: 700 }}>{uni.country?.name}</p>
                     <p className="text-xs text-muted">View country details →</p>

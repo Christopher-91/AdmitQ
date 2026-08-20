@@ -51,7 +51,7 @@ export default function CostCalculator() {
   return (
     <div className="page container">
       <div className="page-header">
-        <h1 className="page-title">🧮 Cost Calculator</h1>
+        <h1 className="page-title">Cost Calculator</h1>
         <p className="page-subtitle">Get a detailed cost breakdown for studying abroad</p>
       </div>
 
@@ -105,7 +105,7 @@ export default function CostCalculator() {
               </div>
 
               <div className="card">
-                <h3 className="font-bold mb-2">📅 Monthly Breakdown</h3>
+                <h3 className="font-bold mb-2">Monthly Breakdown</h3>
                 <div className="calc-breakdown">
                   {Object.entries(result.monthly).filter(([k]) => k !== 'total').map(([key, value]) => (
                     <div key={key} className="calc-row">
@@ -121,7 +121,7 @@ export default function CostCalculator() {
               </div>
 
               <div className="card">
-                <h3 className="font-bold mb-2">📊 First Year Costs</h3>
+                <h3 className="font-bold mb-2">First Year Costs</h3>
                 <div className="calc-breakdown">
                   <div className="calc-row">
                     <span className="calc-row-label">Tuition</span>
@@ -147,7 +147,7 @@ export default function CostCalculator() {
           ) : (
             <div className="card" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 300 }}>
               <div className="text-center">
-                <p style={{ fontSize: '3rem', marginBottom: 12 }}>🧮</p>
+                <p style={{ fontSize: '3rem', marginBottom: 12 }}></p>
                 <p className="font-semibold">Enter your details</p>
                 <p className="text-sm text-muted mt-1">Click "Calculate Costs" to see a detailed breakdown</p>
               </div>

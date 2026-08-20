@@ -20,7 +20,7 @@ export default function Scholarships() {
       if (degree) params.degree = degree;
       const res = await api.get('/scholarships', { params });
       setScholarships(res.data.data || []);
-      setTotal(res.data.pagination?.total || 0);
+      setTotal(res.data.meta?.pagination?.total || 0);
     } catch { setScholarships([]); }
     finally { setLoading(false); }
   };
@@ -42,14 +42,14 @@ export default function Scholarships() {
 
         <select className="form-input filter-select" value={country} onChange={(e) => setCountry(e.target.value)}>
           <option value="">All Countries</option>
-          <option value="united-states">🇺🇸 USA</option>
-          <option value="united-kingdom">🇬🇧 UK</option>
-          <option value="canada">🇨🇦 Canada</option>
-          <option value="germany">🇩🇪 Germany</option>
-          <option value="australia">🇦🇺 Australia</option>
-          <option value="japan">🇯🇵 Japan</option>
-          <option value="south-korea">🇰🇷 South Korea</option>
-          <option value="switzerland">🇨🇭 Switzerland</option>
+          <option value="united-states">USA</option>
+          <option value="united-kingdom">UK</option>
+          <option value="canada">Canada</option>
+          <option value="germany">Germany</option>
+          <option value="australia">Australia</option>
+          <option value="japan">Japan</option>
+          <option value="south-korea">South Korea</option>
+          <option value="switzerland">Switzerland</option>
         </select>
 
         <select className="form-input filter-select" value={degree} onChange={(e) => setDegree(e.target.value)}>
@@ -64,7 +64,7 @@ export default function Scholarships() {
 
       {loading ? (
         <div className="cards-grid">
-          {[1,2,3,4,5,6].map(i => <div key={i} className="skeleton" style={{ height: 220, borderRadius: 16 }} />)}
+          {[1, 2, 3, 4, 5, 6].map(i => <div key={i} className="skeleton" style={{ height: 220, borderRadius: 16 }} />)}
         </div>
       ) : scholarships.length > 0 ? (
         <div className="cards-grid stagger-children">
@@ -74,7 +74,7 @@ export default function Scholarships() {
                 <span className={`badge ${s.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`}>
                   {s.coverage === 'full' ? '✨ Full Scholarship' : '💵 Partial'}
                 </span>
-                {s.country && <span>{s.country.flagEmoji}</span>}
+                {s.country && <img src={`/flags/${s.country.code.toLowerCase()}.webp`} alt={s.country.name} style={{ width: '1.5em', verticalAlign: 'middle' }} />}
               </div>
 
               <h3 className="program-name">{s.name}</h3>
@@ -82,7 +82,7 @@ export default function Scholarships() {
 
               {s.amountUsd && (
                 <div className="scholarship-amount">
-                  Up to ${s.amountUsd.toLocaleString()}
+                  Up to ${Number(s.amountUsd).toLocaleString()}
                 </div>
               )}
 
@@ -91,7 +91,12 @@ export default function Scholarships() {
               </p>
 
               <div className="flex gap-2 flex-wrap">
-                {s.degreeEligibility?.map((d, i) => (
+                {(Array.isArray(s.degreeEligibility)
+                  ? s.degreeEligibility
+                  : (typeof s.degreeEligibility === 'string'
+                    ? s.degreeEligibility.replace(/^{|}$/g, '').split(',').filter(Boolean)
+                    : [])
+                ).map((d, i) => (
                   <span key={i} className="tag">{d}</span>
                 ))}
               </div>

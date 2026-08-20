@@ -24,7 +24,7 @@ export default function Programs() {
       params.limit = 30;
       const res = await api.get('/programs', { params });
       setPrograms(res.data.data || []);
-      setTotal(res.data.pagination?.total || 0);
+      setTotal(res.data.meta?.pagination?.total || 0);
     } catch { setPrograms([]); }
     finally { setLoading(false); }
   };
@@ -50,6 +50,13 @@ export default function Programs() {
           <option value="masters">Master's</option>
           <option value="phd">PhD</option>
           <option value="professional">Professional</option>
+        </select>
+
+        <select className="form-input filter-select" value={field} onChange={(e) => setField(e.target.value)}>
+          <option value="">Types of programs</option>
+          <option value="Humanities, Social Sciences, Economy, Business, Management">Humanities, Social Sciences, Economy, Business and Management</option>
+          <option value="Natural Sciences, Technology, Sports and Health Sciences, Educational Sciences, Performing arts, media studies">Natural Sciences, Technology, Sports and Health Sciences, Educational Sciences, Performing arts, media studies</option>
+          <option value="Medicine, dentistry, Veterinary medicine">Medicine, dentistry, Veterinary medicine</option>
         </select>
 
         <select className="form-input filter-select" value={country} onChange={(e) => setCountry(e.target.value)}>
@@ -102,7 +109,7 @@ export default function Programs() {
               </div>
               <h3 className="program-name">{p.name}</h3>
               <p className="program-uni">
-                {p.country?.flagEmoji} {p.university?.name} · {p.country?.name}
+                {p.country && <img src={`/flags/${p.country.code.toLowerCase()}.webp`} alt={p.country.name} style={{ width: '1.2em', verticalAlign: 'middle', marginRight: '4px' }} />} {p.university?.name} · {p.country?.name}
               </p>
               <div className="program-details">
                 <div className="program-detail">

@@ -39,7 +39,7 @@ export default function CountryDetail() {
             ← Back to Countries
           </Link>
           <div style={{ display: 'flex', alignItems: 'center', gap: 20, flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '4rem', lineHeight: 1 }}>{country.flagEmoji}</span>
+            <img src={`/flags/${country.code.toLowerCase()}.webp`} alt={country.name} style={{ width: '4rem', display: 'block', marginBottom: '1rem' }} />
             <div>
               <h1 className="detail-title">{country.name}</h1>
               <p className="detail-subtitle">{country.continent}</p>

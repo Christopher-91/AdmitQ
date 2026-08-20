@@ -101,7 +101,7 @@ export const searchUniversities = async (filters = {}) => {
   params.push(limit, offset);
   const dataResult = await query(
     `SELECT u.id, u.name, u.slug, u.city, u.state_province, u.university_type,
-            u.logo_url, u.avg_tuition_usd, u.qs_ranking, u.the_ranking,
+            u.logo_url, u.website, u.avg_tuition_usd, u.qs_ranking, u.the_ranking,
             u.min_gpa, u.min_ielts, u.min_toefl, u.founded_year,
             u.total_students, u.international_students_pct,
             c.name as country_name, c.code as country_code, c.flag_emoji,
@@ -173,6 +173,7 @@ function formatUniversityCard(row) {
     city: row.city,
     stateProvince: row.state_province,
     universityType: row.university_type,
+    website: row.website,
     logoUrl: row.logo_url,
     avgTuitionUsd: row.avg_tuition_usd,
     qsRanking: row.qs_ranking,

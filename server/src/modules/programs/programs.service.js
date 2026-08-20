@@ -25,7 +25,12 @@ export const searchPrograms = async (filters = {}) => {
   if (country) { conditions.push(`c.slug = $${idx}`); params.push(country); idx++; }
   if (university) { conditions.push(`u.slug = $${idx}`); params.push(university); idx++; }
   if (degree) { conditions.push(`p.degree = $${idx}`); params.push(degree); idx++; }
-  if (field) { conditions.push(`p.field ILIKE $${idx}`); params.push(`%${field}%`); idx++; }
+  if (field) {
+    const fields = field.split(',').map(f => `%${f.trim()}%`);
+    conditions.push(`p.field ILIKE ANY($${idx})`);
+    params.push(fields);
+    idx++;
+  }
   if (specialization) { conditions.push(`p.specialization ILIKE $${idx}`); params.push(`%${specialization}%`); idx++; }
   if (minTuition) { conditions.push(`p.tuition_usd >= $${idx}`); params.push(minTuition); idx++; }
   if (maxTuition) { conditions.push(`p.tuition_usd <= $${idx}`); params.push(maxTuition); idx++; }

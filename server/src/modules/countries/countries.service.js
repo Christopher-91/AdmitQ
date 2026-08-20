@@ -9,7 +9,16 @@ export const listCountries = async () => {
             c.popular_student_cities, c.post_study_work_duration,
             c.work_hours_per_week, c.student_work_rights,
             (SELECT COUNT(*) FROM universities u WHERE u.country_id = c.id AND u.is_active = TRUE) as university_count
-     FROM countries c ORDER BY c.name`
+     FROM countries c 
+     ORDER BY CASE 
+       WHEN c.code = 'US' THEN 1
+       WHEN c.code = 'GB' THEN 2
+       WHEN c.code = 'CA' THEN 3
+       WHEN c.code = 'AU' THEN 4
+       WHEN c.code = 'NZ' THEN 5
+       WHEN c.code = 'IE' THEN 6
+       ELSE 7 
+     END ASC, c.name ASC`
   );
 
   return result.rows.map(c => ({

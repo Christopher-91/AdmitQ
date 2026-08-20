@@ -29,7 +29,7 @@ export default function Countries() {
         <div className="cards-grid stagger-children" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
           {countries.map((c) => (
             <Link key={c.id} to={`/countries/${c.slug}`} className="country-card card">
-              <span className="country-flag">{c.flagEmoji}</span>
+              <img src={`/flags/${c.code.toLowerCase()}.webp`} alt={c.name} className="country-flag" style={{ width: '3rem', height: 'auto', marginBottom: '0.5rem' }} />
               <h3 className="country-name">{c.name}</h3>
               <p className="text-xs text-muted">{c.continent}</p>
 

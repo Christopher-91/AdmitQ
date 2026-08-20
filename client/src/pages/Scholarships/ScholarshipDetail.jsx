@@ -44,7 +44,7 @@ export default function ScholarshipDetail() {
                 <span className={`badge ${scholarship.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`} style={{ fontSize: '0.85rem' }}>
                   {scholarship.coverage === 'full' ? '✨ Full Scholarship' : '💵 Partial Scholarship'}
                 </span>
-                {scholarship.country && <span style={{ fontSize: '1.5rem' }}>{scholarship.country.flagEmoji}</span>}
+                {scholarship.country && <img src={`/flags/${scholarship.country.code.toLowerCase()}.webp`} alt={scholarship.country.name} style={{ width: '1.5rem', verticalAlign: 'middle' }} />}
               </div>
               <h1 className="detail-title">{scholarship.name}</h1>
               <p className="detail-subtitle">by {scholarship.provider}</p>
@@ -175,7 +175,7 @@ export default function ScholarshipDetail() {
               <Link to={`/countries/${scholarship.country.code?.toLowerCase()}`} className="card" style={{ padding: 20, textDecoration: 'none', display: 'block' }}>
                 <p className="text-xs text-muted font-semibold mb-2">COUNTRY</p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <span style={{ fontSize: '2rem' }}>{scholarship.country.flagEmoji}</span>
+                  <img src={`/flags/${scholarship.country.code.toLowerCase()}.webp`} alt={scholarship.country.name} style={{ width: '2rem', verticalAlign: 'middle' }} />
                   <div>
                     <p style={{ fontWeight: 700 }}>{scholarship.country.name}</p>
                     <p className="text-xs text-muted">View country →</p>
