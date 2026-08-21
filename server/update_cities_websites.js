@@ -1,0 +1,198 @@
+import fs from 'fs';
+import path from 'path';
+
+const mappings = {
+  "UC Berkeley": { city: "Berkeley", website: "https://www.berkeley.edu" },
+  "UCLA": { city: "Los Angeles", website: "https://www.ucla.edu" },
+  "University of Michigan": { city: "Ann Arbor", website: "https://umich.edu" },
+  "University of Washington": { city: "Seattle", website: "https://www.washington.edu" },
+  "UNC Chapel Hill": { city: "Chapel Hill", website: "https://www.unc.edu" },
+  "Harvard University": { city: "Cambridge", website: "https://www.harvard.edu" },
+  "Caltech": { city: "Pasadena", website: "https://www.caltech.edu" },
+  "Princeton University": { city: "Princeton", website: "https://www.princeton.edu" },
+  "Yale University": { city: "New Haven", website: "https://www.yale.edu" },
+  "Columbia University": { city: "New York City", website: "https://www.columbia.edu" },
+  "University of Edinburgh": { city: "Edinburgh", website: "https://www.ed.ac.uk" },
+  "King's College London": { city: "London", website: "https://www.kcl.ac.uk" },
+  "LSE": { city: "London", website: "https://www.lse.ac.uk" },
+  "University of Manchester": { city: "Manchester", website: "https://www.manchester.ac.uk" },
+  "University of Warwick": { city: "Coventry", website: "https://warwick.ac.uk" },
+  "University of Buckingham": { city: "Buckingham", website: "https://www.buckingham.ac.uk" },
+  "BPP University": { city: "London", website: "https://www.bpp.com" },
+  "Regent's University London": { city: "London", website: "https://www.regents.ac.uk" },
+  "Richmond American University": { city: "London", website: "https://www.richmond.ac.uk" },
+  "Arden University": { city: "Coventry", website: "https://arden.ac.uk" },
+  "McMaster University": { city: "Hamilton", website: "https://www.mcmaster.ca" },
+  "University of Waterloo": { city: "Waterloo", website: "https://uwaterloo.ca" },
+  "University of Alberta": { city: "Edmonton", website: "https://www.ualberta.ca" },
+  "University of Montreal": { city: "Montreal", website: "https://www.umontreal.ca" },
+  "University of Calgary": { city: "Calgary", website: "https://ucalgary.ca" },
+  "Trinity Western University": { city: "Langley", website: "https://www.twu.ca" },
+  "Quest University": { city: "Squamish", website: "https://questu.ca" },
+  "Yorkville University": { city: "Fredericton", website: "https://www.yorkvilleu.ca" },
+  "Crandall University": { city: "Moncton", website: "https://www.crandallu.ca" },
+  "St. Mary's University": { city: "Calgary", website: "https://stmu.ca" },
+  "UNSW Sydney": { city: "Sydney", website: "https://www.unsw.edu.au" },
+  "ANU": { city: "Canberra", website: "https://www.anu.edu.au" },
+  "University of Queensland": { city: "Brisbane", website: "https://www.uq.edu.au" },
+  "Monash University": { city: "Melbourne", website: "https://www.monash.edu" },
+  "UWA": { city: "Perth", website: "https://www.uwa.edu.au" },
+  "Bond University": { city: "Gold Coast", website: "https://bond.edu.au" },
+  "Torrens University": { city: "Adelaide", website: "https://www.torrens.edu.au" },
+  "University of Notre Dame Australia": { city: "Fremantle", website: "https://www.notredame.edu.au" },
+  "Avondale University": { city: "Cooranbong", website: "https://www.avondale.edu.au" },
+  "Macleay College": { city: "Sydney", website: "https://macleay.edu.au" },
+  "Heidelberg University": { city: "Heidelberg", website: "https://www.uni-heidelberg.de" },
+  "Humboldt University": { city: "Berlin", website: "https://www.hu-berlin.de" },
+  "Free University of Berlin": { city: "Berlin", website: "https://www.fu-berlin.de" },
+  "University of Tübingen": { city: "Tübingen", website: "https://uni-tuebingen.de" },
+  "University of Bonn": { city: "Bonn", website: "https://www.uni-bonn.de" },
+  "Frankfurt School of Finance & Management": { city: "Frankfurt", website: "https://www.frankfurt-school.de" },
+  "WHU - Otto Beisheim": { city: "Vallendar", website: "https://www.whu.edu" },
+  "GISMA Business School": { city: "Hanover", website: "https://www.gisma.com" },
+  "Munich Business School": { city: "Munich", website: "https://www.munich-business-school.de" },
+  "SRH Berlin": { city: "Berlin", website: "https://www.srh-berlin.de" },
+  "University of Otago": { city: "Dunedin", website: "https://www.otago.ac.nz" },
+  "Victoria University of Wellington": { city: "Wellington", website: "https://www.wgtn.ac.nz" },
+  "University of Canterbury": { city: "Christchurch", website: "https://www.canterbury.ac.nz" },
+  "Massey University": { city: "Palmerston North", website: "https://www.massey.ac.nz" },
+  "University of Waikato": { city: "Hamilton", website: "https://www.waikato.ac.nz" },
+  "Auckland Institute of Studies": { city: "Auckland", website: "https://www.ais.ac.nz" },
+  "IPU New Zealand": { city: "Palmerston North", website: "https://www.ipu.ac.nz" },
+  "Whitecliffe College": { city: "Auckland", website: "https://www.whitecliffe.ac.nz" },
+  "Media Design School": { city: "Auckland", website: "https://www.mediadesignschool.com" },
+  "NZTC": { city: "Auckland", website: "https://www.nztertiarycollege.ac.nz" },
+  "Seoul National University": { city: "Seoul", website: "https://en.snu.ac.kr" },
+  "Pusan National University": { city: "Busan", website: "https://www.pusan.ac.kr" },
+  "Kyungpook National University": { city: "Daegu", website: "https://en.knu.ac.kr" },
+  "UNIST": { city: "Ulsan", website: "https://www.unist.ac.kr" },
+  "Chonnam National University": { city: "Gwangju", website: "https://global.jnu.ac.kr" },
+  "Korea University": { city: "Seoul", website: "https://korea.edu" },
+  "Yonsei University": { city: "Seoul", website: "https://www.yonsei.ac.kr" },
+  "Sungkyunkwan University": { city: "Seoul", website: "https://www.skku.edu" },
+  "Hanyang University": { city: "Seoul", website: "https://www.hanyang.ac.kr" },
+  "Kyung Hee University": { city: "Seoul", website: "https://www.khu.ac.kr" },
+  "Kyoto University": { city: "Kyoto", website: "https://www.kyoto-u.ac.jp" },
+  "Osaka University": { city: "Osaka", website: "https://www.osaka-u.ac.jp" },
+  "Tohoku University": { city: "Sendai", website: "https://www.tohoku.ac.jp" },
+  "Nagoya University": { city: "Nagoya", website: "https://en.nagoya-u.ac.jp" },
+  "Hokkaido University": { city: "Sapporo", website: "https://www.global.hokudai.ac.jp" },
+  "Keio University": { city: "Tokyo", website: "https://www.keio.ac.jp" },
+  "Waseda University": { city: "Tokyo", website: "https://www.waseda.jp" },
+  "Sophia University": { city: "Tokyo", website: "https://www.sophia.ac.jp" },
+  "ICU": { city: "Tokyo", website: "https://www.icu.ac.jp" },
+  "Tokyo University of Science": { city: "Tokyo", website: "https://www.tus.ac.jp" },
+  "SMU": { city: "Singapore", website: "https://www.smu.edu.sg" },
+  "SUTD": { city: "Singapore", website: "https://www.sutd.edu.sg" },
+  "SIT": { city: "Singapore", website: "https://www.singaporetech.edu.sg" },
+  "SUSS": { city: "Singapore", website: "https://www.suss.edu.sg" },
+  "Singapore Polytechnic": { city: "Singapore", website: "https://www.sp.edu.sg" },
+  "SIM Global Education": { city: "Singapore", website: "https://www.sim.edu.sg" },
+  "Kaplan Higher Education": { city: "Singapore", website: "https://www.kaplan.com.sg" },
+  "MDIS": { city: "Singapore", website: "https://www.mdis.edu.sg" },
+  "PSB Academy": { city: "Singapore", website: "https://www.psb-academy.edu.sg" },
+  "James Cook University Singapore": { city: "Singapore", website: "https://www.jcu.edu.sg" },
+  "United Arab Emirates University": { city: "Al Ain", website: "https://www.uaeu.ac.ae" },
+  "Zayed University": { city: "Dubai", website: "https://www.zu.ac.ae" },
+  "Higher Colleges of Technology": { city: "Abu Dhabi", website: "https://hct.ac.ae" },
+  "Khalifa University": { city: "Abu Dhabi", website: "https://www.ku.ac.ae" },
+  "Abu Dhabi University": { city: "Abu Dhabi", website: "https://www.adu.ac.ae" },
+  "American University of Sharjah": { city: "Sharjah", website: "https://www.aus.edu" },
+  "American University in Dubai": { city: "Dubai", website: "https://www.aud.edu" },
+  "University of Sharjah": { city: "Sharjah", website: "https://www.sharjah.ac.ae" },
+  "Canadian University Dubai": { city: "Dubai", website: "https://www.cud.ac.ae" },
+  "Middlesex University Dubai": { city: "Dubai", website: "https://www.mdx.ac.ae" },
+  "Sorbonne University": { city: "Abu Dhabi", website: "https://www.sorbonne.ae" },
+  "Université Paris-Saclay": { city: "Gif-sur-Yvette", website: "https://www.universite-paris-saclay.fr" },
+  "École Polytechnique": { city: "Palaiseau", website: "https://www.polytechnique.edu" },
+  "Université de Paris": { city: "Paris", website: "https://u-paris.fr" },
+  "Aix-Marseille University": { city: "Marseille", website: "https://www.univ-amu.fr" },
+  "HEC Paris": { city: "Jouy-en-Josas", website: "https://www.hec.edu" },
+  "INSEAD": { city: "Fontainebleau", website: "https://www.insead.edu" },
+  "ESSEC Business School": { city: "Cergy", website: "https://www.essec.edu" },
+  "ESCP Europe": { city: "Paris", website: "https://escp.eu" },
+  "EDHEC Business School": { city: "Lille", website: "https://www.edhec.edu" },
+  "Lomonosov Moscow State University": { city: "Moscow", website: "https://www.msu.ru" },
+  "Saint Petersburg State University": { city: "Saint Petersburg", website: "https://english.spbu.ru" },
+  "Novosibirsk State University": { city: "Novosibirsk", website: "https://english.nsu.ru" },
+  "Tsinghua University": { city: "Beijing", website: "https://www.tsinghua.edu.cn" },
+  "Peking University": { city: "Beijing", website: "https://english.pku.edu.cn" },
+  "Fudan University": { city: "Shanghai", website: "https://www.fudan.edu.cn" },
+  "Wageningen University": { city: "Wageningen", website: "https://www.wur.nl" },
+  "Leiden University": { city: "Leiden", website: "https://www.universiteitleiden.nl" },
+  "Utrecht University": { city: "Utrecht", website: "https://www.uu.nl" },
+  "KU Leuven": { city: "Leuven", website: "https://www.kuleuven.be" },
+  "Ghent University": { city: "Ghent", website: "https://www.ugent.be" },
+  "Université catholique de Louvain": { city: "Louvain-la-Neuve", website: "https://uclouvain.be" },
+  "University of Warsaw": { city: "Warsaw", website: "https://en.uw.edu.pl" },
+  "Jagiellonian University": { city: "Kraków", website: "https://en.uj.edu.pl" },
+  "Warsaw University of Technology": { city: "Warsaw", website: "https://www.pw.edu.pl" },
+  "University of Vienna": { city: "Vienna", website: "https://www.univie.ac.at" },
+  "TU Wien": { city: "Vienna", website: "https://www.tuwien.at" },
+  "Medical University of Vienna": { city: "Vienna", website: "https://www.meduniwien.ac.at" },
+  "University of Zurich": { city: "Zurich", website: "https://www.uzh.ch" },
+  "University of Geneva": { city: "Geneva", website: "https://www.unige.ch" },
+  "University of Bern": { city: "Bern", website: "https://www.unibe.ch" },
+  "University of Lisbon": { city: "Lisbon", website: "https://www.ulisboa.pt" },
+  "University of Porto": { city: "Porto", website: "https://sigarra.up.pt" },
+  "University of Coimbra": { city: "Coimbra", website: "https://www.uc.pt" },
+  "University of Barcelona": { city: "Barcelona", website: "https://www.ub.edu" },
+  "Autonomous University of Madrid": { city: "Madrid", website: "https://www.uam.es" },
+  "Complutense University of Madrid": { city: "Madrid", website: "https://www.ucm.es" },
+  "University College Dublin": { city: "Dublin", website: "https://www.ucd.ie" },
+  "National University of Ireland Galway": { city: "Galway", website: "https://www.universityofgalway.ie" },
+  "UCC": { city: "Cork", website: "https://www.ucc.ie" },
+  "Karolinska Institute": { city: "Solna", website: "https://ki.se" },
+  "Lund University": { city: "Lund", website: "https://www.lunduniversity.lu.se" },
+  "Uppsala University": { city: "Uppsala", website: "https://www.uu.se" },
+  "University of Bologna": { city: "Bologna", website: "https://www.unibo.it" },
+  "Sapienza University of Rome": { city: "Rome", website: "https://www.uniroma1.it" },
+  "University of Padua": { city: "Padua", website: "https://www.unipd.it" },
+  "University of Oslo": { city: "Oslo", website: "https://www.uio.no" },
+  "University of Bergen": { city: "Bergen", website: "https://www.uib.no" },
+  "NTNU": { city: "Trondheim", website: "https://www.ntnu.edu" },
+  "University of Helsinki": { city: "Helsinki", website: "https://www.helsinki.fi" },
+  "Aalto University": { city: "Espoo", website: "https://www.aalto.fi" },
+  "University of Turku": { city: "Turku", website: "https://www.utu.fi" },
+  "University of Copenhagen": { city: "Copenhagen", website: "https://www.ku.dk" },
+  "Technical University of Denmark": { city: "Kongens Lyngby", website: "https://www.dtu.dk" },
+  "Aarhus University": { city: "Aarhus", website: "https://international.au.dk" },
+  "Universiti Malaya": { city: "Kuala Lumpur", website: "https://um.edu.my" },
+  "Universiti Putra Malaysia": { city: "Serdang", website: "https://upm.edu.my" },
+  "Universiti Kebangsaan Malaysia": { city: "Bangi", website: "https://www.ukm.my" },
+  "University of Luxembourg": { city: "Esch-sur-Alzette", website: "https://www.uni.lu" },
+  "Luxembourg School of Business": { city: "Luxembourg City", website: "https://luxsb.lu" },
+  "LUNEX University": { city: "Differdange", website: "https://www.lunex-university.net" }
+};
+
+const filePath = path.join(process.cwd(), 'src/config/seed-universities.js');
+let content = fs.readFileSync(filePath, 'utf8');
+
+// Replace using regex
+const regex = /(const generatedUniversities = \[)(.*?)(\];)/s;
+const match = content.match(regex);
+
+if (match) {
+  let arrStr = match[2];
+  
+  // Create an array and map through it
+  const arr = eval('[' + arrStr + ']');
+  
+  const updatedArr = arr.map(u => {
+    if (mappings[u.name]) {
+      u.city = mappings[u.name].city;
+      u.website = mappings[u.name].website;
+    }
+    return u;
+  });
+  
+  // Re-stringify the array nicely
+  const newArrStr = JSON.stringify(updatedArr, null, 2);
+  
+  content = content.replace(regex, `$1\n${newArrStr.slice(1, -1)}\n$3`);
+  
+  fs.writeFileSync(filePath, content, 'utf8');
+  console.log("Successfully updated seed-universities.js with real cities and domains!");
+} else {
+  console.log("Failed to find generatedUniversities array");
+}

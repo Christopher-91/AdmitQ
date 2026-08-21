@@ -100,14 +100,14 @@ export default function CountryDetail() {
             <div>
               {country.description && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">🌍 About Studying Here</h2>
+                  <h2 className="detail-section-title">About Studying Here</h2>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{country.description}</p>
                 </div>
               )}
 
               {country.education?.educationSystem && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">🎓 Education System</h2>
+                  <h2 className="detail-section-title">Education System</h2>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{country.education.educationSystem}</p>
                   {country.education.academicCalendar && (
                     <div className="card" style={{ padding: 16, marginTop: 16 }}>
@@ -120,7 +120,7 @@ export default function CountryDetail() {
 
               {country.education?.popularDegrees?.length > 0 && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">📚 Popular Fields of Study</h2>
+                  <h2 className="detail-section-title">Popular Fields of Study</h2>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                     {country.education.popularDegrees.map((d, i) => (
                       <span key={i} className="tag">{d}</span>
@@ -131,14 +131,14 @@ export default function CountryDetail() {
 
               {country.general?.applicationProcess && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">📝 How to Apply</h2>
+                  <h2 className="detail-section-title">How to Apply</h2>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{country.general.applicationProcess}</p>
                 </div>
               )}
 
               {country.general?.popularStudentCities?.length > 0 && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">🏙️ Popular Student Cities</h2>
+                  <h2 className="detail-section-title">Popular Student Cities</h2>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                     {country.general.popularStudentCities.map((city, i) => (
                       <span key={i} className="badge">{city}</span>
@@ -151,7 +151,7 @@ export default function CountryDetail() {
             {/* Sidebar */}
             <div className="detail-sidebar">
               <div className="card" style={{ padding: 20 }}>
-                <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem' }}>💰 Cost Overview</h3>
+                <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem' }}>Cost Overview</h3>
                 {[
                   { label: 'Tuition Range', value: `$${((country.costs?.avgTuitionMinUsd || 0) / 1000).toFixed(0)}k–$${((country.costs?.avgTuitionMaxUsd || 0) / 1000).toFixed(0)}k/yr` },
                   { label: 'Avg. Living Cost', value: country.costs?.avgLivingCostUsd ? `$${country.costs.avgLivingCostUsd.toLocaleString()}/mo` : '-' },
@@ -165,13 +165,13 @@ export default function CountryDetail() {
                   </div>
                 ))}
                 <Link to="/calculator" className="btn btn-primary w-full" style={{ marginTop: 16, display: 'block', textAlign: 'center' }}>
-                  🧮 Calculate Full Cost
+                  Calculate Full Cost
                 </Link>
               </div>
 
               {country.general?.employmentEnvironment && (
                 <div className="card" style={{ padding: 20 }}>
-                  <h3 style={{ fontWeight: 700, marginBottom: 10, fontSize: '0.95rem' }}>💼 Employment Environment</h3>
+                  <h3 style={{ fontWeight: 700, marginBottom: 10, fontSize: '0.95rem' }}>Employment Environment</h3>
                   <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>{country.general.employmentEnvironment}</p>
                 </div>
               )}

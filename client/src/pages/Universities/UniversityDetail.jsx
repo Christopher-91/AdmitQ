@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import api from '../../lib/api';
+import Logo from '../../components/Logo/Logo';
 import '../DataPages.css';
 
 export default function UniversityDetail() {
@@ -42,11 +43,8 @@ export default function UniversityDetail() {
             ← Back to Universities
           </Link>
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 24, flexWrap: 'wrap' }}>
-            <div className="uni-logo" style={{ width: 72, height: 72, fontSize: '2rem', flexShrink: 0 }}>
-              {uni.logoUrl
-                ? <img src={uni.logoUrl} alt={uni.name} />
-                : <span className="uni-logo-placeholder" style={{ fontSize: '1.6rem' }}>{uni.name[0]}</span>
-              }
+            <div className="uni-logo" style={{ width: 72, height: 72, fontSize: '2rem', flexShrink: 0, padding: 0 }}>
+              <Logo website={uni.website} name={uni.name} slug={uni.slug} size={72} />
             </div>
             <div style={{ flex: 1, minWidth: 200 }}>
               <h1 className="detail-title">{uni.name}</h1>
@@ -112,14 +110,14 @@ export default function UniversityDetail() {
             <div>
               {uni.description && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">📖 About</h2>
+                  <h2 className="detail-section-title">About</h2>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{uni.description}</p>
                 </div>
               )}
 
               {uni.faculties?.length > 0 && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">🏛️ Faculties & Schools</h2>
+                  <h2 className="detail-section-title">Faculties & Schools</h2>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                     {uni.faculties.map((f, i) => (
                       <span key={i} className="tag">{f}</span>
@@ -129,7 +127,7 @@ export default function UniversityDetail() {
               )}
 
               <div className="detail-section">
-                <h2 className="detail-section-title">📅 Intake & Language</h2>
+                <h2 className="detail-section-title">Intake & Language</h2>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                   <div className="card" style={{ padding: 16 }}>
                     <p className="text-xs text-muted font-semibold mb-1">INTAKES</p>

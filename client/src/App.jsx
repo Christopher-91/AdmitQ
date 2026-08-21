@@ -1,8 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute, PublicRoute } from './router/ProtectedRoute';
 import Navbar from './components/Navbar/Navbar';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 // Pages
 import Landing from './pages/Landing/Landing';
@@ -25,6 +34,7 @@ import './index.css';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AuthProvider>
         <Navbar />
         <Routes>

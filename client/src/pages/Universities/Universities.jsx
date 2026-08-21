@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import api from '../../lib/api';
+import Logo from '../../components/Logo/Logo';
 import '../DataPages.css';
 
 export default function Universities() {
@@ -15,7 +16,7 @@ export default function Universities() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const params = {};
+      const params = { limit: 50, sort: 'ranking' };
       if (search) params.search = search;
       if (country) params.country = country;
       if (type) params.type = type;
@@ -109,13 +110,7 @@ export default function Universities() {
             <Link key={u.id} to={`/universities/${u.slug}`} className="uni-card card">
               <div className="uni-card-header">
                 <div className="uni-logo">
-                  <img 
-                    src={u.logoUrl || (u.website ? `https://logo.clearbit.com/${new URL(u.website).hostname}` : '')} 
-                    alt={u.name} 
-                    onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }} 
-                    style={{ display: (u.logoUrl || u.website) ? 'block' : 'none' }}
-                  />
-                  <span className="uni-logo-placeholder" style={{ display: (u.logoUrl || u.website) ? 'none' : 'flex' }}>{u.name[0]}</span>
+                  <Logo website={u.website} name={u.name} slug={u.slug} size={48} />
                 </div>
                 <div className="flex-1">
                   <h3 className="uni-name">{u.name}</h3>
