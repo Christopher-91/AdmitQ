@@ -83,7 +83,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 437,
+    "qsRanking": 807,
     "applicationFeeUsd": 74,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -113,7 +113,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 285,
+    "qsRanking": 29,
     "applicationFeeUsd": 144,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -143,7 +143,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 441,
+    "qsRanking": 33,
     "applicationFeeUsd": 98,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -173,7 +173,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 399,
+    "qsRanking": 63,
     "applicationFeeUsd": 51,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -203,7 +203,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 268,
+    "qsRanking": 772,
     "applicationFeeUsd": 60,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -233,7 +233,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 176,
+    "qsRanking": 4,
     "applicationFeeUsd": 142,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -263,7 +263,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 61,
+    "qsRanking": 855,
     "applicationFeeUsd": 96,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -293,7 +293,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 20,
+    "qsRanking": 18,
     "applicationFeeUsd": 55,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -323,7 +323,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 431,
+    "qsRanking": 16,
     "applicationFeeUsd": 84,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -353,7 +353,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 244,
+    "qsRanking": 23,
     "applicationFeeUsd": 131,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -383,7 +383,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 160,
+    "qsRanking": 22,
     "applicationFeeUsd": 67,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -413,7 +413,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 419,
+    "qsRanking": 40,
     "applicationFeeUsd": 128,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -443,7 +443,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 208,
+    "qsRanking": 45,
     "applicationFeeUsd": 124,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -473,7 +473,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 470,
+    "qsRanking": 32,
     "applicationFeeUsd": 88,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -503,7 +503,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 310,
+    "qsRanking": 67,
     "applicationFeeUsd": 100,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -533,7 +533,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 65,
+    "qsRanking": 877,
     "applicationFeeUsd": 66,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -563,7 +563,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 190,
+    "qsRanking": 997,
     "applicationFeeUsd": 88,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -593,7 +593,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 400,
+    "qsRanking": 620,
     "applicationFeeUsd": 132,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -623,7 +623,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 183,
+    "qsRanking": 34,
     "applicationFeeUsd": 104,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -653,7 +653,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 86,
+    "qsRanking": 967,
     "applicationFeeUsd": 91,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -683,7 +683,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 395,
+    "qsRanking": 189,
     "applicationFeeUsd": 107,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -713,7 +713,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 406,
+    "qsRanking": 112,
     "applicationFeeUsd": 117,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -743,7 +743,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 486,
+    "qsRanking": 111,
     "applicationFeeUsd": 86,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -773,7 +773,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 242,
+    "qsRanking": 141,
     "applicationFeeUsd": 99,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -803,7 +803,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 169,
+    "qsRanking": 182,
     "applicationFeeUsd": 73,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -833,7 +833,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 500,
+    "qsRanking": 865,
     "applicationFeeUsd": 126,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -863,7 +863,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 91,
+    "qsRanking": 638,
     "applicationFeeUsd": 62,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -893,7 +893,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 263,
+    "qsRanking": 780,
     "applicationFeeUsd": 129,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -923,7 +923,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 412,
+    "qsRanking": 856,
     "applicationFeeUsd": 92,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -953,7 +953,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 260,
+    "qsRanking": 612,
     "applicationFeeUsd": 84,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -983,7 +983,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 321,
+    "qsRanking": 19,
     "applicationFeeUsd": 127,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1013,7 +1013,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 192,
+    "qsRanking": 34,
     "applicationFeeUsd": 96,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1043,7 +1043,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 227,
+    "qsRanking": 43,
     "applicationFeeUsd": 64,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1073,7 +1073,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 148,
+    "qsRanking": 42,
     "applicationFeeUsd": 64,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1103,7 +1103,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 101,
+    "qsRanking": 72,
     "applicationFeeUsd": 126,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1133,7 +1133,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 145,
+    "qsRanking": 825,
     "applicationFeeUsd": 137,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1163,7 +1163,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 375,
+    "qsRanking": 701,
     "applicationFeeUsd": 120,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1193,7 +1193,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 253,
+    "qsRanking": 829,
     "applicationFeeUsd": 93,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1223,7 +1223,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 79,
+    "qsRanking": 734,
     "applicationFeeUsd": 58,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1253,7 +1253,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 45,
+    "qsRanking": 902,
     "applicationFeeUsd": 128,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1283,7 +1283,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 27,
+    "qsRanking": 87,
     "applicationFeeUsd": 105,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1313,7 +1313,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 487,
+    "qsRanking": 120,
     "applicationFeeUsd": 114,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1343,7 +1343,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 329,
+    "qsRanking": 98,
     "applicationFeeUsd": 57,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1373,7 +1373,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 340,
+    "qsRanking": 885,
     "applicationFeeUsd": 88,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1403,7 +1403,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 208,
+    "qsRanking": 239,
     "applicationFeeUsd": 142,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1433,7 +1433,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 12,
+    "qsRanking": 552,
     "applicationFeeUsd": 52,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1463,7 +1463,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 15,
+    "qsRanking": 513,
     "applicationFeeUsd": 142,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1493,7 +1493,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 416,
+    "qsRanking": 960,
     "applicationFeeUsd": 52,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1523,7 +1523,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 486,
+    "qsRanking": 508,
     "applicationFeeUsd": 146,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1553,7 +1553,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 143,
+    "qsRanking": 821,
     "applicationFeeUsd": 99,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1583,7 +1583,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 408,
+    "qsRanking": 678,
     "applicationFeeUsd": 120,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1613,7 +1613,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 66,
+    "qsRanking": 999,
     "applicationFeeUsd": 117,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1643,7 +1643,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 321,
+    "qsRanking": 757,
     "applicationFeeUsd": 90,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1673,7 +1673,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 363,
+    "qsRanking": 719,
     "applicationFeeUsd": 90,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1703,7 +1703,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 215,
+    "qsRanking": 654,
     "applicationFeeUsd": 99,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1733,7 +1733,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 222,
+    "qsRanking": 825,
     "applicationFeeUsd": 135,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1763,7 +1763,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 137,
+    "qsRanking": 738,
     "applicationFeeUsd": 86,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1793,7 +1793,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 483,
+    "qsRanking": 981,
     "applicationFeeUsd": 139,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1823,7 +1823,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 17,
+    "qsRanking": 527,
     "applicationFeeUsd": 90,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1853,7 +1853,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 320,
+    "qsRanking": 962,
     "applicationFeeUsd": 96,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -1883,7 +1883,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 161,
+    "qsRanking": 41,
     "applicationFeeUsd": 138,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1913,7 +1913,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 83,
+    "qsRanking": 980,
     "applicationFeeUsd": 51,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1943,7 +1943,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 91,
+    "qsRanking": 831,
     "applicationFeeUsd": 85,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -1973,7 +1973,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 194,
+    "qsRanking": 867,
     "applicationFeeUsd": 135,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2003,7 +2003,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 75,
+    "qsRanking": 725,
     "applicationFeeUsd": 63,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2033,7 +2033,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 101,
+    "qsRanking": 79,
     "applicationFeeUsd": 126,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2063,7 +2063,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 84,
+    "qsRanking": 76,
     "applicationFeeUsd": 54,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2093,7 +2093,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 345,
+    "qsRanking": 34,
     "applicationFeeUsd": 135,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2123,7 +2123,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 156,
+    "qsRanking": 805,
     "applicationFeeUsd": 88,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2153,7 +2153,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 234,
+    "qsRanking": 657,
     "applicationFeeUsd": 104,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2183,7 +2183,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 236,
+    "qsRanking": 46,
     "applicationFeeUsd": 112,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2213,7 +2213,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 483,
+    "qsRanking": 80,
     "applicationFeeUsd": 103,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2243,7 +2243,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 274,
+    "qsRanking": 113,
     "applicationFeeUsd": 56,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2273,7 +2273,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 125,
+    "qsRanking": 176,
     "applicationFeeUsd": 144,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2303,7 +2303,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 398,
+    "qsRanking": 196,
     "applicationFeeUsd": 145,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2333,7 +2333,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 154,
+    "qsRanking": 214,
     "applicationFeeUsd": 98,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2363,7 +2363,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 267,
+    "qsRanking": 199,
     "applicationFeeUsd": 118,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2393,7 +2393,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 240,
+    "qsRanking": 630,
     "applicationFeeUsd": 109,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2423,7 +2423,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 245,
+    "qsRanking": 925,
     "applicationFeeUsd": 56,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2453,7 +2453,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 379,
+    "qsRanking": 949,
     "applicationFeeUsd": 113,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2483,7 +2483,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 287,
+    "qsRanking": 429,
     "applicationFeeUsd": 54,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2513,7 +2513,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 69,
+    "qsRanking": 983,
     "applicationFeeUsd": 53,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2543,7 +2543,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 178,
+    "qsRanking": 4,
     "applicationFeeUsd": 88,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2573,7 +2573,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 422,
+    "qsRanking": 823,
     "applicationFeeUsd": 101,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2603,7 +2603,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 246,
+    "qsRanking": 503,
     "applicationFeeUsd": 78,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2633,7 +2633,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 408,
+    "qsRanking": 646,
     "applicationFeeUsd": 137,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2663,7 +2663,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 379,
+    "qsRanking": 652,
     "applicationFeeUsd": 52,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2693,7 +2693,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 396,
+    "qsRanking": 672,
     "applicationFeeUsd": 85,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2723,7 +2723,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 231,
+    "qsRanking": 577,
     "applicationFeeUsd": 94,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2753,7 +2753,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 426,
+    "qsRanking": 722,
     "applicationFeeUsd": 80,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2783,7 +2783,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 174,
+    "qsRanking": 290,
     "applicationFeeUsd": 84,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2813,7 +2813,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 242,
+    "qsRanking": 571,
     "applicationFeeUsd": 85,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2843,7 +2843,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 397,
+    "qsRanking": 967,
     "applicationFeeUsd": 73,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2873,7 +2873,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 49,
+    "qsRanking": 230,
     "applicationFeeUsd": 83,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2903,7 +2903,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 318,
+    "qsRanking": 590,
     "applicationFeeUsd": 69,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -2933,7 +2933,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 299,
+    "qsRanking": 364,
     "applicationFeeUsd": 88,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2963,7 +2963,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 245,
+    "qsRanking": 34,
     "applicationFeeUsd": 92,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -2993,7 +2993,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 495,
+    "qsRanking": 364,
     "applicationFeeUsd": 105,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -3023,7 +3023,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 458,
+    "qsRanking": 34,
     "applicationFeeUsd": 75,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -3053,7 +3053,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 238,
+    "qsRanking": 888,
     "applicationFeeUsd": 75,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -3083,7 +3083,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 400,
+    "qsRanking": 59,
     "applicationFeeUsd": 109,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3113,7 +3113,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 483,
+    "qsRanking": 988,
     "applicationFeeUsd": 59,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3143,7 +3143,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 192,
+    "qsRanking": 38,
     "applicationFeeUsd": 113,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3173,7 +3173,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 374,
+    "qsRanking": 596,
     "applicationFeeUsd": 107,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3203,7 +3203,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 139,
+    "qsRanking": 524,
     "applicationFeeUsd": 122,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3233,7 +3233,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 24,
+    "qsRanking": 518,
     "applicationFeeUsd": 79,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -3263,7 +3263,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 64,
+    "qsRanking": 909,
     "applicationFeeUsd": 83,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -3293,7 +3293,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 261,
+    "qsRanking": 840,
     "applicationFeeUsd": 107,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -3323,7 +3323,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 411,
+    "qsRanking": 816,
     "applicationFeeUsd": 83,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -3353,7 +3353,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 153,
+    "qsRanking": 542,
     "applicationFeeUsd": 87,
     "avgTuitionUsd": 40000,
     "avgLivingCostUsd": 12000,
@@ -3383,7 +3383,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 317,
+    "qsRanking": 574,
     "applicationFeeUsd": 90,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3413,7 +3413,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 48,
+    "qsRanking": 915,
     "applicationFeeUsd": 148,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3443,7 +3443,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 483,
+    "qsRanking": 858,
     "applicationFeeUsd": 110,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3473,7 +3473,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 173,
+    "qsRanking": 25,
     "applicationFeeUsd": 52,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3503,7 +3503,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 276,
+    "qsRanking": 17,
     "applicationFeeUsd": 93,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3533,7 +3533,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 227,
+    "qsRanking": 50,
     "applicationFeeUsd": 123,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3563,7 +3563,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 59,
+    "qsRanking": 835,
     "applicationFeeUsd": 78,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3593,7 +3593,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 140,
+    "qsRanking": 851,
     "applicationFeeUsd": 79,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3623,7 +3623,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 427,
+    "qsRanking": 859,
     "applicationFeeUsd": 73,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3653,7 +3653,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 88,
+    "qsRanking": 61,
     "applicationFeeUsd": 114,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3683,7 +3683,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 424,
+    "qsRanking": 26,
     "applicationFeeUsd": 114,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3713,7 +3713,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 113,
+    "qsRanking": 646,
     "applicationFeeUsd": 137,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3743,7 +3743,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 116,
+    "qsRanking": 551,
     "applicationFeeUsd": 87,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3773,7 +3773,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 342,
+    "qsRanking": 34,
     "applicationFeeUsd": 118,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3803,7 +3803,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 164,
+    "qsRanking": 567,
     "applicationFeeUsd": 62,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3833,7 +3833,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 378,
+    "qsRanking": 844,
     "applicationFeeUsd": 89,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3863,7 +3863,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 62,
+    "qsRanking": 615,
     "applicationFeeUsd": 75,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3893,7 +3893,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 494,
+    "qsRanking": 877,
     "applicationFeeUsd": 82,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3923,7 +3923,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 481,
+    "qsRanking": 783,
     "applicationFeeUsd": 70,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3953,7 +3953,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 373,
+    "qsRanking": 755,
     "applicationFeeUsd": 76,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -3983,7 +3983,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 171,
+    "qsRanking": 712,
     "applicationFeeUsd": 143,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4013,7 +4013,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 146,
+    "qsRanking": 766,
     "applicationFeeUsd": 94,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4043,7 +4043,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 432,
+    "qsRanking": 680,
     "applicationFeeUsd": 62,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4073,7 +4073,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 244,
+    "qsRanking": 731,
     "applicationFeeUsd": 79,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4103,7 +4103,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 374,
+    "qsRanking": 796,
     "applicationFeeUsd": 123,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4133,7 +4133,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 168,
+    "qsRanking": 819,
     "applicationFeeUsd": 135,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4163,7 +4163,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 496,
+    "qsRanking": 964,
     "applicationFeeUsd": 103,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4193,7 +4193,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 121,
+    "qsRanking": 503,
     "applicationFeeUsd": 139,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4223,7 +4223,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 157,
+    "qsRanking": 641,
     "applicationFeeUsd": 72,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4253,7 +4253,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 211,
+    "qsRanking": 663,
     "applicationFeeUsd": 108,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4283,7 +4283,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 139,
+    "qsRanking": 802,
     "applicationFeeUsd": 146,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4313,7 +4313,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 439,
+    "qsRanking": 85,
     "applicationFeeUsd": 87,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4343,7 +4343,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 168,
+    "qsRanking": 105,
     "applicationFeeUsd": 50,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4373,7 +4373,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 4,
+    "qsRanking": 712,
     "applicationFeeUsd": 135,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4403,7 +4403,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 24,
+    "qsRanking": 630,
     "applicationFeeUsd": 95,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4433,7 +4433,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 478,
+    "qsRanking": 783,
     "applicationFeeUsd": 60,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4463,7 +4463,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 474,
+    "qsRanking": 117,
     "applicationFeeUsd": 96,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4493,7 +4493,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 348,
+    "qsRanking": 973,
     "applicationFeeUsd": 70,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4523,7 +4523,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 282,
+    "qsRanking": 519,
     "applicationFeeUsd": 139,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4553,7 +4553,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 284,
+    "qsRanking": 764,
     "applicationFeeUsd": 60,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4583,7 +4583,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 348,
+    "qsRanking": 975,
     "applicationFeeUsd": 56,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4613,7 +4613,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 355,
+    "qsRanking": 640,
     "applicationFeeUsd": 102,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4643,7 +4643,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 264,
+    "qsRanking": 107,
     "applicationFeeUsd": 144,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4673,7 +4673,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 216,
+    "qsRanking": 121,
     "applicationFeeUsd": 137,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4703,7 +4703,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 438,
+    "qsRanking": 507,
     "applicationFeeUsd": 69,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4733,7 +4733,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 14,
+    "qsRanking": 732,
     "applicationFeeUsd": 103,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4763,7 +4763,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 125,
+    "qsRanking": 738,
     "applicationFeeUsd": 147,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4793,7 +4793,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 282,
+    "qsRanking": 930,
     "applicationFeeUsd": 132,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4823,7 +4823,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 266,
+    "qsRanking": 910,
     "applicationFeeUsd": 132,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4853,7 +4853,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 7,
+    "qsRanking": 724,
     "applicationFeeUsd": 118,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
@@ -4883,7 +4883,7 @@ const generatedUniversities = [
       "Fall",
       "Spring"
     ],
-    "qsRanking": 312,
+    "qsRanking": 976,
     "applicationFeeUsd": 101,
     "avgTuitionUsd": 15000,
     "avgLivingCostUsd": 12000,
