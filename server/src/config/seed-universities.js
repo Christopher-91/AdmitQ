@@ -62,7 +62,7 @@ const universities = [
 
 const generatedUniversities = [
 
-  {
+  {   // ── USA ──
     "name": "UC Berkeley",
     "slug": "uc-berkeley",
     "countrySlug": "united-states",
@@ -362,7 +362,7 @@ const generatedUniversities = [
     "minToefl": 90,
     "verificationStatus": "verified"
   },
-  {
+  {   // ── UK ──
     "name": "University of Edinburgh",
     "slug": "university-of-edinburgh",
     "countrySlug": "united-kingdom",
@@ -662,7 +662,7 @@ const generatedUniversities = [
     "minToefl": 90,
     "verificationStatus": "verified"
   },
-  {
+  {  // ── Canada ──
     "name": "McMaster University",
     "slug": "mcmaster-university",
     "countrySlug": "canada",
@@ -962,7 +962,7 @@ const generatedUniversities = [
     "minToefl": 90,
     "verificationStatus": "verified"
   },
-  {
+  {  // ── Australia ──
     "name": "UNSW Sydney",
     "slug": "unsw-sydney",
     "countrySlug": "australia",
@@ -1262,7 +1262,7 @@ const generatedUniversities = [
     "minToefl": 90,
     "verificationStatus": "verified"
   },
-  {
+  {  // ── Germany ──
     "name": "Heidelberg University",
     "slug": "heidelberg-university",
     "countrySlug": "germany",
@@ -1562,7 +1562,7 @@ const generatedUniversities = [
     "minToefl": 90,
     "verificationStatus": "verified"
   },
-  {
+  {  // ── New Zealand ──
     "name": "University of Otago",
     "slug": "university-of-otago",
     "countrySlug": "new-zealand",
@@ -1862,7 +1862,7 @@ const generatedUniversities = [
     "minToefl": 90,
     "verificationStatus": "verified"
   },
-  {
+  {  // ── South Korea ──
     "name": "Seoul National University",
     "slug": "seoul-national-university",
     "countrySlug": "south-korea",
@@ -2162,7 +2162,7 @@ const generatedUniversities = [
     "minToefl": 90,
     "verificationStatus": "verified"
   },
-  {
+  {  // ── Japan ──
     "name": "Kyoto University",
     "slug": "kyoto-university",
     "countrySlug": "japan",
@@ -2193,8 +2193,8 @@ const generatedUniversities = [
     "verificationStatus": "verified"
   },
   {
-    "name": "Osaka University",
-    "slug": "osaka-university",
+    "name": "University of Osaka",
+    "slug": "university-of-osaka",
     "countrySlug": "japan",
     "city": "Osaka",
     "website": "https://www.osaka-u.ac.jp",

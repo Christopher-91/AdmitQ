@@ -10908,7 +10908,7 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "osaka-university",
+    "universitySlug": "university-of-osaka",
     "name": "Master of Arts in Technology",
     "slug": "osaka-university-master-of-arts-in-technology",
     "degree": "masters",
@@ -10935,7 +10935,7 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "osaka-university",
+    "universitySlug": "university-of-osaka",
     "name": "Master of Arts in Performing arts",
     "slug": "osaka-university-master-of-arts-in-performing-arts",
     "degree": "masters",
@@ -10962,7 +10962,7 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "osaka-university",
+    "universitySlug": "university-of-osaka",
     "name": "PhD in Social Sciences",
     "slug": "osaka-university-phd-in-social-sciences",
     "degree": "phd",
@@ -10989,7 +10989,7 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "osaka-university",
+    "universitySlug": "university-of-osaka",
     "name": "PhD in Veterinary medicine",
     "slug": "osaka-university-phd-in-veterinary-medicine",
     "degree": "phd",
