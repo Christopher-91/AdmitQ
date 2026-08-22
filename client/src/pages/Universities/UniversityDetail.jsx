@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import api from '../../lib/api';
 import Logo from '../../components/Logo/Logo';
+import { formatDegree } from '../../lib/formatters';
 import '../DataPages.css';
 
 export default function UniversityDetail() {
@@ -252,7 +253,7 @@ export default function UniversityDetail() {
                           ? s.degreeEligibility.replace(/^{|}$/g, '').split(',').filter(Boolean)
                           : [])
                       ).map((d, i) => (
-                        <span key={i} className="tag">{d}</span>
+                        <span key={i} className="tag">{formatDegree(d)}</span>
                       ))}
                     </div>
                     {s.deadline && (
