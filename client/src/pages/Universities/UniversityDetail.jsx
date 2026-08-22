@@ -246,7 +246,12 @@ export default function UniversityDetail() {
                       <div className="scholarship-amount">Up to ${s.amountUsd.toLocaleString()}</div>
                     )}
                     <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                      {s.degreeEligibility?.map((d, i) => (
+                      {(Array.isArray(s.degreeEligibility)
+                        ? s.degreeEligibility
+                        : (typeof s.degreeEligibility === 'string'
+                          ? s.degreeEligibility.replace(/^{|}$/g, '').split(',').filter(Boolean)
+                          : [])
+                      ).map((d, i) => (
                         <span key={i} className="tag">{d}</span>
                       ))}
                     </div>
@@ -270,7 +275,7 @@ export default function UniversityDetail() {
           <div className="detail-content">
             <div>
               <div className="detail-section">
-                <h2 className="detail-section-title">📋 Admission Requirements</h2>
+                <h2 className="detail-section-title">Admission Requirements</h2>
                 <div className="card" style={{ padding: 24 }}>
                   {[
                     { label: 'Minimum GPA', value: uni.requirements?.minGpa ? `${uni.requirements.minGpa} / 4.0` : 'Not specified' },
@@ -289,7 +294,7 @@ export default function UniversityDetail() {
 
               {uni.applicationPortal && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">🔗 Application Portal</h2>
+                  <h2 className="detail-section-title">Application Portal</h2>
                   <a href={uni.applicationPortal} target="_blank" rel="noreferrer" className="btn btn-primary">
                     Apply Now ↗
                   </a>
@@ -299,7 +304,7 @@ export default function UniversityDetail() {
 
             <div className="detail-sidebar">
               <div className="card" style={{ padding: 20 }}>
-                <h3 style={{ fontWeight: 700, marginBottom: 12, fontSize: '0.95rem' }}>📊 Student Body</h3>
+                <h3 style={{ fontWeight: 700, marginBottom: 12, fontSize: '0.95rem' }}>Student Body</h3>
                 {[
                   { label: 'Total Students', value: uni.totalStudents ? uni.totalStudents.toLocaleString() : '-' },
                   { label: 'International Students', value: uni.internationalStudentsPct ? `${uni.internationalStudentsPct}%` : '-' },

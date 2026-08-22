@@ -88,14 +88,14 @@ export default function ScholarshipDetail() {
           <div>
             {scholarship.description && (
               <div className="detail-section">
-                <h2 className="detail-section-title">📖 About This Scholarship</h2>
+                <h2 className="detail-section-title">About This Scholarship</h2>
                 <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{scholarship.description}</p>
               </div>
             )}
 
             {scholarship.coverageDetails && (
               <div className="detail-section">
-                <h2 className="detail-section-title">💰 What's Covered</h2>
+                <h2 className="detail-section-title">What's Covered</h2>
                 <div className="card" style={{ padding: 20, background: 'linear-gradient(135deg, rgba(16,185,129,0.08), rgba(99,102,241,0.05))', borderColor: 'rgba(16,185,129,0.2)' }}>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{scholarship.coverageDetails}</p>
                 </div>
@@ -113,7 +113,12 @@ export default function ScholarshipDetail() {
               <div className="detail-section">
                 <h2 className="detail-section-title">📎 Required Documents</h2>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                  {scholarship.requiredDocuments.map((doc, i) => (
+                  {(Array.isArray(scholarship.requiredDocuments)
+                    ? scholarship.requiredDocuments
+                    : (typeof scholarship.requiredDocuments === 'string'
+                      ? scholarship.requiredDocuments.replace(/^{|}$/g, '').split(',').map(s => s.replace(/^"|"$/g, '').trim()).filter(Boolean)
+                      : [])
+                  ).map((doc, i) => (
                     <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 14px', background: 'var(--bg-secondary)', borderRadius: 8, fontSize: '0.9rem' }}>
                       <span style={{ color: 'var(--accent-400)', fontWeight: 700 }}>✓</span>
                       <span style={{ color: 'var(--text-secondary)' }}>{doc}</span>
@@ -144,27 +149,42 @@ export default function ScholarshipDetail() {
             {(scholarship.degreeEligibility?.length > 0 || scholarship.fieldEligibility?.length > 0 || scholarship.nationalityEligibility?.length > 0) && (
               <div className="card" style={{ padding: 20 }}>
                 <h3 style={{ fontWeight: 700, marginBottom: 12, fontSize: '0.95rem' }}>🎓 Eligibility</h3>
-                {scholarship.degreeEligibility?.length > 0 && (
+                {scholarship.degreeEligibility && (
                   <div style={{ marginBottom: 12 }}>
                     <p className="text-xs text-muted font-semibold mb-2">DEGREE LEVELS</p>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                      {scholarship.degreeEligibility.map((d, i) => <span key={i} className="badge badge-primary">{d}</span>)}
+                      {(Array.isArray(scholarship.degreeEligibility)
+                        ? scholarship.degreeEligibility
+                        : (typeof scholarship.degreeEligibility === 'string'
+                          ? scholarship.degreeEligibility.replace(/^{|}$/g, '').split(',').filter(Boolean)
+                          : [])
+                      ).map((d, i) => <span key={i} className="badge badge-primary">{d}</span>)}
                     </div>
                   </div>
                 )}
-                {scholarship.fieldEligibility?.length > 0 && (
+                {scholarship.fieldEligibility && (
                   <div style={{ marginBottom: 12 }}>
                     <p className="text-xs text-muted font-semibold mb-2">FIELDS OF STUDY</p>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                      {scholarship.fieldEligibility.map((f, i) => <span key={i} className="tag">{f}</span>)}
+                      {(Array.isArray(scholarship.fieldEligibility)
+                        ? scholarship.fieldEligibility
+                        : (typeof scholarship.fieldEligibility === 'string'
+                          ? scholarship.fieldEligibility.replace(/^{|}$/g, '').split(',').filter(Boolean)
+                          : [])
+                      ).map((f, i) => <span key={i} className="tag">{f}</span>)}
                     </div>
                   </div>
                 )}
-                {scholarship.nationalityEligibility?.length > 0 && (
+                {scholarship.nationalityEligibility && (
                   <div>
                     <p className="text-xs text-muted font-semibold mb-2">NATIONALITY</p>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                      {scholarship.nationalityEligibility.map((n, i) => <span key={i} className="tag">{n}</span>)}
+                      {(Array.isArray(scholarship.nationalityEligibility)
+                        ? scholarship.nationalityEligibility
+                        : (typeof scholarship.nationalityEligibility === 'string'
+                          ? scholarship.nationalityEligibility.replace(/^{|}$/g, '').split(',').filter(Boolean)
+                          : [])
+                      ).map((n, i) => <span key={i} className="tag">{n}</span>)}
                     </div>
                   </div>
                 )}

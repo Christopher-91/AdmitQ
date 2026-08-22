@@ -45,6 +45,7 @@ const COUNTRIES = [
   { name: 'Poland', city: 'Warsaw', sector: 'Technology | Business Services', slug: 'poland', flag: '/flags/pl.webp', image: 'https://images.unsplash.com/photo-1573157268862-704a1e780907?auto=format&fit=crop&w=900&q=85' },
   { name: 'Spain', city: 'Barcelona', sector: 'Tourism | Renewable Energy', slug: 'spain', flag: '/flags/es.webp', image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=85' },
   { name: 'Malaysia', city: 'Kuala Lumpur', sector: 'Technology | Finance', slug: 'malaysia', flag: '/flags/my.webp', image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Luxembourg', city: 'Luxembourg City', sector: 'Finance | Business', slug: 'luxembourg', flag: '/flags/lu.webp', image: '/images/luxembourg.jpg' },
 ];
 
 const STEPS = [
