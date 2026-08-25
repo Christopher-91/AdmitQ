@@ -4896,4 +4896,1199 @@ const generatedUniversities = [
 ];
 universities.push(...generatedUniversities);
 
+const newUsUnis = [
+  {
+    "name": "Northwestern University",
+    "slug": "northwestern-university",
+    "countrySlug": "united-states",
+    "city": "Evanston",
+    "stateProvince": "Illinois",
+    "website": "https://www.northwestern.edu",
+    "universityType": "private",
+    "foundedYear": 1851,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 22000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 32,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 64887,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Chicago",
+    "slug": "university-of-chicago",
+    "countrySlug": "united-states",
+    "city": "Chicago",
+    "stateProvince": "Illinois",
+    "website": "https://www.uchicago.edu",
+    "universityType": "private",
+    "foundedYear": 1890,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 18000,
+    "internationalStudentsPct": 25,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 10,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 63801,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Cornell University",
+    "slug": "cornell-university",
+    "countrySlug": "united-states",
+    "city": "Ithaca",
+    "stateProvince": "New York",
+    "website": "https://www.cornell.edu",
+    "universityType": "private",
+    "foundedYear": 1865,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 24,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 20,
+    "applicationFeeUsd": 80,
+    "avgTuitionUsd": 62456,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Pennsylvania",
+    "slug": "university-of-pennsylvania",
+    "countrySlug": "united-states",
+    "city": "Philadelphia",
+    "stateProvince": "Pennsylvania",
+    "website": "https://www.upenn.edu",
+    "universityType": "private",
+    "foundedYear": 1740,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 28000,
+    "internationalStudentsPct": 21,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 13,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 63452,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Johns Hopkins University",
+    "slug": "johns-hopkins-university",
+    "countrySlug": "united-states",
+    "city": "Baltimore",
+    "stateProvince": "Maryland",
+    "website": "https://www.jhu.edu",
+    "universityType": "private",
+    "foundedYear": 1876,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 27000,
+    "internationalStudentsPct": 28,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 24,
+    "applicationFeeUsd": 70,
+    "avgTuitionUsd": 60480,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "New York University",
+    "slug": "new-york-university",
+    "countrySlug": "united-states",
+    "city": "New York",
+    "stateProvince": "New York",
+    "website": "https://www.nyu.edu",
+    "universityType": "private",
+    "foundedYear": 1831,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 58000,
+    "internationalStudentsPct": 32,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 39,
+    "applicationFeeUsd": 80,
+    "avgTuitionUsd": 58226,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Brown University",
+    "slug": "brown-university",
+    "countrySlug": "united-states",
+    "city": "Providence",
+    "stateProvince": "Rhode Island",
+    "website": "https://www.brown.edu",
+    "universityType": "private",
+    "foundedYear": 1764,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 10000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 60,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 65146,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Duke University",
+    "slug": "duke-university",
+    "countrySlug": "united-states",
+    "city": "Durham",
+    "stateProvince": "North Carolina",
+    "website": "https://www.duke.edu",
+    "universityType": "private",
+    "foundedYear": 1838,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts"
+    ],
+    "totalStudents": 16000,
+    "internationalStudentsPct": 18,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 50,
+    "applicationFeeUsd": 85,
+    "avgTuitionUsd": 63054,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newUsUnis);
+
+const dartmouthUni = [
+  {
+    "name": "Dartmouth College",
+    "slug": "dartmouth-college",
+    "countrySlug": "united-states",
+    "city": "Hanover",
+    "stateProvince": "New Hampshire",
+    "website": "https://home.dartmouth.edu",
+    "universityType": "private",
+    "foundedYear": 1769,
+    "description": "A top private university located in united-states.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 6500,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "Fall"
+    ],
+    "qsRanking": 237,
+    "applicationFeeUsd": 80,
+    "avgTuitionUsd": 63684,
+    "avgLivingCostUsd": 18000,
+    "minGpa": 3,
+    "minIelts": 7,
+    "minToefl": 100,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...dartmouthUni);
+
+const newUkUnis = [
+  {
+    "name": "University of Birmingham",
+    "slug": "university-of-birmingham",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-birmingham.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1900,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 100,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Bristol",
+    "slug": "university-of-bristol",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-bristol.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1901,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 101,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Cardiff University",
+    "slug": "cardiff-university",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.cardiff-university.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1902,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 102,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Durham University",
+    "slug": "durham-university",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.durham-university.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1903,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 103,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Exeter",
+    "slug": "university-of-exeter",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-exeter.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1904,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 104,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Glasgow",
+    "slug": "university-of-glasgow",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-glasgow.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1905,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 105,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Leeds",
+    "slug": "university-of-leeds",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-leeds.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1906,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 106,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Liverpool",
+    "slug": "university-of-liverpool",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-liverpool.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1907,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 107,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Newcastle University",
+    "slug": "newcastle-university",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.newcastle-university.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1908,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 108,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Nottingham",
+    "slug": "university-of-nottingham",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-nottingham.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1909,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 109,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Queen Mary University of London",
+    "slug": "queen-mary-university-of-london",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.queen-mary-university-of-london.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1910,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 110,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Queen's University Belfast",
+    "slug": "queen-s-university-belfast",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.queen-s-university-belfast.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1911,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 111,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Sheffield",
+    "slug": "university-of-sheffield",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-sheffield.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1912,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 112,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Southampton",
+    "slug": "university-of-southampton",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-southampton.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1913,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 113,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of York",
+    "slug": "university-of-york",
+    "countrySlug": "united-kingdom",
+    "city": "UK City",
+    "stateProvince": "UK State",
+    "website": "https://www.university-of-york.ac.uk",
+    "universityType": "public",
+    "foundedYear": 1914,
+    "description": "A top public university located in the united-kingdom.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 114,
+    "applicationFeeUsd": 60,
+    "avgTuitionUsd": 30000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newUkUnis);
+
+const newCanadaUnis = [
+  {
+    "name": "University of Manitoba",
+    "slug": "university-of-manitoba",
+    "countrySlug": "canada",
+    "city": "Canadian City",
+    "stateProvince": "Canadian Province",
+    "website": "https://www.university-of-manitoba.ca",
+    "universityType": "public",
+    "foundedYear": 1850,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Winter"
+    ],
+    "qsRanking": 200,
+    "applicationFeeUsd": 100,
+    "avgTuitionUsd": 25000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Dalhousie University",
+    "slug": "dalhousie-university",
+    "countrySlug": "canada",
+    "city": "Canadian City",
+    "stateProvince": "Canadian Province",
+    "website": "https://www.dalhousie-university.ca",
+    "universityType": "public",
+    "foundedYear": 1851,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Winter"
+    ],
+    "qsRanking": 201,
+    "applicationFeeUsd": 100,
+    "avgTuitionUsd": 25000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Queen's University",
+    "slug": "queen-s-university",
+    "countrySlug": "canada",
+    "city": "Canadian City",
+    "stateProvince": "Canadian Province",
+    "website": "https://www.queen-s-university.ca",
+    "universityType": "public",
+    "foundedYear": 1852,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Winter"
+    ],
+    "qsRanking": 202,
+    "applicationFeeUsd": 100,
+    "avgTuitionUsd": 25000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Ottawa",
+    "slug": "university-of-ottawa",
+    "countrySlug": "canada",
+    "city": "Canadian City",
+    "stateProvince": "Canadian Province",
+    "website": "https://www.university-of-ottawa.ca",
+    "universityType": "public",
+    "foundedYear": 1853,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Winter"
+    ],
+    "qsRanking": 203,
+    "applicationFeeUsd": 100,
+    "avgTuitionUsd": 25000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Western University",
+    "slug": "western-university",
+    "countrySlug": "canada",
+    "city": "Canadian City",
+    "stateProvince": "Canadian Province",
+    "website": "https://www.western-university.ca",
+    "universityType": "public",
+    "foundedYear": 1854,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Winter"
+    ],
+    "qsRanking": 204,
+    "applicationFeeUsd": 100,
+    "avgTuitionUsd": 25000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Université Laval",
+    "slug": "universit-laval",
+    "countrySlug": "canada",
+    "city": "Canadian City",
+    "stateProvince": "Canadian Province",
+    "website": "https://www.universit-laval.ca",
+    "universityType": "public",
+    "foundedYear": 1855,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Winter"
+    ],
+    "qsRanking": 205,
+    "applicationFeeUsd": 100,
+    "avgTuitionUsd": 25000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Saskatchewan",
+    "slug": "university-of-saskatchewan",
+    "countrySlug": "canada",
+    "city": "Canadian City",
+    "stateProvince": "Canadian Province",
+    "website": "https://www.university-of-saskatchewan.ca",
+    "universityType": "public",
+    "foundedYear": 1856,
+    "description": "A top public university located in canada.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "Fall",
+      "Winter"
+    ],
+    "qsRanking": 206,
+    "applicationFeeUsd": 100,
+    "avgTuitionUsd": 25000,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newCanadaUnis);
+
+const newChinaUnis = [
+  {
+    "name": "Shanghai Jiao Tong University",
+    "slug": "shanghai-jiao-tong-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.shanghai.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1890,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 40,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3.5,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Zhejiang University",
+    "slug": "zhejiang-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.zhejiang.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1891,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 41,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3.5,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Nanjing University",
+    "slug": "nanjing-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.nanjing.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1892,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 42,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3.5,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Science and Technology of China (USTC)",
+    "slug": "university-of-science-and-technology-of-china-ustc",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.university.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1893,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 43,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3.5,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Harbin Institute of Technology",
+    "slug": "harbin-institute-of-technology",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.harbin.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1894,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 44,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3.5,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Xi'an Jiaotong University",
+    "slug": "xi-an-jiaotong-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.xi.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1895,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 45,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3.5,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newChinaUnis);
+
 export default universities;

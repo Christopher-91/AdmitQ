@@ -9,7 +9,7 @@ import { buildPagination } from '../../utils/response.js';
 export const searchUniversities = async (filters = {}) => {
   const {
     page = 1, limit = 20,
-    search, country, city, type, degree, field,
+    search, country, city, type, institutionType, distinction, degree, field,
     minTuition, maxTuition, minIelts, maxIelts,
     sort = 'name', order = 'asc',
   } = filters;
@@ -40,6 +40,18 @@ export const searchUniversities = async (filters = {}) => {
   if (type) {
     conditions.push(`u.university_type = $${paramIdx}`);
     params.push(type);
+    paramIdx++;
+  }
+
+  if (institutionType) {
+    conditions.push(`u.institution_type = $${paramIdx}`);
+    params.push(institutionType);
+    paramIdx++;
+  }
+
+  if (distinction) {
+    conditions.push(`u.distinction = $${paramIdx}`);
+    params.push(distinction);
     paramIdx++;
   }
 
@@ -100,7 +112,7 @@ export const searchUniversities = async (filters = {}) => {
   // Data
   params.push(limit, offset);
   const dataResult = await query(
-    `SELECT u.id, u.name, u.slug, u.city, u.state_province, u.university_type,
+    `SELECT u.id, u.name, u.slug, u.city, u.state_province, u.university_type, u.institution_type, u.distinction,
             u.logo_url, u.website, u.avg_tuition_usd, u.qs_ranking, u.the_ranking,
             u.min_gpa, u.min_ielts, u.min_toefl, u.founded_year,
             u.total_students, u.international_students_pct,
@@ -173,6 +185,8 @@ function formatUniversityCard(row) {
     city: row.city,
     stateProvince: row.state_province,
     universityType: row.university_type,
+    institutionType: row.institution_type,
+    distinction: row.distinction,
     website: row.website,
     logoUrl: row.logo_url,
     avgTuitionUsd: row.avg_tuition_usd,

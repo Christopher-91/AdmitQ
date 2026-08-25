@@ -237,6 +237,8 @@ CREATE TABLE universities (
   -- Basic info
   website           VARCHAR(500),
   university_type   university_type,
+  institution_type  VARCHAR(50),
+  distinction       VARCHAR(50),
   founded_year      INTEGER,
   description       TEXT,
   logo_url          VARCHAR(500),

@@ -12,6 +12,25 @@ export default function Universities() {
   const [search, setSearch] = useState(searchParams.get('search') || '');
   const [country, setCountry] = useState(searchParams.get('country') || '');
   const [type, setType] = useState(searchParams.get('type') || '');
+  const [institutionType, setInstitutionType] = useState(searchParams.get('institutionType') || '');
+  const [distinction, setDistinction] = useState(searchParams.get('distinction') || '');
+
+  const eurCountries = ['germany', 'austria', 'finland', 'norway', 'sweden', 'switzerland', 'netherlands', 'ireland', 'denmark', 'france', 'portugal', 'estonia', 'belgium'];
+  const showInstitutionType = eurCountries.includes(country);
+
+  const eliteMap = {
+    'united-states': 'Ivy League',
+    'united-kingdom': 'Russell Group',
+    'germany': 'TU9',
+    'china': 'C9',
+    'australia': 'Group of 8',
+    'japan': 'RU11',
+    'france': 'Grandes Écoles',
+    'netherlands': '4TU',
+    'switzerland': 'ETH Domain',
+    'canada': 'U15'
+  };
+  const activeDistinction = eliteMap[country];
 
   const fetchData = async () => {
     setLoading(true);
@@ -20,6 +39,8 @@ export default function Universities() {
       if (search) params.search = search;
       if (country) params.country = country;
       if (type) params.type = type;
+      if (institutionType) params.institutionType = institutionType;
+      if (distinction) params.distinction = distinction;
       const res = await api.get('/universities', { params });
       setUniversities(res.data.data || []);
       setTotal(res.data.meta?.pagination?.total || 0);
@@ -30,7 +51,17 @@ export default function Universities() {
     }
   };
 
-  useEffect(() => { fetchData(); }, [country, type]);
+  useEffect(() => { fetchData(); }, [country, type, institutionType, distinction]);
+
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (search) params.set('search', search);
+    if (country) params.set('country', country);
+    if (type) params.set('type', type);
+    if (institutionType) params.set('institutionType', institutionType);
+    if (distinction) params.set('distinction', distinction);
+    setSearchParams(params, { replace: true });
+  }, [search, country, type, institutionType, distinction, setSearchParams]);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -56,36 +87,40 @@ export default function Universities() {
           />
         </form>
 
-        <select className="form-input filter-select" value={country} onChange={(e) => setCountry(e.target.value)}>
+        <select className="form-input filter-select" value={country} onChange={(e) => {
+          setCountry(e.target.value);
+          if (!eurCountries.includes(e.target.value)) setInstitutionType('');
+          setDistinction('');
+        }}>
           <option value="">All Countries</option>
           <option value="united-states">United States</option>
           <option value="united-kingdom">United Kingdom</option>
+          <option value="china">China</option>
           <option value="canada">Canada</option>
           <option value="germany">Germany</option>
           <option value="australia">Australia</option>
+          <option value="new-zealand">New Zealand</option>
           <option value="netherlands">Netherlands</option>
-          <option value="switzerland">Switzerland</option>
-          <option value="singapore">Singapore</option>
+          <option value="ireland">Ireland</option>
+          <option value="denmark">Denmark</option>
           <option value="japan">Japan</option>
           <option value="south-korea">South Korea</option>
-          <option value="ireland">Ireland</option>
           <option value="france">France</option>
           <option value="sweden">Sweden</option>
-          <option value="italy">Italy</option>
-          <option value="new-zealand">New Zealand</option>
           <option value="norway">Norway</option>
           <option value="finland">Finland</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="singapore">Singapore</option>
+          <option value="uae">UAE</option>
+          <option value="luxembourg">Luxembourg</option>
+          <option value="italy">Italy</option>
           <option value="belgium">Belgium</option>
-          <option value="china">China</option>
           <option value="austria">Austria</option>
-          <option value="denmark">Denmark</option>
           <option value="russia">Russia</option>
           <option value="spain">Spain</option>
           <option value="malaysia">Malaysia</option>
           <option value="portugal">Portugal</option>
           <option value="poland">Poland</option>
-          <option value="uae">UAE</option>
-          <option value="luxembourg">Luxembourg</option>
         </select>
 
         <select className="form-input filter-select" value={type} onChange={(e) => setType(e.target.value)}>
@@ -93,6 +128,21 @@ export default function Universities() {
           <option value="public">Public</option>
           <option value="private">Private</option>
         </select>
+
+        {showInstitutionType && (
+          <select className="form-input filter-select" value={institutionType} onChange={(e) => setInstitutionType(e.target.value)}>
+            <option value="">All Institutions</option>
+            <option value="research_oriented">Research-oriented</option>
+            <option value="industry_oriented">Industry-oriented</option>
+          </select>
+        )}
+
+        {activeDistinction && (
+          <select className="form-input filter-select" value={distinction} onChange={(e) => setDistinction(e.target.value)}>
+            <option value="">Distinctions</option>
+            <option value={activeDistinction}>{activeDistinction}</option>
+          </select>
+        )}
 
         <span className="filter-count text-sm text-muted">{total} universities found</span>
       </div>
@@ -107,7 +157,7 @@ export default function Universities() {
       ) : universities.length > 0 ? (
         <div className="cards-grid stagger-children">
           {universities.map((u) => (
-            <Link key={u.id} to={`/universities/${u.slug}`} className="uni-card card">
+            <Link key={u.id} to={`/universities/${u.slug}`} state={{ fromParams: searchParams.toString() }} className="uni-card card">
               <div className="uni-card-header">
                 <div className="uni-logo">
                   <Logo website={u.website} name={u.name} slug={u.slug} size={48} />

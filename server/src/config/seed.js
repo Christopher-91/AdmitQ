@@ -177,17 +177,43 @@ async function seed() {
       const countryId = countryIds[u.countrySlug];
       if (!countryId) { console.warn(`  ⚠ Country not found for ${u.name}: ${u.countrySlug}`); continue; }
 
+      const eurCountries = ['germany', 'austria', 'finland', 'norway', 'sweden', 'switzerland', 'netherlands', 'ireland', 'denmark', 'france', 'portugal', 'estonia', 'belgium'];
+      const industryTerms = ['Business School', 'School of Management', 'School of Finance', 'SRH Berlin', 'HEC', 'INSEAD', 'ESSEC', 'ESCP', 'EDHEC'];
+      let instType = null;
+      if (eurCountries.includes(u.countrySlug)) {
+        const isIndustry = industryTerms.some(term => u.name.includes(term));
+        instType = isIndustry ? 'industry_oriented' : 'research_oriented';
+      }
+
+      const eliteGroups = {
+        'united-states': { group: 'Ivy League', unis: ['Harvard University', 'Princeton University', 'Yale University', 'Columbia University', 'University of Pennsylvania', 'Brown University', 'Cornell University', 'Dartmouth College'] },
+        'united-kingdom': { group: 'Russell Group', unis: ['University of Oxford', 'University of Cambridge', 'Imperial College London', 'University College London', 'University of Edinburgh', 'King\'s College London', 'LSE', 'University of Manchester', 'University of Warwick', 'University of Birmingham', 'University of Bristol', 'Cardiff University', 'Durham University', 'University of Exeter', 'University of Glasgow', 'University of Leeds', 'University of Liverpool', 'Newcastle University', 'University of Nottingham', 'Queen Mary University of London', 'Queen\'s University Belfast', 'University of Sheffield', 'University of Southampton', 'University of York'] },
+        'germany': { group: 'TU9', unis: ['Technical University of Munich', 'RWTH Aachen University'] },
+        'china': { group: 'C9', unis: ['Tsinghua University', 'Peking University', 'Fudan University', 'Shanghai Jiao Tong University', 'Zhejiang University', 'Nanjing University', 'University of Science and Technology of China (USTC)', 'Harbin Institute of Technology', 'Xi\'an Jiaotong University'] },
+        'australia': { group: 'Group of 8', unis: ['University of Melbourne', 'University of Sydney', 'UNSW Sydney', 'ANU', 'University of Queensland', 'Monash University', 'UWA'] },
+        'japan': { group: 'RU11', unis: ['University of Tokyo', 'Kyoto University', 'University of Osaka', 'Tohoku University', 'Nagoya University', 'Hokkaido University', 'Keio University', 'Waseda University'] },
+        'france': { group: 'Grandes Écoles', unis: ['École Polytechnique', 'HEC Paris', 'INSEAD', 'ESSEC Business School', 'ESCP Europe', 'EDHEC Business School'] },
+        'netherlands': { group: '4TU', unis: ['Delft University of Technology', 'Wageningen University'] },
+        'switzerland': { group: 'ETH Domain', unis: ['ETH Zurich', 'EPFL'] },
+        'canada': { group: 'U15', unis: ['University of Toronto', 'University of British Columbia', 'McGill University', 'McMaster University', 'University of Waterloo', 'University of Alberta', 'University of Montreal', 'University of Calgary', 'University of Manitoba', 'Dalhousie University', 'Queen\'s University', 'University of Ottawa', 'Western University', 'Université Laval', 'University of Saskatchewan'] }
+      };
+
+      let distinction = null;
+      if (eliteGroups[u.countrySlug] && eliteGroups[u.countrySlug].unis.includes(u.name)) {
+        distinction = eliteGroups[u.countrySlug].group;
+      }
+
       const result = await client.query(
-        `INSERT INTO universities (name, slug, country_id, city, state_province, website, university_type, founded_year, description,
+        `INSERT INTO universities (name, slug, country_id, city, state_province, website, university_type, institution_type, distinction, founded_year, description,
           faculties, departments, total_students, international_students_pct, student_faculty_ratio,
           languages_of_instruction, intakes, qs_ranking, the_ranking,
           application_fee_usd, avg_tuition_usd, avg_living_cost_usd, accommodation_usd, insurance_usd,
           min_gpa, min_ielts, min_toefl, min_gre, min_gmat, application_portal,
           source_url, last_verified, verification_status)
-         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25,$26,$27,$28,$29,$30,NOW(),$31)
+         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25,$26,$27,$28,$29,$30,$31,$32,NOW(),$33)
          ON CONFLICT (slug) DO UPDATE SET description = EXCLUDED.description
          RETURNING id`,
-        [u.name, u.slug, countryId, u.city, u.stateProvince || null, u.website, u.universityType, u.foundedYear, u.description,
+        [u.name, u.slug, countryId, u.city, u.stateProvince || null, u.website, u.universityType, instType, distinction, u.foundedYear, u.description,
          u.faculties || null, u.departments || null, u.totalStudents || null, u.internationalStudentsPct || null, u.studentFacultyRatio || null,
          u.languagesOfInstruction || ['English'], u.intakes || ['Fall'], u.qsRanking || null, u.theRanking || null,
          u.applicationFeeUsd || null, u.avgTuitionUsd || null, u.avgLivingCostUsd || null, u.accommodationUsd || null, u.insuranceUsd || null,

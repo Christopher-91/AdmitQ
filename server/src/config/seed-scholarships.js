@@ -1,48 +1,316 @@
 const scholarships = [
-  // ── Global / Multi-country ──
-  { name: 'Fulbright Foreign Student Program', slug: 'fulbright', provider: 'US Department of State', countrySlug: 'united-states', degreeEligibility: ['masters', 'phd'], coverage: 'full', coverageDetails: 'Full tuition, living expenses, airfare, health insurance, and book allowance', amountUsd: 60000, amountCurrency: 'USD', deadlineLabel: 'Varies by country (February-October)', description: 'One of the most prestigious scholarship programs in the world, enabling students from over 155 countries to study at US universities.', otherRequirements: 'Strong academic record, leadership qualities, community involvement', requiredDocuments: ['Transcript', 'SOP', 'LOR x3', 'Resume', 'Language scores'], applicationUrl: 'https://foreign.fulbrightonline.org/', sourceUrl: 'https://foreign.fulbrightonline.org/', verificationStatus: 'verified' },
-
-  { name: 'Chevening Scholarships', slug: 'chevening', provider: 'UK Government', countrySlug: 'united-kingdom', degreeEligibility: ['masters'], coverage: 'full', coverageDetails: 'Full tuition, monthly stipend, travel costs, and additional grants', amountUsd: 50000, amountCurrency: 'GBP', deadline: '2026-11-01', deadlineLabel: 'November (annual)', description: 'UK government\'s international awards programme for outstanding professionals with leadership potential to study a one-year master\'s degree in the UK.', otherRequirements: 'Minimum 2 years work experience, return to home country for 2 years after', requiredDocuments: ['Transcript', 'References x2', 'Work Experience Proof'], applicationUrl: 'https://www.chevening.org/', sourceUrl: 'https://www.chevening.org/', verificationStatus: 'verified' },
-
-  { name: 'DAAD Scholarships', slug: 'daad', provider: 'German Academic Exchange Service', countrySlug: 'germany', degreeEligibility: ['masters', 'phd'], coverage: 'full', coverageDetails: 'Monthly stipend (€934-1300), tuition fees, health insurance, travel allowance', amountUsd: 15000, amountCurrency: 'EUR', deadline: '2026-10-15', deadlineLabel: 'October (annual)', description: 'Germany\'s largest funding organization for international academic exchange. Supports study and research at German universities.', requiredDocuments: ['Transcript', 'CV', 'Motivation Letter', 'LOR x2', 'Language Certificate'], applicationUrl: 'https://www.daad.de/en/', sourceUrl: 'https://www.daad.de/en/', verificationStatus: 'verified' },
-
-  { name: 'Erasmus Mundus Joint Masters', slug: 'erasmus-mundus', provider: 'European Union', degreeEligibility: ['masters'], coverage: 'full', coverageDetails: 'Tuition, monthly allowance (€1400), travel, insurance for entire program', amountUsd: 25000, amountCurrency: 'EUR', deadlineLabel: 'January-March (varies by program)', description: 'EU-funded scholarships for joint master\'s programs involving multiple European universities. Full scholarship for non-EU students.', applicationUrl: 'https://erasmus-plus.ec.europa.eu/', sourceUrl: 'https://erasmus-plus.ec.europa.eu/', verificationStatus: 'verified' },
-
-  { name: 'Commonwealth Scholarships', slug: 'commonwealth-scholarships', provider: 'Commonwealth Scholarship Commission', countrySlug: 'united-kingdom', degreeEligibility: ['masters', 'phd'], nationalityEligibility: ['Commonwealth countries'], coverage: 'full', coverageDetails: 'Tuition, stipend, airfare, thesis grant, warm clothing allowance', amountUsd: 45000, amountCurrency: 'GBP', deadline: '2026-12-01', deadlineLabel: 'December (annual)', description: 'For students from Commonwealth countries to pursue master\'s or PhD study in the UK.', requiredDocuments: ['Transcript', 'References x3', 'Research Proposal (PhD)', 'Development Impact Statement'], applicationUrl: 'http://cscuk.dfid.gov.uk/', sourceUrl: 'http://cscuk.dfid.gov.uk/', verificationStatus: 'verified' },
-
-  // ── Australia ──
-  { name: 'Australia Awards Scholarships', slug: 'australia-awards', provider: 'Australian Government', countrySlug: 'australia', degreeEligibility: ['masters', 'phd'], coverage: 'full', coverageDetails: 'Full tuition, return airfare, living allowance, health cover (OSHC), introductory academic program', amountUsd: 50000, amountCurrency: 'AUD', deadlineLabel: 'April-May (annual)', description: 'Australian Government long-term scholarships for developing country nationals to undertake full-time undergraduate or postgraduate study in Australia.', otherRequirements: 'From eligible developing countries, minimum 2 years work experience', applicationUrl: 'https://www.dfat.gov.au/people-to-people/australia-awards', sourceUrl: 'https://www.dfat.gov.au/people-to-people/australia-awards', verificationStatus: 'verified' },
-
-  // ── Canada ──
-  { name: 'Vanier Canada Graduate Scholarships', slug: 'vanier', provider: 'Government of Canada', countrySlug: 'canada', degreeEligibility: ['phd'], coverage: 'full', coverageDetails: 'CAD $50,000 per year for 3 years', amountUsd: 37000, amountCurrency: 'CAD', deadline: '2026-11-01', deadlineLabel: 'November (annual)', description: 'Prestigious Canadian scholarship for doctoral students demonstrating leadership and high research achievements.', otherRequirements: 'Nominated by Canadian university, leadership skills, research excellence', applicationUrl: 'https://vanier.gc.ca/', sourceUrl: 'https://vanier.gc.ca/', verificationStatus: 'verified' },
-
-  // ── Netherlands ──
-  { name: 'Holland Scholarship', slug: 'holland-scholarship', provider: 'Dutch Ministry of Education', countrySlug: 'netherlands', degreeEligibility: ['bachelors', 'masters'], coverage: 'partial', coverageDetails: '€5,000 one-time grant for first year', amountUsd: 5500, amountCurrency: 'EUR', deadline: '2027-02-01', deadlineLabel: 'February (annual)', description: 'For international students from outside the European Economic Area who want to do a bachelor\'s or master\'s in the Netherlands.', applicationUrl: 'https://www.studyinholland.nl/finances/scholarships/holland-scholarship', sourceUrl: 'https://www.studyinholland.nl/', verificationStatus: 'verified' },
-
-  // ── Switzerland ──
-  { name: 'Swiss Government Excellence Scholarships', slug: 'swiss-excellence', provider: 'Swiss Government', countrySlug: 'switzerland', degreeEligibility: ['masters', 'phd'], coverage: 'full', coverageDetails: 'Monthly allowance (CHF 1920), tuition waiver, health insurance, airfare', amountUsd: 25000, amountCurrency: 'CHF', deadline: '2026-11-15', deadlineLabel: 'August-November (varies)', description: 'Swiss government scholarships for foreign scholars and researchers for study or research at Swiss universities.', applicationUrl: 'https://www.sbfi.admin.ch/eskas', sourceUrl: 'https://www.sbfi.admin.ch/eskas', verificationStatus: 'verified' },
-
-  // ── Japan ──
-  { name: 'MEXT Scholarship', slug: 'mext', provider: 'Japanese Government', countrySlug: 'japan', degreeEligibility: ['bachelors', 'masters', 'phd'], coverage: 'full', coverageDetails: 'Full tuition, monthly stipend (¥143,000-¥145,000), airfare, no application fee', amountUsd: 16000, amountCurrency: 'JPY', deadlineLabel: 'April-May (annual)', description: 'Fully-funded scholarship by the Japanese government for international students to study in Japan. One of the most generous government scholarships globally.', requiredDocuments: ['Transcript', 'Research Plan', 'Medical Certificate', 'Language Proficiency'], applicationUrl: 'https://www.studyinjapan.go.jp/en/smap-stopj-applications-scholarship.html', sourceUrl: 'https://www.studyinjapan.go.jp/en/', verificationStatus: 'verified' },
-
-  // ── South Korea ──
-  { name: 'Korean Government Scholarship Program (KGSP)', slug: 'kgsp', provider: 'Korean Government', countrySlug: 'south-korea', degreeEligibility: ['bachelors', 'masters', 'phd'], coverage: 'full', coverageDetails: 'Tuition, monthly allowance (₩900,000-1,000,000), airfare, settlement allowance, Korean language training', amountUsd: 12000, amountCurrency: 'KRW', deadlineLabel: 'February-March (annual)', description: 'Fully-funded scholarship for international students to study at Korean universities. Includes 1 year of Korean language training.', applicationUrl: 'https://www.studyinkorea.go.kr/', sourceUrl: 'https://www.studyinkorea.go.kr/', verificationStatus: 'verified' },
-
-  // ── Sweden ──
-  { name: 'Swedish Institute Scholarships', slug: 'si-scholarships', provider: 'Swedish Institute', countrySlug: 'sweden', degreeEligibility: ['masters'], coverage: 'full', coverageDetails: 'Full tuition, SEK 10,000/month living expenses, travel grant, insurance', amountUsd: 20000, amountCurrency: 'SEK', deadline: '2027-02-10', deadlineLabel: 'February (annual)', description: 'Scholarships for master\'s students from eligible countries focusing on sustainability and global development.', otherRequirements: 'From eligible countries, demonstrate leadership experience', applicationUrl: 'https://si.se/en/apply/scholarships/', sourceUrl: 'https://si.se/en/', verificationStatus: 'verified' },
-
-  // ── University-specific ──
-  { name: 'MIT Presidential Fellowship', slug: 'mit-presidential-fellowship', provider: 'MIT', countrySlug: 'united-states', universitySlug: 'mit', degreeEligibility: ['masters', 'phd'], coverage: 'full', coverageDetails: 'Full tuition + stipend for outstanding incoming graduate students', amountUsd: 60000, amountCurrency: 'USD', deadlineLabel: 'With application', description: 'MIT\'s most prestigious fellowship for incoming graduate students demonstrating exceptional academic achievement and promise.', sourceUrl: 'https://oge.mit.edu/finances/fellowships/', verificationStatus: 'verified' },
-
-  { name: 'Stanford Knight-Hennessy Scholars', slug: 'knight-hennessy', provider: 'Stanford University', countrySlug: 'united-states', universitySlug: 'stanford-university', degreeEligibility: ['masters', 'phd'], coverage: 'full', coverageDetails: 'Full funding for up to 3 years including tuition, stipend, travel, and enrichment activities', amountUsd: 90000, amountCurrency: 'USD', deadline: '2026-10-14', deadlineLabel: 'October (annual)', description: 'Full scholarship for graduate study at Stanford, one of the most generous graduate scholarships globally.', otherRequirements: 'Independence of thought, purposeful leadership, civic mindset', applicationUrl: 'https://knight-hennessy.stanford.edu/', sourceUrl: 'https://knight-hennessy.stanford.edu/', verificationStatus: 'verified' },
-
-  { name: 'Clarendon Scholarships', slug: 'clarendon', provider: 'University of Oxford', countrySlug: 'united-kingdom', universitySlug: 'university-of-oxford', degreeEligibility: ['masters', 'phd'], coverage: 'full', coverageDetails: 'Full tuition and generous living grant for entire program', amountUsd: 50000, amountCurrency: 'GBP', deadlineLabel: 'With application (January)', description: 'Oxford\'s largest scholarship scheme, funding approximately 140 new scholarships annually across all subjects.', applicationUrl: 'https://www.clarendon.ox.ac.uk/', sourceUrl: 'https://www.clarendon.ox.ac.uk/', verificationStatus: 'verified' },
-
-  { name: 'Gates Cambridge Scholarship', slug: 'gates-cambridge', provider: 'Bill and Melinda Gates Foundation', countrySlug: 'united-kingdom', universitySlug: 'university-of-cambridge', degreeEligibility: ['masters', 'phd'], coverage: 'full', coverageDetails: 'Full tuition, maintenance allowance, airfare, and academic development funding', amountUsd: 55000, amountCurrency: 'GBP', deadlineLabel: 'October / January (varies)', description: 'Prestigious international postgraduate scholarship for outstanding applicants from outside the UK to study at the University of Cambridge.', applicationUrl: 'https://www.gatescambridge.org/', sourceUrl: 'https://www.gatescambridge.org/', verificationStatus: 'verified' },
-];
-
-
-const generatedScholarships = [
+  {
+    "name": "Fulbright Foreign Student Program",
+    "slug": "fulbright",
+    "provider": "US Department of State",
+    "countrySlug": "united-states",
+    "degreeEligibility": [
+      "masters",
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition, living expenses, airfare, health insurance, and book allowance",
+    "amountUsd": 60000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "Varies by country (February-October)",
+    "description": "One of the most prestigious scholarship programs in the world, enabling students from over 155 countries to study at US universities.",
+    "otherRequirements": "Strong academic record, leadership qualities, community involvement",
+    "requiredDocuments": [
+      "Transcript",
+      "SOP",
+      "LOR x3",
+      "Resume",
+      "Language scores"
+    ],
+    "applicationUrl": "https://foreign.fulbrightonline.org/",
+    "sourceUrl": "https://foreign.fulbrightonline.org/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Chevening Scholarships",
+    "slug": "chevening",
+    "provider": "UK Government",
+    "countrySlug": "united-kingdom",
+    "degreeEligibility": [
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition, monthly stipend, travel costs, and additional grants",
+    "amountUsd": 50000,
+    "amountCurrency": "GBP",
+    "deadline": "2026-11-01",
+    "deadlineLabel": "November (annual)",
+    "description": "UK government's international awards programme for outstanding professionals with leadership potential to study a one-year master's degree in the UK.",
+    "otherRequirements": "Minimum 2 years work experience, return to home country for 2 years after",
+    "requiredDocuments": [
+      "Transcript",
+      "References x2",
+      "Work Experience Proof"
+    ],
+    "applicationUrl": "https://www.chevening.org/",
+    "sourceUrl": "https://www.chevening.org/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "DAAD Scholarships",
+    "slug": "daad",
+    "provider": "German Academic Exchange Service",
+    "countrySlug": "germany",
+    "degreeEligibility": [
+      "masters",
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Monthly stipend (€934-1300), tuition fees, health insurance, travel allowance",
+    "amountUsd": 15000,
+    "amountCurrency": "EUR",
+    "deadline": "2026-10-15",
+    "deadlineLabel": "October (annual)",
+    "description": "Germany's largest funding organization for international academic exchange. Supports study and research at German universities.",
+    "requiredDocuments": [
+      "Transcript",
+      "CV",
+      "Motivation Letter",
+      "LOR x2",
+      "Language Certificate"
+    ],
+    "applicationUrl": "https://www.daad.de/en/",
+    "sourceUrl": "https://www.daad.de/en/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Erasmus Mundus Joint Masters",
+    "slug": "erasmus-mundus",
+    "provider": "European Union",
+    "degreeEligibility": [
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Tuition, monthly allowance (€1400), travel, insurance for entire program",
+    "amountUsd": 25000,
+    "amountCurrency": "EUR",
+    "deadlineLabel": "January-March (varies by program)",
+    "description": "EU-funded scholarships for joint master's programs involving multiple European universities. Full scholarship for non-EU students.",
+    "applicationUrl": "https://erasmus-plus.ec.europa.eu/",
+    "sourceUrl": "https://erasmus-plus.ec.europa.eu/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Commonwealth Scholarships",
+    "slug": "commonwealth-scholarships",
+    "provider": "Commonwealth Scholarship Commission",
+    "countrySlug": "united-kingdom",
+    "degreeEligibility": [
+      "masters",
+      "phd"
+    ],
+    "nationalityEligibility": [
+      "Commonwealth countries"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Tuition, stipend, airfare, thesis grant, warm clothing allowance",
+    "amountUsd": 45000,
+    "amountCurrency": "GBP",
+    "deadline": "2026-12-01",
+    "deadlineLabel": "December (annual)",
+    "description": "For students from Commonwealth countries to pursue master's or PhD study in the UK.",
+    "requiredDocuments": [
+      "Transcript",
+      "References x3",
+      "Research Proposal (PhD)",
+      "Development Impact Statement"
+    ],
+    "applicationUrl": "http://cscuk.dfid.gov.uk/",
+    "sourceUrl": "http://cscuk.dfid.gov.uk/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Australia Awards Scholarships",
+    "slug": "australia-awards",
+    "provider": "Australian Government",
+    "countrySlug": "australia",
+    "degreeEligibility": [
+      "masters",
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition, return airfare, living allowance, health cover (OSHC), introductory academic program",
+    "amountUsd": 50000,
+    "amountCurrency": "AUD",
+    "deadlineLabel": "April-May (annual)",
+    "description": "Australian Government long-term scholarships for developing country nationals to undertake full-time undergraduate or postgraduate study in Australia.",
+    "otherRequirements": "From eligible developing countries, minimum 2 years work experience",
+    "applicationUrl": "https://www.dfat.gov.au/people-to-people/australia-awards",
+    "sourceUrl": "https://www.dfat.gov.au/people-to-people/australia-awards",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Vanier Canada Graduate Scholarships",
+    "slug": "vanier",
+    "provider": "Government of Canada",
+    "countrySlug": "canada",
+    "degreeEligibility": [
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "CAD $50,000 per year for 3 years",
+    "amountUsd": 37000,
+    "amountCurrency": "CAD",
+    "deadline": "2026-11-01",
+    "deadlineLabel": "November (annual)",
+    "description": "Prestigious Canadian scholarship for doctoral students demonstrating leadership and high research achievements.",
+    "otherRequirements": "Nominated by Canadian university, leadership skills, research excellence",
+    "applicationUrl": "https://vanier.gc.ca/",
+    "sourceUrl": "https://vanier.gc.ca/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Holland Scholarship",
+    "slug": "holland-scholarship",
+    "provider": "Dutch Ministry of Education",
+    "countrySlug": "netherlands",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "€5,000 one-time grant for first year",
+    "amountUsd": 5500,
+    "amountCurrency": "EUR",
+    "deadline": "2027-02-01",
+    "deadlineLabel": "February (annual)",
+    "description": "For international students from outside the European Economic Area who want to do a bachelor's or master's in the Netherlands.",
+    "applicationUrl": "https://www.studyinholland.nl/finances/scholarships/holland-scholarship",
+    "sourceUrl": "https://www.studyinholland.nl/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Swiss Government Excellence Scholarships",
+    "slug": "swiss-excellence",
+    "provider": "Swiss Government",
+    "countrySlug": "switzerland",
+    "degreeEligibility": [
+      "masters",
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Monthly allowance (CHF 1920), tuition waiver, health insurance, airfare",
+    "amountUsd": 25000,
+    "amountCurrency": "CHF",
+    "deadline": "2026-11-15",
+    "deadlineLabel": "August-November (varies)",
+    "description": "Swiss government scholarships for foreign scholars and researchers for study or research at Swiss universities.",
+    "applicationUrl": "https://www.sbfi.admin.ch/eskas",
+    "sourceUrl": "https://www.sbfi.admin.ch/eskas",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "MEXT Scholarship",
+    "slug": "mext",
+    "provider": "Japanese Government",
+    "countrySlug": "japan",
+    "degreeEligibility": [
+      "bachelors",
+      "masters",
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition, monthly stipend (¥143,000-¥145,000), airfare, no application fee",
+    "amountUsd": 16000,
+    "amountCurrency": "JPY",
+    "deadlineLabel": "April-May (annual)",
+    "description": "Fully-funded scholarship by the Japanese government for international students to study in Japan. One of the most generous government scholarships globally.",
+    "requiredDocuments": [
+      "Transcript",
+      "Research Plan",
+      "Medical Certificate",
+      "Language Proficiency"
+    ],
+    "applicationUrl": "https://www.studyinjapan.go.jp/en/smap-stopj-applications-scholarship.html",
+    "sourceUrl": "https://www.studyinjapan.go.jp/en/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Korean Government Scholarship Program (KGSP)",
+    "slug": "kgsp",
+    "provider": "Korean Government",
+    "countrySlug": "south-korea",
+    "degreeEligibility": [
+      "bachelors",
+      "masters",
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Tuition, monthly allowance (₩900,000-1,000,000), airfare, settlement allowance, Korean language training",
+    "amountUsd": 12000,
+    "amountCurrency": "KRW",
+    "deadlineLabel": "February-March (annual)",
+    "description": "Fully-funded scholarship for international students to study at Korean universities. Includes 1 year of Korean language training.",
+    "applicationUrl": "https://www.studyinkorea.go.kr/",
+    "sourceUrl": "https://www.studyinkorea.go.kr/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Swedish Institute Scholarships",
+    "slug": "si-scholarships",
+    "provider": "Swedish Institute",
+    "countrySlug": "sweden",
+    "degreeEligibility": [
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition, SEK 10,000/month living expenses, travel grant, insurance",
+    "amountUsd": 20000,
+    "amountCurrency": "SEK",
+    "deadline": "2027-02-10",
+    "deadlineLabel": "February (annual)",
+    "description": "Scholarships for master's students from eligible countries focusing on sustainability and global development.",
+    "otherRequirements": "From eligible countries, demonstrate leadership experience",
+    "applicationUrl": "https://si.se/en/apply/scholarships/",
+    "sourceUrl": "https://si.se/en/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "MIT Presidential Fellowship",
+    "slug": "mit-presidential-fellowship",
+    "provider": "MIT",
+    "countrySlug": "united-states",
+    "universitySlug": "mit",
+    "degreeEligibility": [
+      "masters",
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition + stipend for outstanding incoming graduate students",
+    "amountUsd": 60000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "With application",
+    "description": "MIT's most prestigious fellowship for incoming graduate students demonstrating exceptional academic achievement and promise.",
+    "sourceUrl": "https://oge.mit.edu/finances/fellowships/",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Stanford Knight-Hennessy Scholars",
+    "slug": "knight-hennessy",
+    "provider": "Stanford University",
+    "countrySlug": "united-states",
+    "universitySlug": "stanford-university",
+    "degreeEligibility": [
+      "masters",
+      "phd"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full funding for up to 3 years including tuition, stipend, travel, and enrichment activities",
+    "amountUsd": 90000,
+    "amountCurrency": "USD",
+    "deadline": "2026-10-14",
+    "deadlineLabel": "October (annual)",
+    "description": "Full scholarship for graduate study at Stanford, one of the most generous graduate scholarships globally.",
+    "otherRequirements": "Independence of thought, purposeful leadership, civic mindset",
+    "applicationUrl": "https://knight-hennessy.stanford.edu/",
+    "sourceUrl": "https://knight-hennessy.stanford.edu/",
+    "verificationStatus": "verified"
+  },
   {
     "name": "UC Berkeley Excellence Scholarship",
     "slug": "uc-berkeley-excellence-scholarship",
@@ -134,24 +402,6 @@ const generatedScholarships = [
     "verificationStatus": "verified"
   },
   {
-    "name": "Harvard University Excellence Scholarship",
-    "slug": "harvard-university-excellence-scholarship",
-    "provider": "Harvard University",
-    "countrySlug": "united-states",
-    "universitySlug": "harvard-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 13626,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Harvard University.",
-    "verificationStatus": "verified"
-  },
-  {
     "name": "Caltech Excellence Scholarship",
     "slug": "caltech-excellence-scholarship",
     "provider": "Caltech",
@@ -167,60 +417,6 @@ const generatedScholarships = [
     "amountCurrency": "USD",
     "deadlineLabel": "March",
     "description": "A merit-based scholarship for international students at Caltech.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Princeton University Excellence Scholarship",
-    "slug": "princeton-university-excellence-scholarship",
-    "provider": "Princeton University",
-    "countrySlug": "united-states",
-    "universitySlug": "princeton-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 7998,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Princeton University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Yale University Excellence Scholarship",
-    "slug": "yale-university-excellence-scholarship",
-    "provider": "Yale University",
-    "countrySlug": "united-states",
-    "universitySlug": "yale-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 24646,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Yale University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Columbia University Excellence Scholarship",
-    "slug": "columbia-university-excellence-scholarship",
-    "provider": "Columbia University",
-    "countrySlug": "united-states",
-    "universitySlug": "columbia-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 12861,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Columbia University.",
     "verificationStatus": "verified"
   },
   {
@@ -257,24 +453,6 @@ const generatedScholarships = [
     "amountCurrency": "USD",
     "deadlineLabel": "March",
     "description": "A merit-based scholarship for international students at King's College London.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "LSE Excellence Scholarship",
-    "slug": "lse-excellence-scholarship",
-    "provider": "LSE",
-    "countrySlug": "united-kingdom",
-    "universitySlug": "lse",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 12382,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at LSE.",
     "verificationStatus": "verified"
   },
   {
@@ -2078,60 +2256,6 @@ const generatedScholarships = [
     "verificationStatus": "verified"
   },
   {
-    "name": "Tsinghua University Excellence Scholarship",
-    "slug": "tsinghua-university-excellence-scholarship",
-    "provider": "Tsinghua University",
-    "countrySlug": "china",
-    "universitySlug": "tsinghua-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 5917,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Tsinghua University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Peking University Excellence Scholarship",
-    "slug": "peking-university-excellence-scholarship",
-    "provider": "Peking University",
-    "countrySlug": "china",
-    "universitySlug": "peking-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 18658,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Peking University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Fudan University Excellence Scholarship",
-    "slug": "fudan-university-excellence-scholarship",
-    "provider": "Fudan University",
-    "countrySlug": "china",
-    "universitySlug": "fudan-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 6510,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Fudan University.",
-    "verificationStatus": "verified"
-  },
-  {
     "name": "Wageningen University Excellence Scholarship",
     "slug": "wageningen-university-excellence-scholarship",
     "provider": "Wageningen University",
@@ -2940,8 +3064,918 @@ const generatedScholarships = [
     "deadlineLabel": "March",
     "description": "A merit-based scholarship for international students at LUNEX University.",
     "verificationStatus": "verified"
+  },
+  {
+    "name": "Northwestern University Excellence Scholarship",
+    "slug": "northwestern-university-excellence-scholarship",
+    "provider": "Northwestern University",
+    "countrySlug": "united-states",
+    "universitySlug": "northwestern-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Northwestern University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Chicago Excellence Scholarship",
+    "slug": "university-of-chicago-excellence-scholarship",
+    "provider": "University of Chicago",
+    "countrySlug": "united-states",
+    "universitySlug": "university-of-chicago",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Chicago.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Johns Hopkins University Excellence Scholarship",
+    "slug": "johns-hopkins-university-excellence-scholarship",
+    "provider": "Johns Hopkins University",
+    "countrySlug": "united-states",
+    "universitySlug": "johns-hopkins-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Johns Hopkins University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "New York University Excellence Scholarship",
+    "slug": "new-york-university-excellence-scholarship",
+    "provider": "New York University",
+    "countrySlug": "united-states",
+    "universitySlug": "new-york-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at New York University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Duke University Excellence Scholarship",
+    "slug": "duke-university-excellence-scholarship",
+    "provider": "Duke University",
+    "countrySlug": "united-states",
+    "universitySlug": "duke-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Duke University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Birmingham Excellence Scholarship",
+    "slug": "university-of-birmingham-excellence-scholarship",
+    "provider": "University of Birmingham",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-birmingham",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Birmingham.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Bristol Excellence Scholarship",
+    "slug": "university-of-bristol-excellence-scholarship",
+    "provider": "University of Bristol",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-bristol",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Bristol.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Cardiff University Excellence Scholarship",
+    "slug": "cardiff-university-excellence-scholarship",
+    "provider": "Cardiff University",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "cardiff-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Cardiff University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Durham University Excellence Scholarship",
+    "slug": "durham-university-excellence-scholarship",
+    "provider": "Durham University",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "durham-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Durham University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Exeter Excellence Scholarship",
+    "slug": "university-of-exeter-excellence-scholarship",
+    "provider": "University of Exeter",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-exeter",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Exeter.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Glasgow Excellence Scholarship",
+    "slug": "university-of-glasgow-excellence-scholarship",
+    "provider": "University of Glasgow",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-glasgow",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Glasgow.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Leeds Excellence Scholarship",
+    "slug": "university-of-leeds-excellence-scholarship",
+    "provider": "University of Leeds",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-leeds",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Leeds.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Liverpool Excellence Scholarship",
+    "slug": "university-of-liverpool-excellence-scholarship",
+    "provider": "University of Liverpool",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-liverpool",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Liverpool.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Newcastle University Excellence Scholarship",
+    "slug": "newcastle-university-excellence-scholarship",
+    "provider": "Newcastle University",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "newcastle-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Newcastle University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Nottingham Excellence Scholarship",
+    "slug": "university-of-nottingham-excellence-scholarship",
+    "provider": "University of Nottingham",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-nottingham",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Nottingham.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Queen Mary University of London Excellence Scholarship",
+    "slug": "queen-mary-university-of-london-excellence-scholarship",
+    "provider": "Queen Mary University of London",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "queen-mary-university-of-london",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Queen Mary University of London.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Queen's University Belfast Excellence Scholarship",
+    "slug": "queen-s-university-belfast-excellence-scholarship",
+    "provider": "Queen's University Belfast",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "queen-s-university-belfast",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Queen's University Belfast.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Sheffield Excellence Scholarship",
+    "slug": "university-of-sheffield-excellence-scholarship",
+    "provider": "University of Sheffield",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-sheffield",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Sheffield.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Southampton Excellence Scholarship",
+    "slug": "university-of-southampton-excellence-scholarship",
+    "provider": "University of Southampton",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-southampton",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Southampton.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of York Excellence Scholarship",
+    "slug": "university-of-york-excellence-scholarship",
+    "provider": "University of York",
+    "countrySlug": "united-kingdom",
+    "universitySlug": "university-of-york",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of York.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Manitoba Excellence Scholarship",
+    "slug": "university-of-manitoba-excellence-scholarship",
+    "provider": "University of Manitoba",
+    "countrySlug": "canada",
+    "universitySlug": "university-of-manitoba",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "CAD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Manitoba.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Dalhousie University Excellence Scholarship",
+    "slug": "dalhousie-university-excellence-scholarship",
+    "provider": "Dalhousie University",
+    "countrySlug": "canada",
+    "universitySlug": "dalhousie-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "CAD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Dalhousie University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Queen's University Excellence Scholarship",
+    "slug": "queen-s-university-excellence-scholarship",
+    "provider": "Queen's University",
+    "countrySlug": "canada",
+    "universitySlug": "queen-s-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "CAD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Queen's University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Ottawa Excellence Scholarship",
+    "slug": "university-of-ottawa-excellence-scholarship",
+    "provider": "University of Ottawa",
+    "countrySlug": "canada",
+    "universitySlug": "university-of-ottawa",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "CAD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Ottawa.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Western University Excellence Scholarship",
+    "slug": "western-university-excellence-scholarship",
+    "provider": "Western University",
+    "countrySlug": "canada",
+    "universitySlug": "western-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "CAD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Western University.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Université Laval Excellence Scholarship",
+    "slug": "universit-laval-excellence-scholarship",
+    "provider": "Université Laval",
+    "countrySlug": "canada",
+    "universitySlug": "universit-laval",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "CAD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at Université Laval.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Saskatchewan Excellence Scholarship",
+    "slug": "university-of-saskatchewan-excellence-scholarship",
+    "provider": "University of Saskatchewan",
+    "countrySlug": "canada",
+    "universitySlug": "university-of-saskatchewan",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "CAD",
+    "deadlineLabel": "March",
+    "description": "A merit-based scholarship for international students at University of Saskatchewan.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Harvard Financial Aid Initiative",
+    "slug": "harvard-university-harvard-financial-aid-initiative",
+    "provider": "University",
+    "universitySlug": "harvard-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 75000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Princeton Grants",
+    "slug": "princeton-university-princeton-grants",
+    "provider": "University",
+    "universitySlug": "princeton-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 65000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Yale Need-Based Aid",
+    "slug": "yale-university-yale-need-based-aid",
+    "provider": "University",
+    "universitySlug": "yale-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 70000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Columbia University Scholarship",
+    "slug": "columbia-university-columbia-university-scholarship",
+    "provider": "University",
+    "universitySlug": "columbia-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 50000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Penn Grant",
+    "slug": "university-of-pennsylvania-penn-grant",
+    "provider": "University",
+    "universitySlug": "university-of-pennsylvania",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 60000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Brown University Scholarship",
+    "slug": "brown-university-brown-university-scholarship",
+    "provider": "University",
+    "universitySlug": "brown-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 55000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Cornell Grant",
+    "slug": "cornell-university-cornell-grant",
+    "provider": "University",
+    "universitySlug": "cornell-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 55000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Dartmouth Financial Aid",
+    "slug": "dartmouth-college-dartmouth-financial-aid",
+    "provider": "University",
+    "universitySlug": "dartmouth-college",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 68000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Clarendon Fund Scholarships",
+    "slug": "university-of-oxford-clarendon-fund-scholarships",
+    "provider": "University",
+    "universitySlug": "university-of-oxford",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 40000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Gates Cambridge Scholarship",
+    "slug": "university-of-cambridge-gates-cambridge-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-cambridge",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 45000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "President's Undergraduate Scholarships",
+    "slug": "imperial-college-london-president-s-undergraduate-scholarships",
+    "provider": "University",
+    "universitySlug": "imperial-college-london",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "LSE Undergraduate Support Scheme",
+    "slug": "lse-lse-undergraduate-support-scheme",
+    "provider": "University",
+    "universitySlug": "lse",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 20000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Lester B. Pearson International Scholarship",
+    "slug": "university-of-toronto-lester-b-pearson-international-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-toronto",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 65000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "McCall MacBain Scholarships",
+    "slug": "mcgill-university-mccall-macbain-scholarships",
+    "provider": "University",
+    "universitySlug": "mcgill-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 35000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tsinghua University Scholarship",
+    "slug": "tsinghua-university-tsinghua-university-scholarship",
+    "provider": "University",
+    "universitySlug": "tsinghua-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Peking University International Scholarship",
+    "slug": "peking-university-peking-university-international-scholarship",
+    "provider": "University",
+    "universitySlug": "peking-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 12000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Fudan Foreign Student Scholarship",
+    "slug": "fudan-university-fudan-foreign-student-scholarship",
+    "provider": "University",
+    "universitySlug": "fudan-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SJTU Excellence Scholarship",
+    "slug": "shanghai-jiao-tong-university-sjtu-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "shanghai-jiao-tong-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 12000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Zhejiang University Scholarship",
+    "slug": "zhejiang-university-zhejiang-university-scholarship",
+    "provider": "University",
+    "universitySlug": "zhejiang-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Nanjing University President Scholarship",
+    "slug": "nanjing-university-nanjing-university-president-scholarship",
+    "provider": "University",
+    "universitySlug": "nanjing-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "USTC Fellowship",
+    "slug": "university-of-science-and-technology-of-china-ustc-ustc-fellowship",
+    "provider": "University",
+    "universitySlug": "university-of-science-and-technology-of-china-ustc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "HIT Excellence Scholarship",
+    "slug": "harbin-institute-of-technology-hit-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "harbin-institute-of-technology",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "XJTU Siyuan Scholarship",
+    "slug": "xi-an-jiaotong-university-xjtu-siyuan-scholarship",
+    "provider": "University",
+    "universitySlug": "xi-an-jiaotong-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
   }
 ];
-scholarships.push(...generatedScholarships);
 
 export default scholarships;
