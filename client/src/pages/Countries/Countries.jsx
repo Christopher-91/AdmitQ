@@ -9,7 +9,18 @@ export default function Countries() {
 
   useEffect(() => {
     api.get('/countries')
-      .then(res => setCountries(res.data.data || []))
+      .then(res => {
+        const countryOrder = [
+          'united-states', 'united-kingdom', 'china', 'australia', 'germany', 'new-zealand', 'netherlands', 'ireland', 'canada', 'denmark', 'finland', 'sweden', 'norway', 'japan', 'south-korea', 'france', 'switzerland', 'singapore', 'uae', 'luxembourg', 'italy', 'belgium', 'austria', 'russia', 'spain', 'malaysia', 'portugal', 'poland'
+        ];
+        const data = res.data.data || [];
+        data.sort((a, b) => {
+          const aIndex = countryOrder.indexOf(a.slug);
+          const bIndex = countryOrder.indexOf(b.slug);
+          return (aIndex === -1 ? 999 : aIndex) - (bIndex === -1 ? 999 : bIndex);
+        });
+        setCountries(data);
+      })
       .catch(() => setCountries([]))
       .finally(() => setLoading(false));
   }, []);

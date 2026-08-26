@@ -178,29 +178,32 @@ async function seed() {
       if (!countryId) { console.warn(`  ⚠ Country not found for ${u.name}: ${u.countrySlug}`); continue; }
 
       const eurCountries = ['germany', 'austria', 'finland', 'norway', 'sweden', 'switzerland', 'netherlands', 'ireland', 'denmark', 'france', 'portugal', 'estonia', 'belgium'];
-      const industryTerms = ['Business School', 'School of Management', 'School of Finance', 'SRH Berlin', 'HEC', 'INSEAD', 'ESSEC', 'ESCP', 'EDHEC'];
+      const industryTerms = ['Business School', 'School of Management', 'School of Finance', 'SRH Berlin', 'HEC', 'INSEAD', 'ESSEC', 'ESCP', 'EDHEC', 'HTW', 'Hochschule', 'HAW', 'FH ', 'Applied Sciences', 'TH Köln', 'TH Mittelhessen', 'Fachhochschule', 'UAS'];
       let instType = null;
       if (eurCountries.includes(u.countrySlug)) {
         const isIndustry = industryTerms.some(term => u.name.includes(term));
         instType = isIndustry ? 'industry_oriented' : 'research_oriented';
       }
 
-      const eliteGroups = {
-        'united-states': { group: 'Ivy League', unis: ['Harvard University', 'Princeton University', 'Yale University', 'Columbia University', 'University of Pennsylvania', 'Brown University', 'Cornell University', 'Dartmouth College'] },
-        'united-kingdom': { group: 'Russell Group', unis: ['University of Oxford', 'University of Cambridge', 'Imperial College London', 'University College London', 'University of Edinburgh', 'King\'s College London', 'LSE', 'University of Manchester', 'University of Warwick', 'University of Birmingham', 'University of Bristol', 'Cardiff University', 'Durham University', 'University of Exeter', 'University of Glasgow', 'University of Leeds', 'University of Liverpool', 'Newcastle University', 'University of Nottingham', 'Queen Mary University of London', 'Queen\'s University Belfast', 'University of Sheffield', 'University of Southampton', 'University of York'] },
-        'germany': { group: 'TU9', unis: ['Technical University of Munich', 'RWTH Aachen University'] },
-        'china': { group: 'C9', unis: ['Tsinghua University', 'Peking University', 'Fudan University', 'Shanghai Jiao Tong University', 'Zhejiang University', 'Nanjing University', 'University of Science and Technology of China (USTC)', 'Harbin Institute of Technology', 'Xi\'an Jiaotong University'] },
-        'australia': { group: 'Group of 8', unis: ['University of Melbourne', 'University of Sydney', 'UNSW Sydney', 'ANU', 'University of Queensland', 'Monash University', 'UWA'] },
-        'japan': { group: 'RU11', unis: ['University of Tokyo', 'Kyoto University', 'University of Osaka', 'Tohoku University', 'Nagoya University', 'Hokkaido University', 'Keio University', 'Waseda University'] },
-        'france': { group: 'Grandes Écoles', unis: ['École Polytechnique', 'HEC Paris', 'INSEAD', 'ESSEC Business School', 'ESCP Europe', 'EDHEC Business School'] },
-        'netherlands': { group: '4TU', unis: ['Delft University of Technology', 'Wageningen University'] },
-        'switzerland': { group: 'ETH Domain', unis: ['ETH Zurich', 'EPFL'] },
-        'canada': { group: 'U15', unis: ['University of Toronto', 'University of British Columbia', 'McGill University', 'McMaster University', 'University of Waterloo', 'University of Alberta', 'University of Montreal', 'University of Calgary', 'University of Manitoba', 'Dalhousie University', 'Queen\'s University', 'University of Ottawa', 'Western University', 'Université Laval', 'University of Saskatchewan'] }
-      };
+      const eliteGroups = [
+        { country: 'united-states', group: 'Ivy League', unis: ['Harvard University', 'Princeton University', 'Yale University', 'Columbia University', 'University of Pennsylvania', 'Brown University', 'Cornell University', 'Dartmouth College'] },
+        { country: 'united-kingdom', group: 'Russell Group', unis: ['University of Oxford', 'University of Cambridge', 'Imperial College London', 'University College London', 'University of Edinburgh', 'King\'s College London', 'LSE', 'University of Manchester', 'University of Warwick', 'University of Birmingham', 'University of Bristol', 'Cardiff University', 'Durham University', 'University of Exeter', 'University of Glasgow', 'University of Leeds', 'University of Liverpool', 'Newcastle University', 'University of Nottingham', 'Queen Mary University of London', 'Queen\'s University Belfast', 'University of Sheffield', 'University of Southampton', 'University of York'] },
+        { country: 'germany', group: 'TU9', unis: ['Technical University of Munich', 'RWTH Aachen University', 'Karlsruhe Institute of Technology', 'Technical University of Berlin', 'TUD Dresden University of Technology', 'Technical University of Darmstadt', 'University of Stuttgart', 'Leibniz University Hannover', 'Technische Universität Braunschweig'] },
+        { country: 'china', group: 'C9', unis: ['Tsinghua University', 'Peking University', 'Fudan University', 'Shanghai Jiao Tong University', 'Zhejiang University', 'Nanjing University', 'University of Science and Technology of China (USTC)', 'Harbin Institute of Technology', 'Xi\'an Jiaotong University'] },
+        { country: 'australia', group: 'Go8', unis: ['University of Melbourne', 'University of Sydney', 'UNSW Sydney', 'ANU', 'University of Queensland', 'Monash University', 'UWA', 'Adelaide University'] },
+        { country: 'australia', group: 'ATN', unis: ['Curtin University', 'Deakin University', 'RMIT University', 'University of Newcastle', 'University of South Australia', 'University of Technology Sydney'] },
+        { country: 'australia', group: 'IRU', unis: ['Flinders University', 'Griffith University', 'James Cook University', 'La Trobe University', 'Murdoch University', 'University of Canberra', 'Western Sydney University'] },
+        { country: 'japan', group: 'RU11', unis: ['University of Tokyo', 'Kyoto University', 'University of Osaka', 'Tohoku University', 'Nagoya University', 'Hokkaido University', 'Keio University', 'Waseda University', 'University of Tsukuba', 'Tokyo Institute of Technology', 'Kyushu University'] },
+        { country: 'france', group: 'Grandes Écoles', unis: ['École Polytechnique', 'HEC Paris', 'INSEAD', 'ESSEC Business School', 'ESCP Europe', 'EDHEC Business School'] },
+        { country: 'netherlands', group: '4TU', unis: ['Delft University of Technology', 'Wageningen University', 'Eindhoven University of Technology', 'University of Twente'] },
+        { country: 'switzerland', group: 'ETH Domain', unis: ['ETH Zurich', 'EPFL'] },
+        { country: 'canada', group: 'U15', unis: ['University of Toronto', 'University of British Columbia', 'McGill University', 'McMaster University', 'University of Waterloo', 'University of Alberta', 'University of Montreal', 'University of Calgary', 'University of Manitoba', 'Dalhousie University', 'Queen\'s University', 'University of Ottawa', 'Western University', 'Université Laval', 'University of Saskatchewan'] }
+      ];
 
       let distinction = null;
-      if (eliteGroups[u.countrySlug] && eliteGroups[u.countrySlug].unis.includes(u.name)) {
-        distinction = eliteGroups[u.countrySlug].group;
+      const groupMatch = eliteGroups.find(g => g.country === u.countrySlug && g.unis.includes(u.name));
+      if (groupMatch) {
+        distinction = groupMatch.group;
       }
 
       const result = await client.query(

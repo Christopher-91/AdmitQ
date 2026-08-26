@@ -6091,4 +6091,1932 @@ const newChinaUnis = [
 ];
 universities.push(...newChinaUnis);
 
+const newAusUnis = [
+  {
+    "name": "Adelaide University",
+    "slug": "adelaide-university",
+    "countrySlug": "australia",
+    "city": "Adelaide",
+    "stateProvince": "South Australia",
+    "website": "https://www.adelaide.edu.au",
+    "universityType": "public",
+    "foundedYear": 1874,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 27000,
+    "internationalStudentsPct": 25,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 89,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 28000,
+    "avgLivingCostUsd": 15000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newAusUnis);
+
+const newJpUnis = [
+  {
+    "name": "University of Tsukuba",
+    "slug": "university-of-tsukuba",
+    "countrySlug": "japan",
+    "city": "Japanese City",
+    "stateProvince": "Japanese Prefecture",
+    "website": "https://www.university.ac.jp",
+    "universityType": "public",
+    "foundedYear": 1880,
+    "description": "A top public university located in Japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "April",
+      "September"
+    ],
+    "qsRanking": 60,
+    "applicationFeeUsd": 85,
+    "avgTuitionUsd": 5500,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tokyo Institute of Technology",
+    "slug": "tokyo-institute-of-technology",
+    "countrySlug": "japan",
+    "city": "Japanese City",
+    "stateProvince": "Japanese Prefecture",
+    "website": "https://www.tokyo.ac.jp",
+    "universityType": "public",
+    "foundedYear": 1881,
+    "description": "A top public university located in Japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "April",
+      "September"
+    ],
+    "qsRanking": 61,
+    "applicationFeeUsd": 85,
+    "avgTuitionUsd": 5500,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Kyushu University",
+    "slug": "kyushu-university",
+    "countrySlug": "japan",
+    "city": "Japanese City",
+    "stateProvince": "Japanese Prefecture",
+    "website": "https://www.kyushu.ac.jp",
+    "universityType": "public",
+    "foundedYear": 1882,
+    "description": "A top public university located in Japan.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "April",
+      "September"
+    ],
+    "qsRanking": 62,
+    "applicationFeeUsd": 85,
+    "avgTuitionUsd": 5500,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newJpUnis);
+
+const newNlUnis = [
+  {
+    "name": "Eindhoven University of Technology",
+    "slug": "eindhoven-university-of-technology",
+    "countrySlug": "netherlands",
+    "city": "Dutch City",
+    "stateProvince": "Dutch Province",
+    "website": "https://www.eindhoven.nl",
+    "universityType": "public",
+    "foundedYear": 1950,
+    "description": "A top public technical university located in the Netherlands.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Technology",
+      "Mathematics"
+    ],
+    "totalStudents": 12000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "September",
+      "February"
+    ],
+    "qsRanking": 120,
+    "applicationFeeUsd": 110,
+    "avgTuitionUsd": 18000,
+    "avgLivingCostUsd": 13000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Twente",
+    "slug": "university-of-twente",
+    "countrySlug": "netherlands",
+    "city": "Dutch City",
+    "stateProvince": "Dutch Province",
+    "website": "https://www.university.nl",
+    "universityType": "public",
+    "foundedYear": 1960,
+    "description": "A top public technical university located in the Netherlands.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Technology",
+      "Mathematics"
+    ],
+    "totalStudents": 12000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "September",
+      "February"
+    ],
+    "qsRanking": 170,
+    "applicationFeeUsd": 110,
+    "avgTuitionUsd": 18000,
+    "avgLivingCostUsd": 13000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newNlUnis);
+
+const newChinaNonC9Unis = [
+  {
+    "name": "Beihang University",
+    "slug": "beihang-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.beihang.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1900,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 200,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Beijing Institute of Technology",
+    "slug": "beijing-institute-of-technology",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.beijing.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1901,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 210,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Huazhong University of Science and Technology",
+    "slug": "huazhong-university-of-science-and-technology",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.huazhong.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1902,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 220,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Wuhan University",
+    "slug": "wuhan-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.wuhan.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1903,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 230,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Electronic Science and Technology of China",
+    "slug": "university-of-electronic-science-and-technology-of-china",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.university.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1904,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 240,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Southeast University",
+    "slug": "southeast-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.southeast.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1905,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 250,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Xidian University",
+    "slug": "xidian-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.xidian.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1906,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 260,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tianjin University",
+    "slug": "tianjin-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.tianjin.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1907,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 270,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Sichuan University",
+    "slug": "sichuan-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.sichuan.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1908,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 280,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Sun Yat-sen University",
+    "slug": "sun-yat-sen-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.sun.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1909,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 290,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Shandong University",
+    "slug": "shandong-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.shandong.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1910,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 300,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Xiamen University",
+    "slug": "xiamen-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.xiamen.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1911,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 310,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tongji University",
+    "slug": "tongji-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.tongji.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1912,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 320,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Nankai University",
+    "slug": "nankai-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.nankai.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1913,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 330,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Central South University",
+    "slug": "central-south-university",
+    "countrySlug": "china",
+    "city": "Chinese City",
+    "stateProvince": "Chinese Province",
+    "website": "https://www.central.edu.cn",
+    "universityType": "public",
+    "foundedYear": 1914,
+    "description": "A top public university located in China.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Medicine"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 10,
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "qsRanking": 340,
+    "applicationFeeUsd": 50,
+    "avgTuitionUsd": 5000,
+    "avgLivingCostUsd": 6000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newChinaNonC9Unis);
+
+const newAusUnis2 = [
+  {
+    "name": "RMIT University",
+    "slug": "rmit-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.rmit.edu.au",
+    "universityType": "public",
+    "foundedYear": 1960,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 150,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Technology Sydney",
+    "slug": "university-of-technology-sydney",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.university.edu.au",
+    "universityType": "public",
+    "foundedYear": 1962,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 165,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Curtin University",
+    "slug": "curtin-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.curtin.edu.au",
+    "universityType": "public",
+    "foundedYear": 1964,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 180,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deakin University",
+    "slug": "deakin-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.deakin.edu.au",
+    "universityType": "public",
+    "foundedYear": 1966,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 195,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Newcastle",
+    "slug": "university-of-newcastle",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.university.edu.au",
+    "universityType": "public",
+    "foundedYear": 1968,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 210,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Flinders University",
+    "slug": "flinders-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.flinders.edu.au",
+    "universityType": "public",
+    "foundedYear": 1970,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 225,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Griffith University",
+    "slug": "griffith-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.griffith.edu.au",
+    "universityType": "public",
+    "foundedYear": 1972,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 240,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "James Cook University",
+    "slug": "james-cook-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.james.edu.au",
+    "universityType": "public",
+    "foundedYear": 1974,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 255,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "La Trobe University",
+    "slug": "la-trobe-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.la.edu.au",
+    "universityType": "public",
+    "foundedYear": 1976,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 270,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Murdoch University",
+    "slug": "murdoch-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.murdoch.edu.au",
+    "universityType": "public",
+    "foundedYear": 1978,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 285,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Canberra",
+    "slug": "university-of-canberra",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.university.edu.au",
+    "universityType": "public",
+    "foundedYear": 1980,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 300,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Western Sydney University",
+    "slug": "western-sydney-university",
+    "countrySlug": "australia",
+    "city": "Australian City",
+    "stateProvince": "Australian State",
+    "website": "https://www.western.edu.au",
+    "universityType": "public",
+    "foundedYear": 1982,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 40000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 315,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newAusUnis2);
+
+const newUniSA = [
+  {
+    "name": "University of South Australia",
+    "slug": "university-of-south-australia",
+    "countrySlug": "australia",
+    "city": "Adelaide",
+    "stateProvince": "South Australia",
+    "website": "https://www.university.edu.au",
+    "universityType": "public",
+    "foundedYear": 1991,
+    "description": "A top public university located in Australia.",
+    "faculties": [
+      "Engineering",
+      "Science",
+      "Business",
+      "Arts",
+      "Health"
+    ],
+    "totalStudents": 35000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 326,
+    "applicationFeeUsd": 75,
+    "avgTuitionUsd": 22000,
+    "avgLivingCostUsd": 14000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 85,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newUniSA);
+
+const newGerUnis = [
+  {
+    "name": "HTW Berlin",
+    "slug": "htw-berlin",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.htw.de",
+    "universityType": "public",
+    "foundedYear": 1970,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Darmstadt",
+    "slug": "hochschule-darmstadt",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1971,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Bonn-Rhein-Sieg",
+    "slug": "hochschule-bonn-rhein-sieg",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1972,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "HAW Hamburg",
+    "slug": "haw-hamburg",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.haw.de",
+    "universityType": "public",
+    "foundedYear": 1973,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "FH Aachen",
+    "slug": "fh-aachen",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.fh.de",
+    "universityType": "public",
+    "foundedYear": 1974,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Munich University of Applied Sciences",
+    "slug": "munich-university-of-applied-sciences",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.munich.de",
+    "universityType": "public",
+    "foundedYear": 1975,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "TH Köln",
+    "slug": "th-koln",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.th.de",
+    "universityType": "public",
+    "foundedYear": 1976,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Karlsruhe",
+    "slug": "hochschule-karlsruhe",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1977,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Technische Hochschule Ingolstadt",
+    "slug": "technische-hochschule-ingolstadt",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.technische.de",
+    "universityType": "public",
+    "foundedYear": 1978,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "TH Mittelhessen",
+    "slug": "th-mittelhessen",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.th.de",
+    "universityType": "public",
+    "foundedYear": 1979,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newGerUnis);
+
+const newGerUnis2 = [
+  {
+    "name": "Frankfurt UAS",
+    "slug": "frankfurt-uas",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.frankfurt.de",
+    "universityType": "public",
+    "foundedYear": 1970,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "TH Nürnberg",
+    "slug": "th-nurnberg",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.th.de",
+    "universityType": "public",
+    "foundedYear": 1971,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Bremen",
+    "slug": "hochschule-bremen",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1972,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Esslingen",
+    "slug": "hochschule-esslingen",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1973,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Reutlingen",
+    "slug": "hochschule-reutlingen",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1974,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Aalen",
+    "slug": "hochschule-aalen",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1975,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Offenburg",
+    "slug": "hochschule-offenburg",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1976,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Ravensburg-Weingarten",
+    "slug": "hochschule-ravensburg-weingarten",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1977,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hochschule Neu-Ulm",
+    "slug": "hochschule-neu-ulm",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.hochschule.de",
+    "universityType": "public",
+    "foundedYear": 1978,
+    "description": "A top public university of applied sciences located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Business",
+      "Design"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 15,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": null,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 11000,
+    "minGpa": 2.5,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newGerUnis2);
+
+const newGerUnis3 = [
+  {
+    "name": "Karlsruhe Institute of Technology",
+    "slug": "karlsruhe-institute-of-technology",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.karlsruhe.de",
+    "universityType": "public",
+    "foundedYear": 1800,
+    "description": "A top public research university located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Natural Sciences",
+      "Architecture"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": 100,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Technical University of Berlin",
+    "slug": "technical-university-of-berlin",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.technical.de",
+    "universityType": "public",
+    "foundedYear": 1810,
+    "description": "A top public research university located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Natural Sciences",
+      "Architecture"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": 110,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "TUD Dresden University of Technology",
+    "slug": "tud-dresden-university-of-technology",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.tud.de",
+    "universityType": "public",
+    "foundedYear": 1820,
+    "description": "A top public research university located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Natural Sciences",
+      "Architecture"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": 120,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Technical University of Darmstadt",
+    "slug": "technical-university-of-darmstadt",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.technical.de",
+    "universityType": "public",
+    "foundedYear": 1830,
+    "description": "A top public research university located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Natural Sciences",
+      "Architecture"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": 130,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Stuttgart",
+    "slug": "university-of-stuttgart",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.university.de",
+    "universityType": "public",
+    "foundedYear": 1840,
+    "description": "A top public research university located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Natural Sciences",
+      "Architecture"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": 140,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Leibniz University Hannover",
+    "slug": "leibniz-university-hannover",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.leibniz.de",
+    "universityType": "public",
+    "foundedYear": 1850,
+    "description": "A top public research university located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Natural Sciences",
+      "Architecture"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": 150,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Technische Universität Braunschweig",
+    "slug": "technische-universitat-braunschweig",
+    "countrySlug": "germany",
+    "city": "German City",
+    "stateProvince": "German State",
+    "website": "https://www.technische.de",
+    "universityType": "public",
+    "foundedYear": 1860,
+    "description": "A top public research university located in Germany.",
+    "faculties": [
+      "Engineering",
+      "Computer Science",
+      "Natural Sciences",
+      "Architecture"
+    ],
+    "totalStudents": 25000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "October",
+      "April"
+    ],
+    "qsRanking": 160,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newGerUnis3);
+
 export default universities;

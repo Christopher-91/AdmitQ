@@ -762,96 +762,6 @@ const scholarships = [
     "verificationStatus": "verified"
   },
   {
-    "name": "UNSW Sydney Excellence Scholarship",
-    "slug": "unsw-sydney-excellence-scholarship",
-    "provider": "UNSW Sydney",
-    "countrySlug": "australia",
-    "universitySlug": "unsw-sydney",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 8962,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at UNSW Sydney.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "ANU Excellence Scholarship",
-    "slug": "anu-excellence-scholarship",
-    "provider": "ANU",
-    "countrySlug": "australia",
-    "universitySlug": "anu",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 12468,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at ANU.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "University of Queensland Excellence Scholarship",
-    "slug": "university-of-queensland-excellence-scholarship",
-    "provider": "University of Queensland",
-    "countrySlug": "australia",
-    "universitySlug": "university-of-queensland",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 21411,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at University of Queensland.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Monash University Excellence Scholarship",
-    "slug": "monash-university-excellence-scholarship",
-    "provider": "Monash University",
-    "countrySlug": "australia",
-    "universitySlug": "monash-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 18294,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Monash University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "UWA Excellence Scholarship",
-    "slug": "uwa-excellence-scholarship",
-    "provider": "UWA",
-    "countrySlug": "australia",
-    "universitySlug": "uwa",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 24926,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at UWA.",
-    "verificationStatus": "verified"
-  },
-  {
     "name": "Bond University Excellence Scholarship",
     "slug": "bond-university-excellence-scholarship",
     "provider": "Bond University",
@@ -1482,24 +1392,6 @@ const scholarships = [
     "verificationStatus": "verified"
   },
   {
-    "name": "Kyoto University Excellence Scholarship",
-    "slug": "kyoto-university-excellence-scholarship",
-    "provider": "Kyoto University",
-    "countrySlug": "japan",
-    "universitySlug": "kyoto-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 15670,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Kyoto University.",
-    "verificationStatus": "verified"
-  },
-  {
     "name": "Osaka University Excellence Scholarship",
     "slug": "osaka-university-excellence-scholarship",
     "provider": "Osaka University",
@@ -1515,96 +1407,6 @@ const scholarships = [
     "amountCurrency": "USD",
     "deadlineLabel": "March",
     "description": "A merit-based scholarship for international students at Osaka University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Tohoku University Excellence Scholarship",
-    "slug": "tohoku-university-excellence-scholarship",
-    "provider": "Tohoku University",
-    "countrySlug": "japan",
-    "universitySlug": "tohoku-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 6357,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Tohoku University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Nagoya University Excellence Scholarship",
-    "slug": "nagoya-university-excellence-scholarship",
-    "provider": "Nagoya University",
-    "countrySlug": "japan",
-    "universitySlug": "nagoya-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 18915,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Nagoya University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Hokkaido University Excellence Scholarship",
-    "slug": "hokkaido-university-excellence-scholarship",
-    "provider": "Hokkaido University",
-    "countrySlug": "japan",
-    "universitySlug": "hokkaido-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 16481,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Hokkaido University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Keio University Excellence Scholarship",
-    "slug": "keio-university-excellence-scholarship",
-    "provider": "Keio University",
-    "countrySlug": "japan",
-    "universitySlug": "keio-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 21425,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Keio University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Waseda University Excellence Scholarship",
-    "slug": "waseda-university-excellence-scholarship",
-    "provider": "Waseda University",
-    "countrySlug": "japan",
-    "universitySlug": "waseda-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 7333,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Waseda University.",
     "verificationStatus": "verified"
   },
   {
@@ -2253,24 +2055,6 @@ const scholarships = [
     "amountCurrency": "USD",
     "deadlineLabel": "March",
     "description": "A merit-based scholarship for international students at Novosibirsk State University.",
-    "verificationStatus": "verified"
-  },
-  {
-    "name": "Wageningen University Excellence Scholarship",
-    "slug": "wageningen-university-excellence-scholarship",
-    "provider": "Wageningen University",
-    "countrySlug": "netherlands",
-    "universitySlug": "wageningen-university",
-    "degreeEligibility": [
-      "bachelors",
-      "masters"
-    ],
-    "coverage": "partial",
-    "coverageDetails": "Partial tuition waiver",
-    "amountUsd": 14688,
-    "amountCurrency": "USD",
-    "deadlineLabel": "March",
-    "description": "A merit-based scholarship for international students at Wageningen University.",
     "verificationStatus": "verified"
   },
   {
@@ -3569,6 +3353,278 @@ const scholarships = [
     "verificationStatus": "verified"
   },
   {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Justus & Louise van Effen Excellence Scholarships",
+    "slug": "tu-delft-justus-louise-van-effen-excellence-scholarships",
+    "provider": "University",
+    "universitySlug": "tu-delft",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Justus & Louise van Effen Excellence Scholarships",
+    "slug": "tu-delft-justus-louise-van-effen-excellence-scholarships",
+    "provider": "University",
+    "universitySlug": "tu-delft",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Justus & Louise van Effen Excellence Scholarships",
+    "slug": "tu-delft-justus-louise-van-effen-excellence-scholarships",
+    "provider": "University",
+    "universitySlug": "tu-delft",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Justus & Louise van Effen Excellence Scholarships",
+    "slug": "tu-delft-justus-louise-van-effen-excellence-scholarships",
+    "provider": "University",
+    "universitySlug": "tu-delft",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Justus & Louise van Effen Excellence Scholarships",
+    "slug": "tu-delft-justus-louise-van-effen-excellence-scholarships",
+    "provider": "University",
+    "universitySlug": "tu-delft",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Justus & Louise van Effen Excellence Scholarships",
+    "slug": "tu-delft-justus-louise-van-effen-excellence-scholarships",
+    "provider": "University",
+    "universitySlug": "tu-delft",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "th-nurnberg-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "th-nurnberg",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
     "name": "Harvard Financial Aid Initiative",
     "slug": "harvard-university-harvard-financial-aid-initiative",
     "provider": "University",
@@ -3971,6 +4027,1315 @@ const scholarships = [
     "coverage": "partial",
     "coverageDetails": "Partial tuition waiver",
     "amountUsd": 8000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Melbourne International Undergraduate Scholarship",
+    "slug": "university-of-melbourne-melbourne-international-undergraduate-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-melbourne",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Sydney Scholars India Scholarship Program",
+    "slug": "university-of-sydney-sydney-scholars-india-scholarship-program",
+    "provider": "University",
+    "universitySlug": "university-of-sydney",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 40000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UNSW International Excellence Scholarship",
+    "slug": "unsw-sydney-unsw-international-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "unsw-sydney",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "ANU Chancellor's International Scholarship",
+    "slug": "anu-anu-chancellor-s-international-scholarship",
+    "provider": "University",
+    "universitySlug": "anu",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UQ Excellence Scholarship",
+    "slug": "university-of-queensland-uq-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-queensland",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 6000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Monash International Leadership Scholarship",
+    "slug": "monash-university-monash-international-leadership-scholarship",
+    "provider": "University",
+    "universitySlug": "monash-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UWA Global Excellence Scholarship",
+    "slug": "uwa-uwa-global-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "uwa",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 12000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Global Citizens Scholarship",
+    "slug": "adelaide-university-global-citizens-scholarship",
+    "provider": "University",
+    "universitySlug": "adelaide-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UTokyo Fellowship",
+    "slug": "university-of-tokyo-utokyo-fellowship",
+    "provider": "University",
+    "universitySlug": "university-of-tokyo",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 12000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Kyoto University International Scholarship",
+    "slug": "kyoto-university-kyoto-university-international-scholarship",
+    "provider": "University",
+    "universitySlug": "kyoto-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Osaka University Honors Scholarship",
+    "slug": "university-of-osaka-osaka-university-honors-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-osaka",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tohoku President Fellowship",
+    "slug": "tohoku-university-tohoku-president-fellowship",
+    "provider": "University",
+    "universitySlug": "tohoku-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 9000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Nagoya University Global 30 Scholarship",
+    "slug": "nagoya-university-nagoya-university-global-30-scholarship",
+    "provider": "University",
+    "universitySlug": "nagoya-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 11000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Hokkaido President's Fellowship",
+    "slug": "hokkaido-university-hokkaido-president-s-fellowship",
+    "provider": "University",
+    "universitySlug": "hokkaido-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Keio Design the Future Award",
+    "slug": "keio-university-keio-design-the-future-award",
+    "provider": "University",
+    "universitySlug": "keio-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Waseda Partial Tuition-Waiver Scholarship",
+    "slug": "waseda-university-waseda-partial-tuition-waiver-scholarship",
+    "provider": "University",
+    "universitySlug": "waseda-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 7000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tsukuba Scholarship",
+    "slug": "university-of-tsukuba-tsukuba-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-tsukuba",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 6000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tokyo Tech Tsubame Scholarship",
+    "slug": "tokyo-institute-of-technology-tokyo-tech-tsubame-scholarship",
+    "provider": "University",
+    "universitySlug": "tokyo-institute-of-technology",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 9000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Kyushu University Friendship Scholarship",
+    "slug": "kyushu-university-kyushu-university-friendship-scholarship",
+    "provider": "University",
+    "universitySlug": "kyushu-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8500,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Justus & Louise van Effen Excellence Scholarships",
+    "slug": "tu-delft-justus-louise-van-effen-excellence-scholarships",
+    "provider": "University",
+    "universitySlug": "tu-delft",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Wageningen Excellence Programme",
+    "slug": "wageningen-university-wageningen-excellence-programme",
+    "provider": "University",
+    "universitySlug": "wageningen-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "ALSP Scholarship",
+    "slug": "eindhoven-university-of-technology-alsp-scholarship",
+    "provider": "University",
+    "universitySlug": "eindhoven-university-of-technology",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 16000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "University of Twente Scholarship",
+    "slug": "university-of-twente-university-of-twente-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-twente",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 22000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Beihang University Foreign Student Scholarship",
+    "slug": "beihang-university-beihang-university-foreign-student-scholarship",
+    "provider": "University",
+    "universitySlug": "beihang-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "BIT Presidential Scholarship",
+    "slug": "beijing-institute-of-technology-bit-presidential-scholarship",
+    "provider": "University",
+    "universitySlug": "beijing-institute-of-technology",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 9000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "HUST President Scholarship",
+    "slug": "huazhong-university-of-science-and-technology-hust-president-scholarship",
+    "provider": "University",
+    "universitySlug": "huazhong-university-of-science-and-technology",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Luojia International Excellence Scholarship",
+    "slug": "wuhan-university-luojia-international-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "wuhan-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 11000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UESTC University Scholarship",
+    "slug": "university-of-electronic-science-and-technology-of-china-uestc-university-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-electronic-science-and-technology-of-china",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SEU President Scholarship",
+    "slug": "southeast-university-seu-president-scholarship",
+    "provider": "University",
+    "universitySlug": "southeast-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 9000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Xidian University Scholarship",
+    "slug": "xidian-university-xidian-university-scholarship",
+    "provider": "University",
+    "universitySlug": "xidian-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 7000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Peiyang Future Scholar Scholarship",
+    "slug": "tianjin-university-peiyang-future-scholar-scholarship",
+    "provider": "University",
+    "universitySlug": "tianjin-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Sichuan University Belt and Road Scholarship",
+    "slug": "sichuan-university-sichuan-university-belt-and-road-scholarship",
+    "provider": "University",
+    "universitySlug": "sichuan-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8500,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "SYSU Undergraduate Scholarship for International Students",
+    "slug": "sun-yat-sen-university-sysu-undergraduate-scholarship-for-international-students",
+    "provider": "University",
+    "universitySlug": "sun-yat-sen-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 9500,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Shandong University International Student Scholarship",
+    "slug": "shandong-university-shandong-university-international-student-scholarship",
+    "provider": "University",
+    "universitySlug": "shandong-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Xiamen University President's Scholarship",
+    "slug": "xiamen-university-xiamen-university-president-s-scholarship",
+    "provider": "University",
+    "universitySlug": "xiamen-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 12000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Tongji University President Scholarship",
+    "slug": "tongji-university-tongji-university-president-scholarship",
+    "provider": "University",
+    "universitySlug": "tongji-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Nankai University Study Abroad Scholarship",
+    "slug": "nankai-university-nankai-university-study-abroad-scholarship",
+    "provider": "University",
+    "universitySlug": "nankai-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 9000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "CSU President Scholarship",
+    "slug": "central-south-university-csu-president-scholarship",
+    "provider": "University",
+    "universitySlug": "central-south-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8500,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "RMIT International Excellence Scholarship",
+    "slug": "rmit-university-rmit-international-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "rmit-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UTS Vice-Chancellor’s International Scholarship",
+    "slug": "university-of-technology-sydney-uts-vice-chancellor-s-international-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-technology-sydney",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 12000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Curtin International Merit Scholarship",
+    "slug": "curtin-university-curtin-international-merit-scholarship",
+    "provider": "University",
+    "universitySlug": "curtin-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deakin Vice-Chancellor’s International Scholarship",
+    "slug": "deakin-university-deakin-vice-chancellor-s-international-scholarship",
+    "provider": "University",
+    "universitySlug": "deakin-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Newcastle Excellence Scholarship",
+    "slug": "university-of-newcastle-newcastle-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-newcastle",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Flinders Go Beyond Scholarship",
+    "slug": "flinders-university-flinders-go-beyond-scholarship",
+    "provider": "University",
+    "universitySlug": "flinders-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 7000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Griffith Remarkable Scholarship",
+    "slug": "griffith-university-griffith-remarkable-scholarship",
+    "provider": "University",
+    "universitySlug": "griffith-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 15000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "JCU Vice Chancellor’s International Scholarship",
+    "slug": "james-cook-university-jcu-vice-chancellor-s-international-scholarship",
+    "provider": "University",
+    "universitySlug": "james-cook-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 6000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "La Trobe International Scholarship",
+    "slug": "la-trobe-university-la-trobe-international-scholarship",
+    "provider": "University",
+    "universitySlug": "la-trobe-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 8500,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Murdoch University International Welcome Scholarship",
+    "slug": "murdoch-university-murdoch-university-international-welcome-scholarship",
+    "provider": "University",
+    "universitySlug": "murdoch-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 5000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "UC International Merit Scholarship",
+    "slug": "university-of-canberra-uc-international-merit-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-canberra",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 6000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Western Sydney International Scholarship",
+    "slug": "western-sydney-university-western-sydney-international-scholarship",
+    "provider": "University",
+    "universitySlug": "western-sydney-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 7000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Vice Chancellor’s International Excellence Scholarship",
+    "slug": "university-of-south-australia-vice-chancellor-s-international-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "university-of-south-australia",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "htw-berlin-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "htw-berlin",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-darmstadt-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-darmstadt",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-bonn-rhein-sieg-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-bonn-rhein-sieg",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "haw-hamburg-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "haw-hamburg",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "fh-aachen-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "fh-aachen",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "munich-university-of-applied-sciences-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "munich-university-of-applied-sciences",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "th-koln-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "th-koln",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-karlsruhe-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-karlsruhe",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "technische-hochschule-ingolstadt-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "technische-hochschule-ingolstadt",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "th-mittelhessen-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "th-mittelhessen",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "frankfurt-uas-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "frankfurt-uas",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "th-nurnberg-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "th-nurnberg",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-bremen-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-bremen",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-esslingen-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-esslingen",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-reutlingen-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-reutlingen",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-aalen-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-aalen",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-offenburg-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-offenburg",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-ravensburg-weingarten-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-ravensburg-weingarten",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "hochschule-neu-ulm-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "hochschule-neu-ulm",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "karlsruhe-institute-of-technology-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "karlsruhe-institute-of-technology",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "technical-university-of-berlin-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "technical-university-of-berlin",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "tud-dresden-university-of-technology-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "tud-dresden-university-of-technology",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "technical-university-of-darmstadt-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "technical-university-of-darmstadt",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "university-of-stuttgart-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "university-of-stuttgart",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "leibniz-university-hannover-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "leibniz-university-hannover",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "technische-universitat-braunschweig-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "technische-universitat-braunschweig",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
     "amountCurrency": "USD",
     "deadlineLabel": "March",
     "description": "A prestigious real scholarship for international students.",

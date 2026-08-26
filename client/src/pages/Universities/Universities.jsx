@@ -19,18 +19,18 @@ export default function Universities() {
   const showInstitutionType = eurCountries.includes(country);
 
   const eliteMap = {
-    'united-states': 'Ivy League',
-    'united-kingdom': 'Russell Group',
-    'germany': 'TU9',
-    'china': 'C9',
-    'australia': 'Group of 8',
-    'japan': 'RU11',
-    'france': 'Grandes Écoles',
-    'netherlands': '4TU',
-    'switzerland': 'ETH Domain',
-    'canada': 'U15'
+    'united-states': ['Ivy League'],
+    'united-kingdom': ['Russell Group'],
+    'germany': ['TU9'],
+    'china': ['C9'],
+    'australia': ['Go8', 'ATN', 'IRU'],
+    'japan': ['RU11'],
+    'france': ['Grandes Écoles'],
+    'netherlands': ['4TU'],
+    'switzerland': ['ETH Domain'],
+    'canada': ['U15']
   };
-  const activeDistinction = eliteMap[country];
+  const activeDistinctions = eliteMap[country];
 
   const fetchData = async () => {
     setLoading(true);
@@ -96,19 +96,19 @@ export default function Universities() {
           <option value="united-states">United States</option>
           <option value="united-kingdom">United Kingdom</option>
           <option value="china">China</option>
-          <option value="canada">Canada</option>
-          <option value="germany">Germany</option>
           <option value="australia">Australia</option>
+          <option value="germany">Germany</option>
           <option value="new-zealand">New Zealand</option>
           <option value="netherlands">Netherlands</option>
           <option value="ireland">Ireland</option>
+          <option value="canada">Canada</option>
           <option value="denmark">Denmark</option>
+          <option value="finland">Finland</option>
+          <option value="sweden">Sweden</option>
+          <option value="norway">Norway</option>
           <option value="japan">Japan</option>
           <option value="south-korea">South Korea</option>
           <option value="france">France</option>
-          <option value="sweden">Sweden</option>
-          <option value="norway">Norway</option>
-          <option value="finland">Finland</option>
           <option value="switzerland">Switzerland</option>
           <option value="singapore">Singapore</option>
           <option value="uae">UAE</option>
@@ -137,10 +137,12 @@ export default function Universities() {
           </select>
         )}
 
-        {activeDistinction && (
+        {activeDistinctions && (
           <select className="form-input filter-select" value={distinction} onChange={(e) => setDistinction(e.target.value)}>
             <option value="">Distinctions</option>
-            <option value={activeDistinction}>{activeDistinction}</option>
+            {activeDistinctions.map(dist => (
+              <option key={dist} value={dist}>{dist}</option>
+            ))}
           </select>
         )}
 
