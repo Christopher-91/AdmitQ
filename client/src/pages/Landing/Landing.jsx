@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from 'react';
 import './Landing.css';
 const HERO_STATS = [
   { value: '25+', label: 'Countries' },
-  { value: '190+', label: 'Universities' },
-  { value: '750+', label: 'Programs' },
-  { value: '200+', label: 'Scholarships' },
+  { value: '290+', label: 'Universities' },
+  { value: '950+', label: 'Programs' },
+  { value: '280+', label: 'Scholarships' },
 ];
 
 const FEATURES = [

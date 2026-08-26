@@ -34,6 +34,31 @@ const STUDY_FIELDS = [
 ];
 const TESTS = ['IELTS', 'TOEFL', 'GRE', 'GMAT', 'SAT', 'Duolingo English Test'];
 
+const NATIONALITIES = [
+  'Afghan', 'Australian', 'Austrian', 'Bangladeshi', 'Belgian', 'Brazilian', 'British',
+  'Canadian', 'Chinese', 'Danish', 'Dutch', 'Egyptian', 'Emirati', 'Ethiopian',
+  'Filipino', 'Finnish', 'French', 'German', 'Greek', 'Indian', 'Indonesian', 'Iranian',
+  'Iraqi', 'Irish', 'Israeli', 'Italian', 'Japanese', 'Jordanian', 'Kenyan', 'Korean',
+  'Lebanese', 'Malaysian', 'Mexican', 'Moroccan', 'Nepali', 'New Zealander', 'Nigerian',
+  'Norwegian', 'Pakistani', 'Polish', 'Portuguese', 'Romanian', 'Russian', 'Saudi',
+  'Singaporean', 'South African', 'Spanish', 'Sri Lankan', 'Swedish', 'Swiss', 'Taiwanese',
+  'Thai', 'Turkish', 'Ukrainian', 'American', 'Vietnamese', 'Other',
+];
+
+const LANGUAGES = [
+  'English', 'French', 'German', 'Spanish', 'Mandarin', 'Arabic', 'Hindi', 'Portuguese',
+  'Russian', 'Japanese', 'Korean', 'Italian', 'Dutch', 'Other',
+];
+
+const CAREER_GOALS = [
+  'Software Engineer', 'Data Scientist', 'AI/ML Engineer', 'Product Manager',
+  'Business Analyst', 'Management Consultant', 'Investment Banker', 'Financial Analyst',
+  'Doctor / Physician', 'Research Scientist', 'Academic / Professor', 'Lawyer',
+  'Architect', 'UX Designer', 'Marketing Manager', 'Entrepreneur',
+  'Civil Engineer', 'Mechanical Engineer', 'Electrical Engineer', 'Biomedical Engineer',
+  'Nurse / Healthcare Professional', 'Public Policy Analyst', 'Journalist / Writer', 'Other',
+];
+
 export default function Profile() {
   const { user, refreshProfile } = useAuth();
   const navigate = useNavigate();
@@ -53,6 +78,10 @@ export default function Profile() {
   });
   const [testScores, setTestScores] = useState([]);
   const [newScore, setNewScore] = useState({ testName: '', overallScore: '', testDate: '' });
+  const [personal, setPersonal] = useState({
+    nationality: '', countryOfResidence: '', dateOfBirth: '', preferredLanguage: '', phone: '',
+  });
+  const [careerGoal, setCareerGoal] = useState('');
 
   useEffect(() => {
     api.get('/users/me')
@@ -87,6 +116,18 @@ export default function Profile() {
           });
         }
         if (d.testScores) setTestScores(d.testScores);
+        if (d.personal) {
+          setPersonal({
+            nationality: d.personal.nationality || '',
+            countryOfResidence: d.personal.countryOfResidence || '',
+            dateOfBirth: d.personal.dateOfBirth ? d.personal.dateOfBirth.split('T')[0] : '',
+            preferredLanguage: d.personal.preferredLanguage || '',
+            phone: d.personal.phone || '',
+          });
+        }
+        if (d.careerGoals?.length > 0) {
+          setCareerGoal(d.careerGoals[0].careerName || d.careerGoals[0].customCareer || '');
+        }
       })
       .catch(() => toast.error('Failed to load profile'))
       .finally(() => setLoading(false));
@@ -187,6 +228,39 @@ export default function Profile() {
 
   const completionPct = profileData?.profileCompletion || 0;
 
+  const handleSavePersonal = async () => {
+    setSaving(true);
+    try {
+      const res = await api.put('/users/me', {
+        personal: {
+          nationality: personal.nationality || undefined,
+          countryOfResidence: personal.countryOfResidence || undefined,
+          dateOfBirth: personal.dateOfBirth || undefined,
+          preferredLanguage: personal.preferredLanguage || undefined,
+          phone: personal.phone || undefined,
+        },
+      });
+
+      // Save career goal if filled
+      if (careerGoal) {
+        await api.put('/users/me/career-goals', {
+          goals: [{ customCareer: careerGoal, isPrimary: true }],
+        });
+      }
+
+      // Re-fetch to get updated completion %
+      const fresh = await api.get('/users/me');
+      if (fresh.data?.data) setProfileData(fresh.data.data);
+      await refreshProfile();
+      toast.success('Personal info saved!');
+    } catch (err) {
+      console.error('Save personal error:', err.response?.data || err.message);
+      toast.error('Failed to save. Please try again.');
+    } finally {
+      setSaving(false);
+    }
+  };
+
   if (loading) {
     return (
       <div className="page container">
@@ -197,6 +271,7 @@ export default function Profile() {
   }
 
   const TABS = [
+    { key: 'personal', label: 'Personal' },
     { key: 'academic', label: 'Academic' },
     { key: 'preferences', label: 'Study Goals' },
     { key: 'tests', label: 'Test Scores' },
@@ -242,6 +317,54 @@ export default function Profile() {
           </button>
         ))}
       </div>
+
+      {activeTab === 'personal' && (
+        <div className="profile-card animate-fadeInUp">
+          <h2 className="profile-section-title">Personal Information</h2>
+          <p className="profile-section-desc">These fields count toward your profile completion score and help us personalise your experience.</p>
+          <div className="profile-form-grid">
+            <div className="form-group">
+              <label className="form-label">Nationality ⭐</label>
+              <select className="form-input" value={personal.nationality} onChange={e => setPersonal(p => ({ ...p, nationality: e.target.value }))}>
+                <option value="">Select nationality...</option>
+                {NATIONALITIES.map(n => <option key={n} value={n}>{n}</option>)}
+              </select>
+            </div>
+            <div className="form-group">
+              <label className="form-label">Country of Residence ⭐</label>
+              <select className="form-input" value={personal.countryOfResidence} onChange={e => setPersonal(p => ({ ...p, countryOfResidence: e.target.value }))}>
+                <option value="">Select country...</option>
+                {COUNTRIES.map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+            </div>
+            <div className="form-group">
+              <label className="form-label">Date of Birth ⭐</label>
+              <input className="form-input" type="date" value={personal.dateOfBirth} onChange={e => setPersonal(p => ({ ...p, dateOfBirth: e.target.value }))} />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Preferred Language ⭐</label>
+              <select className="form-input" value={personal.preferredLanguage} onChange={e => setPersonal(p => ({ ...p, preferredLanguage: e.target.value }))}>
+                <option value="">Select language...</option>
+                {LANGUAGES.map(l => <option key={l} value={l}>{l}</option>)}
+              </select>
+            </div>
+            <div className="form-group">
+              <label className="form-label">Phone Number ⭐</label>
+              <input className="form-input" type="tel" placeholder="e.g. +91 98765 43210" value={personal.phone} onChange={e => setPersonal(p => ({ ...p, phone: e.target.value }))} />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Career Goal ⭐</label>
+              <select className="form-input" value={careerGoal} onChange={e => setCareerGoal(e.target.value)}>
+                <option value="">Select your goal career...</option>
+                {CAREER_GOALS.map(g => <option key={g} value={g}>{g}</option>)}
+              </select>
+            </div>
+          </div>
+          <button className="btn btn-primary" onClick={handleSavePersonal} disabled={saving}>
+            {saving ? 'Saving…' : 'Save Personal Info →'}
+          </button>
+        </div>
+      )}
 
       {activeTab === 'academic' && (
         <div className="profile-card animate-fadeInUp">

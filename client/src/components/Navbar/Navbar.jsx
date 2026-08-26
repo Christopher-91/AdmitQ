@@ -94,13 +94,7 @@ export default function Navbar() {
                 onClick={() => setProfileOpen(!profileOpen)}
                 onBlur={() => setTimeout(() => setProfileOpen(false), 200)}
               >
-                <div className="profile-avatar">
-                  {user?.firstName?.[0]}{user?.lastName?.[0]}
-                </div>
-                <span className="profile-name">{user?.firstName}</span>
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-                  <path d="M6 8L2 4h8L6 8z"/>
-                </svg>
+                {user?.firstName?.[0]}{user?.lastName?.[0]}
               </button>
 
               {profileOpen && (
@@ -111,25 +105,25 @@ export default function Navbar() {
                   </div>
                   <div className="dropdown-divider" />
                   <Link to="/dashboard" className="dropdown-item" onClick={() => setProfileOpen(false)}>
-                    📊 Dashboard
+                    Dashboard
                   </Link>
                   <Link to="/profile" className="dropdown-item" onClick={() => setProfileOpen(false)}>
-                    👤 Profile
+                    Profile
                   </Link>
                   <Link to="/applications" className="dropdown-item" onClick={() => setProfileOpen(false)}>
-                    📋 Applications
+                    Applications
                   </Link>
                   <Link to="/calculator" className="dropdown-item" onClick={() => setProfileOpen(false)}>
                     Cost Calculator
                   </Link>
                   {user?.role === 'admin' && (
                     <Link to="/admin" className="dropdown-item" onClick={() => setProfileOpen(false)}>
-                      ⚙️ Admin
+                      Admin
                     </Link>
                   )}
                   <div className="dropdown-divider" />
                   <button className="dropdown-item dropdown-logout" onClick={handleLogout}>
-                    🚪 Logout
+                    Logout
                   </button>
                 </div>
               )}
