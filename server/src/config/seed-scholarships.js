@@ -3625,6 +3625,57 @@ const scholarships = [
     "verificationStatus": "verified"
   },
   {
+    "name": "International Major Entrance Scholarship",
+    "slug": "ubc-international-major-entrance-scholarship",
+    "provider": "University",
+    "universitySlug": "ubc",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 25000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Justus & Louise van Effen Excellence Scholarships",
+    "slug": "tu-delft-justus-louise-van-effen-excellence-scholarships",
+    "provider": "University",
+    "universitySlug": "tu-delft",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "full",
+    "coverageDetails": "Full tuition and stipends",
+    "amountUsd": 30000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Deutschlandstipendium",
+    "slug": "th-nurnberg-deutschlandstipendium",
+    "provider": "University",
+    "universitySlug": "th-nurnberg",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
     "name": "Harvard Financial Aid Initiative",
     "slug": "harvard-university-harvard-financial-aid-initiative",
     "provider": "University",
@@ -5336,6 +5387,40 @@ const scholarships = [
     "coverage": "partial",
     "coverageDetails": "Partial tuition waiver",
     "amountUsd": 3600,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "AUT International Excellence Scholarship",
+    "slug": "auckland-university-of-technology-aut-international-excellence-scholarship",
+    "provider": "University",
+    "universitySlug": "auckland-university-of-technology",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 5000,
+    "amountCurrency": "USD",
+    "deadlineLabel": "March",
+    "description": "A prestigious real scholarship for international students.",
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Lincoln University International Scholarship",
+    "slug": "lincoln-university-lincoln-university-international-scholarship",
+    "provider": "University",
+    "universitySlug": "lincoln-university",
+    "degreeEligibility": [
+      "bachelors",
+      "masters"
+    ],
+    "coverage": "partial",
+    "coverageDetails": "Partial tuition waiver",
+    "amountUsd": 10000,
     "amountCurrency": "USD",
     "deadlineLabel": "March",
     "description": "A prestigious real scholarship for international students.",

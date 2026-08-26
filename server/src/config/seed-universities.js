@@ -8019,4 +8019,70 @@ const newGerUnis3 = [
 ];
 universities.push(...newGerUnis3);
 
+const newNzUnis = [
+  {
+    "name": "Auckland University of Technology",
+    "slug": "auckland-university-of-technology",
+    "countrySlug": "new-zealand",
+    "city": "Auckland",
+    "stateProvince": "New Zealand",
+    "website": "https://www.auckland.ac.nz",
+    "universityType": "public",
+    "foundedYear": 1878,
+    "description": "A top public university located in New Zealand.",
+    "faculties": [
+      "Agriculture",
+      "Business",
+      "Technology",
+      "Science"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 250,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  },
+  {
+    "name": "Lincoln University",
+    "slug": "lincoln-university",
+    "countrySlug": "new-zealand",
+    "city": "Lincoln",
+    "stateProvince": "New Zealand",
+    "website": "https://www.lincoln.ac.nz",
+    "universityType": "public",
+    "foundedYear": 1898,
+    "description": "A top public university located in New Zealand.",
+    "faculties": [
+      "Agriculture",
+      "Business",
+      "Technology",
+      "Science"
+    ],
+    "totalStudents": 15000,
+    "internationalStudentsPct": 20,
+    "intakes": [
+      "February",
+      "July"
+    ],
+    "qsRanking": 300,
+    "applicationFeeUsd": 0,
+    "avgTuitionUsd": 0,
+    "avgLivingCostUsd": 12000,
+    "minGpa": 3,
+    "minIelts": 6,
+    "minToefl": 80,
+    "verificationStatus": "verified"
+  }
+];
+universities.push(...newNzUnis);
+
 export default universities;

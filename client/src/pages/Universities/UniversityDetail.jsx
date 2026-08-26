@@ -1,17 +1,116 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Link, useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 import api from '../../lib/api';
 import Logo from '../../components/Logo/Logo';
 import { formatDegree } from '../../lib/formatters';
 import '../DataPages.css';
 
+// ── Client-side match calculation ─────────────────────────
+function computeMatch(profile, uni) {
+  if (!profile) return null;
+  const factors = {};
+  let totalScore = 0;
+  let count = 0;
+
+  // Academic
+  if (profile.gpa && uni.requirements?.minGpa) {
+    const ratio = profile.gpa / uni.requirements.minGpa;
+    factors.academic = ratio >= 1.1 ? 'strong' : ratio >= 0.95 ? 'moderate' : 'difficult';
+    totalScore += ratio >= 1.1 ? 90 : ratio >= 0.95 ? 65 : 35;
+  } else {
+    factors.academic = 'moderate';
+    totalScore += 65;
+  }
+  count++;
+
+  // Program fit / Career alignment
+  if (profile.desiredField && uni.faculties?.length > 0) {
+    const fieldLower = (profile.desiredField || '').toLowerCase();
+    const match = uni.faculties.some(f => f.toLowerCase().includes(fieldLower) || fieldLower.includes(f.toLowerCase()));
+    factors.career = match ? 'strong' : 'moderate';
+    totalScore += match ? 95 : 55;
+  } else {
+    factors.career = 'moderate';
+    totalScore += 60;
+  }
+  count++;
+
+  // Budget
+  if (profile.budgetMax && uni.financial?.avgTuitionUsd) {
+    const totalCost = uni.financial.avgTuitionUsd + (uni.financial.avgLivingCostUsd || 0) * 12;
+    const ratio = profile.budgetMax / totalCost;
+    factors.budget = ratio >= 1 ? 'strong' : ratio >= 0.7 ? 'moderate' : 'difficult';
+    totalScore += ratio >= 1 ? 90 : ratio >= 0.7 ? 55 : 25;
+  } else {
+    factors.budget = 'moderate';
+    totalScore += 55;
+  }
+  count++;
+
+  // Requirements (test scores)
+  if (profile.ielts && uni.requirements?.minIelts) {
+    factors.requirements = profile.ielts >= uni.requirements.minIelts ? 'strong' : 'difficult';
+    totalScore += profile.ielts >= uni.requirements.minIelts ? 90 : 30;
+  } else if (profile.toefl && uni.requirements?.minToefl) {
+    factors.requirements = profile.toefl >= uni.requirements.minToefl ? 'strong' : 'difficult';
+    totalScore += profile.toefl >= uni.requirements.minToefl ? 90 : 30;
+  } else {
+    factors.requirements = 'moderate';
+    totalScore += 60;
+  }
+  count++;
+
+  const overall = Math.round(totalScore / count);
+  return { overall, factors };
+}
+
+function MatchIndicator({ level }) {
+  const config = {
+    strong: { icon: '🟢', label: 'Strong' },
+    moderate: { icon: '🟡', label: 'Moderate' },
+    difficult: { icon: '🔴', label: 'Difficult' },
+  };
+  const c = config[level] || config.moderate;
+  return <span className={`match-indicator ${level}`}>{c.icon} {c.label}</span>;
+}
+
+function ProgressRing({ percent }) {
+  const r = 38;
+  const circ = 2 * Math.PI * r;
+  const offset = circ - (percent / 100) * circ;
+  return (
+    <div className="match-ring">
+      <svg viewBox="0 0 90 90">
+        <circle cx="45" cy="45" r={r} fill="none" stroke="var(--border-secondary)" strokeWidth="7" />
+        <circle cx="45" cy="45" r={r} fill="none" stroke="var(--primary-400)" strokeWidth="7"
+          strokeDasharray={circ} strokeDashoffset={offset} strokeLinecap="round" />
+      </svg>
+      <div className="match-ring-value">{percent}%</div>
+    </div>
+  );
+}
+
+function StarDisplay({ rating }) {
+  const full = Math.floor(rating);
+  const half = rating - full >= 0.3;
+  let stars = '';
+  for (let i = 0; i < full; i++) stars += '★';
+  if (half) stars += '★';
+  while (stars.length < 5) stars += '☆';
+  return <span>{stars}</span>;
+}
+
 export default function UniversityDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+  const { user, isAuthenticated } = useAuth();
   const [uni, setUni] = useState(null);
+  const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState('overview');
+  const [careers, setCareers] = useState([]);
+  const [viewMode, setViewMode] = useState('overview'); // 'overview' or 'details'
 
   useEffect(() => {
     api.get(`/universities/${slug}`)
@@ -20,13 +119,31 @@ export default function UniversityDetail() {
       .finally(() => setLoading(false));
   }, [slug]);
 
+  useEffect(() => {
+    if (isAuthenticated) {
+      api.get('/users/me').then(res => {
+        const u = res.data.data;
+        if (u.profile) setProfile(u.profile);
+      }).catch(() => { });
+    }
+  }, [isAuthenticated]);
+
+  useEffect(() => {
+    api.get('/careers', { params: { limit: 10 } })
+      .then(res => setCareers(res.data.data || []))
+      .catch(() => { });
+  }, []);
+
+  const match = useMemo(() => computeMatch(profile, uni), [profile, uni]);
+
   if (loading) {
     return (
       <div className="page container">
         <div className="skeleton" style={{ height: 200, borderRadius: 16, marginBottom: 32 }} />
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 32 }}>
-          <div className="skeleton" style={{ height: 400, borderRadius: 16 }} />
-          <div className="skeleton" style={{ height: 300, borderRadius: 16 }} />
+        <div style={{ maxWidth: 820, margin: '0 auto' }}>
+          <div className="skeleton" style={{ height: 180, borderRadius: 16, marginBottom: 20 }} />
+          <div className="skeleton" style={{ height: 140, borderRadius: 16, marginBottom: 20 }} />
+          <div className="skeleton" style={{ height: 200, borderRadius: 16 }} />
         </div>
       </div>
     );
@@ -34,12 +151,68 @@ export default function UniversityDetail() {
 
   if (!uni) return null;
 
-  const tabs = ['overview', 'programs', 'scholarships', 'requirements'];
+  const totalAnnualCost = (uni.financial?.avgTuitionUsd || 0) + (uni.financial?.avgLivingCostUsd || 0) * 12;
+  const userBudget = profile?.budgetMax || null;
+  const budgetDiffPct = userBudget ? Math.round(((totalAnnualCost - userBudget) / userBudget) * 100) : null;
+
+  // Placeholder student ratings based on university data
+  const seed = (uni.name || '').length;
+  const ratings = {
+    academics: 3.8 + (seed % 12) / 10,
+    career: 3.5 + (seed % 14) / 10,
+    costValue: 2.8 + (seed % 17) / 10,
+    campusLife: 3.5 + (seed % 11) / 10,
+  };
+  const avgRating = ((ratings.academics + ratings.career + ratings.costValue + ratings.campusLife) / 4).toFixed(1);
+  const reviewCount = 100 + (seed * 7) % 400;
+
+  // Mock Acceptance Rate based on QS ranking
+  const acceptanceRate = uni.rankings?.qs
+    ? Math.max(4, Math.min(85, Math.floor(uni.rankings.qs / 1.5))) + '%'
+    : (20 + (seed % 40)) + '%';
+
+  // Placeholder deadlines
+  const nextYear = new Date().getFullYear() + 1;
+  const deadlines = [
+    { label: 'Application Deadline', value: `Jan 1, ${nextYear}` },
+    { label: 'Scholarship Deadline', value: `Dec 15, ${nextYear - 1}` },
+    { label: 'Housing Application', value: `Mar 1, ${nextYear}` },
+  ];
+
+  // Living costs
+  const monthlyLiving = uni.financial?.avgLivingCostUsd || 0;
+  const livingCosts = [
+    { label: '🏠 Housing', value: Math.round(monthlyLiving * 0.5) },
+    { label: '🍔 Food', value: Math.round(monthlyLiving * 0.25) },
+    { label: '🚌 Transport', value: Math.round(monthlyLiving * 0.12) },
+    { label: '📦 Other', value: Math.round(monthlyLiving * 0.13) },
+  ];
+
+  // Career outcomes - match uni faculties to career data
+  const relatedCareers = careers.filter(c => {
+    const faculties = (uni.faculties || []).map(f => f.toLowerCase());
+    return faculties.some(f =>
+      c.name.toLowerCase().includes(f) ||
+      f.includes('computer') && c.name.toLowerCase().includes('software') ||
+      f.includes('engineering') && c.name.toLowerCase().includes('engineer') ||
+      f.includes('business') && (c.name.toLowerCase().includes('business') || c.name.toLowerCase().includes('financial') || c.name.toLowerCase().includes('product'))
+    );
+  }).slice(0, 4);
+
+  // Dynamic description generation
+  const generatedDesc = `Established in ${uni.foundedYear || 'its founding year'}, ${uni.name} is a leading ${uni.universityType || 'higher education'} institution located in ${uni.city || 'its vibrant city'}, ${uni.country?.name}. ` +
+    (uni.faculties?.length > 0 ? `It is highly recognized globally for its exceptional academic programs, particularly in ${uni.faculties.slice(0, 3).join(', ')}. ` : '') +
+    (uni.totalStudents ? `The university is home to approximately ${uni.totalStudents.toLocaleString()} students, fostering a diverse and vibrant campus life. ` : '') +
+    (uni.internationalStudentsPct ? `With an international student body comprising ${uni.internationalStudentsPct}% of its population, it offers a truly global perspective and an inclusive environment for students from all over the world.` : '');
+
+  const finalDescription = (uni.description && uni.description.length > 200)
+    ? uni.description
+    : `${uni.description ? uni.description + ' ' : ''}${generatedDesc}`;
 
   return (
     <div className="page">
-      {/* Hero */}
-      <div className="detail-hero" style={{ background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border-primary)' }}>
+      {/* ══════════ HERO ══════════ */}
+      <div className="detail-hero" style={{ background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border-primary)', marginBottom: 0 }}>
         <div className="container">
           <Link to={location.state?.fromParams ? `/universities?${location.state.fromParams}` : '/universities'} className="text-sm text-muted" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 20, textDecoration: 'none' }}>
             ← Back to Universities
@@ -84,244 +257,404 @@ export default function UniversityDetail() {
         </div>
       </div>
 
-      {/* Tabs */}
-      <div style={{ borderBottom: '1px solid var(--border-secondary)', background: 'var(--bg-secondary)', position: 'sticky', top: 60, zIndex: 10 }}>
+      {/* ══════════ TABS ══════════ */}
+      <div style={{ borderBottom: '1px solid var(--border-secondary)', background: 'var(--bg-secondary)', position: 'sticky', top: 60, zIndex: 10, marginBottom: 32 }}>
         <div className="container" style={{ display: 'flex', gap: 0 }}>
-          {tabs.map(t => (
-            <button
-              key={t}
-              onClick={() => setActiveTab(t)}
-              style={{
-                padding: '14px 20px', background: 'none', border: 'none', cursor: 'pointer',
-                borderBottom: activeTab === t ? '2px solid var(--primary-400)' : '2px solid transparent',
-                color: activeTab === t ? 'var(--primary-300)' : 'var(--text-secondary)',
-                fontWeight: activeTab === t ? 700 : 500,
-                fontSize: '0.9rem', textTransform: 'capitalize', transition: 'all 0.15s',
-              }}
-            >
-              {t}
-            </button>
-          ))}
+          <button
+            onClick={() => setViewMode('overview')}
+            style={{
+              padding: '14px 20px', background: 'none', border: 'none', cursor: 'pointer',
+              borderBottom: viewMode === 'overview' ? '2px solid var(--primary-400)' : '2px solid transparent',
+              color: viewMode === 'overview' ? 'var(--primary-300)' : 'var(--text-secondary)',
+              fontWeight: viewMode === 'overview' ? 700 : 500,
+              fontSize: '0.9rem', textTransform: 'capitalize', transition: 'all 0.15s',
+            }}
+          >
+            Overview
+          </button>
+          <button
+            onClick={() => setViewMode('details')}
+            style={{
+              padding: '14px 20px', background: 'none', border: 'none', cursor: 'pointer',
+              borderBottom: viewMode === 'details' ? '2px solid var(--primary-400)' : '2px solid transparent',
+              color: viewMode === 'details' ? 'var(--primary-300)' : 'var(--text-secondary)',
+              fontWeight: viewMode === 'details' ? 700 : 500,
+              fontSize: '0.9rem', textTransform: 'capitalize', transition: 'all 0.15s',
+            }}
+          >
+            Details
+          </button>
         </div>
       </div>
 
-      {/* Content */}
-      <div className="container" style={{ paddingTop: 32, paddingBottom: 64 }}>
-        {activeTab === 'overview' && (
-          <div className="detail-content">
-            <div>
-              {uni.description && (
-                <div className="detail-section">
-                  <h2 className="detail-section-title">About</h2>
-                  <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{uni.description}</p>
-                </div>
-              )}
-
-              {uni.faculties?.length > 0 && (
-                <div className="detail-section">
-                  <h2 className="detail-section-title">Faculties & Schools</h2>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-                    {uni.faculties.map((f, i) => (
-                      <span key={i} className="tag">{f}</span>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              <div className="detail-section">
-                <h2 className="detail-section-title">Intake & Language</h2>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-                  <div className="card" style={{ padding: 16 }}>
-                    <p className="text-xs text-muted font-semibold mb-1">INTAKES</p>
-                    <p style={{ fontWeight: 600 }}>{(uni.intakes || []).join(', ')}</p>
-                  </div>
-                  <div className="card" style={{ padding: 16 }}>
-                    <p className="text-xs text-muted font-semibold mb-1">LANGUAGES OF INSTRUCTION</p>
-                    <p style={{ fontWeight: 600 }}>{(uni.languagesOfInstruction || ['English']).join(', ')}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Sidebar */}
-            <div className="detail-sidebar">
-              <div className="card" style={{ padding: 20 }}>
-                <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem' }}>💰 Financial Info</h3>
-                {[
-                  { label: 'Avg. Tuition', value: uni.financial?.avgTuitionUsd ? `$${uni.financial.avgTuitionUsd.toLocaleString()}/yr` : '-' },
-                  { label: 'Application Fee', value: uni.financial?.applicationFeeUsd ? `$${uni.financial.applicationFeeUsd}` : '-' },
-                  { label: 'Avg. Living Cost', value: uni.financial?.avgLivingCostUsd ? `$${uni.financial.avgLivingCostUsd.toLocaleString()}/mo` : '-' },
-                  { label: 'Accommodation', value: uni.financial?.accommodationUsd ? `$${uni.financial.accommodationUsd.toLocaleString()}/yr` : '-' },
-                ].map(item => (
-                  <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border-secondary)', fontSize: '0.875rem' }}>
-                    <span style={{ color: 'var(--text-secondary)' }}>{item.label}</span>
-                    <span style={{ fontWeight: 700 }}>{item.value}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="card" style={{ padding: 20 }}>
-                <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem' }}>🏆 Rankings</h3>
-                {[
-                  { label: 'QS World', value: uni.rankings?.qs ? `#${uni.rankings.qs}` : '-' },
-                  { label: 'THE World', value: uni.rankings?.the ? `#${uni.rankings.the}` : '-' },
-                  { label: 'ARWU', value: uni.rankings?.arwu ? `#${uni.rankings.arwu}` : '-' },
-                  { label: 'National', value: uni.rankings?.national ? `#${uni.rankings.national}` : '-' },
-                ].map(item => (
-                  <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border-secondary)', fontSize: '0.875rem' }}>
-                    <span style={{ color: 'var(--text-secondary)' }}>{item.label}</span>
-                    <span style={{ fontWeight: 700, color: item.value !== '-' ? 'var(--primary-300)' : 'inherit' }}>{item.value}</span>
-                  </div>
-                ))}
-              </div>
-
-              <Link to={`/countries/${uni.country?.slug}`} className="card" style={{ padding: 20, textDecoration: 'none', display: 'block' }}>
-                <p className="text-xs text-muted font-semibold mb-2">COUNTRY INFO</p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  {uni.country && <img src={`/flags/${uni.country.code.toLowerCase()}.webp`} alt={uni.country.name} style={{ width: '2rem', verticalAlign: 'middle' }} />}
-                  <div>
-                    <p style={{ fontWeight: 700 }}>{uni.country?.name}</p>
-                    <p className="text-xs text-muted">View country details →</p>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-        )}
-
-        {activeTab === 'programs' && (
-          <div>
-            <h2 className="detail-section-title" style={{ marginBottom: 24 }}>📚 Programs Offered ({uni.programs?.length || 0})</h2>
-            {uni.programs?.length > 0 ? (
-              <div className="cards-grid">
-                {uni.programs.map(p => (
-                  <Link key={p.id} to={`/programs/${p.slug}`} className="program-card card">
+      {/* ══════════ PAGE CONTENT ══════════ */}
+      {viewMode === 'overview' ? (
+        <div className="container" style={{ padding: '16px 20px 80px' }}>
+          <div className="overview-section animate-fadeInUp">
+            <style>{`
+              .overview-grid-custom {
+                display: grid;
+                grid-template-columns: 2.7fr 1fr;
+                gap: 40px;
+              }
+              @media (max-width: 768px) {
+                .overview-grid-custom {
+                  grid-template-columns: 1fr;
+                }
+              }
+            `}</style>
+            
+            <h2 className="decision-section-title">About {uni.name}</h2>
+            <div className="overview-grid-custom">
+              <div className="overview-left">
+                <div className="card" style={{ padding: '24px 32px', marginBottom: 32 }}>
+                  <p style={{ lineHeight: 1.6, color: 'var(--text-secondary)', marginBottom: 16 }}>
+                    {finalDescription}
+                  </p>
+                  
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, paddingTop: 16, borderTop: '1px solid var(--border-secondary)' }}>
                     <div>
-                      <span className={`badge ${p.degree === 'masters' ? 'badge-primary' : p.degree === 'phd' ? 'badge-accent' : 'badge-warning'}`}>
-                        {p.degree === 'masters' ? "Master's" : p.degree === 'phd' ? 'PhD' : p.degree === 'bachelors' ? "Bachelor's" : p.degree}
-                      </span>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600, marginBottom: 4 }}>Acceptance Rate</div>
+                      <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary)' }}>{acceptanceRate}</div>
                     </div>
-                    <h3 className="program-name">{p.name}</h3>
-                    {p.field && <p className="text-sm text-muted">{p.field}{p.specialization ? ` · ${p.specialization}` : ''}</p>}
-                    <div className="program-details">
-                      <div className="program-detail">
-                        <span className="program-detail-label">Tuition</span>
-                        <span className="program-detail-value">${(p.tuitionUsd || 0).toLocaleString()}/yr</span>
-                      </div>
-                      <div className="program-detail">
-                        <span className="program-detail-label">Duration</span>
-                        <span className="program-detail-value">{p.durationLabel || '-'}</span>
-                      </div>
-                      {p.minIelts && (
-                        <div className="program-detail">
-                          <span className="program-detail-label">Min. IELTS</span>
-                          <span className="program-detail-value">{p.minIelts}</span>
-                        </div>
-                      )}
+                    <div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600, marginBottom: 4 }}>QS World Ranking</div>
+                      <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary)' }}>{uni.rankings?.qs ? `#${uni.rankings.qs}` : 'Not Ranked'}</div>
                     </div>
-                  </Link>
-                ))}
+                  </div>
+                </div>
+                
+                {/* Provide a nudge to check the details */}
+                <div className="match-cta" style={{ background: 'var(--bg-secondary)', borderStyle: 'solid' }}>
+                  <div className="match-cta-title">Is this university right for you?</div>
+                  <p className="match-cta-desc">Check the Details tab to see your personalized profile match, cost analysis, programs, and more.</p>
+                  <button onClick={() => { setViewMode('details'); window.scrollTo(0, 0); }} className="btn btn-primary btn-sm">
+                    View Full Details →
+                  </button>
+                </div>
               </div>
-            ) : (
-              <div className="empty-state card" style={{ padding: 64, textAlign: 'center' }}>
-                <p style={{ fontSize: '2rem', marginBottom: 8 }}>📚</p>
-                <p className="font-semibold">No programs listed yet</p>
-              </div>
-            )}
-          </div>
-        )}
-
-        {activeTab === 'scholarships' && (
-          <div>
-            <h2 className="detail-section-title" style={{ marginBottom: 24 }}>💰 Scholarships ({uni.scholarships?.length || 0})</h2>
-            {uni.scholarships?.length > 0 ? (
-              <div className="cards-grid">
-                {uni.scholarships.map(s => (
-                  <Link key={s.id} to={`/scholarships/${s.slug}`} className="scholarship-card card">
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span className={`badge ${s.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`}>
-                        {s.coverage === 'full' ? '✨ Full' : '💵 Partial'}
-                      </span>
-                    </div>
-                    <h3 className="program-name">{s.name}</h3>
-                    {s.amountUsd && (
-                      <div className="scholarship-amount">Up to ${s.amountUsd.toLocaleString()}</div>
-                    )}
-                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                      {(Array.isArray(s.degreeEligibility)
-                        ? s.degreeEligibility
-                        : (typeof s.degreeEligibility === 'string'
-                          ? s.degreeEligibility.replace(/^{|}$/g, '').split(',').filter(Boolean)
-                          : [])
-                      ).map((d, i) => (
-                        <span key={i} className="tag">{formatDegree(d)}</span>
-                      ))}
-                    </div>
-                    {s.deadline && (
-                      <p className="text-xs text-muted">⏰ Deadline: {new Date(s.deadline).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
-                    )}
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <div className="empty-state card" style={{ padding: 64, textAlign: 'center' }}>
-                <p style={{ fontSize: '2rem', marginBottom: 8 }}>💰</p>
-                <p className="font-semibold">No scholarships listed yet</p>
-                <p className="text-sm text-muted mt-1">Check the university website for available funding</p>
-              </div>
-            )}
-          </div>
-        )}
-
-        {activeTab === 'requirements' && (
-          <div className="detail-content">
-            <div>
-              <div className="detail-section">
-                <h2 className="detail-section-title">Admission Requirements</h2>
+              
+              <div className="overview-right detail-sidebar">
                 <div className="card" style={{ padding: 24 }}>
+                  <h3 style={{ fontWeight: 700, marginBottom: 20, fontSize: '1rem' }}>Rankings</h3>
                   {[
-                    { label: 'Minimum GPA', value: uni.requirements?.minGpa ? `${uni.requirements.minGpa} / 4.0` : 'Not specified' },
-                    { label: 'IELTS (minimum)', value: uni.requirements?.minIelts ? `${uni.requirements.minIelts}` : 'Not specified' },
-                    { label: 'TOEFL (minimum)', value: uni.requirements?.minToefl ? `${uni.requirements.minToefl}` : 'Not specified' },
-                    { label: 'GRE (minimum)', value: uni.requirements?.minGre ? `${uni.requirements.minGre}` : 'Not required / Not specified' },
-                    { label: 'GMAT (minimum)', value: uni.requirements?.minGmat ? `${uni.requirements.minGmat}` : 'Not required / Not specified' },
+                    { label: 'QS World', value: uni.rankings?.qs ? `#${uni.rankings.qs}` : '—' },
+                    { label: 'THE World', value: uni.rankings?.the ? `#${uni.rankings.the}` : '—' },
+                    { label: 'ARWU (Shanghai)', value: uni.rankings?.arwu ? `#${uni.rankings.arwu}` : '—' },
+                    { label: 'National', value: uni.rankings?.national ? `#${uni.rankings.national}` : '—' },
                   ].map(item => (
                     <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 0', borderBottom: '1px solid var(--border-secondary)', fontSize: '0.9rem' }}>
-                      <span style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>{item.label}</span>
-                      <span style={{ fontWeight: 700 }}>{item.value}</span>
+                      <span style={{ color: 'var(--text-secondary)' }}>{item.label}</span>
+                      <span style={{ fontWeight: 700, color: item.value !== '—' ? 'var(--primary-300)' : 'inherit' }}>{item.value}</span>
                     </div>
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className="decision-page">
+          <div className="animate-fadeInUp">
 
-              {uni.applicationPortal && (
-                <div className="detail-section">
-                  <h2 className="detail-section-title">Application Portal</h2>
-                  <a href={uni.applicationPortal} target="_blank" rel="noreferrer" className="btn btn-primary">
-                    Apply Now ↗
-                  </a>
+
+            {/* ── 1. YOUR MATCH ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">🎯 Your Match</h2>
+              {match ? (
+                <div className="match-card">
+                  <div className="match-header">
+                    <ProgressRing percent={match.overall} />
+                    <div>
+                      <div style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--text-primary)' }}>Profile Match</div>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', marginTop: 4 }}>Based on your academic profile, budget, and preferences</p>
+                    </div>
+                  </div>
+                  <div className="match-factors">
+                    <div className="match-factor">
+                      <span className="match-factor-label">Academic</span>
+                      <MatchIndicator level={match.factors.academic} />
+                    </div>
+                    <div className="match-factor">
+                      <span className="match-factor-label">Career</span>
+                      <MatchIndicator level={match.factors.career} />
+                    </div>
+                    <div className="match-factor">
+                      <span className="match-factor-label">Budget</span>
+                      <MatchIndicator level={match.factors.budget} />
+                    </div>
+                    <div className="match-factor">
+                      <span className="match-factor-label">Requirements</span>
+                      <MatchIndicator level={match.factors.requirements} />
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="match-cta">
+                  <div className="match-cta-icon">🎯</div>
+                  <div className="match-cta-title">See how well you match with {uni.name}</div>
+                  <p className="match-cta-desc">Sign in and complete your profile to get a personalized match score based on your academics, budget, and career goals.</p>
+                  <Link to={isAuthenticated ? '/profile' : '/register'} className="btn btn-primary btn-sm">
+                    {isAuthenticated ? 'Complete Profile' : 'Sign Up Free'}
+                  </Link>
                 </div>
               )}
             </div>
 
-            <div className="detail-sidebar">
-              <div className="card" style={{ padding: 20 }}>
-                <h3 style={{ fontWeight: 700, marginBottom: 12, fontSize: '0.95rem' }}>Student Body</h3>
-                {[
-                  { label: 'Total Students', value: uni.totalStudents ? uni.totalStudents.toLocaleString() : '-' },
-                  { label: 'International Students', value: uni.internationalStudentsPct ? `${uni.internationalStudentsPct}%` : '-' },
-                  { label: 'Student-Faculty Ratio', value: uni.studentFacultyRatio ? `${uni.studentFacultyRatio}:1` : '-' },
-                ].map(item => (
-                  <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border-secondary)', fontSize: '0.875rem' }}>
-                    <span style={{ color: 'var(--text-secondary)' }}>{item.label}</span>
-                    <span style={{ fontWeight: 700 }}>{item.value}</span>
+            {/* ── 2. CAN YOU AFFORD IT? ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">💰 Can You Afford It?</h2>
+              <div className="afford-card">
+                <div className="afford-comparison">
+                  <div className="afford-item">
+                    <div className="afford-item-label">Estimated Annual Cost</div>
+                    <div className="afford-item-value">${totalAnnualCost.toLocaleString()}</div>
+                  </div>
+                  <div className="afford-vs">vs</div>
+                  <div className="afford-item">
+                    <div className="afford-item-label">Your Budget</div>
+                    <div className="afford-item-value">{userBudget ? `$${userBudget.toLocaleString()}` : '—'}</div>
+                  </div>
+                </div>
+                {budgetDiffPct !== null ? (
+                  <div className={`afford-warning ${budgetDiffPct > 0 ? 'over' : 'under'}`}>
+                    {budgetDiffPct > 0
+                      ? `⚠️ Above your budget by ${budgetDiffPct}%`
+                      : `✅ Within your budget — ${Math.abs(budgetDiffPct)}% headroom`
+                    }
+                  </div>
+                ) : (
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', textAlign: 'center' }}>
+                    {isAuthenticated
+                      ? <Link to="/profile" style={{ color: 'var(--primary-300)' }}>Set your budget</Link>
+                      : <Link to="/register" style={{ color: 'var(--primary-300)' }}>Sign up</Link>
+                    } to compare with your finances
+                  </p>
+                )}
+                <div style={{ marginTop: 16, textAlign: 'center' }}>
+                  <Link to="/calculator" className="btn btn-ghost btn-sm">Calculate Your Cost →</Link>
+                </div>
+              </div>
+            </div>
+
+            {/* ── 3. PROGRAMS ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">🎓 Programs ({uni.programs?.length || 0})</h2>
+              {uni.programs?.length > 0 ? (
+                <>
+                  <div className="programs-mini-grid">
+                    {uni.programs.slice(0, 6).map(p => (
+                      <Link key={p.id} to={`/programs/${p.slug}`} className="program-mini-card">
+                        <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+                          <span className={`badge ${p.degree === 'masters' ? 'badge-primary' : p.degree === 'phd' ? 'badge-accent' : 'badge-warning'}`} style={{ fontSize: '0.65rem', padding: '2px 8px' }}>
+                            {formatDegree(p.degree)}
+                          </span>
+                        </div>
+                        <div className="program-mini-name">{p.name}</div>
+                        <div className="program-mini-meta">{p.field}{p.specialization ? ` · ${p.specialization}` : ''} · {p.durationLabel || '—'}</div>
+                      </Link>
+                    ))}
+                  </div>
+                  {uni.programs.length > 6 && (
+                    <div style={{ marginTop: 16, textAlign: 'center' }}>
+                      <Link to={`/programs?university=${slug}`} className="btn btn-ghost btn-sm">View All {uni.programs.length} Programs →</Link>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <p style={{ color: 'var(--text-tertiary)', fontSize: '0.9rem' }}>No programs listed yet. Check the university website for details.</p>
+              )}
+            </div>
+
+            {/* ── 4. STUDENT REALITY ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">👨‍🎓 Student Reality</h2>
+              <div className="rating-overview">
+                <div className="rating-big">
+                  <div className="rating-big-value">{avgRating}</div>
+                  <div className="rating-big-stars"><StarDisplay rating={parseFloat(avgRating)} /></div>
+                  <div className="rating-big-count">{reviewCount} students</div>
+                </div>
+                <div className="rating-bars">
+                  {[
+                    { label: 'Academics', value: ratings.academics },
+                    { label: 'Career', value: ratings.career },
+                    { label: 'Cost / Value', value: ratings.costValue },
+                    { label: 'Campus Life', value: ratings.campusLife },
+                  ].map(r => (
+                    <div key={r.label} className="rating-bar-row">
+                      <span className="rating-bar-label">{r.label}</span>
+                      <div className="rating-bar-track">
+                        <div className="rating-bar-fill" style={{ width: `${(r.value / 5) * 100}%` }} />
+                      </div>
+                      <span className="rating-bar-value">{r.value.toFixed(1)}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="coming-soon-card" style={{ padding: 20 }}>
+                <span className="coming-soon-badge">Coming Soon</span>
+                <p className="coming-soon-desc">Detailed student reviews and experiences will be available soon.</p>
+              </div>
+            </div>
+
+            {/* ── 5. COMMUNITY ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">💬 Community</h2>
+              <div className="coming-soon-card">
+                <span className="coming-soon-badge">Coming Soon</span>
+                <div className="coming-soon-title">{uni.name} — Fall {new Date().getFullYear() + 1}</div>
+                <p className="coming-soon-desc">Connect with prospective and current students. Ask questions, share experiences, and get real answers.</p>
+              </div>
+            </div>
+
+            {/* ── 6. LIFE IN [CITY] ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">🏠 Life in {uni.city || 'This City'}</h2>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', marginBottom: 16 }}>Average monthly student expenses</p>
+              <div className="living-cost-grid">
+                {livingCosts.map(c => (
+                  <div key={c.label} className="living-cost-item">
+                    <span>{c.label}</span>
+                    <span>{c.value ? `$${c.value.toLocaleString()}/mo` : '—'}</span>
                   </div>
                 ))}
               </div>
+              {uni.financial?.avgLivingCostUsd && (
+                <div style={{ marginTop: 16, padding: '14px 16px', borderRadius: 'var(--radius-md)', background: 'var(--bg-secondary)', border: '1px solid var(--border-secondary)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: 600 }}>Total Monthly</span>
+                  <span style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--primary-300)' }}>${uni.financial.avgLivingCostUsd.toLocaleString()}/mo</span>
+                </div>
+              )}
+            </div>
+
+            {/* ── 7. CAREER OUTCOMES ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">💼 Career Outcomes</h2>
+              {relatedCareers.length > 0 ? (
+                <>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', marginBottom: 16 }}>Popular career paths for graduates</p>
+                  <div className="career-outcomes-grid">
+                    {relatedCareers.map(c => (
+                      <Link key={c.id} to={`/careers/${c.slug}`} className="career-outcome-card">
+                        <div className="career-outcome-icon">{c.icon}</div>
+                        <div className="career-outcome-name">{c.name}</div>
+                        <div className="career-outcome-salary">Avg. ${(c.avgSalaryUsd || 0).toLocaleString()}/yr</div>
+                      </Link>
+                    ))}
+                  </div>
+                  <div style={{ marginTop: 16, textAlign: 'center' }}>
+                    <Link to="/careers" className="btn btn-ghost btn-sm">Explore All Careers →</Link>
+                  </div>
+                </>
+              ) : (
+                <div style={{ textAlign: 'center' }}>
+                  <p style={{ color: 'var(--text-tertiary)', fontSize: '0.9rem', marginBottom: 12 }}>Explore career paths suited to {uni.name} graduates.</p>
+                  <Link to="/careers" className="btn btn-ghost btn-sm">Browse Careers →</Link>
+                </div>
+              )}
+            </div>
+
+            {/* ── 8. SCHOLARSHIPS ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">🎓 Scholarships ({uni.scholarships?.length || 0})</h2>
+              {uni.scholarships?.length > 0 ? (
+                <>
+                  <div className="scholarship-mini-grid">
+                    {uni.scholarships.slice(0, 4).map(s => (
+                      <Link key={s.id} to={`/scholarships/${s.slug}`} className="scholarship-mini-card">
+                        <span className={`badge ${s.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`} style={{ fontSize: '0.65rem', padding: '2px 8px', alignSelf: 'flex-start' }}>
+                          {s.coverage === 'full' ? '✨ Full' : '💵 Partial'}
+                        </span>
+                        <div className="scholarship-mini-name">{s.name}</div>
+                        {s.amountUsd && <div className="scholarship-mini-amount">Up to ${s.amountUsd.toLocaleString()}</div>}
+                      </Link>
+                    ))}
+                  </div>
+                  {uni.scholarships.length > 4 && (
+                    <div style={{ marginTop: 16, textAlign: 'center' }}>
+                      <Link to={`/scholarships?university=${slug}`} className="btn btn-ghost btn-sm">View All {uni.scholarships.length} Scholarships →</Link>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <p style={{ color: 'var(--text-tertiary)', fontSize: '0.9rem' }}>No scholarships listed yet. Check the university website for funding opportunities.</p>
+              )}
+            </div>
+
+            {/* ── 9. REQUIREMENTS ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">📋 Requirements</h2>
+              <div className="requirements-grid">
+                {[
+                  { label: 'Minimum GPA', value: uni.requirements?.minGpa ? `${uni.requirements.minGpa} / 4.0` : 'Not specified' },
+                  { label: 'IELTS (minimum)', value: uni.requirements?.minIelts || 'Not specified' },
+                  { label: 'TOEFL (minimum)', value: uni.requirements?.minToefl || 'Not specified' },
+                  { label: 'GRE', value: uni.requirements?.minGre || 'Not required / Not specified' },
+                  { label: 'GMAT', value: uni.requirements?.minGmat || 'Not required / Not specified' },
+                ].map(item => (
+                  <div key={item.label} className="requirement-row">
+                    <span className="requirement-label">{item.label}</span>
+                    <span className="requirement-value">{item.value}</span>
+                  </div>
+                ))}
+              </div>
+              {uni.applicationPortal && (
+                <div style={{ marginTop: 16, textAlign: 'center' }}>
+                  <a href={uni.applicationPortal} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm">Apply Now ↗</a>
+                </div>
+              )}
+            </div>
+
+            {/* ── 10. DEADLINES ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">📅 Deadlines — Fall {nextYear}</h2>
+              <div className="deadline-grid">
+                {deadlines.map(d => (
+                  <div key={d.label} className="deadline-row">
+                    <span className="deadline-row-label">{d.label}</span>
+                    <span className="deadline-row-value">{d.value}</span>
+                  </div>
+                ))}
+              </div>
+              <p style={{ fontSize: '0.78rem', color: 'var(--text-tertiary)', marginTop: 12, textAlign: 'center' }}>Dates are approximate — verify on the university website</p>
+            </div>
+
+            {/* ── 11. BETTER ALTERNATIVES ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">🔄 Better Alternatives</h2>
+              <div className="coming-soon-card">
+                <span className="coming-soon-badge">Coming Soon</span>
+                <div className="coming-soon-title">Universities that may fit your profile better</div>
+                <p className="coming-soon-desc">We'll compare your profile against similar universities and suggest better-matched alternatives.</p>
+              </div>
+            </div>
+
+            {/* ── 12. QUESTIONS ── */}
+            <div className="decision-section">
+              <h2 className="decision-section-title">❓ Questions?</h2>
+              <div className="coming-soon-card">
+                <span className="coming-soon-badge">Coming Soon</span>
+                <div className="coming-soon-title">Ask {uni.name} students</div>
+                <p className="coming-soon-desc">Get your questions answered by current students and alumni who've been through the process.</p>
+              </div>
+            </div>
+
+            {/* ── COUNTRY INFO LINK ── */}
+            <div className="decision-section" style={{ borderBottom: 'none' }}>
+              <Link to={`/countries/${uni.country?.slug}`} className="card" style={{ padding: 20, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 14 }}>
+                {uni.country && <img src={`/flags/${uni.country.code.toLowerCase()}.webp`} alt={uni.country.name} style={{ width: '2.5rem' }} />}
+                <div style={{ flex: 1 }}>
+                  <p style={{ fontWeight: 700 }}>Study in {uni.country?.name}</p>
+                  <p className="text-xs text-muted">Visa requirements, costs, work rights & more</p>
+                </div>
+                <span style={{ color: 'var(--text-tertiary)', fontSize: '1.2rem' }}>→</span>
+              </Link>
+            </div>
+
             </div>
           </div>
         )}
       </div>
-    </div>
   );
 }

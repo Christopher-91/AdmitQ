@@ -1,10 +1,10 @@
 const programs = [
   {
     "universitySlug": "mit",
-    "name": "Master of Arts in Humanities",
-    "slug": "mit-master-of-arts-in-humanities",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "mit-master-of-science-in-sports-and-health-sciences",
     "degree": "masters",
-    "field": "Humanities",
+    "field": "Sports and Health Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -14,37 +14,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31112,
+    "tuitionUsd": 24909,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.1743130412289844,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "mit",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "mit-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23491,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1665609117336966,
+    "minGpa": 3.0685759902733594,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -55,12 +28,12 @@ const programs = [
   },
   {
     "universitySlug": "mit",
-    "name": "PhD in Veterinary medicine",
-    "slug": "mit-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "name": "Master of Arts in Medicine",
+    "slug": "mit-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -68,157 +41,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43132,
+    "tuitionUsd": 32675,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.6298457834064184,
+    "minGpa": 3.299829117751618,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "mit",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "mit-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44574,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.153011220210437,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "stanford-university",
-    "name": "Bachelor of Science in Business",
-    "slug": "stanford-university-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35952,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7839517412665407,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "stanford-university",
-    "name": "Master of Arts in Economy",
-    "slug": "stanford-university-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19342,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6483464374446855,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "stanford-university",
-    "name": "Bachelor of Science in Educational Sciences",
-    "slug": "stanford-university-bachelor-of-science-in-educational-sciences",
-    "degree": "bachelors",
-    "field": "Educational Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41508,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.728355813774579,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "carnegie-mellon",
-    "name": "PhD in Economy",
-    "slug": "carnegie-mellon-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29367,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1835407609441653,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "carnegie-mellon",
     "name": "Master of Science in Social Sciences",
-    "slug": "carnegie-mellon-master-of-science-in-social-sciences",
+    "slug": "mit-master-of-science-in-social-sciences",
     "degree": "masters",
     "field": "Social Sciences",
     "durationMonths": 24,
@@ -230,10 +68,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26000,
+    "tuitionUsd": 30723,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.747940644024184,
+    "minGpa": 3.479137412064736,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -243,65 +81,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "carnegie-mellon",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "carnegie-mellon-bachelor-of-science-in-dentistry",
-    "degree": "bachelors",
-    "field": "dentistry",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34164,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7934904492554065,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "carnegie-mellon",
-    "name": "PhD in Business",
-    "slug": "carnegie-mellon-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16538,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5207184009303933,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "carnegie-mellon",
-    "name": "Master of Arts in Humanities",
-    "slug": "carnegie-mellon-master-of-arts-in-humanities",
+    "universitySlug": "mit",
+    "name": "Master of Arts in Management",
+    "slug": "mit-master-of-arts-in-management",
     "degree": "masters",
-    "field": "Humanities",
+    "field": "Management",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -311,10 +95,64 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21568,
+    "tuitionUsd": 31799,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0863246516781415,
+    "scholarshipAvailable": false,
+    "minGpa": 3.6686527536127604,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "mit",
+    "name": "PhD in Natural Sciences",
+    "slug": "mit-phd-in-natural-sciences",
+    "degree": "phd",
+    "field": "Natural Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36280,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.582954930234861,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "stanford-university",
+    "name": "PhD in Humanities",
+    "slug": "stanford-university-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22081,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.724872446403346,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -324,9 +162,252 @@ const programs = [
     ]
   },
   {
+    "universitySlug": "stanford-university",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "stanford-university-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36902,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.005517659283138,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "stanford-university",
+    "name": "PhD in dentistry",
+    "slug": "stanford-university-phd-in-dentistry",
+    "degree": "phd",
+    "field": "dentistry",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 32129,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7350413814780112,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "stanford-university",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "stanford-university-master-of-arts-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42529,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1097785443428503,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "stanford-university",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "stanford-university-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30485,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3244469406429413,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "carnegie-mellon",
+    "name": "Master of Arts in Business",
+    "slug": "carnegie-mellon-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21407,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7240161005035595,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "carnegie-mellon",
+    "name": "Master of Science in Medicine",
+    "slug": "carnegie-mellon-master-of-science-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24660,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1773324420317293,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "carnegie-mellon",
+    "name": "PhD in Technology",
+    "slug": "carnegie-mellon-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34528,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5480109111977853,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "carnegie-mellon",
+    "name": "Bachelor of Science in Economy",
+    "slug": "carnegie-mellon-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28164,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5150901462725526,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
     "universitySlug": "georgia-tech",
-    "name": "Master of Arts in Performing arts",
-    "slug": "georgia-tech-master-of-arts-in-performing-arts",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "georgia-tech-master-of-arts-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16508,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.621848428371223,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "georgia-tech",
+    "name": "Master of Science in Performing arts",
+    "slug": "georgia-tech-master-of-science-in-performing-arts",
     "degree": "masters",
     "field": "Performing arts",
     "durationMonths": 24,
@@ -338,10 +419,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43141,
+    "tuitionUsd": 30887,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6855158811443856,
+    "scholarshipAvailable": true,
+    "minGpa": 3.6441084637729992,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -352,91 +433,10 @@ const programs = [
   },
   {
     "universitySlug": "georgia-tech",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "georgia-tech-bachelor-of-science-in-natural-sciences",
-    "degree": "bachelors",
-    "field": "Natural Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35870,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.783483576236898,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "georgia-tech",
-    "name": "Bachelor of Science in Management",
-    "slug": "georgia-tech-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40809,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.776760771361766,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "georgia-tech",
-    "name": "PhD in Veterinary medicine",
-    "slug": "georgia-tech-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15678,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7597127295223762,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ucl",
-    "name": "Master of Arts in Management",
-    "slug": "ucl-master-of-arts-in-management",
+    "name": "Master of Arts in Economy",
+    "slug": "georgia-tech-master-of-arts-in-economy",
     "degree": "masters",
-    "field": "Management",
+    "field": "Economy",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -446,37 +446,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32573,
+    "tuitionUsd": 26230,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7267515292334186,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ucl",
-    "name": "PhD in Economy",
-    "slug": "ucl-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41840,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2178594513865604,
+    "minGpa": 3.1016504699414122,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -486,225 +459,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "ucl",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "ucl-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30248,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5299968532020953,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ubc",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "ubc-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29669,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2062747599670747,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ubc",
-    "name": "PhD in Social Sciences",
-    "slug": "ubc-phd-in-social-sciences",
-    "degree": "phd",
-    "field": "Social Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41897,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6018219466528647,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ubc",
-    "name": "Master of Arts in Business",
-    "slug": "ubc-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29472,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3668437889697986,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ubc",
-    "name": "Master of Science in Medicine",
-    "slug": "ubc-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28033,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.14608360046698,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ubc",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "ubc-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22734,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.645303874764922,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "tu-munich",
-    "name": "Bachelor of Science in Business",
-    "slug": "tu-munich-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25756,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.101044745011593,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "tu-munich",
-    "name": "Master of Arts in media studies",
-    "slug": "tu-munich-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25840,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.104745698831444,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "tu-munich",
-    "name": "Master of Arts in Technology",
-    "slug": "tu-munich-master-of-arts-in-technology",
+    "universitySlug": "georgia-tech",
+    "name": "Master of Science in Technology",
+    "slug": "georgia-tech-master-of-science-in-technology",
     "degree": "masters",
     "field": "Technology",
     "durationMonths": 24,
@@ -716,10 +473,226 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27773,
+    "tuitionUsd": 30477,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.34131762817254,
+    "minGpa": 3.4927277321652914,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ucl",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "ucl-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15910,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.687123100752074,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ucl",
+    "name": "PhD in Humanities",
+    "slug": "ucl-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41056,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.264619244254786,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ucl",
+    "name": "Master of Arts in Business",
+    "slug": "ucl-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23702,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.554983824912285,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ucl",
+    "name": "Master of Science in Medicine",
+    "slug": "ucl-master-of-science-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22889,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5383622502771575,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ubc",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "ubc-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41579,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7042328713794457,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ubc",
+    "name": "PhD in Management",
+    "slug": "ubc-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23590,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.046321565257008,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ubc",
+    "name": "Bachelor of Science in media studies",
+    "slug": "ubc-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24225,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.611186973864738,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "tu-munich",
+    "name": "PhD in Technology",
+    "slug": "tu-munich-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22288,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.348303350207485,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -730,10 +703,10 @@ const programs = [
   },
   {
     "universitySlug": "tu-munich",
-    "name": "Master of Science in Humanities",
-    "slug": "tu-munich-master-of-science-in-humanities",
+    "name": "Master of Science in dentistry",
+    "slug": "tu-munich-master-of-science-in-dentistry",
     "degree": "masters",
-    "field": "Humanities",
+    "field": "dentistry",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -743,26 +716,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28650,
+    "tuitionUsd": 15842,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0196048093243957,
+    "scholarshipAvailable": true,
+    "minGpa": 3.287912651709643,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in dentistry",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "tu-munich",
-    "name": "Bachelor of Science in Management",
-    "slug": "tu-munich-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "name": "Master of Science in Performing arts",
+    "slug": "tu-munich-master-of-science-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -770,26 +743,80 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26339,
+    "tuitionUsd": 22191,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6017769249189397,
+    "scholarshipAvailable": false,
+    "minGpa": 3.450203200121015,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Management",
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "tu-munich",
+    "name": "PhD in media studies",
+    "slug": "tu-munich-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23037,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0792500597331314,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "tu-munich",
+    "name": "Master of Arts in Business",
+    "slug": "tu-munich-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22148,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.412919688997353,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "rwth-aachen",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "rwth-aachen-bachelor-of-science-in-medicine",
-    "degree": "bachelors",
-    "field": "Medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "name": "Master of Arts in Economy",
+    "slug": "rwth-aachen-master-of-arts-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -797,14 +824,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38260,
+    "tuitionUsd": 28293,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.549406876266957,
+    "scholarshipAvailable": false,
+    "minGpa": 3.011655250132131,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Medicine",
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
@@ -824,10 +851,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33997,
+    "tuitionUsd": 22460,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.080667733546714,
+    "minGpa": 3.785862745568319,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -838,10 +865,10 @@ const programs = [
   },
   {
     "universitySlug": "rwth-aachen",
-    "name": "Master of Arts in Humanities",
-    "slug": "rwth-aachen-master-of-arts-in-humanities",
+    "name": "Master of Arts in Business",
+    "slug": "rwth-aachen-master-of-arts-in-business",
     "degree": "masters",
-    "field": "Humanities",
+    "field": "Business",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -851,10 +878,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30076,
+    "tuitionUsd": 26035,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.710710535693299,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "rwth-aachen",
+    "name": "PhD in Humanities",
+    "slug": "rwth-aachen-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20257,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7992426291338415,
+    "minGpa": 3.426683684622003,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -865,12 +919,12 @@ const programs = [
   },
   {
     "universitySlug": "rwth-aachen",
-    "name": "Bachelor of Science in Management",
-    "slug": "rwth-aachen-bachelor-of-science-in-management",
-    "degree": "bachelors",
+    "name": "Master of Arts in Management",
+    "slug": "rwth-aachen-master-of-arts-in-management",
+    "degree": "masters",
     "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -878,10 +932,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40624,
+    "tuitionUsd": 41344,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.4285495510739294,
+    "minGpa": 3.042357258430444,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -891,9 +945,90 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "rwth-aachen",
+    "universitySlug": "lmu-munich",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "lmu-munich-master-of-science-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31798,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5905239976859535,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lmu-munich",
+    "name": "Bachelor of Science in Technology",
+    "slug": "lmu-munich-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28193,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.713301907604366,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lmu-munich",
+    "name": "PhD in Veterinary medicine",
+    "slug": "lmu-munich-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17447,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.204368299686322,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lmu-munich",
     "name": "PhD in Natural Sciences",
-    "slug": "rwth-aachen-phd-in-natural-sciences",
+    "slug": "lmu-munich-phd-in-natural-sciences",
     "degree": "phd",
     "field": "Natural Sciences",
     "durationMonths": 60,
@@ -905,10 +1040,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40591,
+    "tuitionUsd": 40674,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.744114998335556,
+    "scholarshipAvailable": true,
+    "minGpa": 3.536358233813535,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -918,13 +1053,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "lmu-munich",
-    "name": "Master of Science in media studies",
-    "slug": "lmu-munich-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "tu-delft",
+    "name": "PhD in Medicine",
+    "slug": "tu-delft-phd-in-medicine",
+    "degree": "phd",
+    "field": "Medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -932,76 +1067,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39197,
+    "tuitionUsd": 34916,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3009059952935305,
+    "scholarshipAvailable": false,
+    "minGpa": 3.702282664966052,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "lmu-munich",
-    "name": "Master of Science in Technology",
-    "slug": "lmu-munich-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32818,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3414544183994463,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lmu-munich",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "lmu-munich-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27530,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.077041901244156,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lmu-munich",
+    "universitySlug": "tu-delft",
     "name": "Master of Science in Educational Sciences",
-    "slug": "lmu-munich-master-of-science-in-educational-sciences",
+    "slug": "tu-delft-master-of-science-in-educational-sciences",
     "degree": "masters",
     "field": "Educational Sciences",
     "durationMonths": 24,
@@ -1013,10 +1094,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24930,
+    "tuitionUsd": 25541,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.233871909142054,
+    "minGpa": 3.187481271650381,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1027,12 +1108,12 @@ const programs = [
   },
   {
     "universitySlug": "tu-delft",
-    "name": "Master of Science in Humanities",
-    "slug": "tu-delft-master-of-science-in-humanities",
-    "degree": "masters",
+    "name": "PhD in Humanities",
+    "slug": "tu-delft-phd-in-humanities",
+    "degree": "phd",
     "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -1040,41 +1121,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40991,
+    "tuitionUsd": 20126,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7346436055606125,
+    "scholarshipAvailable": false,
+    "minGpa": 3.275186641813803,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "tu-delft",
-    "name": "Master of Arts in Performing arts",
-    "slug": "tu-delft-master-of-arts-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29859,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.721613170281282,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
@@ -1094,10 +1148,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28469,
+    "tuitionUsd": 16795,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.124614432323513,
+    "scholarshipAvailable": true,
+    "minGpa": 3.4227371329034386,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1107,11 +1161,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "tu-delft",
-    "name": "Master of Arts in media studies",
-    "slug": "tu-delft-master-of-arts-in-media-studies",
+    "universitySlug": "university-of-amsterdam",
+    "name": "Master of Science in Educational Sciences",
+    "slug": "university-of-amsterdam-master-of-science-in-educational-sciences",
     "degree": "masters",
-    "field": "media studies",
+    "field": "Educational Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -1121,26 +1175,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42268,
+    "tuitionUsd": 42379,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.331089927357832,
+    "minGpa": 3.148742159938987,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Educational Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "tu-delft",
-    "name": "PhD in Economy",
-    "slug": "tu-delft-phd-in-economy",
-    "degree": "phd",
+    "universitySlug": "university-of-amsterdam",
+    "name": "Master of Arts in Economy",
+    "slug": "university-of-amsterdam-master-of-arts-in-economy",
+    "degree": "masters",
     "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -1148,10 +1202,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39845,
+    "tuitionUsd": 32189,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3897596659963125,
+    "minGpa": 3.0336427830852197,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1162,224 +1216,8 @@ const programs = [
   },
   {
     "universitySlug": "university-of-amsterdam",
-    "name": "Master of Arts in Humanities",
-    "slug": "university-of-amsterdam-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35781,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2354434243103625,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-amsterdam",
-    "name": "PhD in media studies",
-    "slug": "university-of-amsterdam-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39969,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.378935036248123,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-amsterdam",
-    "name": "Master of Science in Medicine",
-    "slug": "university-of-amsterdam-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39684,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.313190346030736,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-amsterdam",
-    "name": "Master of Science in dentistry",
-    "slug": "university-of-amsterdam-master-of-science-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18201,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.404162049817693,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "eth-zurich",
-    "name": "PhD in Humanities",
-    "slug": "eth-zurich-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43437,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4617643025636684,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "eth-zurich",
-    "name": "Master of Science in Medicine",
-    "slug": "eth-zurich-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41299,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6109240529063156,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "eth-zurich",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "eth-zurich-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41548,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2758517370222586,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "eth-zurich",
-    "name": "Master of Science in media studies",
-    "slug": "eth-zurich-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31857,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.141052923656526,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "epfl",
     "name": "Master of Science in Business",
-    "slug": "epfl-master-of-science-in-business",
+    "slug": "university-of-amsterdam-master-of-science-in-business",
     "degree": "masters",
     "field": "Business",
     "durationMonths": 24,
@@ -1391,10 +1229,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36630,
+    "tuitionUsd": 42316,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4373512728895927,
+    "scholarshipAvailable": true,
+    "minGpa": 3.500127601408355,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1404,13 +1242,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "epfl",
-    "name": "Master of Science in Technology",
-    "slug": "epfl-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "university-of-amsterdam",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "university-of-amsterdam-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -1418,22 +1256,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23604,
+    "tuitionUsd": 21166,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4534413823323407,
+    "scholarshipAvailable": true,
+    "minGpa": 3.7518563471227386,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Technology",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "epfl",
+    "universitySlug": "university-of-amsterdam",
     "name": "Master of Arts in Performing arts",
-    "slug": "epfl-master-of-arts-in-performing-arts",
+    "slug": "university-of-amsterdam-master-of-arts-in-performing-arts",
     "degree": "masters",
     "field": "Performing arts",
     "durationMonths": 24,
@@ -1445,10 +1283,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19157,
+    "tuitionUsd": 37781,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7009419731705426,
+    "scholarshipAvailable": false,
+    "minGpa": 3.111981916484079,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1458,65 +1296,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "epfl",
-    "name": "Bachelor of Science in Management",
-    "slug": "epfl-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32889,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2087976116441235,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "nus",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "nus-bachelor-of-science-in-medicine",
-    "degree": "bachelors",
-    "field": "Medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17689,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7525717677542514,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "nus",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "nus-phd-in-sports-and-health-sciences",
+    "universitySlug": "eth-zurich",
+    "name": "PhD in Economy",
+    "slug": "eth-zurich-phd-in-economy",
     "degree": "phd",
-    "field": "Sports and Health Sciences",
+    "field": "Economy",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -1526,37 +1310,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31424,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.377576058367057,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "nus",
-    "name": "Bachelor of Science in Economy",
-    "slug": "nus-bachelor-of-science-in-economy",
-    "degree": "bachelors",
-    "field": "Economy",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25134,
+    "tuitionUsd": 21391,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.176507359267813,
+    "minGpa": 3.379879350037289,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1566,38 +1323,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "ntu-singapore",
-    "name": "PhD in Technology",
-    "slug": "ntu-singapore-phd-in-technology",
-    "degree": "phd",
-    "field": "Technology",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19113,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5319597196262036,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ntu-singapore",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "ntu-singapore-master-of-arts-in-veterinary-medicine",
+    "universitySlug": "eth-zurich",
+    "name": "Master of Science in Social Sciences",
+    "slug": "eth-zurich-master-of-science-in-social-sciences",
     "degree": "masters",
-    "field": "Veterinary medicine",
+    "field": "Social Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -1607,14 +1337,311 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25243,
+    "tuitionUsd": 43658,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4877684262667086,
+    "minGpa": 3.1529894677987995,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "eth-zurich",
+    "name": "Master of Science in Technology",
+    "slug": "eth-zurich-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16227,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.065606227875823,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "epfl",
+    "name": "Master of Arts in Technology",
+    "slug": "epfl-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23637,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.476640954544636,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "epfl",
+    "name": "PhD in Business",
+    "slug": "epfl-phd-in-business",
+    "degree": "phd",
+    "field": "Business",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21421,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0767683366476404,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "epfl",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "epfl-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24836,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.478640567932726,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "nus",
+    "name": "PhD in Social Sciences",
+    "slug": "nus-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42209,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1582386558710005,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "nus",
+    "name": "PhD in Humanities",
+    "slug": "nus-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40602,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.782829751811526,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "nus",
+    "name": "Master of Science in Performing arts",
+    "slug": "nus-master-of-science-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41929,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6101826366482426,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "nus",
+    "name": "Bachelor of Science in Business",
+    "slug": "nus-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17972,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.039318314435489,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "nus",
+    "name": "PhD in Natural Sciences",
+    "slug": "nus-phd-in-natural-sciences",
+    "degree": "phd",
+    "field": "Natural Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33161,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4444774009086343,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ntu-singapore",
+    "name": "Master of Arts in Business",
+    "slug": "ntu-singapore-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35474,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0274011737864885,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ntu-singapore",
+    "name": "Master of Arts in Technology",
+    "slug": "ntu-singapore-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20251,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.60718307373927,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
@@ -1634,10 +1661,91 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15922,
+    "tuitionUsd": 37192,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.632547617182489,
+    "minGpa": 3.35668092415726,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ntu-singapore",
+    "name": "PhD in Performing arts",
+    "slug": "ntu-singapore-phd-in-performing-arts",
+    "degree": "phd",
+    "field": "Performing arts",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19913,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.033639749771271,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ntu-singapore",
+    "name": "PhD in Social Sciences",
+    "slug": "ntu-singapore-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38437,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6810000841718895,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "trinity-college-dublin",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "trinity-college-dublin-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36992,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.44385513493204,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1648,37 +1756,10 @@ const programs = [
   },
   {
     "universitySlug": "trinity-college-dublin",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "trinity-college-dublin-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18315,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.752007028049876,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "trinity-college-dublin",
-    "name": "PhD in Business",
-    "slug": "trinity-college-dublin-phd-in-business",
+    "name": "PhD in Management",
+    "slug": "trinity-college-dublin-phd-in-management",
     "degree": "phd",
-    "field": "Business",
+    "field": "Management",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -1688,49 +1769,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15386,
+    "tuitionUsd": 40464,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.0853196507588487,
+    "minGpa": 3.613058880644597,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Management",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "trinity-college-dublin",
-    "name": "Master of Science in media studies",
-    "slug": "trinity-college-dublin-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29496,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6952868431537675,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kaist",
-    "name": "Master of Science in Medicine",
-    "slug": "kaist-master-of-science-in-medicine",
+    "name": "Master of Arts in Medicine",
+    "slug": "trinity-college-dublin-master-of-arts-in-medicine",
     "degree": "masters",
     "field": "Medicine",
     "durationMonths": 24,
@@ -1742,10 +1796,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20202,
+    "tuitionUsd": 17673,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6733089943549184,
+    "minGpa": 3.349169561630076,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1755,13 +1809,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "kaist",
-    "name": "PhD in Technology",
-    "slug": "kaist-phd-in-technology",
-    "degree": "phd",
-    "field": "Technology",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "universitySlug": "trinity-college-dublin",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "trinity-college-dublin-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -1769,22 +1823,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21896,
+    "tuitionUsd": 36063,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.085480138496402,
+    "scholarshipAvailable": true,
+    "minGpa": 3.3396153835221902,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Technology",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "kaist",
+    "universitySlug": "trinity-college-dublin",
     "name": "Bachelor of Science in Business",
-    "slug": "kaist-bachelor-of-science-in-business",
+    "slug": "trinity-college-dublin-bachelor-of-science-in-business",
     "degree": "bachelors",
     "field": "Business",
     "durationMonths": 48,
@@ -1796,14 +1850,95 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15761,
+    "tuitionUsd": 40688,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.074451895533806,
+    "minGpa": 3.0046384159137567,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kaist",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "kaist-master-of-science-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44679,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0442261106774664,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kaist",
+    "name": "Master of Science in Business",
+    "slug": "kaist-master-of-science-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34017,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3582675731945417,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kaist",
+    "name": "PhD in Medicine",
+    "slug": "kaist-phd-in-medicine",
+    "degree": "phd",
+    "field": "Medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17668,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.293705333081025,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
@@ -1823,10 +1958,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27249,
+    "tuitionUsd": 19517,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4177299408370736,
+    "minGpa": 3.0096022931626116,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1837,8 +1972,143 @@ const programs = [
   },
   {
     "universitySlug": "kaist",
+    "name": "Bachelor of Science in Management",
+    "slug": "kaist-bachelor-of-science-in-management",
+    "degree": "bachelors",
+    "field": "Management",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43924,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5610270497235375,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kth-stockholm",
+    "name": "PhD in Humanities",
+    "slug": "kth-stockholm-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36494,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5655601079335444,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kth-stockholm",
+    "name": "Master of Arts in Business",
+    "slug": "kth-stockholm-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25103,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1981887377478913,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kth-stockholm",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "kth-stockholm-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30741,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5496774865694536,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kth-stockholm",
+    "name": "Master of Science in dentistry",
+    "slug": "kth-stockholm-master-of-science-in-dentistry",
+    "degree": "masters",
+    "field": "dentistry",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30567,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.432484004204389,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "psl-university",
     "name": "Master of Arts in Management",
-    "slug": "kaist-master-of-arts-in-management",
+    "slug": "psl-university-master-of-arts-in-management",
     "degree": "masters",
     "field": "Management",
     "durationMonths": 24,
@@ -1850,10 +2120,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30397,
+    "tuitionUsd": 43467,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5054054011401217,
+    "scholarshipAvailable": false,
+    "minGpa": 3.185296019127682,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -1863,11 +2133,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "kth-stockholm",
-    "name": "PhD in media studies",
-    "slug": "kth-stockholm-phd-in-media-studies",
+    "universitySlug": "psl-university",
+    "name": "PhD in Business",
+    "slug": "psl-university-phd-in-business",
     "degree": "phd",
-    "field": "media studies",
+    "field": "Business",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -1877,78 +2147,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40519,
+    "tuitionUsd": 25778,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.19800847199228,
+    "minGpa": 3.791027194962813,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kth-stockholm",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "kth-stockholm-bachelor-of-science-in-performing-arts",
-    "degree": "bachelors",
-    "field": "Performing arts",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19506,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.730870434748017,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kth-stockholm",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "kth-stockholm-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19908,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.111169151772422,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "psl-university",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "psl-university-bachelor-of-science-in-dentistry",
+    "name": "Bachelor of Science in Economy",
+    "slug": "psl-university-bachelor-of-science-in-economy",
     "degree": "bachelors",
-    "field": "dentistry",
+    "field": "Economy",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -1958,24 +2174,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43086,
+    "tuitionUsd": 30915,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.5651888011431967,
+    "minGpa": 3.7329987694562012,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in dentistry",
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "psl-university",
-    "name": "Master of Science in Performing arts",
-    "slug": "psl-university-master-of-science-in-performing-arts",
+    "universitySlug": "university-of-auckland",
+    "name": "Master of Arts in Technology",
+    "slug": "university-of-auckland-master-of-arts-in-technology",
     "degree": "masters",
-    "field": "Performing arts",
+    "field": "Technology",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -1985,161 +2201,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19722,
+    "tuitionUsd": 22985,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3457821772668734,
+    "scholarshipAvailable": false,
+    "minGpa": 3.5221499068780466,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Performing arts",
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "psl-university",
-    "name": "Master of Arts in Humanities",
-    "slug": "psl-university-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32110,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.715747719066069,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "psl-university",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "psl-university-phd-in-sports-and-health-sciences",
+    "universitySlug": "university-of-auckland",
+    "name": "PhD in Natural Sciences",
+    "slug": "university-of-auckland-phd-in-natural-sciences",
     "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29603,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7651876475702752,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-auckland",
-    "name": "Bachelor of Science in media studies",
-    "slug": "university-of-auckland-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16449,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.344921036919166,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-auckland",
-    "name": "Master of Science in Performing arts",
-    "slug": "university-of-auckland-master-of-science-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23640,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5750372197343063,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-auckland",
-    "name": "Master of Science in Humanities",
-    "slug": "university-of-auckland-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26958,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5123718175746004,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-auckland",
-    "name": "Master of Science in Natural Sciences",
-    "slug": "university-of-auckland-master-of-science-in-natural-sciences",
-    "degree": "masters",
     "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -2147,10 +2228,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29561,
+    "tuitionUsd": 35769,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.650217671942951,
+    "scholarshipAvailable": false,
+    "minGpa": 3.396459927755625,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2160,63 +2241,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "polimi",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "polimi-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23653,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2703026448037678,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "polimi",
-    "name": "Master of Science in Business",
-    "slug": "polimi-master-of-science-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33592,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0303171687618957,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "polimi",
+    "universitySlug": "university-of-auckland",
     "name": "Bachelor of Science in Management",
-    "slug": "polimi-bachelor-of-science-in-management",
+    "slug": "university-of-auckland-bachelor-of-science-in-management",
     "degree": "bachelors",
     "field": "Management",
     "durationMonths": 48,
@@ -2228,10 +2255,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41931,
+    "tuitionUsd": 31660,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.0377893635488635,
+    "minGpa": 3.7551008082896784,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2241,11 +2268,38 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "uc-berkeley",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "uc-berkeley-bachelor-of-science-in-humanities",
+    "universitySlug": "polimi",
+    "name": "Master of Science in media studies",
+    "slug": "polimi-master-of-science-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34451,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5555953180508597,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "polimi",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "polimi-bachelor-of-science-in-sports-and-health-sciences",
     "degree": "bachelors",
-    "field": "Humanities",
+    "field": "Sports and Health Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -2255,37 +2309,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17401,
+    "tuitionUsd": 19322,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1764426792347082,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "uc-berkeley",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "uc-berkeley-phd-in-sports-and-health-sciences",
-    "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40649,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.624993195367934,
+    "scholarshipAvailable": false,
+    "minGpa": 3.553981357631876,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2295,11 +2322,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "uc-berkeley",
-    "name": "PhD in Social Sciences",
-    "slug": "uc-berkeley-phd-in-social-sciences",
+    "universitySlug": "polimi",
+    "name": "PhD in Performing arts",
+    "slug": "polimi-phd-in-performing-arts",
     "degree": "phd",
-    "field": "Social Sciences",
+    "field": "Performing arts",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -2309,10 +2336,91 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21790,
+    "tuitionUsd": 18123,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5124512465418194,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "uc-berkeley",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "uc-berkeley-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35504,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3110117735888984,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "uc-berkeley",
+    "name": "PhD in media studies",
+    "slug": "uc-berkeley-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16319,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.7967080122127728,
+    "minGpa": 3.7813534098816626,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "uc-berkeley",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "uc-berkeley-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40805,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.365721172712317,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2322,13 +2430,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "ucla",
-    "name": "PhD in dentistry",
-    "slug": "ucla-phd-in-dentistry",
-    "degree": "phd",
+    "universitySlug": "uc-berkeley",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "uc-berkeley-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
     "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -2336,10 +2444,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16758,
+    "tuitionUsd": 41480,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3222428200885283,
+    "minGpa": 3.271622484271142,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2350,12 +2458,12 @@ const programs = [
   },
   {
     "universitySlug": "ucla",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "ucla-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "PhD in Performing arts",
+    "slug": "ucla-phd-in-performing-arts",
+    "degree": "phd",
+    "field": "Performing arts",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -2363,49 +2471,103 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44383,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.226874589708475,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ucla",
-    "name": "Master of Science in Technology",
-    "slug": "ucla-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29516,
+    "tuitionUsd": 35545,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.0342633492312863,
+    "minGpa": 3.3337986764072114,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Technology",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "ucla",
+    "name": "Master of Science in media studies",
+    "slug": "ucla-master-of-science-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29462,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0017327667925446,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ucla",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "ucla-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24103,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5553921538263094,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-michigan",
+    "name": "Master of Science in Educational Sciences",
+    "slug": "university-of-michigan-master-of-science-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31560,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.05679188166812,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-michigan",
     "name": "PhD in Humanities",
-    "slug": "ucla-phd-in-humanities",
+    "slug": "university-of-michigan-phd-in-humanities",
     "degree": "phd",
     "field": "Humanities",
     "durationMonths": 60,
@@ -2417,10 +2579,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23456,
+    "tuitionUsd": 23894,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.498322594896824,
+    "minGpa": 3.666265505243895,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2431,12 +2593,12 @@ const programs = [
   },
   {
     "universitySlug": "university-of-michigan",
-    "name": "Master of Science in Technology",
-    "slug": "university-of-michigan-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "Bachelor of Science in Management",
+    "slug": "university-of-michigan-bachelor-of-science-in-management",
+    "degree": "bachelors",
+    "field": "Management",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -2444,26 +2606,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16108,
+    "tuitionUsd": 28505,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.592977495914451,
+    "minGpa": 3.1967300794231313,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Technology",
+      "Professional in Management",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-michigan",
-    "name": "Master of Arts in Humanities",
-    "slug": "university-of-michigan-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "Bachelor of Science in media studies",
+    "slug": "university-of-michigan-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -2471,68 +2633,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22906,
+    "tuitionUsd": 28645,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.497756674303817,
+    "minGpa": 3.075575700142867,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-michigan",
-    "name": "PhD in Business",
-    "slug": "university-of-michigan-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18352,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5039525277472885,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-michigan",
-    "name": "PhD in Social Sciences",
-    "slug": "university-of-michigan-phd-in-social-sciences",
-    "degree": "phd",
-    "field": "Social Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40608,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2239849090350745,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
+      "Professional in media studies",
       "Researcher",
       "Consultant"
     ]
@@ -2552,14 +2660,95 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36320,
+    "tuitionUsd": 38180,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4146769790697307,
+    "minGpa": 3.404959143450837,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-washington",
+    "name": "Bachelor of Science in Technology",
+    "slug": "university-of-washington-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37645,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.2568322716099405,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-washington",
+    "name": "Master of Arts in Humanities",
+    "slug": "university-of-washington-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38352,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2228208680618007,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-washington",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "university-of-washington-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17224,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.102618623608112,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
@@ -2579,10 +2768,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20848,
+    "tuitionUsd": 25900,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3563524762277663,
+    "scholarshipAvailable": false,
+    "minGpa": 3.523559348398875,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2592,13 +2781,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-washington",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "university-of-washington-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "universitySlug": "unc-chapel-hill",
+    "name": "PhD in Business",
+    "slug": "unc-chapel-hill-phd-in-business",
+    "degree": "phd",
+    "field": "Business",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -2606,78 +2795,51 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41428,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5850193128285572,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-washington",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "university-of-washington-bachelor-of-science-in-medicine",
-    "degree": "bachelors",
-    "field": "Medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36504,
+    "tuitionUsd": 30575,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.2898542566804574,
+    "minGpa": 3.583375350744569,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-washington",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "university-of-washington-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42191,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1044306703740565,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "unc-chapel-hill",
-    "name": "Master of Science in Performing arts",
-    "slug": "unc-chapel-hill-master-of-science-in-performing-arts",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "unc-chapel-hill-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43690,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3059870676804537,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "unc-chapel-hill",
+    "name": "Master of Science in media studies",
+    "slug": "unc-chapel-hill-master-of-science-in-media-studies",
     "degree": "masters",
-    "field": "Performing arts",
+    "field": "media studies",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -2687,14 +2849,41 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23851,
+    "tuitionUsd": 29685,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.7771058247255738,
+    "minGpa": 3.3902493042267974,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Performing arts",
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "unc-chapel-hill",
+    "name": "Master of Science in Management",
+    "slug": "unc-chapel-hill-master-of-science-in-management",
+    "degree": "masters",
+    "field": "Management",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25241,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0226710381266324,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
       "Researcher",
       "Consultant"
     ]
@@ -2714,10 +2903,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24779,
+    "tuitionUsd": 36289,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.6275755158656144,
+    "minGpa": 3.2239736276866062,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2727,121 +2916,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "unc-chapel-hill",
-    "name": "Master of Science in dentistry",
-    "slug": "unc-chapel-hill-master-of-science-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21007,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5844107529089433,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "unc-chapel-hill",
-    "name": "Master of Arts in Medicine",
-    "slug": "unc-chapel-hill-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18080,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1247170089565146,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "unc-chapel-hill",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "unc-chapel-hill-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43244,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6237220260048257,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "caltech",
-    "name": "Master of Arts in dentistry",
-    "slug": "caltech-master-of-arts-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24086,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.745870602020601,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "caltech",
-    "name": "Master of Arts in Technology",
-    "slug": "caltech-master-of-arts-in-technology",
-    "degree": "masters",
+    "name": "PhD in Technology",
+    "slug": "caltech-phd-in-technology",
+    "degree": "phd",
     "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -2849,10 +2930,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15378,
+    "tuitionUsd": 19045,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.5806353402919164,
+    "minGpa": 3.3562825471192106,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2863,8 +2944,8 @@ const programs = [
   },
   {
     "universitySlug": "caltech",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "caltech-master-of-arts-in-natural-sciences",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "caltech-master-of-science-in-natural-sciences",
     "degree": "masters",
     "field": "Natural Sciences",
     "durationMonths": 24,
@@ -2876,10 +2957,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29569,
+    "tuitionUsd": 43858,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.012148188873398,
+    "minGpa": 3.5297128450646547,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -2890,10 +2971,10 @@ const programs = [
   },
   {
     "universitySlug": "caltech",
-    "name": "Master of Arts in Management",
-    "slug": "caltech-master-of-arts-in-management",
+    "name": "Master of Arts in Medicine",
+    "slug": "caltech-master-of-arts-in-medicine",
     "degree": "masters",
-    "field": "Management",
+    "field": "Medicine",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -2903,134 +2984,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42575,
+    "tuitionUsd": 38647,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7990980180522094,
+    "minGpa": 3.336546413438328,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Management",
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-edinburgh",
-    "name": "Master of Arts in Business",
-    "slug": "university-of-edinburgh-master-of-arts-in-business",
+    "universitySlug": "caltech",
+    "name": "Master of Arts in Performing arts",
+    "slug": "caltech-master-of-arts-in-performing-arts",
     "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41579,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0300721338441607,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-edinburgh",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "university-of-edinburgh-bachelor-of-science-in-dentistry",
-    "degree": "bachelors",
-    "field": "dentistry",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38126,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5600169951957588,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-edinburgh",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "university-of-edinburgh-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33087,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.348773087116263,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-edinburgh",
-    "name": "Master of Science in Economy",
-    "slug": "university-of-edinburgh-master-of-science-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36120,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0512963000732674,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-edinburgh",
-    "name": "PhD in Performing arts",
-    "slug": "university-of-edinburgh-phd-in-performing-arts",
-    "degree": "phd",
     "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -3038,10 +3011,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31773,
+    "tuitionUsd": 32300,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.2820014241641315,
+    "minGpa": 3.1303219136412213,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -3051,1035 +3024,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "king-s-college-london",
-    "name": "PhD in Business",
-    "slug": "king-s-college-london-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22276,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0627488840857655,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "king-s-college-london",
-    "name": "Master of Science in Humanities",
-    "slug": "king-s-college-london-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31888,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.23664133519868,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "king-s-college-london",
-    "name": "PhD in Medicine",
-    "slug": "king-s-college-london-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24017,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2528341817354014,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "king-s-college-london",
-    "name": "Master of Arts in Educational Sciences",
-    "slug": "king-s-college-london-master-of-arts-in-educational-sciences",
-    "degree": "masters",
-    "field": "Educational Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30484,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.374573043260891,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "king-s-college-london",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "king-s-college-london-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30267,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2399602941051056,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-manchester",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "university-of-manchester-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28913,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.05846077980881,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-manchester",
-    "name": "Master of Science in dentistry",
-    "slug": "university-of-manchester-master-of-science-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24825,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0492298109804925,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-manchester",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "university-of-manchester-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22123,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.672782507755051,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-warwick",
-    "name": "PhD in media studies",
-    "slug": "university-of-warwick-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38557,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.310806982978086,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-warwick",
-    "name": "Bachelor of Science in Management",
-    "slug": "university-of-warwick-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38496,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.311742926681875,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-warwick",
-    "name": "PhD in Natural Sciences",
-    "slug": "university-of-warwick-phd-in-natural-sciences",
-    "degree": "phd",
-    "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25739,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0465572815975888,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-buckingham",
-    "name": "Master of Science in Humanities",
-    "slug": "university-of-buckingham-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23806,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7866142809901824,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-buckingham",
-    "name": "Master of Science in Social Sciences",
-    "slug": "university-of-buckingham-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37090,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.415591523266298,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-buckingham",
-    "name": "PhD in media studies",
-    "slug": "university-of-buckingham-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42869,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4689798070973388,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-buckingham",
-    "name": "Master of Science in Economy",
-    "slug": "university-of-buckingham-master-of-science-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41614,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6486454066871095,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "bpp-university",
-    "name": "Master of Arts in Management",
-    "slug": "bpp-university-master-of-arts-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28104,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3422871539987,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "bpp-university",
-    "name": "Master of Science in Natural Sciences",
-    "slug": "bpp-university-master-of-science-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41062,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5993035503492874,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "bpp-university",
-    "name": "Master of Science in Humanities",
-    "slug": "bpp-university-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29257,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4466596182154747,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "regent-s-university-london",
-    "name": "Master of Science in Technology",
-    "slug": "regent-s-university-london-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25599,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1704790212361966,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "regent-s-university-london",
-    "name": "Master of Science in Business",
-    "slug": "regent-s-university-london-master-of-science-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22886,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4149895599729536,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "regent-s-university-london",
-    "name": "Bachelor of Science in Educational Sciences",
-    "slug": "regent-s-university-london-bachelor-of-science-in-educational-sciences",
-    "degree": "bachelors",
-    "field": "Educational Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37950,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7722719848547674,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "regent-s-university-london",
-    "name": "Bachelor of Science in Management",
-    "slug": "regent-s-university-london-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25848,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3593527026905674,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "regent-s-university-london",
-    "name": "PhD in Natural Sciences",
-    "slug": "regent-s-university-london-phd-in-natural-sciences",
-    "degree": "phd",
-    "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38007,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5585758248016557,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "richmond-american-university",
-    "name": "Master of Arts in dentistry",
-    "slug": "richmond-american-university-master-of-arts-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42585,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1209603179949674,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "richmond-american-university",
-    "name": "PhD in Medicine",
-    "slug": "richmond-american-university-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31087,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6575487872425887,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "richmond-american-university",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "richmond-american-university-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25123,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6882770411197745,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "richmond-american-university",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "richmond-american-university-bachelor-of-science-in-natural-sciences",
-    "degree": "bachelors",
-    "field": "Natural Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26709,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.541368563715303,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "richmond-american-university",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "richmond-american-university-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18511,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7029154240492463,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "arden-university",
-    "name": "PhD in Management",
-    "slug": "arden-university-phd-in-management",
-    "degree": "phd",
-    "field": "Management",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33435,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.24741380580741,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "arden-university",
-    "name": "PhD in Business",
-    "slug": "arden-university-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40670,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.140536670797255,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "arden-university",
-    "name": "Bachelor of Science in Educational Sciences",
-    "slug": "arden-university-bachelor-of-science-in-educational-sciences",
-    "degree": "bachelors",
-    "field": "Educational Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30064,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.042664713618085,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "mcmaster-university",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "mcmaster-university-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33130,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.536833066297263,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "mcmaster-university",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "mcmaster-university-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23966,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.341383620812611,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "mcmaster-university",
-    "name": "PhD in media studies",
-    "slug": "mcmaster-university-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32079,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.526176031855309,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "mcmaster-university",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "mcmaster-university-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23450,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5561251347283207,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-waterloo",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "university-of-waterloo-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20313,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1497081831999285,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-waterloo",
-    "name": "Master of Arts in Medicine",
-    "slug": "university-of-waterloo-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28394,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.163668760799344,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-waterloo",
-    "name": "PhD in Technology",
-    "slug": "university-of-waterloo-phd-in-technology",
-    "degree": "phd",
-    "field": "Technology",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34729,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5162959597436503,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-waterloo",
+    "universitySlug": "university-of-edinburgh",
     "name": "Master of Science in Educational Sciences",
-    "slug": "university-of-waterloo-master-of-science-in-educational-sciences",
+    "slug": "university-of-edinburgh-master-of-science-in-educational-sciences",
     "degree": "masters",
     "field": "Educational Sciences",
     "durationMonths": 24,
@@ -4091,10 +3038,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23651,
+    "tuitionUsd": 25369,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7962896338757317,
+    "scholarshipAvailable": true,
+    "minGpa": 3.4143693173080987,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4104,11 +3051,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-alberta",
-    "name": "Master of Science in Management",
-    "slug": "university-of-alberta-master-of-science-in-management",
+    "universitySlug": "university-of-edinburgh",
+    "name": "Master of Science in Humanities",
+    "slug": "university-of-edinburgh-master-of-science-in-humanities",
     "degree": "masters",
-    "field": "Management",
+    "field": "Humanities",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -4118,22 +3065,76 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44522,
+    "tuitionUsd": 19563,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3986969170124253,
+    "minGpa": 3.6702848611231067,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Management",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-alberta",
+    "universitySlug": "university-of-edinburgh",
+    "name": "Bachelor of Science in Economy",
+    "slug": "university-of-edinburgh-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20260,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.253659033113996,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-edinburgh",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-edinburgh-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31252,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0139370428757726,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "king-s-college-london",
     "name": "PhD in Humanities",
-    "slug": "university-of-alberta-phd-in-humanities",
+    "slug": "king-s-college-london-phd-in-humanities",
     "degree": "phd",
     "field": "Humanities",
     "durationMonths": 60,
@@ -4145,10 +3146,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27775,
+    "tuitionUsd": 29891,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.14265559598061,
+    "minGpa": 3.109049421762483,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4158,9 +3159,225 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-alberta",
+    "universitySlug": "king-s-college-london",
+    "name": "PhD in media studies",
+    "slug": "king-s-college-london-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33490,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6327021502737855,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "king-s-college-london",
+    "name": "PhD in Natural Sciences",
+    "slug": "king-s-college-london-phd-in-natural-sciences",
+    "degree": "phd",
+    "field": "Natural Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28735,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4957557674818,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-manchester",
+    "name": "PhD in Medicine",
+    "slug": "university-of-manchester-phd-in-medicine",
+    "degree": "phd",
+    "field": "Medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29717,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1369672443818217,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-manchester",
+    "name": "PhD in Technology",
+    "slug": "university-of-manchester-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44659,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.336429660336698,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-manchester",
+    "name": "PhD in dentistry",
+    "slug": "university-of-manchester-phd-in-dentistry",
+    "degree": "phd",
+    "field": "dentistry",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42632,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6367697424707544,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-manchester",
+    "name": "PhD in Veterinary medicine",
+    "slug": "university-of-manchester-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42000,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.491288346000238,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-manchester",
+    "name": "Master of Science in media studies",
+    "slug": "university-of-manchester-master-of-science-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25857,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.2720805267260396,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-warwick",
+    "name": "Master of Arts in Humanities",
+    "slug": "university-of-warwick-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15612,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3600920904994367,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-warwick",
     "name": "Master of Science in Veterinary medicine",
-    "slug": "university-of-alberta-master-of-science-in-veterinary-medicine",
+    "slug": "university-of-warwick-master-of-science-in-veterinary-medicine",
     "degree": "masters",
     "field": "Veterinary medicine",
     "durationMonths": 24,
@@ -4172,10 +3389,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39759,
+    "tuitionUsd": 23638,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.604262945807408,
+    "minGpa": 3.654881266020137,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4185,11 +3402,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-alberta",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "university-of-alberta-bachelor-of-science-in-dentistry",
+    "universitySlug": "university-of-warwick",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "university-of-warwick-bachelor-of-science-in-social-sciences",
     "degree": "bachelors",
-    "field": "dentistry",
+    "field": "Social Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -4199,78 +3416,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28831,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.388717210384423,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-montreal",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "university-of-montreal-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38515,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4965625054486527,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-montreal",
-    "name": "Master of Arts in Economy",
-    "slug": "university-of-montreal-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21276,
+    "tuitionUsd": 19486,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.7777455620094313,
+    "minGpa": 3.0175909969787056,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Economy",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-montreal",
-    "name": "Bachelor of Science in media studies",
-    "slug": "university-of-montreal-bachelor-of-science-in-media-studies",
+    "universitySlug": "university-of-warwick",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-warwick-bachelor-of-science-in-sports-and-health-sciences",
     "degree": "bachelors",
-    "field": "media studies",
+    "field": "Sports and Health Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -4280,22 +3443,157 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36234,
+    "tuitionUsd": 32772,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.428992744637368,
+    "minGpa": 3.472760952659849,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Sports and Health Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-montreal",
+    "universitySlug": "university-of-buckingham",
+    "name": "PhD in Educational Sciences",
+    "slug": "university-of-buckingham-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24762,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0506416994423473,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-buckingham",
+    "name": "Master of Arts in Medicine",
+    "slug": "university-of-buckingham-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29526,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.212833349522884,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-buckingham",
+    "name": "PhD in Management",
+    "slug": "university-of-buckingham-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40953,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0610990520550083,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "bpp-university",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "bpp-university-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26326,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7964759449554633,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "bpp-university",
+    "name": "Master of Arts in Medicine",
+    "slug": "bpp-university-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29919,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.32928116190205,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "bpp-university",
     "name": "Master of Arts in Social Sciences",
-    "slug": "university-of-montreal-master-of-arts-in-social-sciences",
+    "slug": "bpp-university-master-of-arts-in-social-sciences",
     "degree": "masters",
     "field": "Social Sciences",
     "durationMonths": 24,
@@ -4307,14 +3605,662 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39358,
+    "tuitionUsd": 39561,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.573549618110078,
+    "minGpa": 3.529915318098247,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "bpp-university",
+    "name": "Master of Arts in Veterinary medicine",
+    "slug": "bpp-university-master-of-arts-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16228,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6022071505606266,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "regent-s-university-london",
+    "name": "Master of Arts in Management",
+    "slug": "regent-s-university-london-master-of-arts-in-management",
+    "degree": "masters",
+    "field": "Management",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15274,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7529105825783993,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "regent-s-university-london",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "regent-s-university-london-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33575,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5104120256069793,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "regent-s-university-london",
+    "name": "Master of Arts in media studies",
+    "slug": "regent-s-university-london-master-of-arts-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27990,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.74392814481353,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "richmond-american-university",
+    "name": "Master of Science in media studies",
+    "slug": "richmond-american-university-master-of-science-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16831,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.720571966347055,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "richmond-american-university",
+    "name": "Bachelor of Science in Economy",
+    "slug": "richmond-american-university-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19974,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.625329431614759,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "richmond-american-university",
+    "name": "PhD in Natural Sciences",
+    "slug": "richmond-american-university-phd-in-natural-sciences",
+    "degree": "phd",
+    "field": "Natural Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24570,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.360717090836542,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "richmond-american-university",
+    "name": "PhD in Business",
+    "slug": "richmond-american-university-phd-in-business",
+    "degree": "phd",
+    "field": "Business",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24023,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4997330257238306,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "richmond-american-university",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "richmond-american-university-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24206,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.124344098883662,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "arden-university",
+    "name": "Bachelor of Science in Economy",
+    "slug": "arden-university-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21092,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.336261820857227,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "arden-university",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "arden-university-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21174,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.42210711829067,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "arden-university",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "arden-university-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22391,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1261696144659648,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "arden-university",
+    "name": "Master of Arts in Technology",
+    "slug": "arden-university-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21810,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3072488979441457,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "arden-university",
+    "name": "Bachelor of Science in Veterinary medicine",
+    "slug": "arden-university-bachelor-of-science-in-veterinary-medicine",
+    "degree": "bachelors",
+    "field": "Veterinary medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25629,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.770434229701483,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "mcmaster-university",
+    "name": "Bachelor of Science in media studies",
+    "slug": "mcmaster-university-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23202,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.514545899590794,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "mcmaster-university",
+    "name": "Master of Arts in Veterinary medicine",
+    "slug": "mcmaster-university-master-of-arts-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28704,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.082577034785387,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "mcmaster-university",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "mcmaster-university-master-of-arts-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16035,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.532116767756984,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "mcmaster-university",
+    "name": "Bachelor of Science in Technology",
+    "slug": "mcmaster-university-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28762,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.439320330549826,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-waterloo",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "university-of-waterloo-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42329,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.420705720829069,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-waterloo",
+    "name": "Master of Science in Technology",
+    "slug": "university-of-waterloo-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30266,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5833054257245163,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-waterloo",
+    "name": "PhD in media studies",
+    "slug": "university-of-waterloo-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29564,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1115640282186567,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-alberta",
+    "name": "Master of Arts in Medicine",
+    "slug": "university-of-alberta-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40533,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4036807350042673,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-alberta",
+    "name": "PhD in media studies",
+    "slug": "university-of-alberta-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39011,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4612965193790837,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-alberta",
+    "name": "Master of Arts in Economy",
+    "slug": "university-of-alberta-master-of-arts-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40863,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.360904964783436,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
@@ -4334,10 +4280,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37347,
+    "tuitionUsd": 25969,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.321827660517088,
+    "scholarshipAvailable": true,
+    "minGpa": 3.5936892704218404,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4347,40 +4293,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-calgary",
-    "name": "Bachelor of Science in Economy",
-    "slug": "university-of-calgary-bachelor-of-science-in-economy",
-    "degree": "bachelors",
-    "field": "Economy",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34306,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4279517319294834,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-calgary",
-    "name": "Master of Arts in Business",
-    "slug": "university-of-calgary-master-of-arts-in-business",
-    "degree": "masters",
+    "universitySlug": "university-of-montreal",
+    "name": "PhD in Business",
+    "slug": "university-of-montreal-phd-in-business",
+    "degree": "phd",
     "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -4388,10 +4307,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38853,
+    "tuitionUsd": 20758,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.579928413638651,
+    "minGpa": 3.115793449828256,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4401,40 +4320,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-calgary",
-    "name": "PhD in Social Sciences",
-    "slug": "university-of-calgary-phd-in-social-sciences",
-    "degree": "phd",
-    "field": "Social Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43426,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.31815107484478,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-calgary",
-    "name": "PhD in Medicine",
-    "slug": "university-of-calgary-phd-in-medicine",
-    "degree": "phd",
+    "universitySlug": "university-of-montreal",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "university-of-montreal-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
     "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -4442,10 +4334,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44491,
+    "tuitionUsd": 36959,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3683553871220657,
+    "minGpa": 3.050292144527717,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4456,10 +4348,91 @@ const programs = [
   },
   {
     "universitySlug": "university-of-calgary",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "university-of-calgary-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
+    "name": "PhD in Technology",
+    "slug": "university-of-calgary-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40856,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.534890975456118,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-calgary",
+    "name": "Master of Arts in Performing arts",
+    "slug": "university-of-calgary-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24856,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2285998246798564,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-calgary",
+    "name": "PhD in Humanities",
+    "slug": "university-of-calgary-phd-in-humanities",
+    "degree": "phd",
     "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43607,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.383254829943131,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-calgary",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "university-of-calgary-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -4469,10 +4442,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21360,
+    "tuitionUsd": 27122,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3681333528075044,
+    "minGpa": 3.2874924386251343,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "trinity-western-university",
+    "name": "PhD in Humanities",
+    "slug": "trinity-western-university-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 32396,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.323845328573868,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4483,37 +4483,10 @@ const programs = [
   },
   {
     "universitySlug": "trinity-western-university",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "trinity-western-university-phd-in-sports-and-health-sciences",
-    "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31580,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.173333405650938,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "trinity-western-university",
-    "name": "Bachelor of Science in Business",
-    "slug": "trinity-western-university-bachelor-of-science-in-business",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "trinity-western-university-bachelor-of-science-in-social-sciences",
     "degree": "bachelors",
-    "field": "Business",
+    "field": "Social Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -4523,76 +4496,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33157,
+    "tuitionUsd": 15213,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.498739532710129,
+    "minGpa": 3.461772700374575,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "trinity-western-university",
-    "name": "PhD in Management",
-    "slug": "trinity-western-university-phd-in-management",
-    "degree": "phd",
-    "field": "Management",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21572,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.58841963881895,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "quest-university",
-    "name": "PhD in Performing arts",
-    "slug": "quest-university-phd-in-performing-arts",
-    "degree": "phd",
-    "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25103,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6461179645790214,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "quest-university",
     "name": "Bachelor of Science in Technology",
-    "slug": "quest-university-bachelor-of-science-in-technology",
+    "slug": "trinity-western-university-bachelor-of-science-in-technology",
     "degree": "bachelors",
     "field": "Technology",
     "durationMonths": 48,
@@ -4604,10 +4523,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39161,
+    "tuitionUsd": 33015,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.1863786986518177,
+    "minGpa": 3.6583634363336666,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4617,13 +4536,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "quest-university",
-    "name": "PhD in Economy",
-    "slug": "quest-university-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "universitySlug": "trinity-western-university",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "trinity-western-university-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -4631,26 +4550,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41113,
+    "tuitionUsd": 16327,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.443384111619234,
+    "minGpa": 3.7728921767788757,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Economy",
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "quest-university",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "quest-university-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "quest-university-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -4658,49 +4577,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34587,
+    "tuitionUsd": 19811,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.1930858015216192,
+    "minGpa": 3.740117079245165,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "yorkville-university",
-    "name": "PhD in Business",
-    "slug": "yorkville-university-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37945,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1302119011974976,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "yorkville-university",
+    "universitySlug": "quest-university",
     "name": "PhD in dentistry",
-    "slug": "yorkville-university-phd-in-dentistry",
+    "slug": "quest-university-phd-in-dentistry",
     "degree": "phd",
     "field": "dentistry",
     "durationMonths": 60,
@@ -4712,10 +4604,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39165,
+    "tuitionUsd": 35548,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.2644707048283648,
+    "minGpa": 3.2521328208166542,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4725,36 +4617,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "yorkville-university",
-    "name": "PhD in Humanities",
-    "slug": "yorkville-university-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20132,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.693705703746225,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "yorkville-university",
+    "universitySlug": "quest-university",
     "name": "PhD in Social Sciences",
-    "slug": "yorkville-university-phd-in-social-sciences",
+    "slug": "quest-university-phd-in-social-sciences",
     "degree": "phd",
     "field": "Social Sciences",
     "durationMonths": 60,
@@ -4766,10 +4631,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29550,
+    "tuitionUsd": 37027,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2608261492298323,
+    "scholarshipAvailable": true,
+    "minGpa": 3.60119996401096,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4779,36 +4644,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "crandall-university",
-    "name": "PhD in Social Sciences",
-    "slug": "crandall-university-phd-in-social-sciences",
-    "degree": "phd",
-    "field": "Social Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18464,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1858313933771556,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "crandall-university",
+    "universitySlug": "quest-university",
     "name": "Bachelor of Science in Medicine",
-    "slug": "crandall-university-bachelor-of-science-in-medicine",
+    "slug": "quest-university-bachelor-of-science-in-medicine",
     "degree": "bachelors",
     "field": "Medicine",
     "durationMonths": 48,
@@ -4820,10 +4658,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37028,
+    "tuitionUsd": 27122,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.419917813346295,
+    "minGpa": 3.3705436956643218,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4833,94 +4671,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "crandall-university",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "crandall-university-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27752,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.418658807066201,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "crandall-university",
-    "name": "Master of Science in media studies",
-    "slug": "crandall-university-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32193,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.532596927598854,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "st-mary-s-university",
-    "name": "Master of Arts in Technology",
-    "slug": "st-mary-s-university-master-of-arts-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37062,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.189241145938199,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "st-mary-s-university",
-    "name": "PhD in Natural Sciences",
-    "slug": "st-mary-s-university-phd-in-natural-sciences",
-    "degree": "phd",
+    "universitySlug": "quest-university",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "quest-university-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
     "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -4928,10 +4685,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18173,
+    "tuitionUsd": 34036,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.0898360144572936,
+    "minGpa": 3.7572638166916525,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -4941,38 +4698,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "st-mary-s-university",
-    "name": "Master of Science in Management",
-    "slug": "st-mary-s-university-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33326,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1248197897144183,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "bond-university",
-    "name": "PhD in media studies",
-    "slug": "bond-university-phd-in-media-studies",
+    "universitySlug": "yorkville-university",
+    "name": "PhD in Educational Sciences",
+    "slug": "yorkville-university-phd-in-educational-sciences",
     "degree": "phd",
-    "field": "media studies",
+    "field": "Educational Sciences",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -4982,26 +4712,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29650,
+    "tuitionUsd": 16323,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.683570069233417,
+    "minGpa": 3.5496822066157896,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Educational Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "bond-university",
-    "name": "Master of Arts in Humanities",
-    "slug": "bond-university-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "yorkville-university",
+    "name": "Bachelor of Science in Veterinary medicine",
+    "slug": "yorkville-university-bachelor-of-science-in-veterinary-medicine",
+    "degree": "bachelors",
+    "field": "Veterinary medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -5009,22 +4739,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42691,
+    "tuitionUsd": 30363,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.375806645452199,
+    "scholarshipAvailable": false,
+    "minGpa": 3.2459714569441447,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Veterinary medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "bond-university",
-    "name": "Master of Arts in Business",
-    "slug": "bond-university-master-of-arts-in-business",
+    "universitySlug": "yorkville-university",
+    "name": "Master of Science in Business",
+    "slug": "yorkville-university-master-of-science-in-business",
     "degree": "masters",
     "field": "Business",
     "durationMonths": 24,
@@ -5036,10 +4766,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20582,
+    "tuitionUsd": 20126,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.7043315058416812,
+    "minGpa": 3.7758400308741633,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5049,38 +4779,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "bond-university",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "bond-university-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42352,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7346898261703516,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "torrens-university",
-    "name": "PhD in Technology",
-    "slug": "torrens-university-phd-in-technology",
+    "universitySlug": "crandall-university",
+    "name": "PhD in Humanities",
+    "slug": "crandall-university-phd-in-humanities",
     "degree": "phd",
-    "field": "Technology",
+    "field": "Humanities",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -5090,22 +4793,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17007,
+    "tuitionUsd": 27203,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.248407744869066,
+    "minGpa": 3.5914632178060284,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Technology",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "torrens-university",
+    "universitySlug": "crandall-university",
     "name": "Bachelor of Science in Economy",
-    "slug": "torrens-university-bachelor-of-science-in-economy",
+    "slug": "crandall-university-bachelor-of-science-in-economy",
     "degree": "bachelors",
     "field": "Economy",
     "durationMonths": 48,
@@ -5117,10 +4820,307 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28872,
+    "tuitionUsd": 34655,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.129084137123894,
+    "minGpa": 3.709051060113675,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "crandall-university",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "crandall-university-master-of-arts-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36949,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1268351698604406,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "crandall-university",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "crandall-university-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
+    "field": "Natural Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21578,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0522173303677405,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "st-mary-s-university",
+    "name": "Master of Science in Social Sciences",
+    "slug": "st-mary-s-university-master-of-science-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29912,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5374871671035963,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "st-mary-s-university",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "st-mary-s-university-master-of-arts-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27592,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6991152706883987,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "st-mary-s-university",
+    "name": "Master of Science in Humanities",
+    "slug": "st-mary-s-university-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23176,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.601479413171615,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "bond-university",
+    "name": "Master of Science in Humanities",
+    "slug": "bond-university-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39518,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2053742486513346,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "bond-university",
+    "name": "Master of Arts in Performing arts",
+    "slug": "bond-university-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21277,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.768589205410904,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "bond-university",
+    "name": "Bachelor of Science in Economy",
+    "slug": "bond-university-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22843,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0620909741322317,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "bond-university",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "bond-university-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
+    "field": "Natural Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18172,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5315750694061676,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "torrens-university",
+    "name": "Master of Arts in Technology",
+    "slug": "torrens-university-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38365,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.544334707112644,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "torrens-university",
+    "name": "PhD in Economy",
+    "slug": "torrens-university-phd-in-economy",
+    "degree": "phd",
+    "field": "Economy",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41256,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4367008660383638,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5131,10 +5131,10 @@ const programs = [
   },
   {
     "universitySlug": "torrens-university",
-    "name": "Master of Science in Educational Sciences",
-    "slug": "torrens-university-master-of-science-in-educational-sciences",
+    "name": "Master of Science in Social Sciences",
+    "slug": "torrens-university-master-of-science-in-social-sciences",
     "degree": "masters",
-    "field": "Educational Sciences",
+    "field": "Social Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -5144,26 +5144,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21396,
+    "tuitionUsd": 35249,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6024662846628126,
+    "minGpa": 3.6344340640139206,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Educational Sciences",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "torrens-university",
-    "name": "Bachelor of Science in Business",
-    "slug": "torrens-university-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "universitySlug": "university-of-notre-dame-australia",
+    "name": "PhD in Veterinary medicine",
+    "slug": "university-of-notre-dame-australia-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -5171,14 +5171,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43982,
+    "tuitionUsd": 29267,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.605489906884449,
+    "scholarshipAvailable": false,
+    "minGpa": 3.5148240810618683,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Veterinary medicine",
       "Researcher",
       "Consultant"
     ]
@@ -5198,10 +5198,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43667,
+    "tuitionUsd": 40914,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.123309455958091,
+    "scholarshipAvailable": false,
+    "minGpa": 3.2685296875686336,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5212,64 +5212,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-notre-dame-australia",
-    "name": "PhD in Social Sciences",
-    "slug": "university-of-notre-dame-australia-phd-in-social-sciences",
-    "degree": "phd",
-    "field": "Social Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40904,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7968362053369096,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-notre-dame-australia",
-    "name": "Master of Arts in Performing arts",
-    "slug": "university-of-notre-dame-australia-master-of-arts-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20500,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6194618293255765,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "avondale-university",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "avondale-university-bachelor-of-science-in-humanities",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-notre-dame-australia-bachelor-of-science-in-sports-and-health-sciences",
     "degree": "bachelors",
-    "field": "Humanities",
+    "field": "Sports and Health Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -5279,24 +5225,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23997,
+    "tuitionUsd": 35108,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.3419851482377707,
+    "minGpa": 3.7635446043337653,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Sports and Health Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "avondale-university",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "avondale-university-master-of-arts-in-social-sciences",
+    "universitySlug": "university-of-notre-dame-australia",
+    "name": "Master of Science in Humanities",
+    "slug": "university-of-notre-dame-australia-master-of-science-in-humanities",
     "degree": "masters",
-    "field": "Social Sciences",
+    "field": "Humanities",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -5306,41 +5252,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29305,
+    "tuitionUsd": 23717,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5558291268242908,
+    "scholarshipAvailable": true,
+    "minGpa": 3.7164767660255684,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "avondale-university",
-    "name": "PhD in Economy",
-    "slug": "avondale-university-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17612,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5747142616496017,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
@@ -5360,10 +5279,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21069,
+    "tuitionUsd": 29245,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.347432402224723,
+    "minGpa": 3.6052858883947354,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5373,38 +5292,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "macleay-college",
-    "name": "Master of Science in Economy",
-    "slug": "macleay-college-master-of-science-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44508,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.752174024232053,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "macleay-college",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "macleay-college-bachelor-of-science-in-veterinary-medicine",
+    "universitySlug": "avondale-university",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "avondale-university-bachelor-of-science-in-educational-sciences",
     "degree": "bachelors",
-    "field": "Veterinary medicine",
+    "field": "Educational Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -5414,10 +5306,91 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41614,
+    "tuitionUsd": 33109,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.7004762233250967,
+    "minGpa": 3.3152621460927065,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "avondale-university",
+    "name": "Master of Arts in Humanities",
+    "slug": "avondale-university-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30681,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.24220921879388,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "macleay-college",
+    "name": "PhD in media studies",
+    "slug": "macleay-college-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30206,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6773444320315956,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "macleay-college",
+    "name": "PhD in Veterinary medicine",
+    "slug": "macleay-college-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35793,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.574047114931041,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5428,10 +5401,64 @@ const programs = [
   },
   {
     "universitySlug": "macleay-college",
-    "name": "Master of Arts in Management",
-    "slug": "macleay-college-master-of-arts-in-management",
+    "name": "PhD in dentistry",
+    "slug": "macleay-college-phd-in-dentistry",
+    "degree": "phd",
+    "field": "dentistry",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41756,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.496925578381463,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "macleay-college",
+    "name": "PhD in Educational Sciences",
+    "slug": "macleay-college-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24471,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6806953366781707,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "heidelberg-university",
+    "name": "Master of Science in Humanities",
+    "slug": "heidelberg-university-master-of-science-in-humanities",
     "degree": "masters",
-    "field": "Management",
+    "field": "Humanities",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -5441,26 +5468,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29160,
+    "tuitionUsd": 37535,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.526574272207065,
+    "scholarshipAvailable": false,
+    "minGpa": 3.499006125508142,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Management",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "macleay-college",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "macleay-college-bachelor-of-science-in-performing-arts",
-    "degree": "bachelors",
-    "field": "Performing arts",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "universitySlug": "heidelberg-university",
+    "name": "PhD in Sports and Health Sciences",
+    "slug": "heidelberg-university-phd-in-sports-and-health-sciences",
+    "degree": "phd",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -5468,10 +5495,64 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22134,
+    "tuitionUsd": 24761,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.569551601780451,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "heidelberg-university",
+    "name": "PhD in media studies",
+    "slug": "heidelberg-university-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41703,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3648596044161048,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "heidelberg-university",
+    "name": "PhD in Performing arts",
+    "slug": "heidelberg-university-phd-in-performing-arts",
+    "degree": "phd",
+    "field": "Performing arts",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38485,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.5753061090423834,
+    "minGpa": 3.3564957505627167,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5481,9 +5562,36 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "heidelberg-university",
+    "universitySlug": "humboldt-university",
+    "name": "Master of Science in dentistry",
+    "slug": "humboldt-university-master-of-science-in-dentistry",
+    "degree": "masters",
+    "field": "dentistry",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41588,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.225704498021096,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "humboldt-university",
     "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "heidelberg-university-master-of-arts-in-sports-and-health-sciences",
+    "slug": "humboldt-university-master-of-arts-in-sports-and-health-sciences",
     "degree": "masters",
     "field": "Sports and Health Sciences",
     "durationMonths": 24,
@@ -5495,10 +5603,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38826,
+    "tuitionUsd": 29305,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.5715056451603178,
+    "minGpa": 3.501809309144483,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5508,13 +5616,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "heidelberg-university",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "heidelberg-university-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "universitySlug": "humboldt-university",
+    "name": "PhD in Technology",
+    "slug": "humboldt-university-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -5522,10 +5630,64 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16594,
+    "tuitionUsd": 15353,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.2703772545829035,
+    "minGpa": 3.155660195841947,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "free-university-of-berlin",
+    "name": "Master of Arts in Business",
+    "slug": "free-university-of-berlin-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23878,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0664379636514316,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "free-university-of-berlin",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "free-university-of-berlin-master-of-science-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19777,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.312904264036312,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5535,63 +5697,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "heidelberg-university",
-    "name": "Master of Arts in Economy",
-    "slug": "heidelberg-university-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31887,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.612219780518251,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "humboldt-university",
-    "name": "Master of Arts in Medicine",
-    "slug": "humboldt-university-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17627,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.790564113425888,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "humboldt-university",
+    "universitySlug": "free-university-of-berlin",
     "name": "Master of Science in Economy",
-    "slug": "humboldt-university-master-of-science-in-economy",
+    "slug": "free-university-of-berlin-master-of-science-in-economy",
     "degree": "masters",
     "field": "Economy",
     "durationMonths": 24,
@@ -5603,10 +5711,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40772,
+    "tuitionUsd": 23640,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3725325402967115,
+    "scholarshipAvailable": true,
+    "minGpa": 3.2494394056552665,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5616,63 +5724,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "humboldt-university",
-    "name": "Master of Science in Natural Sciences",
-    "slug": "humboldt-university-master-of-science-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20399,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.560579968947466,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "humboldt-university",
-    "name": "Master of Science in media studies",
-    "slug": "humboldt-university-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30779,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4995390841316274,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "humboldt-university",
+    "universitySlug": "university-of-t-bingen",
     "name": "Master of Arts in Technology",
-    "slug": "humboldt-university-master-of-arts-in-technology",
+    "slug": "university-of-t-bingen-master-of-arts-in-technology",
     "degree": "masters",
     "field": "Technology",
     "durationMonths": 24,
@@ -5684,10 +5738,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27192,
+    "tuitionUsd": 39429,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.636487721205981,
+    "minGpa": 3.666886200287661,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5697,11 +5751,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "free-university-of-berlin",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "free-university-of-berlin-bachelor-of-science-in-performing-arts",
+    "universitySlug": "university-of-t-bingen",
+    "name": "Bachelor of Science in Economy",
+    "slug": "university-of-t-bingen-bachelor-of-science-in-economy",
     "degree": "bachelors",
-    "field": "Performing arts",
+    "field": "Economy",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -5711,37 +5765,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32961,
+    "tuitionUsd": 29383,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.4397706625568167,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "free-university-of-berlin",
-    "name": "Master of Arts in Economy",
-    "slug": "free-university-of-berlin-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41616,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.258936480644492,
+    "minGpa": 3.110510148445126,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5751,11 +5778,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "free-university-of-berlin",
-    "name": "Master of Science in Social Sciences",
-    "slug": "free-university-of-berlin-master-of-science-in-social-sciences",
+    "universitySlug": "university-of-t-bingen",
+    "name": "Master of Arts in Business",
+    "slug": "university-of-t-bingen-master-of-arts-in-business",
     "degree": "masters",
-    "field": "Social Sciences",
+    "field": "Business",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -5765,26 +5792,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20368,
+    "tuitionUsd": 26941,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.333558091532674,
+    "scholarshipAvailable": true,
+    "minGpa": 3.546988869088698,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Social Sciences",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "free-university-of-berlin",
-    "name": "PhD in Natural Sciences",
-    "slug": "free-university-of-berlin-phd-in-natural-sciences",
-    "degree": "phd",
+    "universitySlug": "university-of-t-bingen",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "university-of-t-bingen-master-of-science-in-natural-sciences",
+    "degree": "masters",
     "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -5792,10 +5819,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38767,
+    "tuitionUsd": 23588,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.5286886160238975,
+    "minGpa": 3.593579299120002,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5805,9 +5832,171 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "free-university-of-berlin",
+    "universitySlug": "university-of-t-bingen",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "university-of-t-bingen-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30111,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.216095664800024,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bonn",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "university-of-bonn-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
+    "field": "Natural Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23313,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.510578692284435,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bonn",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "university-of-bonn-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34435,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1357796646385228,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bonn",
+    "name": "Master of Arts in Performing arts",
+    "slug": "university-of-bonn-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41337,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.153400380436643,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "frankfurt-school-of-finance-management",
+    "name": "Master of Arts in Business",
+    "slug": "frankfurt-school-of-finance-management-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17099,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0499725145320427,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "frankfurt-school-of-finance-management",
+    "name": "PhD in Economy",
+    "slug": "frankfurt-school-of-finance-management-phd-in-economy",
+    "degree": "phd",
+    "field": "Economy",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28101,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.453714991175648,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "frankfurt-school-of-finance-management",
     "name": "Master of Arts in Veterinary medicine",
-    "slug": "free-university-of-berlin-master-of-arts-in-veterinary-medicine",
+    "slug": "frankfurt-school-of-finance-management-master-of-arts-in-veterinary-medicine",
     "degree": "masters",
     "field": "Veterinary medicine",
     "durationMonths": 24,
@@ -5819,10 +6008,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21549,
+    "tuitionUsd": 27498,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6945065296309023,
+    "minGpa": 3.018984633210844,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -5832,9 +6021,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-t-bingen",
+    "universitySlug": "frankfurt-school-of-finance-management",
     "name": "Master of Science in Medicine",
-    "slug": "university-of-t-bingen-master-of-science-in-medicine",
+    "slug": "frankfurt-school-of-finance-management-master-of-science-in-medicine",
     "degree": "masters",
     "field": "Medicine",
     "durationMonths": 24,
@@ -5846,257 +6035,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43611,
+    "tuitionUsd": 44792,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0036429234212307,
+    "scholarshipAvailable": true,
+    "minGpa": 3.614548294895637,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-t-bingen",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "university-of-t-bingen-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44138,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2029599202802324,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-t-bingen",
-    "name": "Master of Arts in media studies",
-    "slug": "university-of-t-bingen-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19797,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.601723783378746,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-t-bingen",
-    "name": "PhD in Veterinary medicine",
-    "slug": "university-of-t-bingen-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21256,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.60167092061665,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-t-bingen",
-    "name": "PhD in Natural Sciences",
-    "slug": "university-of-t-bingen-phd-in-natural-sciences",
-    "degree": "phd",
-    "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30492,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3148159350136517,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bonn",
-    "name": "Master of Arts in Humanities",
-    "slug": "university-of-bonn-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28788,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0646954070427226,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bonn",
-    "name": "Bachelor of Science in media studies",
-    "slug": "university-of-bonn-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41729,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7875606153592156,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bonn",
-    "name": "PhD in Economy",
-    "slug": "university-of-bonn-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34011,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0535157547208893,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bonn",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "university-of-bonn-bachelor-of-science-in-performing-arts",
-    "degree": "bachelors",
-    "field": "Performing arts",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44268,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7446475423963657,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "frankfurt-school-of-finance-management",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "frankfurt-school-of-finance-management-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26071,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.509951958068649,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
       "Researcher",
       "Consultant"
     ]
@@ -6116,10 +6062,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23500,
+    "tuitionUsd": 28444,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.445789528651236,
+    "minGpa": 3.083161146061871,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6129,94 +6075,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "frankfurt-school-of-finance-management",
-    "name": "Master of Arts in Technology",
-    "slug": "frankfurt-school-of-finance-management-master-of-arts-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18892,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.082590402191144,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "frankfurt-school-of-finance-management",
-    "name": "Bachelor of Science in media studies",
-    "slug": "frankfurt-school-of-finance-management-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28487,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.076083398923536,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "frankfurt-school-of-finance-management",
-    "name": "Master of Arts in Humanities",
-    "slug": "frankfurt-school-of-finance-management-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17564,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5311924918044064,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "whu-otto-beisheim",
-    "name": "Master of Science in Social Sciences",
-    "slug": "whu-otto-beisheim-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "PhD in Business",
+    "slug": "whu-otto-beisheim-phd-in-business",
+    "degree": "phd",
+    "field": "Business",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -6224,68 +6089,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42335,
+    "tuitionUsd": 17318,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4094862975297375,
+    "minGpa": 3.411695820353866,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "whu-otto-beisheim",
-    "name": "Master of Arts in Humanities",
-    "slug": "whu-otto-beisheim-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23303,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4870037708536743,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "whu-otto-beisheim",
-    "name": "Bachelor of Science in media studies",
-    "slug": "whu-otto-beisheim-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25218,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.232609577727944,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
@@ -6305,14 +6116,176 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22029,
+    "tuitionUsd": 34859,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4494179637483064,
+    "minGpa": 3.7597253006441123,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "whu-otto-beisheim",
+    "name": "PhD in Social Sciences",
+    "slug": "whu-otto-beisheim-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16176,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1082748310740644,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "whu-otto-beisheim",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "whu-otto-beisheim-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30170,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7297541817648323,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "whu-otto-beisheim",
+    "name": "Master of Science in Economy",
+    "slug": "whu-otto-beisheim-master-of-science-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 32865,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5710789000006593,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "gisma-business-school",
+    "name": "PhD in Humanities",
+    "slug": "gisma-business-school-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18653,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6584966861402517,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "gisma-business-school",
+    "name": "PhD in dentistry",
+    "slug": "gisma-business-school-phd-in-dentistry",
+    "degree": "phd",
+    "field": "dentistry",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43793,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.304337948539397,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "gisma-business-school",
+    "name": "Master of Science in Technology",
+    "slug": "gisma-business-school-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29141,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3068184738677213,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
@@ -6332,10 +6305,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43270,
+    "tuitionUsd": 34032,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.378401437116648,
+    "scholarshipAvailable": true,
+    "minGpa": 3.7448309650597293,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6345,9 +6318,90 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "gisma-business-school",
+    "universitySlug": "munich-business-school",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "munich-business-school-master-of-arts-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30936,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6283616192157044,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "munich-business-school",
+    "name": "Master of Science in Humanities",
+    "slug": "munich-business-school-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33255,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3969410269513567,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "munich-business-school",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "munich-business-school-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44667,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6445098142055534,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "munich-business-school",
     "name": "Master of Arts in Performing arts",
-    "slug": "gisma-business-school-master-of-arts-in-performing-arts",
+    "slug": "munich-business-school-master-of-arts-in-performing-arts",
     "degree": "masters",
     "field": "Performing arts",
     "durationMonths": 24,
@@ -6359,10 +6413,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34581,
+    "tuitionUsd": 38663,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.573888581008018,
+    "minGpa": 3.7233806397357236,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6372,40 +6426,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "gisma-business-school",
-    "name": "Bachelor of Science in Technology",
-    "slug": "gisma-business-school-bachelor-of-science-in-technology",
-    "degree": "bachelors",
-    "field": "Technology",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27302,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2210775317580804,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "munich-business-school",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "munich-business-school-phd-in-sports-and-health-sciences",
-    "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "name": "Master of Arts in Economy",
+    "slug": "munich-business-school-master-of-arts-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -6413,49 +6440,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25336,
+    "tuitionUsd": 18906,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.0418812987576316,
+    "minGpa": 3.4076442361164236,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "munich-business-school",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "munich-business-school-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30296,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.122243414238447,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "munich-business-school",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "munich-business-school-master-of-arts-in-veterinary-medicine",
+    "universitySlug": "srh-berlin",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "srh-berlin-master-of-science-in-veterinary-medicine",
     "degree": "masters",
     "field": "Veterinary medicine",
     "durationMonths": 24,
@@ -6467,10 +6467,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27005,
+    "tuitionUsd": 39834,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4421595931945324,
+    "scholarshipAvailable": false,
+    "minGpa": 3.2020969991786297,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6480,13 +6480,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "munich-business-school",
-    "name": "Bachelor of Science in Educational Sciences",
-    "slug": "munich-business-school-bachelor-of-science-in-educational-sciences",
-    "degree": "bachelors",
+    "universitySlug": "srh-berlin",
+    "name": "Master of Science in Educational Sciences",
+    "slug": "srh-berlin-master-of-science-in-educational-sciences",
+    "degree": "masters",
     "field": "Educational Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -6494,10 +6494,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42828,
+    "tuitionUsd": 43106,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.194224568355726,
+    "minGpa": 3.235088382170302,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6521,10 +6521,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41507,
+    "tuitionUsd": 22718,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1324364316224194,
+    "scholarshipAvailable": true,
+    "minGpa": 3.050652003713393,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6535,12 +6535,12 @@ const programs = [
   },
   {
     "universitySlug": "srh-berlin",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "srh-berlin-bachelor-of-science-in-performing-arts",
-    "degree": "bachelors",
+    "name": "Master of Arts in Performing arts",
+    "slug": "srh-berlin-master-of-arts-in-performing-arts",
+    "degree": "masters",
     "field": "Performing arts",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -6548,10 +6548,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35181,
+    "tuitionUsd": 26512,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0240935039174093,
+    "scholarshipAvailable": true,
+    "minGpa": 3.350979188975289,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6562,10 +6562,10 @@ const programs = [
   },
   {
     "universitySlug": "srh-berlin",
-    "name": "PhD in Natural Sciences",
-    "slug": "srh-berlin-phd-in-natural-sciences",
+    "name": "PhD in Technology",
+    "slug": "srh-berlin-phd-in-technology",
     "degree": "phd",
-    "field": "Natural Sciences",
+    "field": "Technology",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -6575,91 +6575,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34767,
+    "tuitionUsd": 30592,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.2614544537101193,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-otago",
-    "name": "Master of Arts in Business",
-    "slug": "university-of-otago-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22126,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2204453362123364,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-otago",
-    "name": "Master of Science in dentistry",
-    "slug": "university-of-otago-master-of-science-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25625,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3810162649100457,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-otago",
-    "name": "Master of Arts in Technology",
-    "slug": "university-of-otago-master-of-arts-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25966,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.396278341059735,
+    "minGpa": 3.4927334034280486,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6670,12 +6589,12 @@ const programs = [
   },
   {
     "universitySlug": "university-of-otago",
-    "name": "PhD in Natural Sciences",
-    "slug": "university-of-otago-phd-in-natural-sciences",
-    "degree": "phd",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "university-of-otago-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
     "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -6683,14 +6602,41 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24296,
+    "tuitionUsd": 22104,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.453513625161657,
+    "minGpa": 3.724614651489863,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-otago",
+    "name": "Bachelor of Science in Economy",
+    "slug": "university-of-otago-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36676,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1116620471195215,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
@@ -6710,10 +6656,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41135,
+    "tuitionUsd": 30502,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1280129616862506,
+    "scholarshipAvailable": false,
+    "minGpa": 3.4550863389150903,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6723,65 +6669,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "victoria-university-of-wellington",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "victoria-university-of-wellington-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34228,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6399723550576155,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "victoria-university-of-wellington",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "victoria-university-of-wellington-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31665,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.126578652681516,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "victoria-university-of-wellington",
-    "name": "PhD in dentistry",
-    "slug": "victoria-university-of-wellington-phd-in-dentistry",
+    "universitySlug": "university-of-otago",
+    "name": "PhD in Social Sciences",
+    "slug": "university-of-otago-phd-in-social-sciences",
     "degree": "phd",
-    "field": "dentistry",
+    "field": "Social Sciences",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -6791,10 +6683,64 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35978,
+    "tuitionUsd": 25204,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6104638355753864,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-otago",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-otago-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26505,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.515105639779954,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "victoria-university-of-wellington",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "victoria-university-of-wellington-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19589,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.584631379294374,
+    "minGpa": 3.0011101132939997,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -6805,197 +6751,8 @@ const programs = [
   },
   {
     "universitySlug": "victoria-university-of-wellington",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "victoria-university-of-wellington-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26980,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0009445752616384,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "victoria-university-of-wellington",
-    "name": "Master of Arts in media studies",
-    "slug": "victoria-university-of-wellington-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18010,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.746838984585931,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-canterbury",
-    "name": "PhD in Business",
-    "slug": "university-of-canterbury-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43591,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.754344080191919,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-canterbury",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "university-of-canterbury-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17699,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.782674520913387,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-canterbury",
-    "name": "PhD in Medicine",
-    "slug": "university-of-canterbury-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16445,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6297499761429237,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "massey-university",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "massey-university-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40133,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.304746371352583,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "massey-university",
-    "name": "Master of Science in Management",
-    "slug": "massey-university-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28674,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6483958026539813,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "massey-university",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "massey-university-master-of-arts-in-natural-sciences",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "victoria-university-of-wellington-master-of-science-in-natural-sciences",
     "degree": "masters",
     "field": "Natural Sciences",
     "durationMonths": 24,
@@ -7007,10 +6764,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17437,
+    "tuitionUsd": 39838,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0381067206104664,
+    "scholarshipAvailable": false,
+    "minGpa": 3.579850197332943,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7020,11 +6777,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "massey-university",
-    "name": "PhD in Technology",
-    "slug": "massey-university-phd-in-technology",
+    "universitySlug": "victoria-university-of-wellington",
+    "name": "PhD in Sports and Health Sciences",
+    "slug": "victoria-university-of-wellington-phd-in-sports-and-health-sciences",
     "degree": "phd",
-    "field": "Technology",
+    "field": "Sports and Health Sciences",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -7034,91 +6791,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16371,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.359137730026692,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "massey-university",
-    "name": "Master of Arts in Economy",
-    "slug": "massey-university-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24408,
+    "tuitionUsd": 15316,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3021027480197205,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-waikato",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "university-of-waikato-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39037,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.199728642950897,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-waikato",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "university-of-waikato-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16047,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1888426524030566,
+    "minGpa": 3.469125866853486,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7128,11 +6804,38 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-waikato",
-    "name": "Master of Science in Humanities",
-    "slug": "university-of-waikato-master-of-science-in-humanities",
+    "universitySlug": "university-of-canterbury",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "university-of-canterbury-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35396,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1196579977482797,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-canterbury",
+    "name": "Master of Arts in Business",
+    "slug": "university-of-canterbury-master-of-arts-in-business",
     "degree": "masters",
-    "field": "Humanities",
+    "field": "Business",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -7142,22 +6845,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38254,
+    "tuitionUsd": 25770,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.049514691928418,
+    "scholarshipAvailable": false,
+    "minGpa": 3.2531933032687776,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-waikato",
+    "universitySlug": "university-of-canterbury",
     "name": "PhD in media studies",
-    "slug": "university-of-waikato-phd-in-media-studies",
+    "slug": "university-of-canterbury-phd-in-media-studies",
     "degree": "phd",
     "field": "media studies",
     "durationMonths": 60,
@@ -7169,10 +6872,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40514,
+    "tuitionUsd": 24762,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.433550053438891,
+    "scholarshipAvailable": false,
+    "minGpa": 3.472796619931352,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7182,9 +6885,198 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "auckland-institute-of-studies",
+    "universitySlug": "massey-university",
+    "name": "Master of Arts in Humanities",
+    "slug": "massey-university-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44455,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7722542003239576,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "massey-university",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "massey-university-master-of-arts-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43031,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4486599996665346,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "massey-university",
+    "name": "PhD in Management",
+    "slug": "massey-university-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15920,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.727910334081159,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "massey-university",
+    "name": "Master of Science in Business",
+    "slug": "massey-university-master-of-science-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30436,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.341645656537847,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "massey-university",
+    "name": "Master of Arts in Performing arts",
+    "slug": "massey-university-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26426,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6447506263463274,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-waikato",
+    "name": "Master of Arts in Technology",
+    "slug": "university-of-waikato-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22871,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.025121036151719,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-waikato",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "university-of-waikato-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41115,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3945988221696988,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-waikato",
     "name": "Bachelor of Science in Humanities",
-    "slug": "auckland-institute-of-studies-bachelor-of-science-in-humanities",
+    "slug": "university-of-waikato-bachelor-of-science-in-humanities",
     "degree": "bachelors",
     "field": "Humanities",
     "durationMonths": 48,
@@ -7196,14 +7088,95 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33974,
+    "tuitionUsd": 40940,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2386731920584055,
+    "scholarshipAvailable": true,
+    "minGpa": 3.169227901497689,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-waikato",
+    "name": "PhD in Social Sciences",
+    "slug": "university-of-waikato-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15892,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.757818767681388,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-waikato",
+    "name": "PhD in Educational Sciences",
+    "slug": "university-of-waikato-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44825,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1927853884040758,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "auckland-institute-of-studies",
+    "name": "Master of Science in Medicine",
+    "slug": "auckland-institute-of-studies-master-of-science-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18555,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.115866912933202,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
@@ -7223,10 +7196,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16244,
+    "tuitionUsd": 34910,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3320089723384747,
+    "scholarshipAvailable": true,
+    "minGpa": 3.255545840980225,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7237,251 +7210,8 @@ const programs = [
   },
   {
     "universitySlug": "auckland-institute-of-studies",
-    "name": "PhD in Business",
-    "slug": "auckland-institute-of-studies-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44196,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3478655178715995,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ipu-new-zealand",
-    "name": "PhD in Humanities",
-    "slug": "ipu-new-zealand-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33766,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.074344345520972,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ipu-new-zealand",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "ipu-new-zealand-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26158,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0751042377728433,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ipu-new-zealand",
-    "name": "Master of Science in Medicine",
-    "slug": "ipu-new-zealand-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17252,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.246794549480702,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "whitecliffe-college",
-    "name": "PhD in dentistry",
-    "slug": "whitecliffe-college-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16886,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.540609325091897,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "whitecliffe-college",
-    "name": "PhD in Humanities",
-    "slug": "whitecliffe-college-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27743,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7188706434532577,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "whitecliffe-college",
-    "name": "Master of Science in Business",
-    "slug": "whitecliffe-college-master-of-science-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28870,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3925387569695657,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "whitecliffe-college",
-    "name": "PhD in Veterinary medicine",
-    "slug": "whitecliffe-college-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31425,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2412731081992203,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "whitecliffe-college",
-    "name": "Master of Science in Medicine",
-    "slug": "whitecliffe-college-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31309,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0291494061880457,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "media-design-school",
     "name": "PhD in Technology",
-    "slug": "media-design-school-phd-in-technology",
+    "slug": "auckland-institute-of-studies-phd-in-technology",
     "degree": "phd",
     "field": "Technology",
     "durationMonths": 60,
@@ -7493,10 +7223,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20602,
+    "tuitionUsd": 24450,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.295603002623063,
+    "scholarshipAvailable": true,
+    "minGpa": 3.73140917718369,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7506,90 +7236,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "media-design-school",
-    "name": "Master of Science in dentistry",
-    "slug": "media-design-school-master-of-science-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37376,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.607924325723336,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "media-design-school",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "media-design-school-phd-in-sports-and-health-sciences",
-    "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37400,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1367322184064825,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "nztc",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "nztc-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38056,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7352204326575635,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "nztc",
+    "universitySlug": "ipu-new-zealand",
     "name": "Bachelor of Science in Business",
-    "slug": "nztc-bachelor-of-science-in-business",
+    "slug": "ipu-new-zealand-bachelor-of-science-in-business",
     "degree": "bachelors",
     "field": "Business",
     "durationMonths": 48,
@@ -7601,10 +7250,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34808,
+    "tuitionUsd": 43272,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.33856380508424,
+    "minGpa": 3.7850244618848845,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7614,9 +7263,117 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "nztc",
+    "universitySlug": "ipu-new-zealand",
+    "name": "Master of Arts in Economy",
+    "slug": "ipu-new-zealand-master-of-arts-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38172,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.056403666770742,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ipu-new-zealand",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "ipu-new-zealand-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30610,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0366437113639337,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "whitecliffe-college",
+    "name": "Master of Arts in Management",
+    "slug": "whitecliffe-college-master-of-arts-in-management",
+    "degree": "masters",
+    "field": "Management",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35842,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4656201670252997,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "whitecliffe-college",
+    "name": "Master of Science in Economy",
+    "slug": "whitecliffe-college-master-of-science-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35182,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.784368468715667,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "whitecliffe-college",
     "name": "PhD in Natural Sciences",
-    "slug": "nztc-phd-in-natural-sciences",
+    "slug": "whitecliffe-college-phd-in-natural-sciences",
     "degree": "phd",
     "field": "Natural Sciences",
     "durationMonths": 60,
@@ -7628,10 +7385,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16380,
+    "tuitionUsd": 30904,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2351197052289398,
+    "scholarshipAvailable": false,
+    "minGpa": 3.3704993118659443,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7641,13 +7398,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "nztc",
-    "name": "Master of Science in Humanities",
-    "slug": "nztc-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "whitecliffe-college",
+    "name": "Bachelor of Science in Business",
+    "slug": "whitecliffe-college-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -7655,22 +7412,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17723,
+    "tuitionUsd": 22798,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.420949449429156,
+    "minGpa": 3.286954925117503,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "seoul-national-university",
+    "universitySlug": "whitecliffe-college",
     "name": "PhD in Sports and Health Sciences",
-    "slug": "seoul-national-university-phd-in-sports-and-health-sciences",
+    "slug": "whitecliffe-college-phd-in-sports-and-health-sciences",
     "degree": "phd",
     "field": "Sports and Health Sciences",
     "durationMonths": 60,
@@ -7682,10 +7439,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29548,
+    "tuitionUsd": 36354,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4235507883318017,
+    "scholarshipAvailable": true,
+    "minGpa": 3.0112360438685126,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7695,11 +7452,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "seoul-national-university",
-    "name": "PhD in Technology",
-    "slug": "seoul-national-university-phd-in-technology",
+    "universitySlug": "media-design-school",
+    "name": "PhD in Performing arts",
+    "slug": "media-design-school-phd-in-performing-arts",
     "degree": "phd",
-    "field": "Technology",
+    "field": "Performing arts",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -7709,24 +7466,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36377,
+    "tuitionUsd": 30485,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2070969397980464,
+    "scholarshipAvailable": true,
+    "minGpa": 3.772622364400218,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Technology",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "seoul-national-university",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "seoul-national-university-bachelor-of-science-in-natural-sciences",
+    "universitySlug": "media-design-school",
+    "name": "Bachelor of Science in Technology",
+    "slug": "media-design-school-bachelor-of-science-in-technology",
     "degree": "bachelors",
-    "field": "Natural Sciences",
+    "field": "Technology",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -7736,22 +7493,49 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27157,
+    "tuitionUsd": 29744,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.7378226504773098,
+    "minGpa": 3.351482293563659,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Natural Sciences",
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "seoul-national-university",
+    "universitySlug": "media-design-school",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "media-design-school-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21672,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6346346436420354,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "media-design-school",
     "name": "PhD in Humanities",
-    "slug": "seoul-national-university-phd-in-humanities",
+    "slug": "media-design-school-phd-in-humanities",
     "degree": "phd",
     "field": "Humanities",
     "durationMonths": 60,
@@ -7763,10 +7547,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39261,
+    "tuitionUsd": 27038,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1358641684740034,
+    "scholarshipAvailable": false,
+    "minGpa": 3.703495502370196,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7776,65 +7560,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "seoul-national-university",
-    "name": "Master of Arts in Medicine",
-    "slug": "seoul-national-university-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18518,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.228553393024453,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "pusan-national-university",
-    "name": "Master of Arts in dentistry",
-    "slug": "pusan-national-university-master-of-arts-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16155,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.119314243500024,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "pusan-national-university",
-    "name": "Bachelor of Science in media studies",
-    "slug": "pusan-national-university-bachelor-of-science-in-media-studies",
+    "universitySlug": "media-design-school",
+    "name": "Bachelor of Science in Economy",
+    "slug": "media-design-school-bachelor-of-science-in-economy",
     "degree": "bachelors",
-    "field": "media studies",
+    "field": "Economy",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -7844,14 +7574,284 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18458,
+    "tuitionUsd": 16020,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7302112118906243,
+    "minGpa": 3.0654281758780977,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "nztc",
+    "name": "Master of Arts in Humanities",
+    "slug": "nztc-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44579,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.261714723136021,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "nztc",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "nztc-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26351,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.2379327796931645,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "nztc",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "nztc-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34304,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.307609526071435,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "seoul-national-university",
+    "name": "Bachelor of Science in Business",
+    "slug": "seoul-national-university-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37038,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5837143913762337,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "seoul-national-university",
+    "name": "Master of Arts in Veterinary medicine",
+    "slug": "seoul-national-university-master-of-arts-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29462,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4012465517002615,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "seoul-national-university",
+    "name": "PhD in Economy",
+    "slug": "seoul-national-university-phd-in-economy",
+    "degree": "phd",
+    "field": "Economy",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17299,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3488595412480207,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "seoul-national-university",
+    "name": "PhD in Medicine",
+    "slug": "seoul-national-university-phd-in-medicine",
+    "degree": "phd",
+    "field": "Medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39957,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.538383945251093,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "seoul-national-university",
+    "name": "Master of Science in Performing arts",
+    "slug": "seoul-national-university-master-of-science-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39513,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3134053365035157,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "pusan-national-university",
+    "name": "Master of Arts in Business",
+    "slug": "pusan-national-university-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22757,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.409090788527119,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "pusan-national-university",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "pusan-national-university-master-of-science-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30221,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.239230543003688,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
       "Researcher",
       "Consultant"
     ]
@@ -7871,10 +7871,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38229,
+    "tuitionUsd": 36435,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.708932570090908,
+    "scholarshipAvailable": false,
+    "minGpa": 3.5668229151534128,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7885,12 +7885,12 @@ const programs = [
   },
   {
     "universitySlug": "pusan-national-university",
-    "name": "Master of Science in Performing arts",
-    "slug": "pusan-national-university-master-of-science-in-performing-arts",
-    "degree": "masters",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "pusan-national-university-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
     "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -7898,10 +7898,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43142,
+    "tuitionUsd": 28593,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6361582451624,
+    "scholarshipAvailable": false,
+    "minGpa": 3.3491367746809715,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -7912,118 +7912,10 @@ const programs = [
   },
   {
     "universitySlug": "kyungpook-national-university",
-    "name": "Master of Arts in Business",
-    "slug": "kyungpook-national-university-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29384,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.121165717486493,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kyungpook-national-university",
-    "name": "PhD in Humanities",
-    "slug": "kyungpook-national-university-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29824,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.361891327278471,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kyungpook-national-university",
-    "name": "Master of Arts in media studies",
-    "slug": "kyungpook-national-university-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32462,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6408054150875953,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kyungpook-national-university",
-    "name": "Master of Science in Social Sciences",
-    "slug": "kyungpook-national-university-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26039,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.202228520889001,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kyungpook-national-university",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "kyungpook-national-university-bachelor-of-science-in-veterinary-medicine",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "kyungpook-national-university-bachelor-of-science-in-performing-arts",
     "degree": "bachelors",
-    "field": "Veterinary medicine",
+    "field": "Performing arts",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -8033,350 +7925,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43915,
+    "tuitionUsd": 40592,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.581253241049655,
+    "scholarshipAvailable": false,
+    "minGpa": 3.1990926490100215,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "unist",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "unist-master-of-science-in-sports-and-health-sciences",
+    "universitySlug": "kyungpook-national-university",
+    "name": "Master of Science in Management",
+    "slug": "kyungpook-national-university-master-of-science-in-management",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44644,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5416429003789287,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "unist",
-    "name": "Bachelor of Science in Business",
-    "slug": "unist-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35547,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7611150632735155,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "unist",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "unist-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42584,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7032651277295323,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "unist",
-    "name": "Master of Arts in media studies",
-    "slug": "unist-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32049,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6210922636249627,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "unist",
-    "name": "Master of Science in Medicine",
-    "slug": "unist-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36906,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.571795764477366,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "chonnam-national-university",
-    "name": "Bachelor of Science in Economy",
-    "slug": "chonnam-national-university-bachelor-of-science-in-economy",
-    "degree": "bachelors",
-    "field": "Economy",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25174,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4435935265085993,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "chonnam-national-university",
-    "name": "PhD in Humanities",
-    "slug": "chonnam-national-university-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34034,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6454906032478935,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "chonnam-national-university",
-    "name": "PhD in Educational Sciences",
-    "slug": "chonnam-national-university-phd-in-educational-sciences",
-    "degree": "phd",
-    "field": "Educational Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42595,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.590997264002294,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "chonnam-national-university",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "chonnam-national-university-phd-in-sports-and-health-sciences",
-    "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37712,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0702808980010756,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "korea-university",
-    "name": "Master of Arts in Economy",
-    "slug": "korea-university-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43188,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4725407952725655,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "korea-university",
-    "name": "PhD in Humanities",
-    "slug": "korea-university-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25520,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.703004124996644,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "korea-university",
-    "name": "PhD in Medicine",
-    "slug": "korea-university-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20549,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6213745345167343,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "korea-university",
-    "name": "Bachelor of Science in Management",
-    "slug": "korea-university-bachelor-of-science-in-management",
-    "degree": "bachelors",
     "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -8384,10 +7952,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42258,
+    "tuitionUsd": 28383,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.037617919963481,
+    "scholarshipAvailable": false,
+    "minGpa": 3.511725036562698,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -8397,11 +7965,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "korea-university",
-    "name": "Master of Arts in Business",
-    "slug": "korea-university-master-of-arts-in-business",
+    "universitySlug": "kyungpook-national-university",
+    "name": "Master of Arts in Economy",
+    "slug": "kyungpook-national-university-master-of-arts-in-economy",
     "degree": "masters",
-    "field": "Business",
+    "field": "Economy",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -8411,24 +7979,159 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37819,
+    "tuitionUsd": 44362,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2571069727782365,
+    "scholarshipAvailable": false,
+    "minGpa": 3.4039822015616856,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "yonsei-university",
-    "name": "PhD in media studies",
-    "slug": "yonsei-university-phd-in-media-studies",
+    "universitySlug": "kyungpook-national-university",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "kyungpook-national-university-master-of-science-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17958,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.240356182144109,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "unist",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "unist-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42181,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.237319756541003,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "unist",
+    "name": "Master of Arts in Humanities",
+    "slug": "unist-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25766,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.256385260492573,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "unist",
+    "name": "Master of Science in Performing arts",
+    "slug": "unist-master-of-science-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24872,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.047040964813571,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "unist",
+    "name": "Master of Science in Educational Sciences",
+    "slug": "unist-master-of-science-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35095,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5618067931740045,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "unist",
+    "name": "PhD in Social Sciences",
+    "slug": "unist-phd-in-social-sciences",
     "degree": "phd",
-    "field": "media studies",
+    "field": "Social Sciences",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -8438,26 +8141,53 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18962,
+    "tuitionUsd": 25132,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3874254886787707,
+    "scholarshipAvailable": false,
+    "minGpa": 3.0520816984783194,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "yonsei-university",
-    "name": "PhD in Natural Sciences",
-    "slug": "yonsei-university-phd-in-natural-sciences",
-    "degree": "phd",
+    "universitySlug": "chonnam-national-university",
+    "name": "Master of Science in Humanities",
+    "slug": "chonnam-national-university-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34173,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7390158724717932,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "chonnam-national-university",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "chonnam-national-university-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
     "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -8465,10 +8195,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43348,
+    "tuitionUsd": 22764,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3926642520779455,
+    "minGpa": 3.263264824920074,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -8478,9 +8208,63 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "yonsei-university",
+    "universitySlug": "chonnam-national-university",
+    "name": "Master of Arts in dentistry",
+    "slug": "chonnam-national-university-master-of-arts-in-dentistry",
+    "degree": "masters",
+    "field": "dentistry",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22297,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.748160255106305,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "chonnam-national-university",
+    "name": "Bachelor of Science in Technology",
+    "slug": "chonnam-national-university-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43890,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.276212683760776,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "korea-university",
     "name": "Master of Arts in Social Sciences",
-    "slug": "yonsei-university-master-of-arts-in-social-sciences",
+    "slug": "korea-university-master-of-arts-in-social-sciences",
     "degree": "masters",
     "field": "Social Sciences",
     "durationMonths": 24,
@@ -8492,10 +8276,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37803,
+    "tuitionUsd": 33670,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5710950911371206,
+    "scholarshipAvailable": true,
+    "minGpa": 3.287483903900781,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -8505,117 +8289,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "yonsei-university",
-    "name": "PhD in Performing arts",
-    "slug": "yonsei-university-phd-in-performing-arts",
-    "degree": "phd",
-    "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17895,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.338002631382608,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "yonsei-university",
-    "name": "PhD in Humanities",
-    "slug": "yonsei-university-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22474,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.201082922074132,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sungkyunkwan-university",
-    "name": "PhD in Educational Sciences",
-    "slug": "sungkyunkwan-university-phd-in-educational-sciences",
-    "degree": "phd",
-    "field": "Educational Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33640,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1748574402147933,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sungkyunkwan-university",
-    "name": "Bachelor of Science in Business",
-    "slug": "sungkyunkwan-university-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27413,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3361049338337714,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sungkyunkwan-university",
+    "universitySlug": "korea-university",
     "name": "Master of Science in Natural Sciences",
-    "slug": "sungkyunkwan-university-master-of-science-in-natural-sciences",
+    "slug": "korea-university-master-of-science-in-natural-sciences",
     "degree": "masters",
     "field": "Natural Sciences",
     "durationMonths": 24,
@@ -8627,14 +8303,230 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26610,
+    "tuitionUsd": 40288,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1176918890274115,
+    "scholarshipAvailable": false,
+    "minGpa": 3.197800137276107,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "korea-university",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "korea-university-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25602,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0934189290188785,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "yonsei-university",
+    "name": "Master of Arts in Humanities",
+    "slug": "yonsei-university-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37484,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4181327293323833,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "yonsei-university",
+    "name": "PhD in Social Sciences",
+    "slug": "yonsei-university-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33283,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5012840717272793,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "yonsei-university",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "yonsei-university-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15334,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.048527382035588,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "yonsei-university",
+    "name": "PhD in Management",
+    "slug": "yonsei-university-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24901,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4726114934824643,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sungkyunkwan-university",
+    "name": "PhD in Technology",
+    "slug": "sungkyunkwan-university-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18989,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.709151916412715,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sungkyunkwan-university",
+    "name": "Master of Science in Business",
+    "slug": "sungkyunkwan-university-master-of-science-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20704,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4638173606054568,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sungkyunkwan-university",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "sungkyunkwan-university-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38895,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.225321356896335,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
       "Researcher",
       "Consultant"
     ]
@@ -8654,10 +8546,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19733,
+    "tuitionUsd": 17657,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1932702317942163,
+    "scholarshipAvailable": true,
+    "minGpa": 3.030581346100755,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -8667,9 +8559,90 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "sungkyunkwan-university",
+    "universitySlug": "hanyang-university",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "hanyang-university-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39979,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2153832763882946,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "hanyang-university",
+    "name": "Master of Science in Economy",
+    "slug": "hanyang-university-master-of-science-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25561,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2537741267221634,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "hanyang-university",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "hanyang-university-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22319,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7831347645394118,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "hanyang-university",
     "name": "Master of Arts in Medicine",
-    "slug": "sungkyunkwan-university-master-of-arts-in-medicine",
+    "slug": "hanyang-university-master-of-arts-in-medicine",
     "degree": "masters",
     "field": "Medicine",
     "durationMonths": 24,
@@ -8681,10 +8654,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24867,
+    "tuitionUsd": 39321,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7557184191670414,
+    "scholarshipAvailable": true,
+    "minGpa": 3.391544003942955,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -8695,8 +8668,62 @@ const programs = [
   },
   {
     "universitySlug": "hanyang-university",
+    "name": "PhD in Natural Sciences",
+    "slug": "hanyang-university-phd-in-natural-sciences",
+    "degree": "phd",
+    "field": "Natural Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15046,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7935912517345995,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kyung-hee-university",
+    "name": "PhD in Technology",
+    "slug": "kyung-hee-university-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33293,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5823889106170856,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kyung-hee-university",
     "name": "Master of Science in dentistry",
-    "slug": "hanyang-university-master-of-science-in-dentistry",
+    "slug": "kyung-hee-university-master-of-science-in-dentistry",
     "degree": "masters",
     "field": "dentistry",
     "durationMonths": 24,
@@ -8708,10 +8735,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40759,
+    "tuitionUsd": 24957,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.4446426161537644,
+    "minGpa": 3.519736011141596,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -8721,252 +8748,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "hanyang-university",
-    "name": "PhD in Humanities",
-    "slug": "hanyang-university-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15644,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.516208323350961,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "hanyang-university",
-    "name": "Master of Science in Business",
-    "slug": "hanyang-university-master-of-science-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15973,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2051201020443596,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "kyung-hee-university",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "kyung-hee-university-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15909,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0824762912969415,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kyung-hee-university",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "kyung-hee-university-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27412,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.03867168681787,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kyung-hee-university",
-    "name": "Master of Arts in Management",
-    "slug": "kyung-hee-university-master-of-arts-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39557,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.482214795335028,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kyung-hee-university",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "kyung-hee-university-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38565,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.144048588867456,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sophia-university",
-    "name": "PhD in dentistry",
-    "slug": "sophia-university-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20315,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.63385561647997,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sophia-university",
-    "name": "PhD in Humanities",
-    "slug": "sophia-university-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27966,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.510612478070648,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sophia-university",
-    "name": "PhD in Performing arts",
-    "slug": "sophia-university-phd-in-performing-arts",
-    "degree": "phd",
-    "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25172,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.057709740570205,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sophia-university",
     "name": "PhD in Social Sciences",
-    "slug": "sophia-university-phd-in-social-sciences",
+    "slug": "kyung-hee-university-phd-in-social-sciences",
     "degree": "phd",
     "field": "Social Sciences",
     "durationMonths": 60,
@@ -8978,10 +8762,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35174,
+    "tuitionUsd": 30310,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.0808988846770915,
+    "minGpa": 3.72040193843548,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -8991,65 +8775,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "sophia-university",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "sophia-university-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34496,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6618539148751097,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "icu",
-    "name": "Master of Science in Business",
-    "slug": "icu-master-of-science-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42673,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.389296169604216,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "icu",
-    "name": "PhD in dentistry",
-    "slug": "icu-phd-in-dentistry",
+    "universitySlug": "kyung-hee-university",
+    "name": "PhD in media studies",
+    "slug": "kyung-hee-university-phd-in-media-studies",
     "degree": "phd",
-    "field": "dentistry",
+    "field": "media studies",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -9059,14 +8789,149 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32267,
+    "tuitionUsd": 20367,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.701830090676403,
+    "scholarshipAvailable": false,
+    "minGpa": 3.4395927331034617,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in dentistry",
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kyung-hee-university",
+    "name": "PhD in Veterinary medicine",
+    "slug": "kyung-hee-university-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20305,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.2426596952183258,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sophia-university",
+    "name": "PhD in media studies",
+    "slug": "sophia-university-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43824,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0410154158113434,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sophia-university",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "sophia-university-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15547,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.661059694462341,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sophia-university",
+    "name": "PhD in Sports and Health Sciences",
+    "slug": "sophia-university-phd-in-sports-and-health-sciences",
+    "degree": "phd",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18712,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.774281487266518,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "icu",
+    "name": "Master of Arts in Performing arts",
+    "slug": "icu-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18586,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0682102770289292,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
@@ -9086,10 +8951,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33194,
+    "tuitionUsd": 19827,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.587555491918671,
+    "minGpa": 3.6507150658680576,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9100,12 +8965,12 @@ const programs = [
   },
   {
     "universitySlug": "icu",
-    "name": "PhD in Economy",
-    "slug": "icu-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "icu-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -9113,22 +8978,76 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17434,
+    "tuitionUsd": 28118,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0288269874092655,
+    "scholarshipAvailable": false,
+    "minGpa": 3.1693419536505454,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Economy",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "icu",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "icu-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20782,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7288592669981604,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "icu",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "icu-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
+    "field": "Natural Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36250,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4167465505940795,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "tokyo-university-of-science",
     "name": "PhD in Natural Sciences",
-    "slug": "icu-phd-in-natural-sciences",
+    "slug": "tokyo-university-of-science-phd-in-natural-sciences",
     "degree": "phd",
     "field": "Natural Sciences",
     "durationMonths": 60,
@@ -9140,10 +9059,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18789,
+    "tuitionUsd": 43748,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6176743189559164,
+    "minGpa": 3.499648955620589,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9154,8 +9073,62 @@ const programs = [
   },
   {
     "universitySlug": "tokyo-university-of-science",
+    "name": "PhD in Management",
+    "slug": "tokyo-university-of-science-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41654,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7002967057492273,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "tokyo-university-of-science",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "tokyo-university-of-science-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43106,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.098134217456212,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "smu",
     "name": "Bachelor of Science in Technology",
-    "slug": "tokyo-university-of-science-bachelor-of-science-in-technology",
+    "slug": "smu-bachelor-of-science-in-technology",
     "degree": "bachelors",
     "field": "Technology",
     "durationMonths": 48,
@@ -9167,10 +9140,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27273,
+    "tuitionUsd": 23605,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.473148082562348,
+    "minGpa": 3.0213027683526814,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9180,11 +9153,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "tokyo-university-of-science",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "tokyo-university-of-science-master-of-arts-in-sports-and-health-sciences",
+    "universitySlug": "smu",
+    "name": "Master of Arts in Humanities",
+    "slug": "smu-master-of-arts-in-humanities",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
+    "field": "Humanities",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -9194,26 +9167,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15754,
+    "tuitionUsd": 36776,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2057319105296944,
+    "scholarshipAvailable": true,
+    "minGpa": 3.0263341116646933,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "tokyo-university-of-science",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "tokyo-university-of-science-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "universitySlug": "smu",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "smu-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -9221,22 +9194,76 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39218,
+    "tuitionUsd": 40268,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.0756809506241063,
+    "minGpa": 3.0044011455622393,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Natural Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "tokyo-university-of-science",
+    "universitySlug": "sutd",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "sutd-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29904,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1937578646297897,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sutd",
+    "name": "Master of Science in Technology",
+    "slug": "sutd-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18902,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.431506367371312,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sutd",
     "name": "PhD in Medicine",
-    "slug": "tokyo-university-of-science-phd-in-medicine",
+    "slug": "sutd-phd-in-medicine",
     "degree": "phd",
     "field": "Medicine",
     "durationMonths": 60,
@@ -9248,10 +9275,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22731,
+    "tuitionUsd": 27578,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7568146612300732,
+    "minGpa": 3.5050868693128114,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9261,38 +9288,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "smu",
-    "name": "Master of Arts in media studies",
-    "slug": "smu-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42132,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.375380566315845,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "smu",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "smu-bachelor-of-science-in-humanities",
+    "universitySlug": "sutd",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "sutd-bachelor-of-science-in-educational-sciences",
     "degree": "bachelors",
-    "field": "Humanities",
+    "field": "Educational Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -9302,176 +9302,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23954,
+    "tuitionUsd": 39743,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.5564167067465755,
+    "minGpa": 3.386150092068366,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "smu",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "smu-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19921,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4181741638583563,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sutd",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "sutd-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42803,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.047084022570354,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sutd",
-    "name": "Master of Science in Social Sciences",
-    "slug": "sutd-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25937,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.25581645390561,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sutd",
-    "name": "Master of Arts in Performing arts",
-    "slug": "sutd-master-of-arts-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16716,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4552858445679764,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sit",
-    "name": "PhD in Humanities",
-    "slug": "sit-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16442,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4265902880958827,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sit",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "sit-bachelor-of-science-in-natural-sciences",
-    "degree": "bachelors",
-    "field": "Natural Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41124,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6109655465835067,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
+      "Professional in Educational Sciences",
       "Researcher",
       "Consultant"
     ]
@@ -9491,10 +9329,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31202,
+    "tuitionUsd": 21593,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.592698870053041,
+    "minGpa": 3.0803208378763873,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9504,13 +9342,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "suss",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "suss-bachelor-of-science-in-dentistry",
-    "degree": "bachelors",
-    "field": "dentistry",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "universitySlug": "sit",
+    "name": "PhD in Performing arts",
+    "slug": "sit-phd-in-performing-arts",
+    "degree": "phd",
+    "field": "Performing arts",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -9518,14 +9356,95 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18291,
+    "tuitionUsd": 30958,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.791356499073087,
+    "minGpa": 3.0147433370176864,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in dentistry",
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sit",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "sit-master-of-science-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44164,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3023278642692606,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sit",
+    "name": "PhD in media studies",
+    "slug": "sit-phd-in-media-studies",
+    "degree": "phd",
+    "field": "media studies",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18337,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3358699354123695,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "suss",
+    "name": "PhD in Sports and Health Sciences",
+    "slug": "suss-phd-in-sports-and-health-sciences",
+    "degree": "phd",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18694,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1818001160786253,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
       "Researcher",
       "Consultant"
     ]
@@ -9545,10 +9464,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38096,
+    "tuitionUsd": 17063,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5871332904951942,
+    "scholarshipAvailable": false,
+    "minGpa": 3.062345985990512,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9559,37 +9478,10 @@ const programs = [
   },
   {
     "universitySlug": "suss",
-    "name": "Master of Arts in Performing arts",
-    "slug": "suss-master-of-arts-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23493,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.797195255051569,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "suss",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "suss-bachelor-of-science-in-medicine",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "suss-bachelor-of-science-in-social-sciences",
     "degree": "bachelors",
-    "field": "Medicine",
+    "field": "Social Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -9599,49 +9491,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24511,
+    "tuitionUsd": 42189,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1245497378184983,
+    "scholarshipAvailable": false,
+    "minGpa": 3.470373188973217,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Medicine",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "suss",
-    "name": "PhD in Management",
-    "slug": "suss-phd-in-management",
-    "degree": "phd",
-    "field": "Management",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26481,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.540424045563203,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "singapore-polytechnic",
     "name": "Bachelor of Science in Economy",
-    "slug": "singapore-polytechnic-bachelor-of-science-in-economy",
+    "slug": "suss-bachelor-of-science-in-economy",
     "degree": "bachelors",
     "field": "Economy",
     "durationMonths": 48,
@@ -9653,10 +9518,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34388,
+    "tuitionUsd": 35430,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1361568093135963,
+    "scholarshipAvailable": true,
+    "minGpa": 3.6616482652683704,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9667,12 +9532,12 @@ const programs = [
   },
   {
     "universitySlug": "singapore-polytechnic",
-    "name": "PhD in Social Sciences",
-    "slug": "singapore-polytechnic-phd-in-social-sciences",
-    "degree": "phd",
-    "field": "Social Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "name": "Master of Arts in Economy",
+    "slug": "singapore-polytechnic-master-of-arts-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -9680,10 +9545,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22648,
+    "tuitionUsd": 36180,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0188884689510864,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "singapore-polytechnic",
+    "name": "Master of Science in Social Sciences",
+    "slug": "singapore-polytechnic-master-of-science-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17948,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.4137888245008936,
+    "minGpa": 3.009527666588964,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9694,12 +9586,12 @@ const programs = [
   },
   {
     "universitySlug": "singapore-polytechnic",
-    "name": "Master of Arts in Educational Sciences",
-    "slug": "singapore-polytechnic-master-of-arts-in-educational-sciences",
-    "degree": "masters",
-    "field": "Educational Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "PhD in Medicine",
+    "slug": "singapore-polytechnic-phd-in-medicine",
+    "degree": "phd",
+    "field": "Medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -9707,53 +9599,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20609,
+    "tuitionUsd": 37456,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.5872162151177323,
+    "minGpa": 3.509137964418092,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Educational Sciences",
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "singapore-polytechnic",
-    "name": "Bachelor of Science in Management",
-    "slug": "singapore-polytechnic-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39136,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6714738242915312,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "singapore-polytechnic",
-    "name": "Master of Science in Business",
-    "slug": "singapore-polytechnic-master-of-science-in-business",
-    "degree": "masters",
+    "name": "PhD in Business",
+    "slug": "singapore-polytechnic-phd-in-business",
+    "degree": "phd",
     "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -9761,10 +9626,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44439,
+    "tuitionUsd": 33191,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0524182938735356,
+    "scholarshipAvailable": true,
+    "minGpa": 3.043536955630873,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9775,91 +9640,10 @@ const programs = [
   },
   {
     "universitySlug": "sim-global-education",
-    "name": "Bachelor of Science in Social Sciences",
-    "slug": "sim-global-education-bachelor-of-science-in-social-sciences",
-    "degree": "bachelors",
-    "field": "Social Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29701,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.226893457246837,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sim-global-education",
-    "name": "PhD in Veterinary medicine",
-    "slug": "sim-global-education-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20499,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1194909952226326,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sim-global-education",
-    "name": "Bachelor of Science in media studies",
-    "slug": "sim-global-education-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23843,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5604048481494988,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sim-global-education",
-    "name": "Master of Science in Educational Sciences",
-    "slug": "sim-global-education-master-of-science-in-educational-sciences",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "sim-global-education-master-of-science-in-natural-sciences",
     "degree": "masters",
-    "field": "Educational Sciences",
+    "field": "Natural Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -9869,64 +9653,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21127,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.212305759999987,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sim-global-education",
-    "name": "PhD in Humanities",
-    "slug": "sim-global-education-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28984,
+    "tuitionUsd": 27687,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3018769104990864,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kaplan-higher-education",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "kaplan-higher-education-bachelor-of-science-in-natural-sciences",
-    "degree": "bachelors",
-    "field": "Natural Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41045,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4229775491825425,
+    "minGpa": 3.4829251478798833,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9936,13 +9666,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "kaplan-higher-education",
-    "name": "PhD in Economy",
-    "slug": "kaplan-higher-education-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "universitySlug": "sim-global-education",
+    "name": "Master of Science in Humanities",
+    "slug": "sim-global-education-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -9950,10 +9680,172 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40027,
+    "tuitionUsd": 28705,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.2873869077441094,
+    "minGpa": 3.0559270556675773,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sim-global-education",
+    "name": "Bachelor of Science in Technology",
+    "slug": "sim-global-education-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25383,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6181346122185762,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sim-global-education",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "sim-global-education-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26075,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5142267001942056,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sim-global-education",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "sim-global-education-master-of-science-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35340,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3999704901301557,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kaplan-higher-education",
+    "name": "Bachelor of Science in Business",
+    "slug": "kaplan-higher-education-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36256,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0357341736474357,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kaplan-higher-education",
+    "name": "Master of Arts in Technology",
+    "slug": "kaplan-higher-education-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29822,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.603559928747795,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "kaplan-higher-education",
+    "name": "Bachelor of Science in Economy",
+    "slug": "kaplan-higher-education-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42129,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.368732332892522,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -9964,37 +9856,10 @@ const programs = [
   },
   {
     "universitySlug": "kaplan-higher-education",
-    "name": "PhD in Medicine",
-    "slug": "kaplan-higher-education-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40592,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4560008024879605,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "kaplan-higher-education",
-    "name": "Master of Science in Management",
-    "slug": "kaplan-higher-education-master-of-science-in-management",
+    "name": "Master of Arts in Veterinary medicine",
+    "slug": "kaplan-higher-education-master-of-arts-in-veterinary-medicine",
     "degree": "masters",
-    "field": "Management",
+    "field": "Veterinary medicine",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -10004,24 +9869,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26945,
+    "tuitionUsd": 19993,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.039327510422887,
+    "scholarshipAvailable": false,
+    "minGpa": 3.2462229017588116,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Management",
+      "Professional in Veterinary medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "mdis",
-    "name": "PhD in Humanities",
-    "slug": "mdis-phd-in-humanities",
+    "name": "PhD in Business",
+    "slug": "mdis-phd-in-business",
     "degree": "phd",
-    "field": "Humanities",
+    "field": "Business",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -10031,14 +9896,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37608,
+    "tuitionUsd": 40355,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.0586379596020477,
+    "minGpa": 3.1815131906951986,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
@@ -10058,10 +9923,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40065,
+    "tuitionUsd": 19000,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1765660223404786,
+    "scholarshipAvailable": true,
+    "minGpa": 3.0550898105351783,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -10072,548 +9937,8 @@ const programs = [
   },
   {
     "universitySlug": "mdis",
-    "name": "PhD in Management",
-    "slug": "mdis-phd-in-management",
-    "degree": "phd",
-    "field": "Management",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40019,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3154349432037824,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "mdis",
-    "name": "Bachelor of Science in Educational Sciences",
-    "slug": "mdis-bachelor-of-science-in-educational-sciences",
-    "degree": "bachelors",
-    "field": "Educational Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42247,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.451062428846659,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "mdis",
-    "name": "Master of Science in Technology",
-    "slug": "mdis-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37114,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.011512348433149,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "psb-academy",
-    "name": "PhD in Management",
-    "slug": "psb-academy-phd-in-management",
-    "degree": "phd",
-    "field": "Management",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43448,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4393588210352606,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "psb-academy",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "psb-academy-bachelor-of-science-in-performing-arts",
-    "degree": "bachelors",
-    "field": "Performing arts",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22446,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.181520318341672,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "psb-academy",
-    "name": "Bachelor of Science in Business",
-    "slug": "psb-academy-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40397,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.584847216664385,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "james-cook-university-singapore",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "james-cook-university-singapore-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26564,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6546314817108687,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "james-cook-university-singapore",
-    "name": "PhD in Natural Sciences",
-    "slug": "james-cook-university-singapore-phd-in-natural-sciences",
-    "degree": "phd",
-    "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19511,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6412284747903345,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "james-cook-university-singapore",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "james-cook-university-singapore-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36006,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2993365111853095,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "james-cook-university-singapore",
-    "name": "PhD in Economy",
-    "slug": "james-cook-university-singapore-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44069,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.138974068983548,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "james-cook-university-singapore",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "james-cook-university-singapore-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33620,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.776005085649329,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "united-arab-emirates-university",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "united-arab-emirates-university-bachelor-of-science-in-medicine",
-    "degree": "bachelors",
-    "field": "Medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19368,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0436598613395858,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "united-arab-emirates-university",
-    "name": "Bachelor of Science in media studies",
-    "slug": "united-arab-emirates-university-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28810,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4503967654726946,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "united-arab-emirates-university",
-    "name": "Master of Arts in Educational Sciences",
-    "slug": "united-arab-emirates-university-master-of-arts-in-educational-sciences",
-    "degree": "masters",
-    "field": "Educational Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16665,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4563760332171567,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "zayed-university",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "zayed-university-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43011,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0250977152247653,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "zayed-university",
-    "name": "Master of Science in Technology",
-    "slug": "zayed-university-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41134,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.301032012016494,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "zayed-university",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "zayed-university-bachelor-of-science-in-natural-sciences",
-    "degree": "bachelors",
-    "field": "Natural Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37262,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4598416849828046,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "higher-colleges-of-technology",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "higher-colleges-of-technology-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18107,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5446424640229477,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "higher-colleges-of-technology",
-    "name": "Bachelor of Science in Management",
-    "slug": "higher-colleges-of-technology-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33511,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.043111010681,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "higher-colleges-of-technology",
-    "name": "Bachelor of Science in Business",
-    "slug": "higher-colleges-of-technology-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44478,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5382697758768082,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "higher-colleges-of-technology",
     "name": "Master of Science in Humanities",
-    "slug": "higher-colleges-of-technology-master-of-science-in-humanities",
+    "slug": "mdis-master-of-science-in-humanities",
     "degree": "masters",
     "field": "Humanities",
     "durationMonths": 24,
@@ -10625,10 +9950,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22468,
+    "tuitionUsd": 17657,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2456884449206216,
+    "scholarshipAvailable": true,
+    "minGpa": 3.6114416454484224,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -10638,414 +9963,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "khalifa-university",
-    "name": "PhD in Natural Sciences",
-    "slug": "khalifa-university-phd-in-natural-sciences",
-    "degree": "phd",
-    "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18059,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4833784738972167,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "khalifa-university",
-    "name": "PhD in Humanities",
-    "slug": "khalifa-university-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18915,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2634318521504904,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "khalifa-university",
-    "name": "Bachelor of Science in media studies",
-    "slug": "khalifa-university-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28601,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5437908543804375,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "abu-dhabi-university",
-    "name": "Bachelor of Science in Social Sciences",
-    "slug": "abu-dhabi-university-bachelor-of-science-in-social-sciences",
-    "degree": "bachelors",
-    "field": "Social Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21524,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4557413055586665,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "abu-dhabi-university",
-    "name": "Master of Arts in Economy",
-    "slug": "abu-dhabi-university-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34327,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.262844348240359,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "abu-dhabi-university",
-    "name": "Master of Arts in Humanities",
-    "slug": "abu-dhabi-university-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41956,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5158656188282955,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "abu-dhabi-university",
-    "name": "PhD in dentistry",
-    "slug": "abu-dhabi-university-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38593,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2266823020474344,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "american-university-of-sharjah",
-    "name": "Master of Science in Social Sciences",
-    "slug": "american-university-of-sharjah-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42004,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.72065604934756,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "american-university-of-sharjah",
-    "name": "Master of Science in Humanities",
-    "slug": "american-university-of-sharjah-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26772,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.652526388192372,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "american-university-of-sharjah",
-    "name": "Master of Science in Business",
-    "slug": "american-university-of-sharjah-master-of-science-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29183,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5376792496408984,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "american-university-of-sharjah",
-    "name": "Master of Science in Management",
-    "slug": "american-university-of-sharjah-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24976,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.589333013750682,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "american-university-in-dubai",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "american-university-in-dubai-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24551,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4697406842811254,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "american-university-in-dubai",
-    "name": "Master of Arts in Technology",
-    "slug": "american-university-in-dubai-master-of-arts-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39519,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3834857624241215,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "american-university-in-dubai",
-    "name": "Master of Arts in Business",
-    "slug": "american-university-in-dubai-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37555,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4980495133032194,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "american-university-in-dubai",
-    "name": "Master of Arts in Medicine",
-    "slug": "american-university-in-dubai-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16970,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.37047254509978,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-sharjah",
+    "universitySlug": "psb-academy",
     "name": "Master of Arts in Performing arts",
-    "slug": "university-of-sharjah-master-of-arts-in-performing-arts",
+    "slug": "psb-academy-master-of-arts-in-performing-arts",
     "degree": "masters",
     "field": "Performing arts",
     "durationMonths": 24,
@@ -11057,10 +9977,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42614,
+    "tuitionUsd": 28120,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.608961538382158,
+    "scholarshipAvailable": false,
+    "minGpa": 3.4084187065830327,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -11070,11 +9990,281 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-sharjah",
-    "name": "Bachelor of Science in Social Sciences",
-    "slug": "university-of-sharjah-bachelor-of-science-in-social-sciences",
+    "universitySlug": "psb-academy",
+    "name": "Master of Arts in Management",
+    "slug": "psb-academy-master-of-arts-in-management",
+    "degree": "masters",
+    "field": "Management",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41725,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.324029605846117,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "psb-academy",
+    "name": "PhD in Educational Sciences",
+    "slug": "psb-academy-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21893,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2162383558958414,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "james-cook-university-singapore",
+    "name": "Master of Arts in Technology",
+    "slug": "james-cook-university-singapore-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36351,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6600447630270057,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "james-cook-university-singapore",
+    "name": "PhD in Performing arts",
+    "slug": "james-cook-university-singapore-phd-in-performing-arts",
+    "degree": "phd",
+    "field": "Performing arts",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44393,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.013448217363576,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "james-cook-university-singapore",
+    "name": "PhD in Humanities",
+    "slug": "james-cook-university-singapore-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18223,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.528711492991593,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "james-cook-university-singapore",
+    "name": "Master of Arts in Economy",
+    "slug": "james-cook-university-singapore-master-of-arts-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24713,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6082981598700967,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "united-arab-emirates-university",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "united-arab-emirates-university-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17101,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.698004083769465,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "united-arab-emirates-university",
+    "name": "Master of Arts in Business",
+    "slug": "united-arab-emirates-university-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29374,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6291490736738536,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "united-arab-emirates-university",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "united-arab-emirates-university-master-of-science-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18585,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.133454116435664,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "united-arab-emirates-university",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "united-arab-emirates-university-master-of-arts-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27454,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.12044142637511,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "zayed-university",
+    "name": "Bachelor of Science in Economy",
+    "slug": "zayed-university-bachelor-of-science-in-economy",
     "degree": "bachelors",
-    "field": "Social Sciences",
+    "field": "Economy",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -11084,22 +10274,49 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27591,
+    "tuitionUsd": 29450,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.2706048288991587,
+    "minGpa": 3.476537871472336,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Social Sciences",
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-sharjah",
+    "universitySlug": "zayed-university",
+    "name": "Bachelor of Science in Business",
+    "slug": "zayed-university-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23747,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7659493738132674,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "zayed-university",
     "name": "Master of Arts in media studies",
-    "slug": "university-of-sharjah-master-of-arts-in-media-studies",
+    "slug": "zayed-university-master-of-arts-in-media-studies",
     "degree": "masters",
     "field": "media studies",
     "durationMonths": 24,
@@ -11111,10 +10328,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29525,
+    "tuitionUsd": 23558,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.4024232173353215,
+    "minGpa": 3.1770838409599635,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -11124,11 +10341,146 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-sharjah",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "university-of-sharjah-bachelor-of-science-in-dentistry",
-    "degree": "bachelors",
+    "universitySlug": "zayed-university",
+    "name": "PhD in Social Sciences",
+    "slug": "zayed-university-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19957,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.2840579124794638,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "higher-colleges-of-technology",
+    "name": "Master of Science in Technology",
+    "slug": "higher-colleges-of-technology-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41987,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5123328562623835,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "higher-colleges-of-technology",
+    "name": "Master of Science in dentistry",
+    "slug": "higher-colleges-of-technology-master-of-science-in-dentistry",
+    "degree": "masters",
     "field": "dentistry",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20322,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.113724216487781,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "higher-colleges-of-technology",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "higher-colleges-of-technology-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27297,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.42946183002624,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "khalifa-university",
+    "name": "PhD in Veterinary medicine",
+    "slug": "khalifa-university-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43199,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2824498338935806,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "khalifa-university",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "khalifa-university-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -11138,14 +10490,527 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33209,
+    "tuitionUsd": 38016,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7023668833640477,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "khalifa-university",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "khalifa-university-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24698,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.283608311858617,
+    "minGpa": 3.4619836686031933,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "abu-dhabi-university",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "abu-dhabi-university-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44417,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.295375799588403,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "abu-dhabi-university",
+    "name": "Master of Arts in Management",
+    "slug": "abu-dhabi-university-master-of-arts-in-management",
+    "degree": "masters",
+    "field": "Management",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18666,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7079758104631293,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "abu-dhabi-university",
+    "name": "PhD in Technology",
+    "slug": "abu-dhabi-university-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15518,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5379788789203808,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "abu-dhabi-university",
+    "name": "PhD in Veterinary medicine",
+    "slug": "abu-dhabi-university-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42516,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.317161652841835,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "american-university-of-sharjah",
+    "name": "PhD in Natural Sciences",
+    "slug": "american-university-of-sharjah-phd-in-natural-sciences",
+    "degree": "phd",
+    "field": "Natural Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43349,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.033342911879263,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "american-university-of-sharjah",
+    "name": "Master of Science in dentistry",
+    "slug": "american-university-of-sharjah-master-of-science-in-dentistry",
+    "degree": "masters",
+    "field": "dentistry",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43630,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3912625918556434,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "american-university-of-sharjah",
+    "name": "Master of Arts in Veterinary medicine",
+    "slug": "american-university-of-sharjah-master-of-arts-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42620,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3356521522056197,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "american-university-in-dubai",
+    "name": "Bachelor of Science in Business",
+    "slug": "american-university-in-dubai-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18759,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6468296772431166,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "american-university-in-dubai",
+    "name": "Master of Science in Humanities",
+    "slug": "american-university-in-dubai-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22765,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4746116440335113,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "american-university-in-dubai",
+    "name": "Master of Arts in Performing arts",
+    "slug": "american-university-in-dubai-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16067,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.742899766218577,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "american-university-in-dubai",
+    "name": "Master of Science in Social Sciences",
+    "slug": "american-university-in-dubai-master-of-science-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39462,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.453826189994124,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "american-university-in-dubai",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "american-university-in-dubai-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28953,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2019014261390666,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-sharjah",
+    "name": "Bachelor of Science in Management",
+    "slug": "university-of-sharjah-bachelor-of-science-in-management",
+    "degree": "bachelors",
+    "field": "Management",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41161,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.59627788334343,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-sharjah",
+    "name": "PhD in dentistry",
+    "slug": "university-of-sharjah-phd-in-dentistry",
+    "degree": "phd",
+    "field": "dentistry",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25934,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1912869798992305,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-sharjah",
+    "name": "PhD in Medicine",
+    "slug": "university-of-sharjah-phd-in-medicine",
+    "degree": "phd",
+    "field": "Medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42568,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5202312236542594,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-sharjah",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-sharjah-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33403,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.182488271072966,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "canadian-university-dubai",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "canadian-university-dubai-master-of-arts-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22645,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7903667940356898,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "canadian-university-dubai",
+    "name": "Master of Arts in Business",
+    "slug": "canadian-university-dubai-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36584,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7431339662834726,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
@@ -11165,10 +11030,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35862,
+    "tuitionUsd": 25334,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.602458042969141,
+    "scholarshipAvailable": true,
+    "minGpa": 3.717594637825752,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -11179,12 +11044,12 @@ const programs = [
   },
   {
     "universitySlug": "canadian-university-dubai",
-    "name": "Master of Science in Natural Sciences",
-    "slug": "canadian-university-dubai-master-of-science-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "canadian-university-dubai-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -11192,80 +11057,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29914,
+    "tuitionUsd": 26651,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.1886343390360095,
+    "minGpa": 3.032292189424725,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "canadian-university-dubai",
-    "name": "Master of Arts in Economy",
-    "slug": "canadian-university-dubai-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18990,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.584945481545808,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "canadian-university-dubai",
-    "name": "PhD in Social Sciences",
-    "slug": "canadian-university-dubai-phd-in-social-sciences",
-    "degree": "phd",
-    "field": "Social Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30822,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4509813458182377,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
+      "Professional in Educational Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "middlesex-university-dubai",
-    "name": "PhD in Performing arts",
-    "slug": "middlesex-university-dubai-phd-in-performing-arts",
-    "degree": "phd",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "middlesex-university-dubai-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
     "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -11273,10 +11084,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16007,
+    "tuitionUsd": 37035,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.218103830944351,
+    "minGpa": 3.5749838051418745,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -11287,91 +11098,10 @@ const programs = [
   },
   {
     "universitySlug": "middlesex-university-dubai",
-    "name": "Bachelor of Science in Management",
-    "slug": "middlesex-university-dubai-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38803,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.483273470952906,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "middlesex-university-dubai",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "middlesex-university-dubai-bachelor-of-science-in-dentistry",
-    "degree": "bachelors",
-    "field": "dentistry",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42390,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5781166888681195,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "middlesex-university-dubai",
-    "name": "PhD in Business",
-    "slug": "middlesex-university-dubai-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41940,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7305072214713397,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "middlesex-university-dubai",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "middlesex-university-dubai-master-of-arts-in-sports-and-health-sciences",
+    "name": "Master of Arts in Veterinary medicine",
+    "slug": "middlesex-university-dubai-master-of-arts-in-veterinary-medicine",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
+    "field": "Veterinary medicine",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -11381,76 +11111,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34519,
+    "tuitionUsd": 20131,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0394239084572456,
+    "scholarshipAvailable": true,
+    "minGpa": 3.4358741762953735,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Veterinary medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "sorbonne-university",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "sorbonne-university-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23103,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7200697448690483,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sorbonne-university",
-    "name": "Bachelor of Science in Management",
-    "slug": "sorbonne-university-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41648,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.321737935775321,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sorbonne-university",
-    "name": "Master of Science in media studies",
-    "slug": "sorbonne-university-master-of-science-in-media-studies",
+    "universitySlug": "middlesex-university-dubai",
+    "name": "Master of Arts in media studies",
+    "slug": "middlesex-university-dubai-master-of-arts-in-media-studies",
     "degree": "masters",
     "field": "media studies",
     "durationMonths": 24,
@@ -11462,10 +11138,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41134,
+    "tuitionUsd": 17318,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.251394491503703,
+    "scholarshipAvailable": false,
+    "minGpa": 3.6798759218478256,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -11475,9 +11151,225 @@ const programs = [
     ]
   },
   {
+    "universitySlug": "middlesex-university-dubai",
+    "name": "PhD in Sports and Health Sciences",
+    "slug": "middlesex-university-dubai-phd-in-sports-and-health-sciences",
+    "degree": "phd",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16829,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6032618522185165,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
     "universitySlug": "sorbonne-university",
+    "name": "PhD in Humanities",
+    "slug": "sorbonne-university-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17299,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7289435147780368,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sorbonne-university",
+    "name": "PhD in Business",
+    "slug": "sorbonne-university-phd-in-business",
+    "degree": "phd",
+    "field": "Business",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27754,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3728129993416873,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sorbonne-university",
+    "name": "PhD in Technology",
+    "slug": "sorbonne-university-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15163,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.10640405598558,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sorbonne-university",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "sorbonne-university-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28348,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7234441007436194,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sorbonne-university",
+    "name": "PhD in Educational Sciences",
+    "slug": "sorbonne-university-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37060,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2062855761774727,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-paris-saclay",
+    "name": "Bachelor of Science in Management",
+    "slug": "universit-paris-saclay-bachelor-of-science-in-management",
+    "degree": "bachelors",
+    "field": "Management",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18108,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4704930161450713,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-paris-saclay",
+    "name": "PhD in Humanities",
+    "slug": "universit-paris-saclay-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15877,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.121310294633073,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-paris-saclay",
     "name": "PhD in Social Sciences",
-    "slug": "sorbonne-university-phd-in-social-sciences",
+    "slug": "universit-paris-saclay-phd-in-social-sciences",
     "degree": "phd",
     "field": "Social Sciences",
     "durationMonths": 60,
@@ -11489,41 +11381,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37788,
+    "tuitionUsd": 34172,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.2651416679690173,
+    "minGpa": 3.0465056047545,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sorbonne-university",
-    "name": "PhD in Veterinary medicine",
-    "slug": "sorbonne-university-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27705,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2182250622828787,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
       "Researcher",
       "Consultant"
     ]
@@ -11543,68 +11408,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18035,
+    "tuitionUsd": 40702,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1240733278359722,
+    "scholarshipAvailable": true,
+    "minGpa": 3.0149047104446494,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-paris-saclay",
-    "name": "Bachelor of Science in Economy",
-    "slug": "universit-paris-saclay-bachelor-of-science-in-economy",
-    "degree": "bachelors",
-    "field": "Economy",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36968,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.313429669391353,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-paris-saclay",
-    "name": "Master of Arts in Technology",
-    "slug": "universit-paris-saclay-master-of-arts-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38451,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.627613807692659,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
@@ -11624,10 +11435,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22045,
+    "tuitionUsd": 39878,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7068019520132243,
+    "minGpa": 3.417215827313397,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -11637,333 +11448,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "universit-paris-saclay",
-    "name": "Master of Science in Humanities",
-    "slug": "universit-paris-saclay-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33330,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0456086339167636,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "cole-polytechnique",
-    "name": "PhD in Economy",
-    "slug": "cole-polytechnique-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32528,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4699634889833764,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "cole-polytechnique",
-    "name": "Master of Science in Social Sciences",
-    "slug": "cole-polytechnique-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22872,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2592462882327213,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "cole-polytechnique",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "cole-polytechnique-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27535,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6511594146052526,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "cole-polytechnique",
-    "name": "Master of Science in Educational Sciences",
-    "slug": "cole-polytechnique-master-of-science-in-educational-sciences",
-    "degree": "masters",
-    "field": "Educational Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21907,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4670434493231266,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-de-paris",
-    "name": "Bachelor of Science in media studies",
-    "slug": "universit-de-paris-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26695,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.126732109317656,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-de-paris",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "universit-de-paris-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27967,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4457929141265717,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-de-paris",
-    "name": "PhD in Humanities",
-    "slug": "universit-de-paris-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16379,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5135413018444517,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-de-paris",
-    "name": "Master of Arts in Performing arts",
-    "slug": "universit-de-paris-master-of-arts-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36116,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.369881657552621,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aix-marseille-university",
-    "name": "Bachelor of Science in Technology",
-    "slug": "aix-marseille-university-bachelor-of-science-in-technology",
-    "degree": "bachelors",
-    "field": "Technology",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37570,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7561678179912725,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aix-marseille-university",
-    "name": "PhD in Natural Sciences",
-    "slug": "aix-marseille-university-phd-in-natural-sciences",
-    "degree": "phd",
-    "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25743,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4022682699782445,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aix-marseille-university",
-    "name": "Master of Arts in Management",
-    "slug": "aix-marseille-university-master-of-arts-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41464,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5969629996219683,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aix-marseille-university",
     "name": "Bachelor of Science in Business",
-    "slug": "aix-marseille-university-bachelor-of-science-in-business",
+    "slug": "cole-polytechnique-bachelor-of-science-in-business",
     "degree": "bachelors",
     "field": "Business",
     "durationMonths": 48,
@@ -11975,10 +11462,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21060,
+    "tuitionUsd": 19262,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3094821921506803,
+    "minGpa": 3.1469708701066708,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -11988,38 +11475,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "aix-marseille-university",
-    "name": "PhD in Medicine",
-    "slug": "aix-marseille-university-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35278,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.566481898586719,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "hec-paris",
-    "name": "Master of Arts in Educational Sciences",
-    "slug": "hec-paris-master-of-arts-in-educational-sciences",
+    "universitySlug": "cole-polytechnique",
+    "name": "Master of Science in Management",
+    "slug": "cole-polytechnique-master-of-science-in-management",
     "degree": "masters",
-    "field": "Educational Sciences",
+    "field": "Management",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -12029,14 +11489,284 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28266,
+    "tuitionUsd": 22892,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.5018325809593267,
+    "minGpa": 3.691914859178566,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Educational Sciences",
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "cole-polytechnique",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "cole-polytechnique-master-of-science-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37262,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0087985856604886,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "cole-polytechnique",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "cole-polytechnique-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28180,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.440896404167972,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "cole-polytechnique",
+    "name": "Bachelor of Science in Technology",
+    "slug": "cole-polytechnique-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23615,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0829422258778427,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-de-paris",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "universit-de-paris-master-of-science-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26506,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5315307081889347,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-de-paris",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "universit-de-paris-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28460,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0115938876600397,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-de-paris",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "universit-de-paris-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18973,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6316313664127278,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "aix-marseille-university",
+    "name": "Master of Arts in dentistry",
+    "slug": "aix-marseille-university-master-of-arts-in-dentistry",
+    "degree": "masters",
+    "field": "dentistry",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20181,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3073461603153653,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "aix-marseille-university",
+    "name": "PhD in Humanities",
+    "slug": "aix-marseille-university-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44216,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6928891763372373,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "aix-marseille-university",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "aix-marseille-university-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21297,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3158445015236473,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "hec-paris",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "hec-paris-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31983,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.644479830465096,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
       "Researcher",
       "Consultant"
     ]
@@ -12056,10 +11786,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44566,
+    "tuitionUsd": 19714,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0668051887858296,
+    "scholarshipAvailable": false,
+    "minGpa": 3.1962549417435593,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -12070,12 +11800,12 @@ const programs = [
   },
   {
     "universitySlug": "hec-paris",
-    "name": "Master of Arts in Business",
-    "slug": "hec-paris-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "PhD in Technology",
+    "slug": "hec-paris-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -12083,41 +11813,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41723,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2193982659226874,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "hec-paris",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "hec-paris-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24063,
+    "tuitionUsd": 21409,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.279106521042326,
+    "minGpa": 3.4796877359147937,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
@@ -12137,10 +11840,91 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35961,
+    "tuitionUsd": 22046,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6238781054711193,
+    "minGpa": 3.763495438108299,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "hec-paris",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "hec-paris-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
+    "field": "Natural Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15192,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.551299300756144,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "insead",
+    "name": "Master of Science in Social Sciences",
+    "slug": "insead-master-of-science-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35207,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4342993554365946,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "insead",
+    "name": "Master of Science in Economy",
+    "slug": "insead-master-of-science-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33992,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1119874866186694,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -12151,10 +11935,64 @@ const programs = [
   },
   {
     "universitySlug": "insead",
-    "name": "Bachelor of Science in Technology",
-    "slug": "insead-bachelor-of-science-in-technology",
+    "name": "Master of Science in media studies",
+    "slug": "insead-master-of-science-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20703,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6997420524344475,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "essec-business-school",
+    "name": "Master of Arts in Veterinary medicine",
+    "slug": "essec-business-school-master-of-arts-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44087,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.253339703590523,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "essec-business-school",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "essec-business-school-bachelor-of-science-in-humanities",
     "degree": "bachelors",
-    "field": "Technology",
+    "field": "Humanities",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -12164,10 +12002,64 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24596,
+    "tuitionUsd": 28360,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.394247579381204,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "essec-business-school",
+    "name": "PhD in Management",
+    "slug": "essec-business-school-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19367,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.6922748862638226,
+    "minGpa": 3.3261123542799096,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "escp-europe",
+    "name": "Master of Science in Technology",
+    "slug": "escp-europe-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17389,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6093518453606,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -12177,9 +12069,36 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "insead",
+    "universitySlug": "escp-europe",
+    "name": "Master of Arts in media studies",
+    "slug": "escp-europe-master-of-arts-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36727,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.492089704891527,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "escp-europe",
     "name": "Bachelor of Science in Management",
-    "slug": "insead-bachelor-of-science-in-management",
+    "slug": "escp-europe-bachelor-of-science-in-management",
     "degree": "bachelors",
     "field": "Management",
     "durationMonths": 48,
@@ -12191,10 +12110,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41177,
+    "tuitionUsd": 15571,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3640704155856302,
+    "scholarshipAvailable": false,
+    "minGpa": 3.627625228356777,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -12204,468 +12123,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "insead",
-    "name": "Bachelor of Science in Business",
-    "slug": "insead-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24708,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5306711169607845,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "insead",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "insead-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28008,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5470753609986825,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "essec-business-school",
-    "name": "Master of Arts in Business",
-    "slug": "essec-business-school-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30703,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0391966467714626,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "essec-business-school",
-    "name": "Master of Arts in Medicine",
-    "slug": "essec-business-school-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30135,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.62326552193092,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "essec-business-school",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "essec-business-school-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21905,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5717153762310847,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "essec-business-school",
-    "name": "Master of Arts in dentistry",
-    "slug": "essec-business-school-master-of-arts-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23652,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4328673288581606,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "essec-business-school",
-    "name": "Bachelor of Science in media studies",
-    "slug": "essec-business-school-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36276,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1096644231413877,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "escp-europe",
-    "name": "Bachelor of Science in Business",
-    "slug": "escp-europe-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32846,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.580740612458017,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "escp-europe",
-    "name": "PhD in Economy",
-    "slug": "escp-europe-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21699,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1213431364222926,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "escp-europe",
-    "name": "PhD in Educational Sciences",
-    "slug": "escp-europe-phd-in-educational-sciences",
-    "degree": "phd",
-    "field": "Educational Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28432,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3714370878408038,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "edhec-business-school",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "edhec-business-school-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28730,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.565510271704297,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "edhec-business-school",
-    "name": "Master of Arts in Business",
-    "slug": "edhec-business-school-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43515,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3552362870573744,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "edhec-business-school",
-    "name": "Master of Science in media studies",
-    "slug": "edhec-business-school-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29832,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6446591926351237,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "edhec-business-school",
-    "name": "Bachelor of Science in Economy",
-    "slug": "edhec-business-school-bachelor-of-science-in-economy",
-    "degree": "bachelors",
-    "field": "Economy",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22367,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.467095555424194,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lomonosov-moscow-state-university",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "lomonosov-moscow-state-university-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19089,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6437760390159557,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lomonosov-moscow-state-university",
-    "name": "PhD in Business",
-    "slug": "lomonosov-moscow-state-university-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15077,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.325837806868686,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lomonosov-moscow-state-university",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "lomonosov-moscow-state-university-bachelor-of-science-in-dentistry",
-    "degree": "bachelors",
-    "field": "dentistry",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40011,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5913005325556746,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lomonosov-moscow-state-university",
     "name": "Master of Arts in Natural Sciences",
-    "slug": "lomonosov-moscow-state-university-master-of-arts-in-natural-sciences",
+    "slug": "edhec-business-school-master-of-arts-in-natural-sciences",
     "degree": "masters",
     "field": "Natural Sciences",
     "durationMonths": 24,
@@ -12677,10 +12137,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32452,
+    "tuitionUsd": 16355,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.1481710341484144,
+    "minGpa": 3.6614485306377658,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -12690,11 +12150,65 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "lomonosov-moscow-state-university",
-    "name": "PhD in Management",
-    "slug": "lomonosov-moscow-state-university-phd-in-management",
+    "universitySlug": "edhec-business-school",
+    "name": "Master of Science in Humanities",
+    "slug": "edhec-business-school-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21503,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.213100474943454,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "edhec-business-school",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "edhec-business-school-master-of-arts-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26827,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1084297896635764,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "edhec-business-school",
+    "name": "PhD in Social Sciences",
+    "slug": "edhec-business-school-phd-in-social-sciences",
     "degree": "phd",
-    "field": "Management",
+    "field": "Social Sciences",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -12704,14 +12218,230 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23989,
+    "tuitionUsd": 34673,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1038748516734462,
+    "scholarshipAvailable": false,
+    "minGpa": 3.7633936402111052,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Management",
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lomonosov-moscow-state-university",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "lomonosov-moscow-state-university-master-of-science-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30940,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5638329939716353,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lomonosov-moscow-state-university",
+    "name": "Master of Arts in Business",
+    "slug": "lomonosov-moscow-state-university-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31747,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1601373667851984,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lomonosov-moscow-state-university",
+    "name": "Master of Arts in Medicine",
+    "slug": "lomonosov-moscow-state-university-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15764,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.651229298034128,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lomonosov-moscow-state-university",
+    "name": "Bachelor of Science in media studies",
+    "slug": "lomonosov-moscow-state-university-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28811,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1499992774043832,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lomonosov-moscow-state-university",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "lomonosov-moscow-state-university-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44786,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.53193016408256,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "saint-petersburg-state-university",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "saint-petersburg-state-university-master-of-science-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19779,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.115146152065957,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "saint-petersburg-state-university",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "saint-petersburg-state-university-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42098,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5724574865771808,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "saint-petersburg-state-university",
+    "name": "Master of Arts in Medicine",
+    "slug": "saint-petersburg-state-university-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16583,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.319266045690929,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
@@ -12731,122 +12461,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34950,
+    "tuitionUsd": 24134,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.636837403265822,
+    "scholarshipAvailable": true,
+    "minGpa": 3.115446376080577,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "saint-petersburg-state-university",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "saint-petersburg-state-university-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28096,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0140992423088377,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "saint-petersburg-state-university",
-    "name": "PhD in Business",
-    "slug": "saint-petersburg-state-university-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22424,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.184487909990756,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "saint-petersburg-state-university",
-    "name": "Bachelor of Science in Technology",
-    "slug": "saint-petersburg-state-university-bachelor-of-science-in-technology",
-    "degree": "bachelors",
-    "field": "Technology",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42846,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2965308617355227,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "novosibirsk-state-university",
-    "name": "PhD in Economy",
-    "slug": "novosibirsk-state-university-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44590,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7027789940916973,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
@@ -12866,10 +12488,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17175,
+    "tuitionUsd": 41639,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.026803017744628,
+    "scholarshipAvailable": true,
+    "minGpa": 3.218387626176658,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -12880,64 +12502,10 @@ const programs = [
   },
   {
     "universitySlug": "novosibirsk-state-university",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "novosibirsk-state-university-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31444,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6944834515888916,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "novosibirsk-state-university",
-    "name": "Master of Science in Management",
-    "slug": "novosibirsk-state-university-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31716,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3291854284314812,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "leiden-university",
-    "name": "PhD in Humanities",
-    "slug": "leiden-university-phd-in-humanities",
+    "name": "PhD in Management",
+    "slug": "novosibirsk-state-university-phd-in-management",
     "degree": "phd",
-    "field": "Humanities",
+    "field": "Management",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -12947,118 +12515,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41367,
+    "tuitionUsd": 21672,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.108608755507168,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "leiden-university",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "leiden-university-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39960,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4771529879124374,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "leiden-university",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "leiden-university-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24997,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0534225852202845,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "leiden-university",
-    "name": "Master of Arts in Educational Sciences",
-    "slug": "leiden-university-master-of-arts-in-educational-sciences",
-    "degree": "masters",
-    "field": "Educational Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33965,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5055185635463335,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "utrecht-university",
-    "name": "Master of Arts in Management",
-    "slug": "utrecht-university-master-of-arts-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25785,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2068239815737605,
+    "minGpa": 3.385510113736361,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13068,9 +12528,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "utrecht-university",
+    "universitySlug": "novosibirsk-state-university",
     "name": "Master of Science in dentistry",
-    "slug": "utrecht-university-master-of-science-in-dentistry",
+    "slug": "novosibirsk-state-university-master-of-science-in-dentistry",
     "degree": "masters",
     "field": "dentistry",
     "durationMonths": 24,
@@ -13082,14 +12542,230 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40693,
+    "tuitionUsd": 19648,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.414349467977658,
+    "scholarshipAvailable": true,
+    "minGpa": 3.195369012409981,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "novosibirsk-state-university",
+    "name": "Master of Arts in media studies",
+    "slug": "novosibirsk-state-university-master-of-arts-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28536,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3305268619515926,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "leiden-university",
+    "name": "Master of Science in Economy",
+    "slug": "leiden-university-master-of-science-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21917,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.650006026966516,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "leiden-university",
+    "name": "Master of Science in Medicine",
+    "slug": "leiden-university-master-of-science-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41793,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2507805276572332,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "leiden-university",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "leiden-university-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41325,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3932075511136315,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "leiden-university",
+    "name": "Master of Science in Performing arts",
+    "slug": "leiden-university-master-of-science-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17214,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.51844955831015,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "utrecht-university",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "utrecht-university-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26543,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.417317608242044,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "utrecht-university",
+    "name": "Master of Science in Performing arts",
+    "slug": "utrecht-university-master-of-science-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29953,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.598695375687268,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "utrecht-university",
+    "name": "PhD in Humanities",
+    "slug": "utrecht-university-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17186,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.449637052230789,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
@@ -13109,10 +12785,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32122,
+    "tuitionUsd": 32992,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0522011493292025,
+    "scholarshipAvailable": true,
+    "minGpa": 3.110374483796622,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13123,12 +12799,12 @@ const programs = [
   },
   {
     "universitySlug": "utrecht-university",
-    "name": "PhD in Economy",
-    "slug": "utrecht-university-phd-in-economy",
-    "degree": "phd",
+    "name": "Master of Science in Economy",
+    "slug": "utrecht-university-master-of-science-in-economy",
+    "degree": "masters",
     "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -13136,10 +12812,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34476,
+    "tuitionUsd": 24726,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.002628269492747,
+    "scholarshipAvailable": false,
+    "minGpa": 3.003769693927574,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13150,12 +12826,12 @@ const programs = [
   },
   {
     "universitySlug": "ku-leuven",
-    "name": "Master of Arts in Technology",
-    "slug": "ku-leuven-master-of-arts-in-technology",
-    "degree": "masters",
+    "name": "PhD in Technology",
+    "slug": "ku-leuven-phd-in-technology",
+    "degree": "phd",
     "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -13163,10 +12839,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16425,
+    "tuitionUsd": 15984,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.592955675828372,
+    "minGpa": 3.0277353288752558,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13177,10 +12853,10 @@ const programs = [
   },
   {
     "universitySlug": "ku-leuven",
-    "name": "Master of Arts in Economy",
-    "slug": "ku-leuven-master-of-arts-in-economy",
+    "name": "Master of Science in Medicine",
+    "slug": "ku-leuven-master-of-science-in-medicine",
     "degree": "masters",
-    "field": "Economy",
+    "field": "Medicine",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -13190,14 +12866,41 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42277,
+    "tuitionUsd": 43681,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.419298590962483,
+    "minGpa": 3.1340646499940448,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Economy",
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ku-leuven",
+    "name": "Master of Science in Management",
+    "slug": "ku-leuven-master-of-science-in-management",
+    "degree": "masters",
+    "field": "Management",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36939,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.215509574424855,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
       "Researcher",
       "Consultant"
     ]
@@ -13217,10 +12920,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26142,
+    "tuitionUsd": 30161,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.276924829767083,
+    "scholarshipAvailable": true,
+    "minGpa": 3.2056172482300394,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13231,10 +12934,10 @@ const programs = [
   },
   {
     "universitySlug": "ku-leuven",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "ku-leuven-master-of-science-in-sports-and-health-sciences",
+    "name": "Master of Science in Business",
+    "slug": "ku-leuven-master-of-science-in-business",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
+    "field": "Business",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -13244,91 +12947,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31340,
+    "tuitionUsd": 34645,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.2423207881115657,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ghent-university",
+    "name": "Bachelor of Science in media studies",
+    "slug": "ghent-university-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40922,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.5488146589231357,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ghent-university",
-    "name": "PhD in Educational Sciences",
-    "slug": "ghent-university-phd-in-educational-sciences",
-    "degree": "phd",
-    "field": "Educational Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27058,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1566631603149355,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ghent-university",
-    "name": "PhD in dentistry",
-    "slug": "ghent-university-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27814,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.189504729876264,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ghent-university",
-    "name": "Master of Science in media studies",
-    "slug": "ghent-university-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33204,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5694620291338106,
+    "minGpa": 3.3879898156528503,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13339,8 +12988,170 @@ const programs = [
   },
   {
     "universitySlug": "ghent-university",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "ghent-university-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39919,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3840735048379997,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ghent-university",
+    "name": "PhD in Social Sciences",
+    "slug": "ghent-university-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33892,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.256052770094603,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-catholique-de-louvain",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "universit-catholique-de-louvain-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21678,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.303772037691056,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-catholique-de-louvain",
+    "name": "PhD in Humanities",
+    "slug": "universit-catholique-de-louvain-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31809,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.104180879877269,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-catholique-de-louvain",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "universit-catholique-de-louvain-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27639,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.687826293784605,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-warsaw",
+    "name": "Master of Science in Technology",
+    "slug": "university-of-warsaw-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18112,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.230485208332564,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-warsaw",
     "name": "Master of Arts in Humanities",
-    "slug": "ghent-university-master-of-arts-in-humanities",
+    "slug": "university-of-warsaw-master-of-arts-in-humanities",
     "degree": "masters",
     "field": "Humanities",
     "durationMonths": 24,
@@ -13352,10 +13163,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38707,
+    "tuitionUsd": 33692,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6141382033406764,
+    "scholarshipAvailable": false,
+    "minGpa": 3.729921642526815,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13365,38 +13176,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "universit-catholique-de-louvain",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "universit-catholique-de-louvain-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36917,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0038049213124958,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-catholique-de-louvain",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "universit-catholique-de-louvain-bachelor-of-science-in-dentistry",
+    "universitySlug": "university-of-warsaw",
+    "name": "Bachelor of Science in Business",
+    "slug": "university-of-warsaw-bachelor-of-science-in-business",
     "degree": "bachelors",
-    "field": "dentistry",
+    "field": "Business",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -13406,49 +13190,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17846,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.299563528567231,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-catholique-de-louvain",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "universit-catholique-de-louvain-bachelor-of-science-in-medicine",
-    "degree": "bachelors",
-    "field": "Medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32454,
+    "tuitionUsd": 43766,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.0942863550835513,
+    "minGpa": 3.238201262955975,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Medicine",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "universit-catholique-de-louvain",
-    "name": "Master of Arts in Economy",
-    "slug": "universit-catholique-de-louvain-master-of-arts-in-economy",
+    "universitySlug": "jagiellonian-university",
+    "name": "Master of Science in Economy",
+    "slug": "jagiellonian-university-master-of-science-in-economy",
     "degree": "masters",
     "field": "Economy",
     "durationMonths": 24,
@@ -13460,10 +13217,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43185,
+    "tuitionUsd": 20557,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5349698172261306,
+    "scholarshipAvailable": true,
+    "minGpa": 3.3426461864559975,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13473,11 +13230,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-warsaw",
-    "name": "Master of Arts in Performing arts",
-    "slug": "university-of-warsaw-master-of-arts-in-performing-arts",
+    "universitySlug": "jagiellonian-university",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "jagiellonian-university-master-of-arts-in-social-sciences",
     "degree": "masters",
-    "field": "Performing arts",
+    "field": "Social Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -13487,49 +13244,76 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43477,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0902246543058625,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-warsaw",
-    "name": "Master of Science in Business",
-    "slug": "university-of-warsaw-master-of-science-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37578,
+    "tuitionUsd": 39516,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4212374848949394,
+    "minGpa": 3.6029958064317826,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-warsaw",
+    "universitySlug": "jagiellonian-university",
+    "name": "Master of Science in Humanities",
+    "slug": "jagiellonian-university-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37418,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5485336741427362,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "warsaw-university-of-technology",
+    "name": "Bachelor of Science in media studies",
+    "slug": "warsaw-university-of-technology-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 41034,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4358939808074336,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "warsaw-university-of-technology",
     "name": "PhD in Humanities",
-    "slug": "university-of-warsaw-phd-in-humanities",
+    "slug": "warsaw-university-of-technology-phd-in-humanities",
     "degree": "phd",
     "field": "Humanities",
     "durationMonths": 60,
@@ -13541,10 +13325,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37091,
+    "tuitionUsd": 25673,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.383564177391585,
+    "minGpa": 3.7821364900741274,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13554,92 +13338,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "jagiellonian-university",
-    "name": "Master of Arts in Performing arts",
-    "slug": "jagiellonian-university-master-of-arts-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38970,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6797562980181246,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "jagiellonian-university",
-    "name": "Master of Science in Medicine",
-    "slug": "jagiellonian-university-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30082,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6529764209227205,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "jagiellonian-university",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "jagiellonian-university-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16370,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.582833784862144,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "jagiellonian-university",
-    "name": "PhD in Veterinary medicine",
-    "slug": "jagiellonian-university-phd-in-veterinary-medicine",
+    "universitySlug": "warsaw-university-of-technology",
+    "name": "PhD in Social Sciences",
+    "slug": "warsaw-university-of-technology-phd-in-social-sciences",
     "degree": "phd",
-    "field": "Veterinary medicine",
+    "field": "Social Sciences",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -13649,10 +13352,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42747,
+    "tuitionUsd": 39088,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.094673347047665,
+    "minGpa": 3.4606817297284582,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "warsaw-university-of-technology",
+    "name": "Master of Arts in Veterinary medicine",
+    "slug": "warsaw-university-of-technology-master-of-arts-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42119,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.756139685890861,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13662,92 +13392,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "jagiellonian-university",
-    "name": "PhD in Business",
-    "slug": "jagiellonian-university-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27050,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.56920896875215,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "warsaw-university-of-technology",
-    "name": "Master of Science in Social Sciences",
-    "slug": "warsaw-university-of-technology-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34957,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1363818734709383,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "warsaw-university-of-technology",
-    "name": "Master of Science in Management",
-    "slug": "warsaw-university-of-technology-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26588,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.419189414162765,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "warsaw-university-of-technology",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "warsaw-university-of-technology-bachelor-of-science-in-medicine",
+    "name": "Bachelor of Science in Business",
+    "slug": "warsaw-university-of-technology-bachelor-of-science-in-business",
     "degree": "bachelors",
-    "field": "Medicine",
+    "field": "Business",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -13757,10 +13406,172 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27050,
+    "tuitionUsd": 19137,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.6952683840611704,
+    "minGpa": 3.460759399604539,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-vienna",
+    "name": "Master of Science in Technology",
+    "slug": "university-of-vienna-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16653,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.374034463413733,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-vienna",
+    "name": "Bachelor of Science in Management",
+    "slug": "university-of-vienna-bachelor-of-science-in-management",
+    "degree": "bachelors",
+    "field": "Management",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18687,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.394056746425583,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-vienna",
+    "name": "PhD in dentistry",
+    "slug": "university-of-vienna-phd-in-dentistry",
+    "degree": "phd",
+    "field": "dentistry",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35153,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.513344161281026,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-vienna",
+    "name": "Master of Arts in Business",
+    "slug": "university-of-vienna-master-of-arts-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24379,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5626623525626018,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "tu-wien",
+    "name": "Master of Science in Economy",
+    "slug": "tu-wien-master-of-science-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24927,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.50381291466443,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "tu-wien",
+    "name": "Master of Science in Medicine",
+    "slug": "tu-wien-master-of-science-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31070,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1912628413185,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13770,9 +13581,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "warsaw-university-of-technology",
+    "universitySlug": "tu-wien",
     "name": "Master of Arts in dentistry",
-    "slug": "warsaw-university-of-technology-master-of-arts-in-dentistry",
+    "slug": "tu-wien-master-of-arts-in-dentistry",
     "degree": "masters",
     "field": "dentistry",
     "durationMonths": 24,
@@ -13784,64 +13595,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39247,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2785729130596035,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-vienna",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "university-of-vienna-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43299,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5003146482138137,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-vienna",
-    "name": "Master of Science in dentistry",
-    "slug": "university-of-vienna-master-of-science-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22806,
+    "tuitionUsd": 34109,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.507405852033293,
+    "minGpa": 3.319056841084716,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13851,11 +13608,38 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-vienna",
-    "name": "PhD in Natural Sciences",
-    "slug": "university-of-vienna-phd-in-natural-sciences",
+    "universitySlug": "medical-university-of-vienna",
+    "name": "Master of Arts in Technology",
+    "slug": "medical-university-of-vienna-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37892,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3238058764030076,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "medical-university-of-vienna",
+    "name": "PhD in Humanities",
+    "slug": "medical-university-of-vienna-phd-in-humanities",
     "degree": "phd",
-    "field": "Natural Sciences",
+    "field": "Humanities",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -13865,64 +13649,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36844,
+    "tuitionUsd": 23159,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.5099011899925046,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-vienna",
-    "name": "Bachelor of Science in media studies",
-    "slug": "university-of-vienna-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28977,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1295192060619055,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-vienna",
-    "name": "Master of Arts in Humanities",
-    "slug": "university-of-vienna-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27633,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.336215549947007,
+    "minGpa": 3.0013010902809896,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -13932,119 +13662,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "tu-wien",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "tu-wien-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40611,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6425713393191543,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "tu-wien",
-    "name": "PhD in Business",
-    "slug": "tu-wien-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30932,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2202012601480607,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "tu-wien",
-    "name": "Master of Science in Management",
-    "slug": "tu-wien-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27154,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.21168232631262,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "tu-wien",
-    "name": "Bachelor of Science in media studies",
-    "slug": "tu-wien-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21971,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.142999014685226,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "medical-university-of-vienna",
-    "name": "Master of Arts in Management",
-    "slug": "medical-university-of-vienna-master-of-arts-in-management",
+    "name": "Master of Arts in Medicine",
+    "slug": "medical-university-of-vienna-master-of-arts-in-medicine",
     "degree": "masters",
-    "field": "Management",
+    "field": "Medicine",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -14054,78 +13676,51 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41715,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1814542995219486,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "medical-university-of-vienna",
-    "name": "PhD in Business",
-    "slug": "medical-university-of-vienna-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17489,
+    "tuitionUsd": 44953,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.355299988977439,
+    "minGpa": 3.5031643932743286,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "medical-university-of-vienna",
-    "name": "Master of Arts in Educational Sciences",
-    "slug": "medical-university-of-vienna-master-of-arts-in-educational-sciences",
-    "degree": "masters",
-    "field": "Educational Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34277,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5609826446820376,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-zurich",
-    "name": "Bachelor of Science in media studies",
-    "slug": "university-of-zurich-bachelor-of-science-in-media-studies",
+    "name": "PhD in Humanities",
+    "slug": "university-of-zurich-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44054,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.754620493259817,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-zurich",
+    "name": "Bachelor of Science in Technology",
+    "slug": "university-of-zurich-bachelor-of-science-in-technology",
     "degree": "bachelors",
-    "field": "media studies",
+    "field": "Technology",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -14135,14 +13730,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33962,
+    "tuitionUsd": 32835,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5058184739927793,
+    "scholarshipAvailable": true,
+    "minGpa": 3.7711147046038755,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
@@ -14162,10 +13757,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41444,
+    "tuitionUsd": 37045,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7409345717913194,
+    "minGpa": 3.7148988853980107,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14176,10 +13771,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-zurich",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "university-of-zurich-bachelor-of-science-in-performing-arts",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-zurich-bachelor-of-science-in-sports-and-health-sciences",
     "degree": "bachelors",
-    "field": "Performing arts",
+    "field": "Sports and Health Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -14189,22 +13784,103 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27840,
+    "tuitionUsd": 40540,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0064653489227595,
+    "scholarshipAvailable": true,
+    "minGpa": 3.3942375266779123,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Performing arts",
+      "Professional in Sports and Health Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-zurich",
-    "name": "Master of Science in Technology",
-    "slug": "university-of-zurich-master-of-science-in-technology",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "university-of-zurich-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40984,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.561557998060309,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-geneva",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-geneva-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31193,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3751629965932004,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-geneva",
+    "name": "Bachelor of Science in Veterinary medicine",
+    "slug": "university-of-geneva-bachelor-of-science-in-veterinary-medicine",
+    "degree": "bachelors",
+    "field": "Veterinary medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34746,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2772160744361014,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-geneva",
+    "name": "Master of Arts in Technology",
+    "slug": "university-of-geneva-master-of-arts-in-technology",
     "degree": "masters",
     "field": "Technology",
     "durationMonths": 24,
@@ -14216,10 +13892,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40585,
+    "tuitionUsd": 40468,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7574570020416544,
+    "scholarshipAvailable": true,
+    "minGpa": 3.5733720674550686,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14230,37 +13906,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-geneva",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "university-of-geneva-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31714,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.528455994520826,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-geneva",
-    "name": "Bachelor of Science in Educational Sciences",
-    "slug": "university-of-geneva-bachelor-of-science-in-educational-sciences",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "university-of-geneva-bachelor-of-science-in-performing-arts",
     "degree": "bachelors",
-    "field": "Educational Sciences",
+    "field": "Performing arts",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -14270,10 +13919,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27282,
+    "tuitionUsd": 26662,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.2994677931275005,
+    "minGpa": 3.273252899909979,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bern",
+    "name": "PhD in Educational Sciences",
+    "slug": "university-of-bern-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42487,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7053502821002136,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14283,171 +13959,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-geneva",
-    "name": "Master of Arts in Economy",
-    "slug": "university-of-geneva-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38369,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.687436935071122,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "university-of-bern",
-    "name": "PhD in Medicine",
-    "slug": "university-of-bern-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38861,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.528021394576971,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bern",
-    "name": "PhD in Humanities",
-    "slug": "university-of-bern-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31582,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5221817503707813,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bern",
-    "name": "PhD in Veterinary medicine",
-    "slug": "university-of-bern-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42864,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6940540876540324,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bern",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "university-of-bern-master-of-arts-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24185,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.735973792506057,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bern",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "university-of-bern-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37125,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1447913405183066,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-lisbon",
     "name": "Bachelor of Science in Business",
-    "slug": "university-of-lisbon-bachelor-of-science-in-business",
+    "slug": "university-of-bern-bachelor-of-science-in-business",
     "degree": "bachelors",
     "field": "Business",
     "durationMonths": 48,
@@ -14459,10 +13973,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17122,
+    "tuitionUsd": 34408,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4983018171487363,
+    "scholarshipAvailable": false,
+    "minGpa": 3.360398065378961,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14472,11 +13986,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-lisbon",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "university-of-lisbon-bachelor-of-science-in-natural-sciences",
+    "universitySlug": "university-of-bern",
+    "name": "Bachelor of Science in media studies",
+    "slug": "university-of-bern-bachelor-of-science-in-media-studies",
     "degree": "bachelors",
-    "field": "Natural Sciences",
+    "field": "media studies",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -14486,24 +14000,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43389,
+    "tuitionUsd": 17681,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.3801007766363593,
+    "minGpa": 3.320476463401171,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Natural Sciences",
+      "Professional in media studies",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-lisbon",
-    "name": "PhD in Medicine",
-    "slug": "university-of-lisbon-phd-in-medicine",
+    "universitySlug": "university-of-bern",
+    "name": "PhD in Performing arts",
+    "slug": "university-of-bern-phd-in-performing-arts",
     "degree": "phd",
-    "field": "Medicine",
+    "field": "Performing arts",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -14513,24 +14027,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27523,
+    "tuitionUsd": 16815,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.1066544466637542,
+    "minGpa": 3.6443461664283374,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Medicine",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-lisbon",
-    "name": "Master of Arts in Humanities",
-    "slug": "university-of-lisbon-master-of-arts-in-humanities",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "university-of-lisbon-master-of-arts-in-educational-sciences",
     "degree": "masters",
-    "field": "Humanities",
+    "field": "Educational Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -14540,10 +14054,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18335,
+    "tuitionUsd": 37844,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6938654035516887,
+    "scholarshipAvailable": false,
+    "minGpa": 3.078964031605843,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-lisbon",
+    "name": "PhD in Humanities",
+    "slug": "university-of-lisbon-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38725,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1289611509670836,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14553,148 +14094,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-porto",
-    "name": "PhD in dentistry",
-    "slug": "university-of-porto-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32598,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7533323376050527,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-porto",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "university-of-porto-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42004,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4499041157998054,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-porto",
-    "name": "Master of Science in Humanities",
-    "slug": "university-of-porto-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28875,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0986751633501073,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-porto",
-    "name": "PhD in Medicine",
-    "slug": "university-of-porto-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22309,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.042184612615201,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-porto",
-    "name": "Master of Science in Management",
-    "slug": "university-of-porto-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38619,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4680860903083226,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-coimbra",
-    "name": "Master of Arts in Economy",
-    "slug": "university-of-coimbra-master-of-arts-in-economy",
-    "degree": "masters",
+    "universitySlug": "university-of-lisbon",
+    "name": "Bachelor of Science in Economy",
+    "slug": "university-of-lisbon-bachelor-of-science-in-economy",
+    "degree": "bachelors",
     "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -14702,10 +14108,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32134,
+    "tuitionUsd": 18495,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.12784966816253,
+    "minGpa": 3.1906248555850443,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14715,11 +14121,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-coimbra",
-    "name": "Master of Arts in dentistry",
-    "slug": "university-of-coimbra-master-of-arts-in-dentistry",
+    "universitySlug": "university-of-lisbon",
+    "name": "Master of Science in Performing arts",
+    "slug": "university-of-lisbon-master-of-science-in-performing-arts",
     "degree": "masters",
-    "field": "dentistry",
+    "field": "Performing arts",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -14729,14 +14135,122 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43846,
+    "tuitionUsd": 42495,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.137727333404509,
+    "scholarshipAvailable": true,
+    "minGpa": 3.1855162366633176,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in dentistry",
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-porto",
+    "name": "PhD in Educational Sciences",
+    "slug": "university-of-porto-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33875,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.154961103577291,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-porto",
+    "name": "Bachelor of Science in Economy",
+    "slug": "university-of-porto-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15383,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2082177995838177,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-porto",
+    "name": "PhD in Social Sciences",
+    "slug": "university-of-porto-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25029,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.495269299502521,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-coimbra",
+    "name": "Bachelor of Science in media studies",
+    "slug": "university-of-coimbra-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20384,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3441810510189773,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
       "Researcher",
       "Consultant"
     ]
@@ -14756,10 +14270,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25454,
+    "tuitionUsd": 37294,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0563640417945726,
+    "scholarshipAvailable": false,
+    "minGpa": 3.4982902882108564,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14770,10 +14284,64 @@ const programs = [
   },
   {
     "universitySlug": "university-of-coimbra",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "university-of-coimbra-master-of-science-in-veterinary-medicine",
+    "name": "PhD in Social Sciences",
+    "slug": "university-of-coimbra-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16001,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7113122741105165,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-barcelona",
+    "name": "PhD in Management",
+    "slug": "university-of-barcelona-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42919,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7556979953274485,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-barcelona",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "university-of-barcelona-master-of-science-in-natural-sciences",
     "degree": "masters",
-    "field": "Veterinary medicine",
+    "field": "Natural Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -14783,37 +14351,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43664,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5431042515280025,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-barcelona",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "university-of-barcelona-bachelor-of-science-in-natural-sciences",
-    "degree": "bachelors",
-    "field": "Natural Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38200,
+    "tuitionUsd": 27036,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7722205461032545,
+    "minGpa": 3.754890226121838,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14824,10 +14365,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-barcelona",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "university-of-barcelona-master-of-arts-in-veterinary-medicine",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "university-of-barcelona-master-of-arts-in-sports-and-health-sciences",
     "degree": "masters",
-    "field": "Veterinary medicine",
+    "field": "Sports and Health Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -14837,37 +14378,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40328,
+    "tuitionUsd": 35057,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.186895852678815,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-barcelona",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "university-of-barcelona-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19556,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0213835491427328,
+    "minGpa": 3.4813564203315437,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -14878,8 +14392,62 @@ const programs = [
   },
   {
     "universitySlug": "university-of-barcelona",
-    "name": "Master of Arts in Humanities",
-    "slug": "university-of-barcelona-master-of-arts-in-humanities",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "university-of-barcelona-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22460,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3950830390253945,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "autonomous-university-of-madrid",
+    "name": "Master of Science in Business",
+    "slug": "autonomous-university-of-madrid-master-of-science-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30732,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2221890546745193,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "autonomous-university-of-madrid",
+    "name": "Master of Science in Humanities",
+    "slug": "autonomous-university-of-madrid-master-of-science-in-humanities",
     "degree": "masters",
     "field": "Humanities",
     "durationMonths": 24,
@@ -14891,145 +14459,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29678,
+    "tuitionUsd": 24874,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.1414889231588528,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-barcelona",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "university-of-barcelona-bachelor-of-science-in-medicine",
-    "degree": "bachelors",
-    "field": "Medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37624,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1334837911387203,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "autonomous-university-of-madrid",
-    "name": "PhD in Performing arts",
-    "slug": "autonomous-university-of-madrid-phd-in-performing-arts",
-    "degree": "phd",
-    "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26004,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3928940584516427,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "autonomous-university-of-madrid",
-    "name": "Bachelor of Science in media studies",
-    "slug": "autonomous-university-of-madrid-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32555,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4918092212478347,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "autonomous-university-of-madrid",
-    "name": "PhD in Business",
-    "slug": "autonomous-university-of-madrid-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18944,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2453411646523227,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "autonomous-university-of-madrid",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "autonomous-university-of-madrid-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16405,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4046831504659574,
+    "minGpa": 3.6705522979928533,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -15040,120 +14473,12 @@ const programs = [
   },
   {
     "universitySlug": "autonomous-university-of-madrid",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "autonomous-university-of-madrid-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38682,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.022339134557602,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "complutense-university-of-madrid",
-    "name": "Bachelor of Science in Business",
-    "slug": "complutense-university-of-madrid-bachelor-of-science-in-business",
+    "name": "Bachelor of Science in Technology",
+    "slug": "autonomous-university-of-madrid-bachelor-of-science-in-technology",
     "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17905,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4589606922409626,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "complutense-university-of-madrid",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "complutense-university-of-madrid-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23181,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5516747197492937,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "complutense-university-of-madrid",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "complutense-university-of-madrid-bachelor-of-science-in-performing-arts",
-    "degree": "bachelors",
-    "field": "Performing arts",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31117,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0721647327191213,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "complutense-university-of-madrid",
-    "name": "Master of Science in Technology",
-    "slug": "complutense-university-of-madrid-master-of-science-in-technology",
-    "degree": "masters",
     "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -15161,10 +14486,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31109,
+    "tuitionUsd": 42299,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.421117965194108,
+    "minGpa": 3.2350839720259583,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -15174,9 +14499,63 @@ const programs = [
     ]
   },
   {
+    "universitySlug": "autonomous-university-of-madrid",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "autonomous-university-of-madrid-master-of-arts-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34770,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.423446262210992,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
     "universitySlug": "complutense-university-of-madrid",
-    "name": "Master of Science in dentistry",
-    "slug": "complutense-university-of-madrid-master-of-science-in-dentistry",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "complutense-university-of-madrid-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19372,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7263026583890557,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "complutense-university-of-madrid",
+    "name": "Master of Arts in dentistry",
+    "slug": "complutense-university-of-madrid-master-of-arts-in-dentistry",
     "degree": "masters",
     "field": "dentistry",
     "durationMonths": 24,
@@ -15188,14 +14567,122 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18984,
+    "tuitionUsd": 33153,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.2123440829044836,
+    "minGpa": 3.637440519827246,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "complutense-university-of-madrid",
+    "name": "PhD in Business",
+    "slug": "complutense-university-of-madrid-phd-in-business",
+    "degree": "phd",
+    "field": "Business",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35739,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7012384426539717,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "complutense-university-of-madrid",
+    "name": "PhD in Educational Sciences",
+    "slug": "complutense-university-of-madrid-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22939,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.063641273125572,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "complutense-university-of-madrid",
+    "name": "PhD in Management",
+    "slug": "complutense-university-of-madrid-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15766,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6809448925681907,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-college-dublin",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "university-college-dublin-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40619,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4042159806639676,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
       "Researcher",
       "Consultant"
     ]
@@ -15215,10 +14702,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29857,
+    "tuitionUsd": 33559,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.603073826426658,
+    "scholarshipAvailable": false,
+    "minGpa": 3.6427451448709074,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -15229,12 +14716,12 @@ const programs = [
   },
   {
     "universitySlug": "university-college-dublin",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "university-college-dublin-bachelor-of-science-in-natural-sciences",
-    "degree": "bachelors",
-    "field": "Natural Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "name": "PhD in Medicine",
+    "slug": "university-college-dublin-phd-in-medicine",
+    "degree": "phd",
+    "field": "Medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -15242,41 +14729,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41965,
+    "tuitionUsd": 37406,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4077373886520443,
+    "minGpa": 3.2958163952174324,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-college-dublin",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "university-college-dublin-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27032,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5771183213887525,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
@@ -15296,10 +14756,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25384,
+    "tuitionUsd": 31639,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0161319547807453,
+    "scholarshipAvailable": false,
+    "minGpa": 3.644102992664295,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -15310,12 +14770,12 @@ const programs = [
   },
   {
     "universitySlug": "national-university-of-ireland-galway",
-    "name": "PhD in Business",
-    "slug": "national-university-of-ireland-galway-phd-in-business",
-    "degree": "phd",
+    "name": "Master of Arts in Business",
+    "slug": "national-university-of-ireland-galway-master-of-arts-in-business",
+    "degree": "masters",
     "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -15323,10 +14783,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18495,
+    "tuitionUsd": 29678,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.4695492026675065,
+    "minGpa": 3.0165982927805346,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -15337,12 +14797,12 @@ const programs = [
   },
   {
     "universitySlug": "national-university-of-ireland-galway",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "national-university-of-ireland-galway-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "Bachelor of Science in Technology",
+    "slug": "national-university-of-ireland-galway-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -15350,24 +14810,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41675,
+    "tuitionUsd": 18631,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.7100219732930895,
+    "minGpa": 3.0639299124372994,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "ucc",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "ucc-master-of-arts-in-sports-and-health-sciences",
+    "name": "Master of Science in Business",
+    "slug": "ucc-master-of-science-in-business",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
+    "field": "Business",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -15377,37 +14837,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16022,
+    "tuitionUsd": 24159,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.0991176127295255,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "ucc",
-    "name": "PhD in Business",
-    "slug": "ucc-phd-in-business",
-    "degree": "phd",
-    "field": "Business",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28906,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2341723922622543,
+    "minGpa": 3.590980623910262,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -15418,8 +14851,278 @@ const programs = [
   },
   {
     "universitySlug": "ucc",
+    "name": "Master of Arts in Economy",
+    "slug": "ucc-master-of-arts-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43666,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7383633902926343,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "ucc",
+    "name": "Master of Science in Social Sciences",
+    "slug": "ucc-master-of-science-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34371,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.626057454193936,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "karolinska-institute",
+    "name": "PhD in Economy",
+    "slug": "karolinska-institute-phd-in-economy",
+    "degree": "phd",
+    "field": "Economy",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27660,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.3164656329439293,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "karolinska-institute",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "karolinska-institute-master-of-science-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27022,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.2666507780902863,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "karolinska-institute",
+    "name": "Master of Science in Medicine",
+    "slug": "karolinska-institute-master-of-science-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25491,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.593378338511354,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "karolinska-institute",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "karolinska-institute-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30533,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.434843357974078,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lund-university",
+    "name": "Master of Science in Performing arts",
+    "slug": "lund-university-master-of-science-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35295,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.476056098425002,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lund-university",
+    "name": "PhD in Educational Sciences",
+    "slug": "lund-university-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42230,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.546400015870266,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lund-university",
+    "name": "PhD in Humanities",
+    "slug": "lund-university-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 21632,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2390013233730297,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "uppsala-university",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "uppsala-university-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 42633,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.096859675573893,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "uppsala-university",
     "name": "Master of Science in Veterinary medicine",
-    "slug": "ucc-master-of-science-in-veterinary-medicine",
+    "slug": "uppsala-university-master-of-science-in-veterinary-medicine",
     "degree": "masters",
     "field": "Veterinary medicine",
     "durationMonths": 24,
@@ -15431,10 +15134,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27710,
+    "tuitionUsd": 28770,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.505635236658892,
+    "scholarshipAvailable": true,
+    "minGpa": 3.3402841259277736,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -15444,11 +15147,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "ucc",
-    "name": "PhD in dentistry",
-    "slug": "ucc-phd-in-dentistry",
+    "universitySlug": "uppsala-university",
+    "name": "PhD in Business",
+    "slug": "uppsala-university-phd-in-business",
     "degree": "phd",
-    "field": "dentistry",
+    "field": "Business",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -15458,10 +15161,172 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35304,
+    "tuitionUsd": 35878,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.2965330037829608,
+    "minGpa": 3.6332021833083865,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bologna",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "university-of-bologna-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23258,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.179501522028128,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bologna",
+    "name": "Bachelor of Science in Economy",
+    "slug": "university-of-bologna-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19642,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7119832208911077,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bologna",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "university-of-bologna-master-of-arts-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22581,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7859511822350935,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sapienza-university-of-rome",
+    "name": "Master of Arts in Sports and Health Sciences",
+    "slug": "sapienza-university-of-rome-master-of-arts-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28772,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4863828131164167,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sapienza-university-of-rome",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "sapienza-university-of-rome-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20607,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.277411368625869,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "sapienza-university-of-rome",
+    "name": "Master of Arts in dentistry",
+    "slug": "sapienza-university-of-rome-master-of-arts-in-dentistry",
+    "degree": "masters",
+    "field": "dentistry",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28198,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.754882435398568,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -15471,765 +15336,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "ucc",
-    "name": "Master of Science in media studies",
-    "slug": "ucc-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22161,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.513854817870426,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "karolinska-institute",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "karolinska-institute-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21295,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4614737627195544,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "karolinska-institute",
-    "name": "Master of Arts in Management",
-    "slug": "karolinska-institute-master-of-arts-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15890,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.622767175066054,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "karolinska-institute",
-    "name": "Master of Arts in media studies",
-    "slug": "karolinska-institute-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42119,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0560033554914856,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "karolinska-institute",
-    "name": "Master of Arts in Medicine",
-    "slug": "karolinska-institute-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16894,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0206680878782697,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lund-university",
-    "name": "Master of Arts in Performing arts",
-    "slug": "lund-university-master-of-arts-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15044,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.460030984876982,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lund-university",
-    "name": "Master of Science in Humanities",
-    "slug": "lund-university-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35554,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.145074962880211,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lund-university",
-    "name": "Master of Science in Social Sciences",
-    "slug": "lund-university-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24206,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.641825632553391,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lund-university",
-    "name": "Bachelor of Science in media studies",
-    "slug": "lund-university-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37870,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6594572008255914,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "lund-university",
-    "name": "PhD in Technology",
-    "slug": "lund-university-phd-in-technology",
-    "degree": "phd",
-    "field": "Technology",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24023,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.629394328489103,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "uppsala-university",
-    "name": "Bachelor of Science in Economy",
-    "slug": "uppsala-university-bachelor-of-science-in-economy",
-    "degree": "bachelors",
-    "field": "Economy",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38893,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3673237124600677,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "uppsala-university",
-    "name": "Master of Science in Humanities",
-    "slug": "uppsala-university-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21592,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3431944566602443,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "uppsala-university",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "uppsala-university-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24044,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.574716697229823,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "uppsala-university",
-    "name": "Master of Science in Management",
-    "slug": "uppsala-university-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26568,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5115373736655315,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "uppsala-university",
-    "name": "Master of Science in Medicine",
-    "slug": "uppsala-university-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17148,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.501455169107993,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bologna",
-    "name": "Bachelor of Science in Business",
-    "slug": "university-of-bologna-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42745,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6027518263850933,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bologna",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "university-of-bologna-bachelor-of-science-in-medicine",
-    "degree": "bachelors",
-    "field": "Medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24082,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5083763952229807,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bologna",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "university-of-bologna-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24170,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0159269111144638,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bologna",
-    "name": "PhD in Veterinary medicine",
-    "slug": "university-of-bologna-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42884,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.058154675280385,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bologna",
-    "name": "PhD in media studies",
-    "slug": "university-of-bologna-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21372,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4211066341126455,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sapienza-university-of-rome",
-    "name": "Master of Science in Performing arts",
-    "slug": "sapienza-university-of-rome-master-of-science-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18231,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4610434058709134,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sapienza-university-of-rome",
-    "name": "PhD in media studies",
-    "slug": "sapienza-university-of-rome-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37745,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2728497796818594,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "sapienza-university-of-rome",
-    "name": "PhD in Educational Sciences",
-    "slug": "sapienza-university-of-rome-phd-in-educational-sciences",
-    "degree": "phd",
-    "field": "Educational Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36785,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7971056097531832,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "university-of-padua",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "university-of-padua-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37094,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.234883846201953,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-padua",
-    "name": "Master of Science in Technology",
-    "slug": "university-of-padua-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23234,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4882734192153664,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-padua",
-    "name": "Bachelor of Science in Educational Sciences",
-    "slug": "university-of-padua-bachelor-of-science-in-educational-sciences",
-    "degree": "bachelors",
-    "field": "Educational Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16854,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1127456607195167,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-padua",
-    "name": "PhD in Performing arts",
-    "slug": "university-of-padua-phd-in-performing-arts",
-    "degree": "phd",
-    "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40899,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5807448145518253,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-oslo",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "university-of-oslo-phd-in-sports-and-health-sciences",
-    "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23878,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6001838531984616,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-oslo",
     "name": "PhD in Business",
-    "slug": "university-of-oslo-phd-in-business",
+    "slug": "university-of-padua-phd-in-business",
     "degree": "phd",
     "field": "Business",
     "durationMonths": 60,
@@ -16241,10 +15350,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32217,
+    "tuitionUsd": 28676,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4628714554612468,
+    "scholarshipAvailable": false,
+    "minGpa": 3.1150555650037854,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16254,92 +15363,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-oslo",
-    "name": "PhD in Medicine",
-    "slug": "university-of-oslo-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30673,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7460374486549486,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-oslo",
-    "name": "PhD in Natural Sciences",
-    "slug": "university-of-oslo-phd-in-natural-sciences",
-    "degree": "phd",
-    "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19787,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5631662883596156,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bergen",
-    "name": "PhD in Humanities",
-    "slug": "university-of-bergen-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31169,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.129238301913278,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-bergen",
-    "name": "Bachelor of Science in Social Sciences",
-    "slug": "university-of-bergen-bachelor-of-science-in-social-sciences",
+    "universitySlug": "university-of-padua",
+    "name": "Bachelor of Science in Veterinary medicine",
+    "slug": "university-of-padua-bachelor-of-science-in-veterinary-medicine",
     "degree": "bachelors",
-    "field": "Social Sciences",
+    "field": "Veterinary medicine",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -16349,22 +15377,130 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37920,
+    "tuitionUsd": 26291,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2438869603532647,
+    "scholarshipAvailable": false,
+    "minGpa": 3.255966309133125,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Social Sciences",
+      "Professional in Veterinary medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-bergen",
+    "universitySlug": "university-of-padua",
+    "name": "Master of Arts in Humanities",
+    "slug": "university-of-padua-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33786,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.429673014395232,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-padua",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "university-of-padua-master-of-arts-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43638,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.282254230396509,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-padua",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "university-of-padua-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18678,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.144596147586957,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-oslo",
+    "name": "Bachelor of Science in media studies",
+    "slug": "university-of-oslo-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26370,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4038498261789947,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-oslo",
     "name": "Master of Science in Sports and Health Sciences",
-    "slug": "university-of-bergen-master-of-science-in-sports-and-health-sciences",
+    "slug": "university-of-oslo-master-of-science-in-sports-and-health-sciences",
     "degree": "masters",
     "field": "Sports and Health Sciences",
     "durationMonths": 24,
@@ -16376,10 +15512,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40735,
+    "tuitionUsd": 42270,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2011437456697243,
+    "scholarshipAvailable": false,
+    "minGpa": 3.781656280310666,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16389,11 +15525,38 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-bergen",
-    "name": "PhD in Educational Sciences",
-    "slug": "university-of-bergen-phd-in-educational-sciences",
+    "universitySlug": "university-of-oslo",
+    "name": "Bachelor of Science in Business",
+    "slug": "university-of-oslo-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 32871,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.625848777284744,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-oslo",
+    "name": "PhD in Social Sciences",
+    "slug": "university-of-oslo-phd-in-social-sciences",
     "degree": "phd",
-    "field": "Educational Sciences",
+    "field": "Social Sciences",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -16403,24 +15566,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23310,
+    "tuitionUsd": 40939,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.599837994779721,
+    "scholarshipAvailable": false,
+    "minGpa": 3.4846505572719146,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Educational Sciences",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-bergen",
-    "name": "Master of Science in Economy",
-    "slug": "university-of-bergen-master-of-science-in-economy",
+    "universitySlug": "university-of-oslo",
+    "name": "Master of Science in Medicine",
+    "slug": "university-of-oslo-master-of-science-in-medicine",
     "degree": "masters",
-    "field": "Economy",
+    "field": "Medicine",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -16430,14 +15593,149 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15739,
+    "tuitionUsd": 20651,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.2414317553460474,
+    "minGpa": 3.4972201974357504,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Economy",
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bergen",
+    "name": "Master of Arts in Performing arts",
+    "slug": "university-of-bergen-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38638,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.652278987641883,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bergen",
+    "name": "PhD in Veterinary medicine",
+    "slug": "university-of-bergen-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39343,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6043187212781653,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bergen",
+    "name": "Bachelor of Science in Technology",
+    "slug": "university-of-bergen-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44793,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.112578227172291,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bergen",
+    "name": "Master of Science in Humanities",
+    "slug": "university-of-bergen-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19222,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4003314068251598,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bergen",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-bergen-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25859,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.761071176324417,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
       "Researcher",
       "Consultant"
     ]
@@ -16457,10 +15755,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28161,
+    "tuitionUsd": 17637,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.708304566440071,
+    "minGpa": 3.312342368340063,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16484,10 +15782,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40508,
+    "tuitionUsd": 34643,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.637353863404047,
+    "minGpa": 3.354151462281684,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16498,12 +15796,12 @@ const programs = [
   },
   {
     "universitySlug": "ntnu",
-    "name": "PhD in Economy",
-    "slug": "ntnu-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "ntnu-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -16511,22 +15809,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16292,
+    "tuitionUsd": 20027,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7370727063940854,
+    "scholarshipAvailable": true,
+    "minGpa": 3.4823623964941355,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Economy",
+      "Professional in Medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-helsinki",
+    "universitySlug": "ntnu",
     "name": "Master of Science in Performing arts",
-    "slug": "university-of-helsinki-master-of-science-in-performing-arts",
+    "slug": "ntnu-master-of-science-in-performing-arts",
     "degree": "masters",
     "field": "Performing arts",
     "durationMonths": 24,
@@ -16538,10 +15836,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44921,
+    "tuitionUsd": 24749,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.019932994678692,
+    "scholarshipAvailable": true,
+    "minGpa": 3.5710148304103564,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16551,13 +15849,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-helsinki",
-    "name": "Master of Arts in Economy",
-    "slug": "university-of-helsinki-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "ntnu",
+    "name": "PhD in Management",
+    "slug": "ntnu-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -16565,10 +15863,64 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42880,
+    "tuitionUsd": 17785,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.7705474516314887,
+    "minGpa": 3.717575390784102,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-helsinki",
+    "name": "PhD in Business",
+    "slug": "university-of-helsinki-phd-in-business",
+    "degree": "phd",
+    "field": "Business",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 32229,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.693662876795126,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-helsinki",
+    "name": "PhD in Economy",
+    "slug": "university-of-helsinki-phd-in-economy",
+    "degree": "phd",
+    "field": "Economy",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36097,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.169389079856387,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16579,10 +15931,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-helsinki",
-    "name": "Master of Science in Social Sciences",
-    "slug": "university-of-helsinki-master-of-science-in-social-sciences",
+    "name": "Master of Science in Educational Sciences",
+    "slug": "university-of-helsinki-master-of-science-in-educational-sciences",
     "degree": "masters",
-    "field": "Social Sciences",
+    "field": "Educational Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -16592,78 +15944,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35176,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.19430864630667,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-helsinki",
-    "name": "Master of Arts in media studies",
-    "slug": "university-of-helsinki-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26367,
+    "tuitionUsd": 28429,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.1577323448163708,
+    "minGpa": 3.4671860708339914,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Educational Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-helsinki",
-    "name": "PhD in Technology",
-    "slug": "university-of-helsinki-phd-in-technology",
-    "degree": "phd",
-    "field": "Technology",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32397,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.763456542459466,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aalto-university",
-    "name": "Bachelor of Science in Management",
-    "slug": "aalto-university-bachelor-of-science-in-management",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "university-of-helsinki-bachelor-of-science-in-performing-arts",
     "degree": "bachelors",
-    "field": "Management",
+    "field": "Performing arts",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -16673,105 +15971,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 42698,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.500607913884811,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aalto-university",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "aalto-university-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35415,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4598949803005157,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aalto-university",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "aalto-university-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39386,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.53738349646337,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aalto-university",
-    "name": "Master of Science in Medicine",
-    "slug": "aalto-university-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43021,
+    "tuitionUsd": 29434,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.18753331823499,
+    "minGpa": 3.4791418542230117,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Medicine",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-turku",
-    "name": "Master of Science in media studies",
-    "slug": "university-of-turku-master-of-science-in-media-studies",
+    "universitySlug": "aalto-university",
+    "name": "Master of Science in dentistry",
+    "slug": "aalto-university-master-of-science-in-dentistry",
     "degree": "masters",
-    "field": "media studies",
+    "field": "dentistry",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -16781,24 +15998,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16209,
+    "tuitionUsd": 23448,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3956741521193656,
+    "scholarshipAvailable": true,
+    "minGpa": 3.6987249630310246,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in dentistry",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-turku",
-    "name": "Master of Science in Management",
-    "slug": "university-of-turku-master-of-science-in-management",
+    "universitySlug": "aalto-university",
+    "name": "Master of Science in Humanities",
+    "slug": "aalto-university-master-of-science-in-humanities",
     "degree": "masters",
-    "field": "Management",
+    "field": "Humanities",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -16808,14 +16025,68 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21729,
+    "tuitionUsd": 25581,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2591163822719316,
+    "scholarshipAvailable": true,
+    "minGpa": 3.0361893602801833,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Management",
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "aalto-university",
+    "name": "Master of Science in Business",
+    "slug": "aalto-university-master-of-science-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38578,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1126589579984856,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-turku",
+    "name": "Bachelor of Science in Technology",
+    "slug": "university-of-turku-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33915,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0467050147078423,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
@@ -16835,10 +16106,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20798,
+    "tuitionUsd": 25611,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.387907087228195,
+    "minGpa": 3.4212121377441105,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16862,10 +16133,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40401,
+    "tuitionUsd": 33037,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4323159565453456,
+    "minGpa": 3.1469675965681114,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16876,37 +16147,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-turku",
-    "name": "Bachelor of Science in Medicine",
-    "slug": "university-of-turku-bachelor-of-science-in-medicine",
-    "degree": "bachelors",
-    "field": "Medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23570,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3344798224116095,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-copenhagen",
-    "name": "Master of Science in Educational Sciences",
-    "slug": "university-of-copenhagen-master-of-science-in-educational-sciences",
+    "name": "Master of Arts in Economy",
+    "slug": "university-of-turku-master-of-arts-in-economy",
     "degree": "masters",
-    "field": "Educational Sciences",
+    "field": "Economy",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -16916,24 +16160,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32343,
+    "tuitionUsd": 15291,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4990670958563177,
+    "scholarshipAvailable": false,
+    "minGpa": 3.190912194927831,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Educational Sciences",
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-copenhagen",
-    "name": "PhD in Performing arts",
-    "slug": "university-of-copenhagen-phd-in-performing-arts",
+    "name": "PhD in media studies",
+    "slug": "university-of-copenhagen-phd-in-media-studies",
     "degree": "phd",
-    "field": "Performing arts",
+    "field": "media studies",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -16943,14 +16187,41 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22609,
+    "tuitionUsd": 17850,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.43407293589082,
+    "minGpa": 3.4636202449539883,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Performing arts",
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-copenhagen",
+    "name": "PhD in dentistry",
+    "slug": "university-of-copenhagen-phd-in-dentistry",
+    "degree": "phd",
+    "field": "dentistry",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33103,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.1720549502848074,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
       "Researcher",
       "Consultant"
     ]
@@ -16970,10 +16241,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41365,
+    "tuitionUsd": 40957,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1600892444331614,
+    "scholarshipAvailable": false,
+    "minGpa": 3.2762658723447897,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -16983,9 +16254,63 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-copenhagen",
+    "universitySlug": "technical-university-of-denmark",
+    "name": "Master of Arts in Technology",
+    "slug": "technical-university-of-denmark-master-of-arts-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19983,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.486622529288608,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "technical-university-of-denmark",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "technical-university-of-denmark-master-of-arts-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27981,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7336009499218843,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "technical-university-of-denmark",
     "name": "Bachelor of Science in Humanities",
-    "slug": "university-of-copenhagen-bachelor-of-science-in-humanities",
+    "slug": "technical-university-of-denmark-bachelor-of-science-in-humanities",
     "degree": "bachelors",
     "field": "Humanities",
     "durationMonths": 48,
@@ -16997,10 +16322,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37611,
+    "tuitionUsd": 34332,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6409003250111835,
+    "scholarshipAvailable": false,
+    "minGpa": 3.4973722476991647,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17010,13 +16335,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-copenhagen",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "university-of-copenhagen-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "aarhus-university",
+    "name": "PhD in Social Sciences",
+    "slug": "aarhus-university-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -17024,26 +16349,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19122,
+    "tuitionUsd": 28769,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.793064531581929,
+    "minGpa": 3.5211197126790936,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "technical-university-of-denmark",
-    "name": "Master of Arts in Economy",
-    "slug": "technical-university-of-denmark-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "aarhus-university",
+    "name": "Bachelor of Science in media studies",
+    "slug": "aarhus-university-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -17051,10 +16376,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26394,
+    "tuitionUsd": 40499,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0789848862003266,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "aarhus-university",
+    "name": "PhD in Economy",
+    "slug": "aarhus-university-phd-in-economy",
+    "degree": "phd",
+    "field": "Economy",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33152,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3870517399342406,
+    "minGpa": 3.239132063194312,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17064,11 +16416,38 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "technical-university-of-denmark",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "technical-university-of-denmark-bachelor-of-science-in-dentistry",
+    "universitySlug": "aarhus-university",
+    "name": "PhD in Educational Sciences",
+    "slug": "aarhus-university-phd-in-educational-sciences",
+    "degree": "phd",
+    "field": "Educational Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25122,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0539922123511363,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universiti-malaya",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "universiti-malaya-bachelor-of-science-in-humanities",
     "degree": "bachelors",
-    "field": "dentistry",
+    "field": "Humanities",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -17078,91 +16457,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27144,
+    "tuitionUsd": 28293,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.27598057920861,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "technical-university-of-denmark",
-    "name": "Master of Science in media studies",
-    "slug": "technical-university-of-denmark-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33631,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2451454326350806,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "technical-university-of-denmark",
-    "name": "Master of Arts in Business",
-    "slug": "technical-university-of-denmark-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17799,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7927123714109934,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "technical-university-of-denmark",
-    "name": "Master of Science in Humanities",
-    "slug": "technical-university-of-denmark-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43609,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6293013716016844,
+    "minGpa": 3.744049908290336,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17172,148 +16470,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "aarhus-university",
-    "name": "Bachelor of Science in Business",
-    "slug": "aarhus-university-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37043,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0879867307953464,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aarhus-university",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "aarhus-university-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32295,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3916846456568646,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aarhus-university",
-    "name": "PhD in media studies",
-    "slug": "aarhus-university-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21401,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2519047299435955,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "aarhus-university",
-    "name": "Master of Science in Natural Sciences",
-    "slug": "aarhus-university-master-of-science-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18905,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7411248993395936,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "universiti-malaya",
-    "name": "PhD in Performing arts",
-    "slug": "universiti-malaya-phd-in-performing-arts",
-    "degree": "phd",
-    "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27877,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3970413007025066,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universiti-malaya",
-    "name": "PhD in Management",
-    "slug": "universiti-malaya-phd-in-management",
-    "degree": "phd",
+    "name": "Bachelor of Science in Management",
+    "slug": "universiti-malaya-bachelor-of-science-in-management",
+    "degree": "bachelors",
     "field": "Management",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -17321,10 +16484,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36863,
+    "tuitionUsd": 16625,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.648364037369252,
+    "scholarshipAvailable": false,
+    "minGpa": 3.2788696299442597,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17335,10 +16498,10 @@ const programs = [
   },
   {
     "universitySlug": "universiti-malaya",
-    "name": "Master of Science in Business",
-    "slug": "universiti-malaya-master-of-science-in-business",
+    "name": "Master of Arts in Performing arts",
+    "slug": "universiti-malaya-master-of-arts-in-performing-arts",
     "degree": "masters",
-    "field": "Business",
+    "field": "Performing arts",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -17348,26 +16511,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18834,
+    "tuitionUsd": 21090,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.219658222921705,
+    "scholarshipAvailable": true,
+    "minGpa": 3.0741866830715106,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "universiti-putra-malaysia",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "universiti-putra-malaysia-phd-in-sports-and-health-sciences",
-    "degree": "phd",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "universiti-putra-malaysia-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
     "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -17375,10 +16538,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39381,
+    "tuitionUsd": 18936,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6046907529734495,
+    "minGpa": 3.279272773785555,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17389,37 +16552,10 @@ const programs = [
   },
   {
     "universitySlug": "universiti-putra-malaysia",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "universiti-putra-malaysia-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25855,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.569128985070509,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universiti-putra-malaysia",
-    "name": "PhD in Business",
-    "slug": "universiti-putra-malaysia-phd-in-business",
+    "name": "PhD in Humanities",
+    "slug": "universiti-putra-malaysia-phd-in-humanities",
     "degree": "phd",
-    "field": "Business",
+    "field": "Humanities",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -17429,14 +16565,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30677,
+    "tuitionUsd": 17747,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7377809291757655,
+    "scholarshipAvailable": false,
+    "minGpa": 3.527632233479359,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
@@ -17456,10 +16592,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30103,
+    "tuitionUsd": 29422,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.012309013599369,
+    "minGpa": 3.283131579472236,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17469,94 +16605,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "universiti-putra-malaysia",
-    "name": "PhD in Veterinary medicine",
-    "slug": "universiti-putra-malaysia-phd-in-veterinary-medicine",
-    "degree": "phd",
-    "field": "Veterinary medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21920,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.350851585749601,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "universiti-kebangsaan-malaysia",
-    "name": "PhD in dentistry",
-    "slug": "universiti-kebangsaan-malaysia-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 22733,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0918617227347593,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universiti-kebangsaan-malaysia",
-    "name": "PhD in Educational Sciences",
-    "slug": "universiti-kebangsaan-malaysia-phd-in-educational-sciences",
-    "degree": "phd",
-    "field": "Educational Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44634,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6311839147712095,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universiti-kebangsaan-malaysia",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "universiti-kebangsaan-malaysia-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
+    "name": "Master of Arts in Humanities",
+    "slug": "universiti-kebangsaan-malaysia-master-of-arts-in-humanities",
+    "degree": "masters",
     "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -17564,10 +16619,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33510,
+    "tuitionUsd": 31981,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.1974977502482393,
+    "minGpa": 3.52064027160158,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17578,12 +16633,12 @@ const programs = [
   },
   {
     "universitySlug": "universiti-kebangsaan-malaysia",
-    "name": "PhD in Social Sciences",
-    "slug": "universiti-kebangsaan-malaysia-phd-in-social-sciences",
-    "degree": "phd",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "universiti-kebangsaan-malaysia-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
     "field": "Social Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -17591,10 +16646,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19454,
+    "tuitionUsd": 39460,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6566212048346642,
+    "scholarshipAvailable": false,
+    "minGpa": 3.221205137511372,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17605,10 +16660,37 @@ const programs = [
   },
   {
     "universitySlug": "universiti-kebangsaan-malaysia",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "universiti-kebangsaan-malaysia-master-of-science-in-veterinary-medicine",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "universiti-kebangsaan-malaysia-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33073,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.686132763317461,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universiti-kebangsaan-malaysia",
+    "name": "Master of Arts in Economy",
+    "slug": "universiti-kebangsaan-malaysia-master-of-arts-in-economy",
     "degree": "masters",
-    "field": "Veterinary medicine",
+    "field": "Economy",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -17618,22 +16700,49 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16649,
+    "tuitionUsd": 42915,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.242028607837475,
+    "minGpa": 3.7616511309616056,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universiti-kebangsaan-malaysia",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "universiti-kebangsaan-malaysia-master-of-arts-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23822,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.478622693039509,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-luxembourg",
-    "name": "Master of Arts in Humanities",
-    "slug": "university-of-luxembourg-master-of-arts-in-humanities",
+    "name": "Master of Science in Humanities",
+    "slug": "university-of-luxembourg-master-of-science-in-humanities",
     "degree": "masters",
     "field": "Humanities",
     "durationMonths": 24,
@@ -17645,10 +16754,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15841,
+    "tuitionUsd": 29605,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.1112978457766003,
+    "minGpa": 3.771241907390492,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17659,10 +16768,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-luxembourg",
-    "name": "Master of Arts in Business",
-    "slug": "university-of-luxembourg-master-of-arts-in-business",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "university-of-luxembourg-master-of-arts-in-social-sciences",
     "degree": "masters",
-    "field": "Business",
+    "field": "Social Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -17672,14 +16781,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43572,
+    "tuitionUsd": 24540,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7843967816045336,
+    "scholarshipAvailable": true,
+    "minGpa": 3.618625093794513,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
@@ -17699,10 +16808,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33471,
+    "tuitionUsd": 44407,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7868950827980092,
+    "scholarshipAvailable": false,
+    "minGpa": 3.3023733717175405,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17712,36 +16821,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "luxembourg-school-of-business",
-    "name": "Master of Science in Performing arts",
-    "slug": "luxembourg-school-of-business-master-of-science-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35064,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4285995715663056,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "luxembourg-school-of-business",
+    "universitySlug": "university-of-luxembourg",
     "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "luxembourg-school-of-business-master-of-arts-in-sports-and-health-sciences",
+    "slug": "university-of-luxembourg-master-of-arts-in-sports-and-health-sciences",
     "degree": "masters",
     "field": "Sports and Health Sciences",
     "durationMonths": 24,
@@ -17753,10 +16835,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40956,
+    "tuitionUsd": 34420,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.58276607261668,
+    "scholarshipAvailable": true,
+    "minGpa": 3.452297460077525,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17767,10 +16849,10 @@ const programs = [
   },
   {
     "universitySlug": "luxembourg-school-of-business",
-    "name": "PhD in media studies",
-    "slug": "luxembourg-school-of-business-phd-in-media-studies",
+    "name": "PhD in Humanities",
+    "slug": "luxembourg-school-of-business-phd-in-humanities",
     "degree": "phd",
-    "field": "media studies",
+    "field": "Humanities",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -17780,24 +16862,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36910,
+    "tuitionUsd": 30543,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.6611199315499743,
+    "minGpa": 3.1945556837324904,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in media studies",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "lunex-university",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "lunex-university-master-of-arts-in-sports-and-health-sciences",
+    "universitySlug": "luxembourg-school-of-business",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "luxembourg-school-of-business-master-of-science-in-natural-sciences",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
+    "field": "Natural Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -17807,22 +16889,49 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18679,
+    "tuitionUsd": 44299,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.5707322436426727,
+    "minGpa": 3.6840792224183554,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Natural Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "lunex-university",
-    "name": "Master of Science in Performing arts",
-    "slug": "lunex-university-master-of-science-in-performing-arts",
+    "universitySlug": "luxembourg-school-of-business",
+    "name": "PhD in Medicine",
+    "slug": "luxembourg-school-of-business-phd-in-medicine",
+    "degree": "phd",
+    "field": "Medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28604,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6852423187340833,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "luxembourg-school-of-business",
+    "name": "Master of Arts in Performing arts",
+    "slug": "luxembourg-school-of-business-master-of-arts-in-performing-arts",
     "degree": "masters",
     "field": "Performing arts",
     "durationMonths": 24,
@@ -17834,10 +16943,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36823,
+    "tuitionUsd": 38531,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.526002339645038,
+    "minGpa": 3.0206202038264243,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17847,13 +16956,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "lunex-university",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "lunex-university-bachelor-of-science-in-humanities",
-    "degree": "bachelors",
-    "field": "Humanities",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "universitySlug": "luxembourg-school-of-business",
+    "name": "PhD in Technology",
+    "slug": "luxembourg-school-of-business-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -17861,24 +16970,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41989,
+    "tuitionUsd": 21920,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6486270985949325,
+    "minGpa": 3.5352419476138373,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "lunex-university",
-    "name": "Master of Arts in Social Sciences",
-    "slug": "lunex-university-master-of-arts-in-social-sciences",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "lunex-university-master-of-arts-in-educational-sciences",
     "degree": "masters",
-    "field": "Social Sciences",
+    "field": "Educational Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -17888,10 +16997,280 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28311,
+    "tuitionUsd": 19389,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.208417236330342,
+    "minGpa": 3.6740255848749417,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lunex-university",
+    "name": "PhD in Management",
+    "slug": "lunex-university-phd-in-management",
+    "degree": "phd",
+    "field": "Management",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26740,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4758738644022666,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "lunex-university",
+    "name": "Bachelor of Science in Technology",
+    "slug": "lunex-university-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27184,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.1370704421763738,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "northwestern-university",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "northwestern-university-master-of-science-in-veterinary-medicine",
+    "degree": "masters",
+    "field": "Veterinary medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20277,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.155879007688254,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "northwestern-university",
+    "name": "Master of Science in Sports and Health Sciences",
+    "slug": "northwestern-university-master-of-science-in-sports-and-health-sciences",
+    "degree": "masters",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 23770,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.487127752999519,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "northwestern-university",
+    "name": "Bachelor of Science in media studies",
+    "slug": "northwestern-university-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40675,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.5357472704853654,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "northwestern-university",
+    "name": "Master of Arts in Medicine",
+    "slug": "northwestern-university-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24743,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7916934852661375,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "northwestern-university",
+    "name": "Master of Arts in Humanities",
+    "slug": "northwestern-university-master-of-arts-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17087,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.090113337702347,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-chicago",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "university-of-chicago-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20583,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.223482181206178,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-chicago",
+    "name": "Bachelor of Science in Business",
+    "slug": "university-of-chicago-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37957,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.333226049147504,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-chicago",
+    "name": "PhD in Social Sciences",
+    "slug": "university-of-chicago-phd-in-social-sciences",
+    "degree": "phd",
+    "field": "Social Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35316,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.581260171272893,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -17901,144 +17280,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "lunex-university",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "lunex-university-bachelor-of-science-in-dentistry",
-    "degree": "bachelors",
-    "field": "dentistry",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26222,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.789223660734989,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "northwestern-university",
-    "name": "Master of Arts in media studies",
-    "slug": "northwestern-university-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16126,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6455954896907974,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "northwestern-university",
-    "name": "PhD in Medicine",
-    "slug": "northwestern-university-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35955,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1995306783593054,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "northwestern-university",
-    "name": "PhD in Performing arts",
-    "slug": "northwestern-university-phd-in-performing-arts",
-    "degree": "phd",
-    "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32615,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.359109367066931,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "northwestern-university",
-    "name": "Bachelor of Science in dentistry",
-    "slug": "northwestern-university-bachelor-of-science-in-dentistry",
-    "degree": "bachelors",
-    "field": "dentistry",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38807,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6417358101509665,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-chicago",
-    "name": "Master of Arts in Business",
-    "slug": "university-of-chicago-master-of-arts-in-business",
+    "universitySlug": "johns-hopkins-university",
+    "name": "Master of Science in Business",
+    "slug": "johns-hopkins-university-master-of-science-in-business",
     "degree": "masters",
     "field": "Business",
     "durationMonths": 24,
@@ -18050,199 +17294,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19996,
+    "tuitionUsd": 42037,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.052874669449179,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-chicago",
-    "name": "PhD in Medicine",
-    "slug": "university-of-chicago-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31690,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0515018929794206,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-chicago",
-    "name": "Master of Arts in Humanities",
-    "slug": "university-of-chicago-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35752,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.067274831747244,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-chicago",
-    "name": "Master of Science in Veterinary medicine",
-    "slug": "university-of-chicago-master-of-science-in-veterinary-medicine",
-    "degree": "masters",
-    "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26820,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.554729857203197,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "johns-hopkins-university",
-    "name": "Master of Science in media studies",
-    "slug": "johns-hopkins-university-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40171,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2602582583899986,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "johns-hopkins-university",
-    "name": "Master of Arts in Educational Sciences",
-    "slug": "johns-hopkins-university-master-of-arts-in-educational-sciences",
-    "degree": "masters",
-    "field": "Educational Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33889,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.715983369341721,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "johns-hopkins-university",
-    "name": "Bachelor of Science in Technology",
-    "slug": "johns-hopkins-university-bachelor-of-science-in-technology",
-    "degree": "bachelors",
-    "field": "Technology",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37555,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.145394934524329,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "johns-hopkins-university",
-    "name": "Bachelor of Science in Business",
-    "slug": "johns-hopkins-university-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25859,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5831426175755414,
+    "minGpa": 3.3235023971534323,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -18253,91 +17308,10 @@ const programs = [
   },
   {
     "universitySlug": "johns-hopkins-university",
-    "name": "Master of Arts in Humanities",
-    "slug": "johns-hopkins-university-master-of-arts-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29931,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.123573512238571,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "new-york-university",
-    "name": "PhD in Economy",
-    "slug": "new-york-university-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35284,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.56533913874451,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "new-york-university",
-    "name": "Master of Science in Natural Sciences",
-    "slug": "new-york-university-master-of-science-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33419,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.709852502772682,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "new-york-university",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "new-york-university-bachelor-of-science-in-performing-arts",
+    "name": "Bachelor of Science in Management",
+    "slug": "johns-hopkins-university-bachelor-of-science-in-management",
     "degree": "bachelors",
-    "field": "Performing arts",
+    "field": "Management",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -18347,238 +17321,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40799,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.49131768081463,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "duke-university",
-    "name": "Master of Arts in Business",
-    "slug": "duke-university-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20532,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.018929225802469,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "duke-university",
-    "name": "Master of Science in Natural Sciences",
-    "slug": "duke-university-master-of-science-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31300,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6030754854579725,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "duke-university",
-    "name": "Master of Science in Humanities",
-    "slug": "duke-university-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33460,
+    "tuitionUsd": 41281,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3016936307266556,
+    "minGpa": 3.632882557259624,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Management",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "duke-university",
-    "name": "Bachelor of Science in Technology",
-    "slug": "duke-university-bachelor-of-science-in-technology",
-    "degree": "bachelors",
-    "field": "Technology",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19074,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.539656711067261,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-birmingham",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "university-of-birmingham-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 20367,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6427334821138766,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-birmingham",
-    "name": "Bachelor of Science in Business",
-    "slug": "university-of-birmingham-bachelor-of-science-in-business",
-    "degree": "bachelors",
-    "field": "Business",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32635,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4637738352369927,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-birmingham",
-    "name": "Master of Science in Technology",
-    "slug": "university-of-birmingham-master-of-science-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25151,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6490756686141745,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-birmingham",
-    "name": "Master of Arts in Medicine",
-    "slug": "university-of-birmingham-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24510,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7635569731287974,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-birmingham",
+    "universitySlug": "johns-hopkins-university",
     "name": "Master of Science in Educational Sciences",
-    "slug": "university-of-birmingham-master-of-science-in-educational-sciences",
+    "slug": "johns-hopkins-university-master-of-science-in-educational-sciences",
     "degree": "masters",
     "field": "Educational Sciences",
     "durationMonths": 24,
@@ -18590,10 +17348,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26732,
+    "tuitionUsd": 36762,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.279568497263256,
+    "minGpa": 3.653534231776475,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -18603,13 +17361,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-bristol",
-    "name": "Master of Arts in Medicine",
-    "slug": "university-of-bristol-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "new-york-university",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "new-york-university-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -18617,22 +17375,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36190,
+    "tuitionUsd": 39457,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4116035774611406,
+    "minGpa": 3.510050230752131,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Medicine",
+      "Professional in Sports and Health Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-bristol",
-    "name": "Master of Science in Management",
-    "slug": "university-of-bristol-master-of-science-in-management",
+    "universitySlug": "new-york-university",
+    "name": "Master of Arts in Management",
+    "slug": "new-york-university-master-of-arts-in-management",
     "degree": "masters",
     "field": "Management",
     "durationMonths": 24,
@@ -18644,14 +17402,311 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24301,
+    "tuitionUsd": 15413,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.460619659347789,
+    "scholarshipAvailable": false,
+    "minGpa": 3.1382551581888563,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "new-york-university",
+    "name": "Bachelor of Science in Veterinary medicine",
+    "slug": "new-york-university-bachelor-of-science-in-veterinary-medicine",
+    "degree": "bachelors",
+    "field": "Veterinary medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40125,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7525949551096556,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "new-york-university",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "new-york-university-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15324,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7439026219316967,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "duke-university",
+    "name": "PhD in Veterinary medicine",
+    "slug": "duke-university-phd-in-veterinary-medicine",
+    "degree": "phd",
+    "field": "Veterinary medicine",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 26985,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.276323465201444,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "duke-university",
+    "name": "PhD in Humanities",
+    "slug": "duke-university-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 28457,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4464965744272034,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "duke-university",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "duke-university-bachelor-of-science-in-social-sciences",
+    "degree": "bachelors",
+    "field": "Social Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35969,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.465729646855274,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "duke-university",
+    "name": "Master of Science in media studies",
+    "slug": "duke-university-master-of-science-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 32223,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6285185707768326,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "duke-university",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "duke-university-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 37951,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4482810995252775,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-birmingham",
+    "name": "Bachelor of Science in Technology",
+    "slug": "university-of-birmingham-bachelor-of-science-in-technology",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 36875,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.428037643765356,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-birmingham",
+    "name": "PhD in Sports and Health Sciences",
+    "slug": "university-of-birmingham-phd-in-sports-and-health-sciences",
+    "degree": "phd",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39810,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4199721465764457,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-birmingham",
+    "name": "Bachelor of Science in Medicine",
+    "slug": "university-of-birmingham-bachelor-of-science-in-medicine",
+    "degree": "bachelors",
+    "field": "Medicine",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43551,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6333384769787838,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bristol",
+    "name": "Master of Science in Humanities",
+    "slug": "university-of-bristol-master-of-science-in-humanities",
+    "degree": "masters",
+    "field": "Humanities",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17063,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.292839173466586,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
@@ -18671,10 +17726,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23573,
+    "tuitionUsd": 25941,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.025073846332029,
+    "minGpa": 3.236576207227671,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -18684,38 +17739,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "cardiff-university",
-    "name": "PhD in dentistry",
-    "slug": "cardiff-university-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43877,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.405418797974195,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "cardiff-university",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "cardiff-university-master-of-arts-in-veterinary-medicine",
+    "universitySlug": "university-of-bristol",
+    "name": "Master of Arts in dentistry",
+    "slug": "university-of-bristol-master-of-arts-in-dentistry",
     "degree": "masters",
-    "field": "Veterinary medicine",
+    "field": "dentistry",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -18725,24 +17753,105 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25614,
+    "tuitionUsd": 42685,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.73909797407007,
+    "minGpa": 3.473896341449888,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bristol",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "university-of-bristol-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18371,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2412725944120417,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-bristol",
+    "name": "Master of Science in Technology",
+    "slug": "university-of-bristol-master-of-science-in-technology",
+    "degree": "masters",
+    "field": "Technology",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 38417,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.641058766863625,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "cardiff-university",
-    "name": "PhD in Medicine",
-    "slug": "cardiff-university-phd-in-medicine",
+    "name": "Master of Science in Management",
+    "slug": "cardiff-university-master-of-science-in-management",
+    "degree": "masters",
+    "field": "Management",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 30261,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.2662586975675287,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "cardiff-university",
+    "name": "PhD in Sports and Health Sciences",
+    "slug": "cardiff-university-phd-in-sports-and-health-sciences",
     "degree": "phd",
-    "field": "Medicine",
+    "field": "Sports and Health Sciences",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -18752,10 +17861,64 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26458,
+    "tuitionUsd": 23382,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2430033610622413,
+    "scholarshipAvailable": false,
+    "minGpa": 3.520963942610281,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Sports and Health Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "cardiff-university",
+    "name": "Master of Science in Educational Sciences",
+    "slug": "cardiff-university-master-of-science-in-educational-sciences",
+    "degree": "masters",
+    "field": "Educational Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27913,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6707360184796216,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "cardiff-university",
+    "name": "Master of Arts in Medicine",
+    "slug": "cardiff-university-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43402,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.139928320864211,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -18766,8 +17929,386 @@ const programs = [
   },
   {
     "universitySlug": "cardiff-university",
+    "name": "PhD in Performing arts",
+    "slug": "cardiff-university-phd-in-performing-arts",
+    "degree": "phd",
+    "field": "Performing arts",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27735,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.47250163717157,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "durham-university",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "durham-university-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 34548,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7181911670120065,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "durham-university",
+    "name": "Master of Science in Economy",
+    "slug": "durham-university-master-of-science-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 25785,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0814193091340747,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "durham-university",
+    "name": "Bachelor of Science in Business",
+    "slug": "durham-university-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 20556,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.7979868061436317,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "durham-university",
+    "name": "Bachelor of Science in Natural Sciences",
+    "slug": "durham-university-bachelor-of-science-in-natural-sciences",
+    "degree": "bachelors",
+    "field": "Natural Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29372,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7284542271009924,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-exeter",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "university-of-exeter-master-of-science-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24699,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7336755663958168,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-exeter",
+    "name": "PhD in Performing arts",
+    "slug": "university-of-exeter-phd-in-performing-arts",
+    "degree": "phd",
+    "field": "Performing arts",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17177,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.269447676728962,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-exeter",
+    "name": "Master of Arts in Social Sciences",
+    "slug": "university-of-exeter-master-of-arts-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15451,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.7450383864701924,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-exeter",
+    "name": "Bachelor of Science in Management",
+    "slug": "university-of-exeter-bachelor-of-science-in-management",
+    "degree": "bachelors",
+    "field": "Management",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 17017,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0495053125085834,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Management",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-exeter",
+    "name": "Master of Science in dentistry",
+    "slug": "university-of-exeter-master-of-science-in-dentistry",
+    "degree": "masters",
+    "field": "dentistry",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24362,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.024043095565104,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-glasgow",
+    "name": "PhD in Business",
+    "slug": "university-of-glasgow-phd-in-business",
+    "degree": "phd",
+    "field": "Business",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18578,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4158696698076745,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-glasgow",
+    "name": "Bachelor of Science in media studies",
+    "slug": "university-of-glasgow-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 27413,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3607122566138057,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-glasgow",
+    "name": "Master of Science in Economy",
+    "slug": "university-of-glasgow-master-of-science-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33628,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.0211618708559103,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-leeds",
+    "name": "Master of Arts in Medicine",
+    "slug": "university-of-leeds-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 44458,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.18816701209397,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-leeds",
     "name": "Master of Science in Business",
-    "slug": "cardiff-university-master-of-science-in-business",
+    "slug": "university-of-leeds-master-of-science-in-business",
     "degree": "masters",
     "field": "Business",
     "durationMonths": 24,
@@ -18779,10 +18320,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 39273,
+    "tuitionUsd": 35868,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.49568240560511,
+    "minGpa": 3.039540873505765,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -18792,9 +18333,36 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "cardiff-university",
-    "name": "Master of Science in Economy",
-    "slug": "cardiff-university-master-of-science-in-economy",
+    "universitySlug": "university-of-leeds",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "university-of-leeds-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19102,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.4593057238215867,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-leeds",
+    "name": "Master of Arts in Economy",
+    "slug": "university-of-leeds-master-of-arts-in-economy",
     "degree": "masters",
     "field": "Economy",
     "durationMonths": 24,
@@ -18806,10 +18374,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31238,
+    "tuitionUsd": 15275,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7366490696741526,
+    "scholarshipAvailable": true,
+    "minGpa": 3.5354465895996032,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -18819,11 +18387,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "durham-university",
-    "name": "Master of Arts in Management",
-    "slug": "durham-university-master-of-arts-in-management",
+    "universitySlug": "university-of-liverpool",
+    "name": "Master of Arts in Business",
+    "slug": "university-of-liverpool-master-of-arts-in-business",
     "degree": "masters",
-    "field": "Management",
+    "field": "Business",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -18833,242 +18401,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43035,
+    "tuitionUsd": 28115,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.09452611572713,
+    "minGpa": 3.587694291519044,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Management",
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "durham-university",
-    "name": "Master of Science in dentistry",
-    "slug": "durham-university-master-of-science-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41728,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2912228175760956,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "durham-university",
-    "name": "Master of Science in Social Sciences",
-    "slug": "durham-university-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35331,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1398445765572474,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-exeter",
-    "name": "PhD in Educational Sciences",
-    "slug": "university-of-exeter-phd-in-educational-sciences",
+    "universitySlug": "university-of-liverpool",
+    "name": "PhD in Veterinary medicine",
+    "slug": "university-of-liverpool-phd-in-veterinary-medicine",
     "degree": "phd",
-    "field": "Educational Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33768,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4812690199962453,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Educational Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-exeter",
-    "name": "PhD in media studies",
-    "slug": "university-of-exeter-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16684,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.25330494608648,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-exeter",
-    "name": "Master of Arts in Medicine",
-    "slug": "university-of-exeter-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27502,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.334678004167099,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-glasgow",
-    "name": "Master of Science in Performing arts",
-    "slug": "university-of-glasgow-master-of-science-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17697,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7917610405137117,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-glasgow",
-    "name": "PhD in dentistry",
-    "slug": "university-of-glasgow-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38360,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0835332166416873,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-glasgow",
-    "name": "PhD in Economy",
-    "slug": "university-of-glasgow-phd-in-economy",
-    "degree": "phd",
-    "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43739,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2843125472184935,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-glasgow",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "university-of-glasgow-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
     "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -19076,10 +18428,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27655,
+    "tuitionUsd": 40024,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.4835335075267597,
+    "minGpa": 3.382325182973597,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19089,227 +18441,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-glasgow",
-    "name": "Master of Arts in Medicine",
-    "slug": "university-of-glasgow-master-of-arts-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28042,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.53051873002979,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-leeds",
-    "name": "PhD in media studies",
-    "slug": "university-of-leeds-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37554,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.508073089037672,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-leeds",
-    "name": "Master of Science in Humanities",
-    "slug": "university-of-leeds-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31155,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3670176183494087,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-leeds",
-    "name": "PhD in Natural Sciences",
-    "slug": "university-of-leeds-phd-in-natural-sciences",
-    "degree": "phd",
-    "field": "Natural Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34062,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3185726970558993,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-leeds",
-    "name": "Master of Arts in Performing arts",
-    "slug": "university-of-leeds-master-of-arts-in-performing-arts",
-    "degree": "masters",
-    "field": "Performing arts",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21107,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.167240077912828,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-leeds",
-    "name": "PhD in Medicine",
-    "slug": "university-of-leeds-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34988,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6614154517065716,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "university-of-liverpool",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "university-of-liverpool-phd-in-sports-and-health-sciences",
-    "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29586,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.009831830826635,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-liverpool",
-    "name": "PhD in Medicine",
-    "slug": "university-of-liverpool-phd-in-medicine",
-    "degree": "phd",
-    "field": "Medicine",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19456,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7458213290611644,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-liverpool",
-    "name": "Bachelor of Science in Humanities",
-    "slug": "university-of-liverpool-bachelor-of-science-in-humanities",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "university-of-liverpool-bachelor-of-science-in-dentistry",
     "degree": "bachelors",
-    "field": "Humanities",
+    "field": "dentistry",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -19319,53 +18455,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17331,
+    "tuitionUsd": 40182,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.4328013337014855,
+    "scholarshipAvailable": true,
+    "minGpa": 3.074364584748723,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in dentistry",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-liverpool",
-    "name": "Bachelor of Science in Social Sciences",
-    "slug": "university-of-liverpool-bachelor-of-science-in-social-sciences",
-    "degree": "bachelors",
-    "field": "Social Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28237,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6817282974384433,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Social Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "newcastle-university",
-    "name": "Bachelor of Science in Economy",
-    "slug": "newcastle-university-bachelor-of-science-in-economy",
-    "degree": "bachelors",
+    "name": "Master of Arts in Economy",
+    "slug": "university-of-liverpool-master-of-arts-in-economy",
+    "degree": "masters",
     "field": "Economy",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -19373,10 +18482,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15258,
+    "tuitionUsd": 20371,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.19100078746048,
+    "minGpa": 3.122262694475018,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19386,63 +18495,9 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "newcastle-university",
-    "name": "Bachelor of Science in Management",
-    "slug": "newcastle-university-bachelor-of-science-in-management",
-    "degree": "bachelors",
-    "field": "Management",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44766,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.112833087161015,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "newcastle-university",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "newcastle-university-bachelor-of-science-in-performing-arts",
-    "degree": "bachelors",
-    "field": "Performing arts",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24351,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3899886720052868,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "newcastle-university",
+    "universitySlug": "university-of-liverpool",
     "name": "Master of Arts in media studies",
-    "slug": "newcastle-university-master-of-arts-in-media-studies",
+    "slug": "university-of-liverpool-master-of-arts-in-media-studies",
     "degree": "masters",
     "field": "media studies",
     "durationMonths": 24,
@@ -19454,10 +18509,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32459,
+    "tuitionUsd": 32998,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7476327197255936,
+    "minGpa": 3.196240113023971,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19468,12 +18523,12 @@ const programs = [
   },
   {
     "universitySlug": "newcastle-university",
-    "name": "Master of Arts in Sports and Health Sciences",
-    "slug": "newcastle-university-master-of-arts-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "newcastle-university-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -19481,22 +18536,76 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34566,
+    "tuitionUsd": 44068,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.2439201045298174,
+    "scholarshipAvailable": true,
+    "minGpa": 3.502127895335085,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "university-of-nottingham",
+    "universitySlug": "newcastle-university",
+    "name": "PhD in Technology",
+    "slug": "newcastle-university-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33344,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6954426735026984,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "newcastle-university",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "newcastle-university-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29464,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.247741543438238,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "newcastle-university",
     "name": "Master of Arts in Management",
-    "slug": "university-of-nottingham-master-of-arts-in-management",
+    "slug": "newcastle-university-master-of-arts-in-management",
     "degree": "masters",
     "field": "Management",
     "durationMonths": 24,
@@ -19508,10 +18617,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34120,
+    "tuitionUsd": 19331,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.384572154024899,
+    "scholarshipAvailable": false,
+    "minGpa": 3.660103088225637,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19522,8 +18631,89 @@ const programs = [
   },
   {
     "universitySlug": "university-of-nottingham",
+    "name": "Master of Science in Business",
+    "slug": "university-of-nottingham-master-of-science-in-business",
+    "degree": "masters",
+    "field": "Business",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 22191,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6523720405984688,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-nottingham",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "university-of-nottingham-master-of-arts-in-natural-sciences",
+    "degree": "masters",
+    "field": "Natural Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 29524,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6947441432052957,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-nottingham",
+    "name": "Master of Arts in Economy",
+    "slug": "university-of-nottingham-master-of-arts-in-economy",
+    "degree": "masters",
+    "field": "Economy",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35055,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.789028041407888,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "queen-mary-university-of-london",
     "name": "Bachelor of Science in Technology",
-    "slug": "university-of-nottingham-bachelor-of-science-in-technology",
+    "slug": "queen-mary-university-of-london-bachelor-of-science-in-technology",
     "degree": "bachelors",
     "field": "Technology",
     "durationMonths": 48,
@@ -19535,10 +18725,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32182,
+    "tuitionUsd": 26833,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0616567385427946,
+    "scholarshipAvailable": true,
+    "minGpa": 3.3724334404873133,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19548,148 +18738,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-nottingham",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "university-of-nottingham-bachelor-of-science-in-veterinary-medicine",
-    "degree": "bachelors",
-    "field": "Veterinary medicine",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37376,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5931592224168583,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Veterinary medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-nottingham",
-    "name": "Master of Science in media studies",
-    "slug": "university-of-nottingham-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26635,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5177578782648915,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-nottingham",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "university-of-nottingham-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25691,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.7530382447442165,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
     "universitySlug": "queen-mary-university-of-london",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "queen-mary-university-of-london-bachelor-of-science-in-sports-and-health-sciences",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "queen-mary-university-of-london-bachelor-of-science-in-humanities",
     "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 23675,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0224915485639023,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "queen-mary-university-of-london",
-    "name": "Master of Science in Management",
-    "slug": "queen-mary-university-of-london-master-of-science-in-management",
-    "degree": "masters",
-    "field": "Management",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17057,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.51318446683338,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Management",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "queen-mary-university-of-london",
-    "name": "Master of Arts in Humanities",
-    "slug": "queen-mary-university-of-london-master-of-arts-in-humanities",
-    "degree": "masters",
     "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -19697,10 +18752,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31815,
+    "tuitionUsd": 27593,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.384345194066946,
+    "minGpa": 3.1916328024505067,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19710,13 +18765,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "queen-s-university-belfast",
-    "name": "PhD in Sports and Health Sciences",
-    "slug": "queen-s-university-belfast-phd-in-sports-and-health-sciences",
-    "degree": "phd",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "universitySlug": "queen-mary-university-of-london",
+    "name": "Master of Arts in Performing arts",
+    "slug": "queen-mary-university-of-london-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -19724,24 +18779,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36604,
+    "tuitionUsd": 26382,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.4191289700895853,
+    "minGpa": 3.2145700326718414,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "queen-s-university-belfast",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "queen-s-university-belfast-bachelor-of-science-in-veterinary-medicine",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "queen-s-university-belfast-bachelor-of-science-in-performing-arts",
     "degree": "bachelors",
-    "field": "Veterinary medicine",
+    "field": "Performing arts",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -19751,22 +18806,22 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30500,
+    "tuitionUsd": 37292,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.576916840899459,
+    "minGpa": 3.7349870058418584,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "queen-s-university-belfast",
-    "name": "Master of Science in Educational Sciences",
-    "slug": "queen-s-university-belfast-master-of-science-in-educational-sciences",
+    "name": "Master of Arts in Educational Sciences",
+    "slug": "queen-s-university-belfast-master-of-arts-in-educational-sciences",
     "degree": "masters",
     "field": "Educational Sciences",
     "durationMonths": 24,
@@ -19778,10 +18833,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 34049,
+    "tuitionUsd": 29880,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4248022534498648,
+    "minGpa": 3.241747966070787,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19792,64 +18847,10 @@ const programs = [
   },
   {
     "universitySlug": "queen-s-university-belfast",
-    "name": "PhD in Performing arts",
-    "slug": "queen-s-university-belfast-phd-in-performing-arts",
-    "degree": "phd",
-    "field": "Performing arts",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33907,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.328738625205596,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "queen-s-university-belfast",
-    "name": "Master of Arts in Economy",
-    "slug": "queen-s-university-belfast-master-of-arts-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18852,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.0818202896277187,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-sheffield",
-    "name": "Bachelor of Science in Economy",
-    "slug": "university-of-sheffield-bachelor-of-science-in-economy",
+    "name": "Bachelor of Science in Social Sciences",
+    "slug": "queen-s-university-belfast-bachelor-of-science-in-social-sciences",
     "degree": "bachelors",
-    "field": "Economy",
+    "field": "Social Sciences",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -19859,10 +18860,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18559,
+    "tuitionUsd": 40653,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.153042166055298,
+    "scholarshipAvailable": true,
+    "minGpa": 3.1281097493991283,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "queen-s-university-belfast",
+    "name": "PhD in Economy",
+    "slug": "queen-s-university-belfast-phd-in-economy",
+    "degree": "phd",
+    "field": "Economy",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 32351,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.658527444905402,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19873,10 +18901,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-sheffield",
-    "name": "Master of Arts in Performing arts",
-    "slug": "university-of-sheffield-master-of-arts-in-performing-arts",
+    "name": "Master of Science in Veterinary medicine",
+    "slug": "university-of-sheffield-master-of-science-in-veterinary-medicine",
     "degree": "masters",
-    "field": "Performing arts",
+    "field": "Veterinary medicine",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -19886,26 +18914,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 26026,
+    "tuitionUsd": 33676,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.0534526981654233,
+    "minGpa": 3.4096292554728027,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Performing arts",
+      "Professional in Veterinary medicine",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-sheffield",
-    "name": "Master of Arts in Natural Sciences",
-    "slug": "university-of-sheffield-master-of-arts-in-natural-sciences",
-    "degree": "masters",
-    "field": "Natural Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "university-of-sheffield-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -19913,14 +18941,41 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36687,
+    "tuitionUsd": 22328,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.3756161212550317,
+    "minGpa": 3.2911646553570124,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Natural Sciences",
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-sheffield",
+    "name": "PhD in Technology",
+    "slug": "university-of-sheffield-phd-in-technology",
+    "degree": "phd",
+    "field": "Technology",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43611,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6978898871130075,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Technology",
       "Researcher",
       "Consultant"
     ]
@@ -19940,10 +18995,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 25490,
+    "tuitionUsd": 30956,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.3616933097450903,
+    "scholarshipAvailable": false,
+    "minGpa": 3.6346962288067894,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -19953,13 +19008,13 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-southampton",
-    "name": "Master of Science in Medicine",
-    "slug": "university-of-southampton-master-of-science-in-medicine",
-    "degree": "masters",
-    "field": "Medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "universitySlug": "university-of-sheffield",
+    "name": "Bachelor of Science in Economy",
+    "slug": "university-of-sheffield-bachelor-of-science-in-economy",
+    "degree": "bachelors",
+    "field": "Economy",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -19967,53 +19022,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 16493,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2823602546191637,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-southampton",
-    "name": "Master of Science in Humanities",
-    "slug": "university-of-southampton-master-of-science-in-humanities",
-    "degree": "masters",
-    "field": "Humanities",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19635,
+    "tuitionUsd": 31844,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.686055450998149,
+    "minGpa": 3.3143269387162584,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-southampton",
-    "name": "Master of Arts in Veterinary medicine",
-    "slug": "university-of-southampton-master-of-arts-in-veterinary-medicine",
-    "degree": "masters",
+    "name": "Bachelor of Science in Veterinary medicine",
+    "slug": "university-of-southampton-bachelor-of-science-in-veterinary-medicine",
+    "degree": "bachelors",
     "field": "Veterinary medicine",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -20021,10 +19049,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32908,
+    "tuitionUsd": 35341,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6292016362571475,
+    "minGpa": 3.383781483106579,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20035,10 +19063,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-southampton",
-    "name": "PhD in Natural Sciences",
-    "slug": "university-of-southampton-phd-in-natural-sciences",
+    "name": "PhD in dentistry",
+    "slug": "university-of-southampton-phd-in-dentistry",
     "degree": "phd",
-    "field": "Natural Sciences",
+    "field": "dentistry",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -20048,64 +19076,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27354,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.752464887530896,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-york",
-    "name": "Master of Arts in Technology",
-    "slug": "university-of-york-master-of-arts-in-technology",
-    "degree": "masters",
-    "field": "Technology",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15709,
+    "tuitionUsd": 19894,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.7390861476899104,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-york",
-    "name": "Master of Science in dentistry",
-    "slug": "university-of-york-master-of-science-in-dentistry",
-    "degree": "masters",
-    "field": "dentistry",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 41730,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4560951912694393,
+    "minGpa": 3.6749444711910577,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20115,9 +19089,36 @@ const programs = [
     ]
   },
   {
+    "universitySlug": "university-of-southampton",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "university-of-southampton-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31649,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.408322298595663,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Educational Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
     "universitySlug": "university-of-york",
-    "name": "Master of Science in Natural Sciences",
-    "slug": "university-of-york-master-of-science-in-natural-sciences",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "university-of-york-master-of-arts-in-natural-sciences",
     "degree": "masters",
     "field": "Natural Sciences",
     "durationMonths": 24,
@@ -20129,10 +19130,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44868,
+    "tuitionUsd": 26196,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.0776849602636056,
+    "scholarshipAvailable": true,
+    "minGpa": 3.4143063602372963,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20143,8 +19144,35 @@ const programs = [
   },
   {
     "universitySlug": "university-of-york",
-    "name": "Master of Arts in Economy",
-    "slug": "university-of-york-master-of-arts-in-economy",
+    "name": "Bachelor of Science in Business",
+    "slug": "university-of-york-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39919,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.3927834369546734,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-york",
+    "name": "Master of Science in Economy",
+    "slug": "university-of-york-master-of-science-in-economy",
     "degree": "masters",
     "field": "Economy",
     "durationMonths": 24,
@@ -20156,10 +19184,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 43671,
+    "tuitionUsd": 34931,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.55277899867516,
+    "minGpa": 3.6914894092992596,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20170,12 +19198,12 @@ const programs = [
   },
   {
     "universitySlug": "university-of-manitoba",
-    "name": "PhD in Humanities",
-    "slug": "university-of-manitoba-phd-in-humanities",
-    "degree": "phd",
-    "field": "Humanities",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "name": "Bachelor of Science in Educational Sciences",
+    "slug": "university-of-manitoba-bachelor-of-science-in-educational-sciences",
+    "degree": "bachelors",
+    "field": "Educational Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -20183,26 +19211,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21397,
+    "tuitionUsd": 37828,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.6554574113055742,
+    "minGpa": 3.6637497901324005,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Educational Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-manitoba",
-    "name": "Master of Science in Social Sciences",
-    "slug": "university-of-manitoba-master-of-science-in-social-sciences",
-    "degree": "masters",
-    "field": "Social Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "university-of-manitoba-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -20210,14 +19238,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17822,
+    "tuitionUsd": 26619,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.5537336435820737,
+    "scholarshipAvailable": false,
+    "minGpa": 3.233449770953076,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Social Sciences",
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
@@ -20237,14 +19265,41 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 37008,
+    "tuitionUsd": 27213,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2177312171031467,
+    "scholarshipAvailable": false,
+    "minGpa": 3.5767961264081887,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Veterinary medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-manitoba",
+    "name": "Bachelor of Science in Performing arts",
+    "slug": "university-of-manitoba-bachelor-of-science-in-performing-arts",
+    "degree": "bachelors",
+    "field": "Performing arts",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 24655,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.291449380423736,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
@@ -20264,10 +19319,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44312,
+    "tuitionUsd": 21307,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.2726865273007077,
+    "scholarshipAvailable": false,
+    "minGpa": 3.7327976844473185,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20278,10 +19333,37 @@ const programs = [
   },
   {
     "universitySlug": "dalhousie-university",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "dalhousie-university-master-of-science-in-sports-and-health-sciences",
+    "name": "Bachelor of Science in media studies",
+    "slug": "dalhousie-university-bachelor-of-science-in-media-studies",
+    "degree": "bachelors",
+    "field": "media studies",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 43734,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.607072011431845,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in media studies",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "dalhousie-university",
+    "name": "Master of Science in Natural Sciences",
+    "slug": "dalhousie-university-master-of-science-in-natural-sciences",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
+    "field": "Natural Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -20291,10 +19373,37 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35023,
+    "tuitionUsd": 23012,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.6765715076460825,
+    "minGpa": 3.5862987442541927,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "dalhousie-university",
+    "name": "Bachelor of Science in Sports and Health Sciences",
+    "slug": "dalhousie-university-bachelor-of-science-in-sports-and-health-sciences",
+    "degree": "bachelors",
+    "field": "Sports and Health Sciences",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 39846,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.6234711356364544,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20305,64 +19414,10 @@ const programs = [
   },
   {
     "universitySlug": "dalhousie-university",
-    "name": "Bachelor of Science in Performing arts",
-    "slug": "dalhousie-university-bachelor-of-science-in-performing-arts",
-    "degree": "bachelors",
-    "field": "Performing arts",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32830,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.005953112231575,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Performing arts",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "dalhousie-university",
-    "name": "Bachelor of Science in Natural Sciences",
-    "slug": "dalhousie-university-bachelor-of-science-in-natural-sciences",
-    "degree": "bachelors",
-    "field": "Natural Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 31703,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.3989841269314978,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Natural Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "queen-s-university",
-    "name": "Master of Arts in Humanities",
-    "slug": "queen-s-university-master-of-arts-in-humanities",
+    "name": "Master of Arts in Economy",
+    "slug": "dalhousie-university-master-of-arts-in-economy",
     "degree": "masters",
-    "field": "Humanities",
+    "field": "Economy",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -20372,26 +19427,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 27427,
+    "tuitionUsd": 27199,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.431063463604807,
+    "minGpa": 3.596166665761818,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Humanities",
+      "Professional in Economy",
       "Researcher",
       "Consultant"
     ]
   },
   {
-    "universitySlug": "queen-s-university",
-    "name": "PhD in media studies",
-    "slug": "queen-s-university-phd-in-media-studies",
-    "degree": "phd",
-    "field": "media studies",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "universitySlug": "dalhousie-university",
+    "name": "Master of Arts in Performing arts",
+    "slug": "dalhousie-university-master-of-arts-in-performing-arts",
+    "degree": "masters",
+    "field": "Performing arts",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -20399,10 +19454,64 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35714,
+    "tuitionUsd": 15473,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.1025602291316265,
+    "minGpa": 3.239234454899635,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Performing arts",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "queen-s-university",
+    "name": "Master of Arts in Medicine",
+    "slug": "queen-s-university-master-of-arts-in-medicine",
+    "degree": "masters",
+    "field": "Medicine",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40595,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.2454989529515204,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Medicine",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "queen-s-university",
+    "name": "Master of Science in media studies",
+    "slug": "queen-s-university-master-of-science-in-media-studies",
+    "degree": "masters",
+    "field": "media studies",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15756,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.297730292544871,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20413,10 +19522,10 @@ const programs = [
   },
   {
     "universitySlug": "queen-s-university",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "queen-s-university-master-of-science-in-sports-and-health-sciences",
+    "name": "Master of Arts in Natural Sciences",
+    "slug": "queen-s-university-master-of-arts-in-natural-sciences",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
+    "field": "Natural Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -20426,24 +19535,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 33860,
+    "tuitionUsd": 31690,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.257900321056772,
+    "scholarshipAvailable": true,
+    "minGpa": 3.074027829453329,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Natural Sciences",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "queen-s-university",
-    "name": "Bachelor of Science in Veterinary medicine",
-    "slug": "queen-s-university-bachelor-of-science-in-veterinary-medicine",
+    "name": "Bachelor of Science in Management",
+    "slug": "queen-s-university-bachelor-of-science-in-management",
     "degree": "bachelors",
-    "field": "Veterinary medicine",
+    "field": "Management",
     "durationMonths": 48,
     "durationLabel": "4 years",
     "language": "English",
@@ -20453,26 +19562,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 18689,
+    "tuitionUsd": 15728,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.5788966092700947,
+    "scholarshipAvailable": true,
+    "minGpa": 3.288264251408454,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Management",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-ottawa",
-    "name": "Bachelor of Science in Technology",
-    "slug": "university-of-ottawa-bachelor-of-science-in-technology",
-    "degree": "bachelors",
+    "name": "Master of Arts in Technology",
+    "slug": "university-of-ottawa-master-of-arts-in-technology",
+    "degree": "masters",
     "field": "Technology",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -20480,10 +19589,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38331,
+    "tuitionUsd": 42794,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1161538146270926,
+    "scholarshipAvailable": false,
+    "minGpa": 3.24342591921999,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20494,10 +19603,10 @@ const programs = [
   },
   {
     "universitySlug": "university-of-ottawa",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "university-of-ottawa-master-of-science-in-sports-and-health-sciences",
+    "name": "Master of Arts in Performing arts",
+    "slug": "university-of-ottawa-master-of-arts-in-performing-arts",
     "degree": "masters",
-    "field": "Sports and Health Sciences",
+    "field": "Performing arts",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -20507,24 +19616,24 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 24038,
+    "tuitionUsd": 24401,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.1408322669956363,
+    "scholarshipAvailable": true,
+    "minGpa": 3.137695285881091,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
+      "Professional in Performing arts",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "university-of-ottawa",
-    "name": "PhD in Business",
-    "slug": "university-of-ottawa-phd-in-business",
+    "name": "PhD in dentistry",
+    "slug": "university-of-ottawa-phd-in-dentistry",
     "degree": "phd",
-    "field": "Business",
+    "field": "dentistry",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -20534,53 +19643,26 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17576,
+    "tuitionUsd": 38079,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.096089522720564,
+    "minGpa": 3.3465671793739284,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-ottawa",
-    "name": "Master of Science in Economy",
-    "slug": "university-of-ottawa-master-of-science-in-economy",
-    "degree": "masters",
-    "field": "Economy",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 15215,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.4445189798172757,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Economy",
+      "Professional in dentistry",
       "Researcher",
       "Consultant"
     ]
   },
   {
     "universitySlug": "western-university",
-    "name": "PhD in Economy",
-    "slug": "western-university-phd-in-economy",
-    "degree": "phd",
+    "name": "Bachelor of Science in Economy",
+    "slug": "western-university-bachelor-of-science-in-economy",
+    "degree": "bachelors",
     "field": "Economy",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
     "language": "English",
     "intakes": [
       "Fall",
@@ -20588,10 +19670,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17549,
+    "tuitionUsd": 34899,
     "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.709039623620617,
+    "scholarshipAvailable": false,
+    "minGpa": 3.3660877141011203,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20615,10 +19697,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32604,
+    "tuitionUsd": 39281,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.0360234142767073,
+    "minGpa": 3.06014706773231,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20629,91 +19711,10 @@ const programs = [
   },
   {
     "universitySlug": "western-university",
-    "name": "Bachelor of Science in Technology",
-    "slug": "western-university-bachelor-of-science-in-technology",
-    "degree": "bachelors",
-    "field": "Technology",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 38075,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.047284147221252,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Technology",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "western-university",
-    "name": "Master of Arts in media studies",
-    "slug": "western-university-master-of-arts-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 17120,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.6132082449353775,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-laval",
-    "name": "Bachelor of Science in Sports and Health Sciences",
-    "slug": "universit-laval-bachelor-of-science-in-sports-and-health-sciences",
-    "degree": "bachelors",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 30826,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.536436228526053,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "universit-laval",
-    "name": "PhD in Veterinary medicine",
-    "slug": "universit-laval-phd-in-veterinary-medicine",
+    "name": "PhD in Humanities",
+    "slug": "western-university-phd-in-humanities",
     "degree": "phd",
-    "field": "Veterinary medicine",
+    "field": "Humanities",
     "durationMonths": 60,
     "durationLabel": "5 years",
     "language": "English",
@@ -20723,14 +19724,41 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40058,
+    "tuitionUsd": 20986,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.4592722981947377,
+    "minGpa": 3.784049661041488,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Veterinary medicine",
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "universit-laval",
+    "name": "PhD in Humanities",
+    "slug": "universit-laval-phd-in-humanities",
+    "degree": "phd",
+    "field": "Humanities",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 18348,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.760796639573484,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
       "Researcher",
       "Consultant"
     ]
@@ -20750,10 +19778,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 21608,
+    "tuitionUsd": 19048,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.564255819500336,
+    "minGpa": 3.124270337029627,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20777,10 +19805,10 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 29419,
+    "tuitionUsd": 27663,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.6514153159522316,
+    "scholarshipAvailable": true,
+    "minGpa": 3.4819734867120813,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
@@ -20790,11 +19818,11 @@ const programs = [
     ]
   },
   {
-    "universitySlug": "university-of-saskatchewan",
-    "name": "Master of Arts in Business",
-    "slug": "university-of-saskatchewan-master-of-arts-in-business",
+    "universitySlug": "universit-laval",
+    "name": "Master of Science in Social Sciences",
+    "slug": "universit-laval-master-of-science-in-social-sciences",
     "degree": "masters",
-    "field": "Business",
+    "field": "Social Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
@@ -20804,14 +19832,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 36475,
+    "tuitionUsd": 26734,
     "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.082157106881405,
+    "scholarshipAvailable": true,
+    "minGpa": 3.3782616487024795,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
-      "Professional in Business",
+      "Professional in Social Sciences",
       "Researcher",
       "Consultant"
     ]
@@ -20831,41 +19859,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 32085,
+    "tuitionUsd": 40379,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.098714939491823,
+    "minGpa": 3.4838983284293894,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Humanities",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "university-of-saskatchewan",
-    "name": "Master of Science in media studies",
-    "slug": "university-of-saskatchewan-master-of-science-in-media-studies",
-    "degree": "masters",
-    "field": "media studies",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40282,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.1310809225836644,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
       "Researcher",
       "Consultant"
     ]
@@ -20885,14 +19886,203 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35113,
+    "tuitionUsd": 15688,
     "tuitionPer": "year",
     "scholarshipAvailable": true,
-    "minGpa": 3.6399031475272343,
+    "minGpa": 3.385954537328684,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-saskatchewan",
+    "name": "PhD in Economy",
+    "slug": "university-of-saskatchewan-phd-in-economy",
+    "degree": "phd",
+    "field": "Economy",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 32765,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0524583521897504,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Economy",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-saskatchewan",
+    "name": "Bachelor of Science in dentistry",
+    "slug": "university-of-saskatchewan-bachelor-of-science-in-dentistry",
+    "degree": "bachelors",
+    "field": "dentistry",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 33794,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4318398114011086,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in dentistry",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "university-of-saskatchewan",
+    "name": "Bachelor of Science in Business",
+    "slug": "university-of-saskatchewan-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 15004,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.21223975282709,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "th-nurnberg",
+    "name": "Master of Science in Social Sciences",
+    "slug": "th-nurnberg-master-of-science-in-social-sciences",
+    "degree": "masters",
+    "field": "Social Sciences",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 16979,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.6910988397757727,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Social Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "th-nurnberg",
+    "name": "Bachelor of Science in Humanities",
+    "slug": "th-nurnberg-bachelor-of-science-in-humanities",
+    "degree": "bachelors",
+    "field": "Humanities",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 19796,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.701826867436646,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Humanities",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "th-nurnberg",
+    "name": "PhD in Natural Sciences",
+    "slug": "th-nurnberg-phd-in-natural-sciences",
+    "degree": "phd",
+    "field": "Natural Sciences",
+    "durationMonths": 60,
+    "durationLabel": "5 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 35159,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.4326140141673265,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Natural Sciences",
+      "Researcher",
+      "Consultant"
+    ]
+  },
+  {
+    "universitySlug": "th-nurnberg",
+    "name": "Bachelor of Science in Business",
+    "slug": "th-nurnberg-bachelor-of-science-in-business",
+    "degree": "bachelors",
+    "field": "Business",
+    "durationMonths": 48,
+    "durationLabel": "4 years",
+    "language": "English",
+    "intakes": [
+      "Fall",
+      "Spring"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 31447,
+    "tuitionPer": "year",
+    "scholarshipAvailable": false,
+    "minGpa": 3.0925859077503057,
+    "minIelts": 6.5,
+    "minToefl": 90,
+    "careerOutcomes": [
+      "Professional in Business",
       "Researcher",
       "Consultant"
     ]
@@ -20912,122 +20102,14 @@ const programs = [
     ],
     "applicationDeadline": "December 15",
     "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 35385,
+    "tuitionUsd": 19288,
     "tuitionPer": "year",
     "scholarshipAvailable": false,
-    "minGpa": 3.036864845163982,
+    "minGpa": 3.783801523753412,
     "minIelts": 6.5,
     "minToefl": 90,
     "careerOutcomes": [
       "Professional in Medicine",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "th-nurnberg",
-    "name": "Master of Arts in Business",
-    "slug": "th-nurnberg-master-of-arts-in-business",
-    "degree": "masters",
-    "field": "Business",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 40032,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.535496843836768,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Business",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "th-nurnberg",
-    "name": "Master of Science in Sports and Health Sciences",
-    "slug": "th-nurnberg-master-of-science-in-sports-and-health-sciences",
-    "degree": "masters",
-    "field": "Sports and Health Sciences",
-    "durationMonths": 24,
-    "durationLabel": "2 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 28089,
-    "tuitionPer": "year",
-    "scholarshipAvailable": true,
-    "minGpa": 3.631940979070847,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in Sports and Health Sciences",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "th-nurnberg",
-    "name": "Bachelor of Science in media studies",
-    "slug": "th-nurnberg-bachelor-of-science-in-media-studies",
-    "degree": "bachelors",
-    "field": "media studies",
-    "durationMonths": 48,
-    "durationLabel": "4 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 19141,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.7086082189260234,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in media studies",
-      "Researcher",
-      "Consultant"
-    ]
-  },
-  {
-    "universitySlug": "th-nurnberg",
-    "name": "PhD in dentistry",
-    "slug": "th-nurnberg-phd-in-dentistry",
-    "degree": "phd",
-    "field": "dentistry",
-    "durationMonths": 60,
-    "durationLabel": "5 years",
-    "language": "English",
-    "intakes": [
-      "Fall",
-      "Spring"
-    ],
-    "applicationDeadline": "December 15",
-    "applicationDeadlineDate": "2026-12-15",
-    "tuitionUsd": 44223,
-    "tuitionPer": "year",
-    "scholarshipAvailable": false,
-    "minGpa": 3.059785810824993,
-    "minIelts": 6.5,
-    "minToefl": 90,
-    "careerOutcomes": [
-      "Professional in dentistry",
       "Researcher",
       "Consultant"
     ]
@@ -26238,6 +25320,106 @@ const programs = [
     "slug": "technische-universitat-braunschweig-msc-pharmaceutical-engineering",
     "degree": "masters",
     "field": "Engineering",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40000,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5,
+    "minIelts": 7,
+    "minToefl": 100,
+    "careerOutcomes": [
+      "Professional",
+      "Researcher"
+    ]
+  },
+  {
+    "universitySlug": "auckland-university-of-technology",
+    "name": "BSc Computer Science",
+    "slug": "auckland-university-of-technology-bsc-computer-science",
+    "degree": "bachelors",
+    "field": "Technology",
+    "durationMonths": 36,
+    "durationLabel": "3 years",
+    "language": "English",
+    "intakes": [
+      "Fall"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40000,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5,
+    "minIelts": 7,
+    "minToefl": 100,
+    "careerOutcomes": [
+      "Professional",
+      "Researcher"
+    ]
+  },
+  {
+    "universitySlug": "auckland-university-of-technology",
+    "name": "MSc Engineering",
+    "slug": "auckland-university-of-technology-msc-engineering",
+    "degree": "masters",
+    "field": "Engineering",
+    "durationMonths": 24,
+    "durationLabel": "2 years",
+    "language": "English",
+    "intakes": [
+      "Fall"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40000,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5,
+    "minIelts": 7,
+    "minToefl": 100,
+    "careerOutcomes": [
+      "Professional",
+      "Researcher"
+    ]
+  },
+  {
+    "universitySlug": "lincoln-university",
+    "name": "BAgSc Agriculture",
+    "slug": "lincoln-university-bagsc-agriculture",
+    "degree": "bachelors",
+    "field": "Natural Sciences",
+    "durationMonths": 36,
+    "durationLabel": "3 years",
+    "language": "English",
+    "intakes": [
+      "Fall"
+    ],
+    "applicationDeadline": "December 15",
+    "applicationDeadlineDate": "2026-12-15",
+    "tuitionUsd": 40000,
+    "tuitionPer": "year",
+    "scholarshipAvailable": true,
+    "minGpa": 3.5,
+    "minIelts": 7,
+    "minToefl": 100,
+    "careerOutcomes": [
+      "Professional",
+      "Researcher"
+    ]
+  },
+  {
+    "universitySlug": "lincoln-university",
+    "name": "MSc Environmental Management",
+    "slug": "lincoln-university-msc-environmental-management",
+    "degree": "masters",
+    "field": "Natural Sciences",
     "durationMonths": 24,
     "durationLabel": "2 years",
     "language": "English",
