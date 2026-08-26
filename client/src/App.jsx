@@ -18,6 +18,7 @@ import Landing from './pages/Landing/Landing';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Profile from './pages/Profile/Profile';
 import Universities from './pages/Universities/Universities';
 import UniversityDetail from './pages/Universities/UniversityDetail';
 import Programs from './pages/Programs/Programs';
@@ -57,6 +58,7 @@ function App() {
 
           {/* Protected */}
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
 
           {/* 404 */}
           <Route path="*" element={

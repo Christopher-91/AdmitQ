@@ -9,13 +9,28 @@ import '../DataPages.css';
 // ── Client-side match calculation ─────────────────────────
 function computeMatch(profile, uni) {
   if (!profile) return null;
+
+  // Extract from nested API shape
+  const academic = profile.academic || {};
+  const prefs = profile.preferences || {};
+  const testScores = profile.testScores || [];
+
+  const gpa = parseFloat(academic.gpa) || null;
+  const desiredField = prefs.desiredField || academic.currentMajor || null;
+  const budgetMax = parseFloat(prefs.budgetMax) || null;
+  const ielts = testScores.find(s => s.testName === 'IELTS')?.overallScore || null;
+  const toefl = testScores.find(s => s.testName === 'TOEFL')?.overallScore || null;
+
+  // If none of the key fields are filled, don't show a match
+  if (!gpa && !desiredField && !budgetMax && !ielts && !toefl) return null;
+
   const factors = {};
   let totalScore = 0;
   let count = 0;
 
   // Academic
-  if (profile.gpa && uni.requirements?.minGpa) {
-    const ratio = profile.gpa / uni.requirements.minGpa;
+  if (gpa && uni.requirements?.minGpa) {
+    const ratio = gpa / uni.requirements.minGpa;
     factors.academic = ratio >= 1.1 ? 'strong' : ratio >= 0.95 ? 'moderate' : 'difficult';
     totalScore += ratio >= 1.1 ? 90 : ratio >= 0.95 ? 65 : 35;
   } else {
@@ -24,12 +39,12 @@ function computeMatch(profile, uni) {
   }
   count++;
 
-  // Program fit / Career alignment
-  if (profile.desiredField && uni.faculties?.length > 0) {
-    const fieldLower = (profile.desiredField || '').toLowerCase();
-    const match = uni.faculties.some(f => f.toLowerCase().includes(fieldLower) || fieldLower.includes(f.toLowerCase()));
-    factors.career = match ? 'strong' : 'moderate';
-    totalScore += match ? 95 : 55;
+  // Program / Career fit
+  if (desiredField && uni.faculties?.length > 0) {
+    const fieldLower = desiredField.toLowerCase();
+    const matched = uni.faculties.some(f => f.toLowerCase().includes(fieldLower) || fieldLower.includes(f.toLowerCase()));
+    factors.career = matched ? 'strong' : 'moderate';
+    totalScore += matched ? 95 : 55;
   } else {
     factors.career = 'moderate';
     totalScore += 60;
@@ -37,9 +52,9 @@ function computeMatch(profile, uni) {
   count++;
 
   // Budget
-  if (profile.budgetMax && uni.financial?.avgTuitionUsd) {
+  if (budgetMax && uni.financial?.avgTuitionUsd) {
     const totalCost = uni.financial.avgTuitionUsd + (uni.financial.avgLivingCostUsd || 0) * 12;
-    const ratio = profile.budgetMax / totalCost;
+    const ratio = budgetMax / totalCost;
     factors.budget = ratio >= 1 ? 'strong' : ratio >= 0.7 ? 'moderate' : 'difficult';
     totalScore += ratio >= 1 ? 90 : ratio >= 0.7 ? 55 : 25;
   } else {
@@ -48,13 +63,13 @@ function computeMatch(profile, uni) {
   }
   count++;
 
-  // Requirements (test scores)
-  if (profile.ielts && uni.requirements?.minIelts) {
-    factors.requirements = profile.ielts >= uni.requirements.minIelts ? 'strong' : 'difficult';
-    totalScore += profile.ielts >= uni.requirements.minIelts ? 90 : 30;
-  } else if (profile.toefl && uni.requirements?.minToefl) {
-    factors.requirements = profile.toefl >= uni.requirements.minToefl ? 'strong' : 'difficult';
-    totalScore += profile.toefl >= uni.requirements.minToefl ? 90 : 30;
+  // English requirement
+  if (ielts && uni.requirements?.minIelts) {
+    factors.requirements = ielts >= uni.requirements.minIelts ? 'strong' : 'difficult';
+    totalScore += ielts >= uni.requirements.minIelts ? 90 : 30;
+  } else if (toefl && uni.requirements?.minToefl) {
+    factors.requirements = toefl >= uni.requirements.minToefl ? 'strong' : 'difficult';
+    totalScore += toefl >= uni.requirements.minToefl ? 90 : 30;
   } else {
     factors.requirements = 'moderate';
     totalScore += 60;
@@ -123,7 +138,8 @@ export default function UniversityDetail() {
     if (isAuthenticated) {
       api.get('/users/me').then(res => {
         const u = res.data.data;
-        if (u.profile) setProfile(u.profile);
+        // Store the full user object (with nested academic/preferences/testScores)
+        setProfile(u);
       }).catch(() => { });
     }
   }, [isAuthenticated]);
@@ -152,7 +168,7 @@ export default function UniversityDetail() {
   if (!uni) return null;
 
   const totalAnnualCost = (uni.financial?.avgTuitionUsd || 0) + (uni.financial?.avgLivingCostUsd || 0) * 12;
-  const userBudget = profile?.budgetMax || null;
+  const userBudget = profile?.preferences?.budgetMax || null;
   const budgetDiffPct = userBudget ? Math.round(((totalAnnualCost - userBudget) / userBudget) * 100) : null;
 
   // Placeholder student ratings based on university data
