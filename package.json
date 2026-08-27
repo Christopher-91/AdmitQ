@@ -21,6 +21,6 @@
     "docker:reset": "docker compose down -v && docker compose up -d"
   },
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.2.4"
   }
 }
