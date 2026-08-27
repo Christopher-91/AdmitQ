@@ -29,6 +29,7 @@ import CountryDetail from './pages/Countries/CountryDetail';
 import Scholarships from './pages/Scholarships/Scholarships';
 import ScholarshipDetail from './pages/Scholarships/ScholarshipDetail';
 import Careers from './pages/Careers/Careers';
+import CareerDetail from './pages/Careers/CareerDetail';
 import CostCalculator from './pages/Calculator/CostCalculator';
 
 import './index.css';
@@ -41,7 +42,7 @@ function App() {
         <Navbar />
         <Routes>
           {/* Public */}
-          <Route path="/" element={<PublicRoute><Landing /></PublicRoute>} />
+          <Route path="/" element={<Landing />} />
           <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
           <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
 
@@ -55,6 +56,7 @@ function App() {
           <Route path="/scholarships" element={<Scholarships />} />
           <Route path="/scholarships/:slug" element={<ScholarshipDetail />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/careers/:slug" element={<CareerDetail />} />
           <Route path="/calculator" element={<CostCalculator />} />
 
           {/* Protected */}

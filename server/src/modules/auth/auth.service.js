@@ -231,7 +231,7 @@ function generateTokens(user) {
   );
 
   const refreshToken = jwt.sign(
-    { userId: user.id },
+    { userId: user.id, jti: crypto.randomUUID() },
     config.jwt.refreshSecret,
     { expiresIn: config.jwt.refreshExpiresIn }
   );

@@ -80,6 +80,7 @@ export default function Scholarships() {
                   }
                 </span>
                 {s.country && <img src={`/flags/${s.country.code.toLowerCase()}.webp`} alt={s.country.name} style={{ width: '1.5em', verticalAlign: 'middle' }} />}
+                {!s.country && s.provider === 'European Union' && <img src="/flags/eu.svg" alt="European Union" style={{ width: '1.5em', verticalAlign: 'middle' }} />}
               </div>
 
               <h3 className="program-name">{s.name}</h3>

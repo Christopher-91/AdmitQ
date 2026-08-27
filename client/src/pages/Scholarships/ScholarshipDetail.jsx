@@ -53,6 +53,7 @@ export default function ScholarshipDetail() {
                   }
                 </span>
                 {scholarship.country && <img src={`/flags/${scholarship.country.code.toLowerCase()}.webp`} alt={scholarship.country.name} style={{ width: '1.5rem', verticalAlign: 'middle' }} />}
+                {!scholarship.country && scholarship.provider === 'European Union' && <img src="/flags/eu.svg" alt="European Union" style={{ width: '1.5rem', verticalAlign: 'middle' }} />}
               </div>
               <h1 className="detail-title">{scholarship.name}</h1>
               <p className="detail-subtitle">by {scholarship.provider}</p>

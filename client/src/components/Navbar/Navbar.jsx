@@ -41,7 +41,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner container">
         {/* Logo */}
-        <Link to={isAuthenticated ? '/dashboard' : '/'} className="navbar-logo">
+        <Link to="/" className="navbar-logo">
           <span className="logo-text">Admit<span className="logo-highlight">Q</span></span>
         </Link>
 

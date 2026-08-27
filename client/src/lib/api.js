@@ -17,6 +17,20 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+let isRefreshing = false;
+let failedQueue = [];
+
+const processQueue = (error, token = null) => {
+  failedQueue.forEach(prom => {
+    if (error) {
+      prom.reject(error);
+    } else {
+      prom.resolve(token);
+    }
+  });
+  failedQueue = [];
+};
+
 // Response interceptor — handle token refresh
 api.interceptors.response.use(
   (response) => response,
@@ -24,7 +38,19 @@ api.interceptors.response.use(
     const originalRequest = error.config;
 
     if (error.response?.status === 401 && !originalRequest._retry) {
+      if (isRefreshing) {
+        return new Promise(function(resolve, reject) {
+          failedQueue.push({ resolve, reject });
+        }).then(token => {
+          originalRequest.headers.Authorization = 'Bearer ' + token;
+          return api(originalRequest);
+        }).catch(err => {
+          return Promise.reject(err);
+        });
+      }
+
       originalRequest._retry = true;
+      isRefreshing = true;
 
       const refreshToken = localStorage.getItem('refreshToken');
       if (refreshToken) {
@@ -35,14 +61,20 @@ api.interceptors.response.use(
           localStorage.setItem('accessToken', accessToken);
           localStorage.setItem('refreshToken', newRefreshToken);
 
+          api.defaults.headers.common['Authorization'] = 'Bearer ' + accessToken;
           originalRequest.headers.Authorization = `Bearer ${accessToken}`;
+          
+          processQueue(null, accessToken);
           return api(originalRequest);
-        } catch {
+        } catch (err) {
+          processQueue(err, null);
           // Refresh failed — clear tokens and redirect to login
           localStorage.removeItem('accessToken');
           localStorage.removeItem('refreshToken');
           localStorage.removeItem('user');
           window.location.href = '/login';
+        } finally {
+          isRefreshing = false;
         }
       }
     }
