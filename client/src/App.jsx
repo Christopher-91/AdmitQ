@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute, PublicRoute } from './router/ProtectedRoute';
 import Navbar from './components/Navbar/Navbar';
+import { BsCompass } from 'react-icons/bs';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -64,7 +65,7 @@ function App() {
           <Route path="*" element={
             <div className="page container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '70vh', textAlign: 'center' }}>
               <div>
-                <p style={{ fontSize: '4rem', marginBottom: 16 }}>🔭</p>
+                <div style={{ fontSize: '4rem', marginBottom: 16 }}><BsCompass /></div>
                 <h1 className="page-title" style={{ marginBottom: 8 }}>Page Not Found</h1>
                 <p className="text-muted">The page you're looking for doesn't exist or has been moved.</p>
                 <a href="/" className="btn btn-primary mt-4">Go Home</a>

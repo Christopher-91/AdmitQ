@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../lib/api';
+import { BsBullseye, BsBriefcase, BsGraphUpArrow } from 'react-icons/bs';
 import '../DataPages.css';
 
 export default function Careers() {
@@ -17,7 +18,7 @@ export default function Careers() {
   return (
     <div className="page container">
       <div className="page-header">
-        <h1 className="page-title">🎯 Career Explorer</h1>
+        <h1 className="page-title"><BsBullseye style={{ verticalAlign: 'middle', marginRight: 8 }} /> Career Explorer</h1>
         <p className="page-subtitle">Start with your dream career — we'll show you the right degree path</p>
       </div>
 
@@ -29,7 +30,7 @@ export default function Careers() {
         <div className="cards-grid stagger-children" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))' }}>
           {careers.map((c) => (
             <Link key={c.id} to={`/careers/${c.slug}`} className="career-card card">
-              <div className="career-icon">{c.icon || '💼'}</div>
+              <div className="career-icon">{c.icon || <BsBriefcase size={28} />}</div>
               <div className="career-info">
                 <h3 className="career-name">{c.name}</h3>
                 <p className="career-desc">{c.description}</p>
@@ -37,8 +38,8 @@ export default function Careers() {
                   <span className="badge badge-accent">
                     ${(c.avgSalaryUsd / 1000).toFixed(0)}k avg salary
                   </span>
-                  <span className={`badge ${c.growthOutlook === 'high' ? 'badge-safe' : 'badge-warning'}`}>
-                    📈 {c.growthOutlook} growth
+                  <span className={`badge ${c.growthOutlook === 'high' ? 'badge-safe' : 'badge-warning'}`} style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                    <BsGraphUpArrow size={11} /> {c.growthOutlook} growth
                   </span>
                   <span className="badge badge-primary">
                     {c.pathwayCount} pathways

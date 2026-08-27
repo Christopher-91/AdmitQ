@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import api from '../../lib/api';
+import {
+  BsBook, BsClipboard2, BsBookHalf, BsRocketTakeoff, BsLightningCharge,
+  BsCheckCircleFill, BsXCircle, BsPaperclip, BsCheck2,
+} from 'react-icons/bs';
 import '../DataPages.css';
 
 export default function ProgramDetail() {
@@ -74,13 +78,13 @@ export default function ProgramDetail() {
           <div>
             {program.description && (
               <div className="detail-section">
-                <h2 className="detail-section-title">📖 Program Description</h2>
+                <h2 className="detail-section-title"><BsBook style={{ verticalAlign: 'middle', marginRight: 8 }} /> Program Description</h2>
                 <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{program.description}</p>
               </div>
             )}
 
             <div className="detail-section">
-              <h2 className="detail-section-title">📋 Admission Requirements</h2>
+              <h2 className="detail-section-title"><BsClipboard2 style={{ verticalAlign: 'middle', marginRight: 8 }} /> Admission Requirements</h2>
               <div className="card" style={{ padding: 24 }}>
                 {[
                   { label: 'Minimum GPA', value: program.minGpa ? `${program.minGpa} / 4.0` : 'Not specified' },
@@ -98,7 +102,7 @@ export default function ProgramDetail() {
 
             {program.prerequisiteCourses?.length > 0 && (
               <div className="detail-section">
-                <h2 className="detail-section-title">📚 Prerequisite Courses</h2>
+                <h2 className="detail-section-title"><BsBookHalf style={{ verticalAlign: 'middle', marginRight: 8 }} /> Prerequisite Courses</h2>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                   {program.prerequisiteCourses.map((c, i) => <span key={i} className="tag">{c}</span>)}
                 </div>
@@ -107,7 +111,7 @@ export default function ProgramDetail() {
 
             {program.careerOutcomes?.length > 0 && (
               <div className="detail-section">
-                <h2 className="detail-section-title">🚀 Career Outcomes</h2>
+                <h2 className="detail-section-title"><BsRocketTakeoff style={{ verticalAlign: 'middle', marginRight: 8 }} /> Career Outcomes</h2>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                   {program.careerOutcomes.map((c, i) => <span key={i} className="tag">{c}</span>)}
                 </div>
@@ -118,14 +122,17 @@ export default function ProgramDetail() {
           {/* Sidebar */}
           <div className="detail-sidebar">
             <div className="card" style={{ padding: 20 }}>
-              <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem' }}>⚡ Quick Info</h3>
+              <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: 6 }}><BsLightningCharge /> Quick Info</h3>
               {[
                 { label: 'Degree Level', value: degreeLabel },
                 { label: 'Field', value: program.field || '-' },
                 { label: 'Specialization', value: program.specialization || '-' },
                 { label: 'Delivery', value: program.deliveryMode?.replace('_', ' ') || 'On campus' },
                 { label: 'Application Deadline', value: program.applicationDeadline || '-' },
-                { label: 'Scholarship Available', value: program.scholarshipAvailable ? '✅ Yes' : '❌ No' },
+                { label: 'Scholarship Available', value: program.scholarshipAvailable
+                  ? <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, color: 'var(--accent-400)' }}><BsCheckCircleFill size={13} /> Yes</span>
+                  : <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, color: 'var(--error-500)' }}><BsXCircle size={13} /> No</span>
+                },
               ].map(item => (
                 <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border-secondary)', fontSize: '0.875rem' }}>
                   <span style={{ color: 'var(--text-secondary)' }}>{item.label}</span>
@@ -154,12 +161,12 @@ export default function ProgramDetail() {
 
             {program.requiredDocuments?.length > 0 && (
               <div className="card" style={{ padding: 20 }}>
-                <h3 style={{ fontWeight: 700, marginBottom: 12, fontSize: '0.95rem' }}>📎 Required Documents</h3>
+                <h3 style={{ fontWeight: 700, marginBottom: 12, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: 6 }}><BsPaperclip /> Required Documents</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 6 }}>
                   {program.requiredDocuments.map((doc, i) => (
-                    <li key={i} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: 6 }}>
-                      <span style={{ color: 'var(--accent-400)' }}>✓</span> {doc}
-                    </li>
+                      <li key={i} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: 6 }}>
+                        <BsCheck2 style={{ color: 'var(--accent-400)', flexShrink: 0 }} /> {doc}
+                      </li>
                   ))}
                 </ul>
               </div>

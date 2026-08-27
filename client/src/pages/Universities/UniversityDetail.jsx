@@ -4,11 +4,18 @@ import { useAuth } from '../../context/AuthContext';
 import api from '../../lib/api';
 import Logo from '../../components/Logo/Logo';
 import { formatDegree } from '../../lib/formatters';
+import {
+  BsBullseye, BsCashCoin, BsMortarboard, BsPeopleFill,
+  BsChatSquareDots, BsHouseDoor, BsForkKnife, BsBusFront, BsBox,
+  BsStarFill, BsCash, BsExclamationTriangleFill, BsCheckCircleFill,
+  BsClipboard2, BsClock, BsGlobe2, BsPaperclip, BsLightningCharge,
+
+} from 'react-icons/bs';
 import '../DataPages.css';
 
 // ── Client-side match calculation ─────────────────────────
 function computeMatch(profile, uni) {
-  if (!profile) return null;
+  if (!profile || !uni) return null;
 
   // Extract from nested API shape
   const academic = profile.academic || {};
@@ -31,63 +38,85 @@ function computeMatch(profile, uni) {
   // Academic
   if (gpa && uni.requirements?.minGpa) {
     const ratio = gpa / uni.requirements.minGpa;
-    factors.academic = ratio >= 1.1 ? 'strong' : ratio >= 0.95 ? 'moderate' : 'difficult';
-    totalScore += ratio >= 1.1 ? 90 : ratio >= 0.95 ? 65 : 35;
+    const score = Math.min(100, Math.round(ratio * 100));
+    factors.academic = { level: score >= 95 ? 'strong' : score >= 85 ? 'moderate' : 'difficult', score };
+    totalScore += score;
+    count++;
   } else {
-    factors.academic = 'moderate';
-    totalScore += 65;
+    factors.academic = { level: 'unknown', score: null };
   }
-  count++;
 
   // Program / Career fit
   if (desiredField && uni.faculties?.length > 0) {
     const fieldLower = desiredField.toLowerCase();
     const matched = uni.faculties.some(f => f.toLowerCase().includes(fieldLower) || fieldLower.includes(f.toLowerCase()));
-    factors.career = matched ? 'strong' : 'moderate';
-    totalScore += matched ? 95 : 55;
+    factors.career = { level: matched ? 'strong' : 'difficult', score: matched ? 100 : 0 };
+    totalScore += matched ? 100 : 0;
+    count++;
   } else {
-    factors.career = 'moderate';
-    totalScore += 60;
+    factors.career = { level: 'unknown', score: null };
   }
-  count++;
 
   // Budget
   if (budgetMax && uni.financial?.avgTuitionUsd) {
     const totalCost = uni.financial.avgTuitionUsd + (uni.financial.avgLivingCostUsd || 0) * 12;
     const ratio = budgetMax / totalCost;
-    factors.budget = ratio >= 1 ? 'strong' : ratio >= 0.7 ? 'moderate' : 'difficult';
-    totalScore += ratio >= 1 ? 90 : ratio >= 0.7 ? 55 : 25;
+    const score = Math.min(100, Math.round(ratio * 100));
+    factors.budget = { level: score >= 100 ? 'strong' : score >= 80 ? 'moderate' : 'difficult', score };
+    totalScore += score;
+    count++;
   } else {
-    factors.budget = 'moderate';
-    totalScore += 55;
+    factors.budget = { level: 'unknown', score: null };
   }
-  count++;
 
   // English requirement
-  if (ielts && uni.requirements?.minIelts) {
-    factors.requirements = ielts >= uni.requirements.minIelts ? 'strong' : 'difficult';
-    totalScore += ielts >= uni.requirements.minIelts ? 90 : 30;
-  } else if (toefl && uni.requirements?.minToefl) {
-    factors.requirements = toefl >= uni.requirements.minToefl ? 'strong' : 'difficult';
-    totalScore += toefl >= uni.requirements.minToefl ? 90 : 30;
+  if ((ielts || toefl) && (uni.requirements?.minIelts || uni.requirements?.minToefl)) {
+    let score = null;
+    let level = null;
+    if (ielts && uni.requirements?.minIelts) {
+      score = Math.min(100, Math.round((ielts / uni.requirements.minIelts) * 100));
+    } else if (toefl && uni.requirements?.minToefl) {
+      score = Math.min(100, Math.round((toefl / uni.requirements.minToefl) * 100));
+    }
+
+    if (score !== null) {
+      level = score >= 100 ? 'strong' : score >= 90 ? 'moderate' : 'difficult';
+      factors.requirements = { level, score };
+      totalScore += score;
+      count++;
+    } else {
+      factors.requirements = { level: 'unknown', score: null };
+    }
   } else {
-    factors.requirements = 'moderate';
-    totalScore += 60;
+    factors.requirements = { level: 'unknown', score: null };
   }
-  count++;
+
+  if (count === 0) return null;
 
   const overall = Math.round(totalScore / count);
   return { overall, factors };
 }
 
-function MatchIndicator({ level }) {
+function MatchIndicator({ factor }) {
   const config = {
-    strong: { icon: '🟢', label: 'Strong' },
-    moderate: { icon: '🟡', label: 'Moderate' },
-    difficult: { icon: '🔴', label: 'Difficult' },
+    strong: { dot: '●', label: 'Strong', color: 'var(--accent-500)' },
+    moderate: { dot: '●', label: 'Moderate', color: 'var(--warning-500)' },
+    difficult: { dot: '●', label: 'Difficult', color: 'var(--error-500)' },
+    unknown: { dot: '●', label: 'Unknown', color: 'var(--text-tertiary)' },
   };
-  const c = config[level] || config.moderate;
-  return <span className={`match-indicator ${level}`}>{c.icon} {c.label}</span>;
+  const c = config[factor.level] || config.unknown;
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+      <span className={`match-indicator ${factor.level}`}>
+        <span style={{ color: c.color, fontSize: '0.7rem' }}>{c.dot}</span> {c.label}
+      </span>
+      {factor.score !== null && (
+        <span style={{ fontSize: '0.9rem', fontWeight: 700, color: c.color, width: '40px', textAlign: 'right' }}>
+          {factor.score}%
+        </span>
+      )}
+    </div>
+  );
 }
 
 function ProgressRing({ percent }) {
@@ -128,6 +157,8 @@ export default function UniversityDetail() {
   const [viewMode, setViewMode] = useState('overview'); // 'overview' or 'details'
 
   useEffect(() => {
+    setLoading(true);
+    setUni(null);
     api.get(`/universities/${slug}`)
       .then(res => setUni(res.data.data))
       .catch(() => navigate('/universities'))
@@ -198,10 +229,10 @@ export default function UniversityDetail() {
   // Living costs
   const monthlyLiving = uni.financial?.avgLivingCostUsd || 0;
   const livingCosts = [
-    { label: '🏠 Housing', value: Math.round(monthlyLiving * 0.5) },
-    { label: '🍔 Food', value: Math.round(monthlyLiving * 0.25) },
-    { label: '🚌 Transport', value: Math.round(monthlyLiving * 0.12) },
-    { label: '📦 Other', value: Math.round(monthlyLiving * 0.13) },
+    { label: 'Housing', icon: <BsHouseDoor size={14} />, value: Math.round(monthlyLiving * 0.5) },
+    { label: 'Food', icon: <BsForkKnife size={14} />, value: Math.round(monthlyLiving * 0.25) },
+    { label: 'Transport', icon: <BsBusFront size={14} />, value: Math.round(monthlyLiving * 0.12) },
+    { label: 'Other', icon: <BsBox size={14} />, value: Math.round(monthlyLiving * 0.13) },
   ];
 
   // Career outcomes - match uni faculties to career data
@@ -246,7 +277,7 @@ export default function UniversityDetail() {
                 <span className="badge badge-primary">{uni.universityType}</span>
                 {uni.foundedYear && <span className="badge">Est. {uni.foundedYear}</span>}
                 {uni.rankings?.qs && <span className="badge badge-accent">QS #{uni.rankings.qs}</span>}
-                {uni.rankings?.the && <span className="badge">THE #{uni.rankings.the}</span>}
+                {uni.rankings?.the && <span className="badge">THE World#{uni.rankings.the}</span>}
               </div>
             </div>
             {uni.website && (
@@ -273,41 +304,10 @@ export default function UniversityDetail() {
         </div>
       </div>
 
-      {/* ══════════ TABS ══════════ */}
-      <div style={{ borderBottom: '1px solid var(--border-secondary)', background: 'var(--bg-secondary)', position: 'sticky', top: 60, zIndex: 10, marginBottom: 32 }}>
-        <div className="container" style={{ display: 'flex', gap: 0 }}>
-          <button
-            onClick={() => setViewMode('overview')}
-            style={{
-              padding: '14px 20px', background: 'none', border: 'none', cursor: 'pointer',
-              borderBottom: viewMode === 'overview' ? '2px solid var(--primary-400)' : '2px solid transparent',
-              color: viewMode === 'overview' ? 'var(--primary-300)' : 'var(--text-secondary)',
-              fontWeight: viewMode === 'overview' ? 700 : 500,
-              fontSize: '0.9rem', textTransform: 'capitalize', transition: 'all 0.15s',
-            }}
-          >
-            Overview
-          </button>
-          <button
-            onClick={() => setViewMode('details')}
-            style={{
-              padding: '14px 20px', background: 'none', border: 'none', cursor: 'pointer',
-              borderBottom: viewMode === 'details' ? '2px solid var(--primary-400)' : '2px solid transparent',
-              color: viewMode === 'details' ? 'var(--primary-300)' : 'var(--text-secondary)',
-              fontWeight: viewMode === 'details' ? 700 : 500,
-              fontSize: '0.9rem', textTransform: 'capitalize', transition: 'all 0.15s',
-            }}
-          >
-            Details
-          </button>
-        </div>
-      </div>
-
       {/* ══════════ PAGE CONTENT ══════════ */}
-      {viewMode === 'overview' ? (
-        <div className="container" style={{ padding: '16px 20px 80px' }}>
-          <div className="overview-section animate-fadeInUp">
-            <style>{`
+      <div className="container" style={{ padding: '16px 20px 80px' }}>
+        <div className="overview-section animate-fadeInUp" style={{ marginBottom: '40px' }}>
+          <style>{`
               .overview-grid-custom {
                 display: grid;
                 grid-template-columns: 2.7fr 1fr;
@@ -319,64 +319,52 @@ export default function UniversityDetail() {
                 }
               }
             `}</style>
-            
-            <h2 className="decision-section-title">About {uni.name}</h2>
-            <div className="overview-grid-custom">
-              <div className="overview-left">
-                <div className="card" style={{ padding: '24px 32px', marginBottom: 32 }}>
-                  <p style={{ lineHeight: 1.6, color: 'var(--text-secondary)', marginBottom: 16 }}>
-                    {finalDescription}
-                  </p>
-                  
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, paddingTop: 16, borderTop: '1px solid var(--border-secondary)' }}>
-                    <div>
-                      <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600, marginBottom: 4 }}>Acceptance Rate</div>
-                      <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary)' }}>{acceptanceRate}</div>
-                    </div>
-                    <div>
-                      <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600, marginBottom: 4 }}>QS World Ranking</div>
-                      <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary)' }}>{uni.rankings?.qs ? `#${uni.rankings.qs}` : 'Not Ranked'}</div>
-                    </div>
+
+          <h2 className="decision-section-title">About {uni.name}</h2>
+          <div className="overview-grid-custom">
+            <div className="overview-left">
+              <div className="card" style={{ padding: '24px 32px', marginBottom: 32 }}>
+                <p style={{ lineHeight: 1.6, color: 'var(--text-secondary)', marginBottom: 16 }}>
+                  {finalDescription}
+                </p>
+
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, paddingTop: 16, borderTop: '1px solid var(--border-secondary)' }}>
+                  <div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600, marginBottom: 4 }}>Acceptance Rate</div>
+                    <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary)' }}>{acceptanceRate}</div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600, marginBottom: 4 }}>QS World Ranking</div>
+                    <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary)' }}>{uni.rankings?.qs ? `#${uni.rankings.qs}` : 'Not Ranked'}</div>
                   </div>
                 </div>
-                
-                {/* Provide a nudge to check the details */}
-                <div className="match-cta" style={{ background: 'var(--bg-secondary)', borderStyle: 'solid' }}>
-                  <div className="match-cta-title">Is this university right for you?</div>
-                  <p className="match-cta-desc">Check the Details tab to see your personalized profile match, cost analysis, programs, and more.</p>
-                  <button onClick={() => { setViewMode('details'); window.scrollTo(0, 0); }} className="btn btn-primary btn-sm">
-                    View Full Details →
-                  </button>
-                </div>
               </div>
-              
-              <div className="overview-right detail-sidebar">
-                <div className="card" style={{ padding: 24 }}>
-                  <h3 style={{ fontWeight: 700, marginBottom: 20, fontSize: '1rem' }}>Rankings</h3>
-                  {[
-                    { label: 'QS World', value: uni.rankings?.qs ? `#${uni.rankings.qs}` : '—' },
-                    { label: 'THE World', value: uni.rankings?.the ? `#${uni.rankings.the}` : '—' },
-                    { label: 'ARWU (Shanghai)', value: uni.rankings?.arwu ? `#${uni.rankings.arwu}` : '—' },
-                    { label: 'National', value: uni.rankings?.national ? `#${uni.rankings.national}` : '—' },
-                  ].map(item => (
-                    <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 0', borderBottom: '1px solid var(--border-secondary)', fontSize: '0.9rem' }}>
-                      <span style={{ color: 'var(--text-secondary)' }}>{item.label}</span>
-                      <span style={{ fontWeight: 700, color: item.value !== '—' ? 'var(--primary-300)' : 'inherit' }}>{item.value}</span>
-                    </div>
-                  ))}
-                </div>
+            </div>
+
+            <div className="overview-right detail-sidebar">
+              <div className="card" style={{ padding: 24 }}>
+                <h3 style={{ fontWeight: 700, marginBottom: 20, fontSize: '1rem' }}>Rankings</h3>
+                {[
+                  { label: 'QS World', value: uni.rankings?.qs ? `#${uni.rankings.qs}` : '—' },
+                  { label: 'THE World', value: uni.rankings?.the ? `#${uni.rankings.the}` : '—' },
+                  { label: 'ARWU (Shanghai)', value: uni.rankings?.arwu ? `#${uni.rankings.arwu}` : '—' },
+                  { label: 'National', value: uni.rankings?.national ? `#${uni.rankings.national}` : '—' },
+                ].map(item => (
+                  <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 0', borderBottom: '1px solid var(--border-secondary)', fontSize: '0.9rem' }}>
+                    <span style={{ color: 'var(--text-secondary)' }}>{item.label}</span>
+                    <span style={{ fontWeight: 700, color: item.value !== '—' ? 'var(--primary-300)' : 'inherit' }}>{item.value}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
-      ) : (
+
         <div className="decision-page">
           <div className="animate-fadeInUp">
 
-
-            {/* ── 1. YOUR MATCH ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">🎯 Your Match</h2>
+              <h2 className="decision-section-title"><BsBullseye style={{ verticalAlign: 'middle', marginRight: 8 }} />Your Match</h2>
               {match ? (
                 <div className="match-card">
                   <div className="match-header">
@@ -389,25 +377,25 @@ export default function UniversityDetail() {
                   <div className="match-factors">
                     <div className="match-factor">
                       <span className="match-factor-label">Academic</span>
-                      <MatchIndicator level={match.factors.academic} />
+                      <MatchIndicator factor={match.factors.academic} />
                     </div>
                     <div className="match-factor">
                       <span className="match-factor-label">Career</span>
-                      <MatchIndicator level={match.factors.career} />
+                      <MatchIndicator factor={match.factors.career} />
                     </div>
                     <div className="match-factor">
                       <span className="match-factor-label">Budget</span>
-                      <MatchIndicator level={match.factors.budget} />
+                      <MatchIndicator factor={match.factors.budget} />
                     </div>
                     <div className="match-factor">
                       <span className="match-factor-label">Requirements</span>
-                      <MatchIndicator level={match.factors.requirements} />
+                      <MatchIndicator factor={match.factors.requirements} />
                     </div>
                   </div>
                 </div>
               ) : (
                 <div className="match-cta">
-                  <div className="match-cta-icon">🎯</div>
+                  <div className="match-cta-icon"><BsBullseye size={32} /></div>
                   <div className="match-cta-title">See how well you match with {uni.name}</div>
                   <p className="match-cta-desc">Sign in and complete your profile to get a personalized match score based on your academics, budget, and career goals.</p>
                   <Link to={isAuthenticated ? '/profile' : '/register'} className="btn btn-primary btn-sm">
@@ -419,7 +407,7 @@ export default function UniversityDetail() {
 
             {/* ── 2. CAN YOU AFFORD IT? ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">💰 Can You Afford It?</h2>
+              <h2 className="decision-section-title"><BsCashCoin style={{ verticalAlign: 'middle', marginRight: 6 }} /> Can You Afford It?</h2>
               <div className="afford-card">
                 <div className="afford-comparison">
                   <div className="afford-item">
@@ -434,10 +422,11 @@ export default function UniversityDetail() {
                 </div>
                 {budgetDiffPct !== null ? (
                   <div className={`afford-warning ${budgetDiffPct > 0 ? 'over' : 'under'}`}>
-                    {budgetDiffPct > 0
-                      ? `⚠️ Above your budget by ${budgetDiffPct}%`
-                      : `✅ Within your budget — ${Math.abs(budgetDiffPct)}% headroom`
-                    }
+                    {budgetDiffPct > 0 ? (
+                      <><BsExclamationTriangleFill style={{ verticalAlign: 'middle', marginRight: 6 }} /> Above your budget by {budgetDiffPct}%</>
+                    ) : (
+                      <><BsCheckCircleFill style={{ verticalAlign: 'middle', marginRight: 6 }} /> Within your budget — {Math.abs(budgetDiffPct)}% headroom</>
+                    )}
                   </div>
                 ) : (
                   <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', textAlign: 'center' }}>
@@ -455,7 +444,7 @@ export default function UniversityDetail() {
 
             {/* ── 3. PROGRAMS ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">🎓 Programs ({uni.programs?.length || 0})</h2>
+              <h2 className="decision-section-title"><BsMortarboard style={{ verticalAlign: 'middle', marginRight: 8 }} /> Programs ({uni.programs?.length || 0})</h2>
               {uni.programs?.length > 0 ? (
                 <>
                   <div className="programs-mini-grid">
@@ -484,7 +473,7 @@ export default function UniversityDetail() {
 
             {/* ── 4. STUDENT REALITY ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">👨‍🎓 Student Reality</h2>
+              <h2 className="decision-section-title"><BsPeopleFill style={{ verticalAlign: 'middle', marginRight: 8 }} /> Student Reality</h2>
               <div className="rating-overview">
                 <div className="rating-big">
                   <div className="rating-big-value">{avgRating}</div>
@@ -516,7 +505,7 @@ export default function UniversityDetail() {
 
             {/* ── 5. COMMUNITY ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">💬 Community</h2>
+              <h2 className="decision-section-title"><BsChatSquareDots style={{ verticalAlign: 'middle', marginRight: 8 }} /> Community</h2>
               <div className="coming-soon-card">
                 <span className="coming-soon-badge">Coming Soon</span>
                 <div className="coming-soon-title">{uni.name} — Fall {new Date().getFullYear() + 1}</div>
@@ -526,12 +515,12 @@ export default function UniversityDetail() {
 
             {/* ── 6. LIFE IN [CITY] ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">🏠 Life in {uni.city || 'This City'}</h2>
+              <h2 className="decision-section-title">Life in {uni.city || 'This City'}</h2>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', marginBottom: 16 }}>Average monthly student expenses</p>
               <div className="living-cost-grid">
                 {livingCosts.map(c => (
                   <div key={c.label} className="living-cost-item">
-                    <span>{c.label}</span>
+                    <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>{c.icon} {c.label}</span>
                     <span>{c.value ? `$${c.value.toLocaleString()}/mo` : '—'}</span>
                   </div>
                 ))}
@@ -546,7 +535,7 @@ export default function UniversityDetail() {
 
             {/* ── 7. CAREER OUTCOMES ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">💼 Career Outcomes</h2>
+              <h2 className="decision-section-title">Career Outcomes</h2>
               {relatedCareers.length > 0 ? (
                 <>
                   <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', marginBottom: 16 }}>Popular career paths for graduates</p>
@@ -573,14 +562,14 @@ export default function UniversityDetail() {
 
             {/* ── 8. SCHOLARSHIPS ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">🎓 Scholarships ({uni.scholarships?.length || 0})</h2>
+              <h2 className="decision-section-title"><BsMortarboard style={{ verticalAlign: 'middle', marginRight: 8 }} /> Scholarships ({uni.scholarships?.length || 0})</h2>
               {uni.scholarships?.length > 0 ? (
                 <>
                   <div className="scholarship-mini-grid">
                     {uni.scholarships.slice(0, 4).map(s => (
                       <Link key={s.id} to={`/scholarships/${s.slug}`} className="scholarship-mini-card">
-                        <span className={`badge ${s.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`} style={{ fontSize: '0.65rem', padding: '2px 8px', alignSelf: 'flex-start' }}>
-                          {s.coverage === 'full' ? '✨ Full' : '💵 Partial'}
+                        <span className={`badge ${s.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`} style={{ fontSize: '0.65rem', padding: '2px 8px', alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                          {s.coverage === 'full' ? <><BsStarFill size={9} /> Full</> : <><BsCash size={9} /> Partial</>}
                         </span>
                         <div className="scholarship-mini-name">{s.name}</div>
                         {s.amountUsd && <div className="scholarship-mini-amount">Up to ${s.amountUsd.toLocaleString()}</div>}
@@ -600,7 +589,7 @@ export default function UniversityDetail() {
 
             {/* ── 9. REQUIREMENTS ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">📋 Requirements</h2>
+              <h2 className="decision-section-title">Requirements</h2>
               <div className="requirements-grid">
                 {[
                   { label: 'Minimum GPA', value: uni.requirements?.minGpa ? `${uni.requirements.minGpa} / 4.0` : 'Not specified' },
@@ -624,7 +613,7 @@ export default function UniversityDetail() {
 
             {/* ── 10. DEADLINES ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">📅 Deadlines — Fall {nextYear}</h2>
+              <h2 className="decision-section-title">Deadlines — Fall {nextYear}</h2>
               <div className="deadline-grid">
                 {deadlines.map(d => (
                   <div key={d.label} className="deadline-row">
@@ -638,7 +627,7 @@ export default function UniversityDetail() {
 
             {/* ── 11. BETTER ALTERNATIVES ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">🔄 Better Alternatives</h2>
+              <h2 className="decision-section-title">Better Alternatives</h2>
               <div className="coming-soon-card">
                 <span className="coming-soon-badge">Coming Soon</span>
                 <div className="coming-soon-title">Universities that may fit your profile better</div>
@@ -648,7 +637,7 @@ export default function UniversityDetail() {
 
             {/* ── 12. QUESTIONS ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title">❓ Questions?</h2>
+              <h2 className="decision-section-title">Questions?</h2>
               <div className="coming-soon-card">
                 <span className="coming-soon-badge">Coming Soon</span>
                 <div className="coming-soon-title">Ask {uni.name} students</div>
@@ -668,9 +657,9 @@ export default function UniversityDetail() {
               </Link>
             </div>
 
-            </div>
           </div>
-        )}
+        </div>
       </div>
+    </div>
   );
 }

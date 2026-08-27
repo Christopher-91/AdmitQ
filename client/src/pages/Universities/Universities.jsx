@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import api from '../../lib/api';
 import Logo from '../../components/Logo/Logo';
+import { BsBank2, BsSearch } from 'react-icons/bs';
 import '../DataPages.css';
 
 export default function Universities() {
@@ -71,14 +72,14 @@ export default function Universities() {
   return (
     <div className="page container">
       <div className="page-header">
-        <h1 className="page-title">🏛️ Explore Universities</h1>
+        <h1 className="page-title"><BsBank2 style={{ verticalAlign: 'middle', marginRight: 8 }} /> Explore Universities</h1>
         <p className="page-subtitle">Discover world-class institutions across 25+ countries</p>
       </div>
 
       {/* Filters */}
       <div className="filters-bar animate-fadeInUp">
         <form onSubmit={handleSearch} className="search-bar" style={{ maxWidth: 400 }}>
-          <span className="search-icon">🔍</span>
+          <span className="search-icon"><BsSearch /></span>
           <input
             type="text"
             placeholder="Search universities..."
@@ -200,7 +201,7 @@ export default function Universities() {
         </div>
       ) : (
         <div className="empty-state card" style={{ padding: 64 }}>
-          <p style={{ fontSize: '2rem', marginBottom: 8 }}>🔍</p>
+          <div style={{ fontSize: '2rem', marginBottom: 8 }}><BsSearch /></div>
           <p className="font-semibold">No universities found</p>
           <p className="text-muted text-sm mt-1">Try adjusting your search or filters</p>
         </div>

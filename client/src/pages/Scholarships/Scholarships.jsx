@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../lib/api';
 import { formatDegree } from '../../lib/formatters';
+import { BsCurrencyDollar, BsSearch, BsStarFill, BsCash, BsClock } from 'react-icons/bs';
 import '../DataPages.css';
 
 export default function Scholarships() {
@@ -31,13 +32,13 @@ export default function Scholarships() {
   return (
     <div className="page container">
       <div className="page-header">
-        <h1 className="page-title">💰 Scholarship Finder</h1>
+        <h1 className="page-title"><BsCurrencyDollar style={{ verticalAlign: 'middle', marginRight: 6 }} /> Scholarship Finder</h1>
         <p className="page-subtitle">Discover scholarships you qualify for — from government programs to university awards</p>
       </div>
 
       <div className="filters-bar animate-fadeInUp">
         <form onSubmit={(e) => { e.preventDefault(); fetchData(); }} className="search-bar" style={{ maxWidth: 400 }}>
-          <span className="search-icon">🔍</span>
+          <span className="search-icon"><BsSearch /></span>
           <input type="text" placeholder="Search scholarships..." value={search} onChange={(e) => setSearch(e.target.value)} />
         </form>
 
@@ -73,7 +74,10 @@ export default function Scholarships() {
             <Link key={s.id} to={`/scholarships/${s.slug}`} className="scholarship-card card">
               <div className="flex items-center justify-between">
                 <span className={`badge ${s.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`}>
-                  {s.coverage === 'full' ? '✨ Full Scholarship' : '💵 Partial'}
+                  {s.coverage === 'full'
+                    ? <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><BsStarFill size={10} /> Full Scholarship</span>
+                    : <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><BsCash size={10} /> Partial</span>
+                  }
                 </span>
                 {s.country && <img src={`/flags/${s.country.code.toLowerCase()}.webp`} alt={s.country.name} style={{ width: '1.5em', verticalAlign: 'middle' }} />}
               </div>
@@ -104,18 +108,18 @@ export default function Scholarships() {
 
               {s.deadline && (
                 <p className="text-xs text-muted mt-1">
-                  ⏰ Deadline: {new Date(s.deadline).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                  <BsClock size={11} style={{ verticalAlign: 'middle', marginRight: 4 }} /> Deadline: {new Date(s.deadline).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                 </p>
               )}
               {!s.deadline && s.deadlineLabel && (
-                <p className="text-xs text-muted mt-1">⏰ {s.deadlineLabel}</p>
+                <p className="text-xs text-muted mt-1"><BsClock size={11} style={{ verticalAlign: 'middle', marginRight: 4 }} /> {s.deadlineLabel}</p>
               )}
             </Link>
           ))}
         </div>
       ) : (
         <div className="empty-state card" style={{ padding: 64 }}>
-          <p style={{ fontSize: '2rem', marginBottom: 8 }}>💰</p>
+          <div style={{ fontSize: '2rem', marginBottom: 8 }}><BsCurrencyDollar /></div>
           <p className="font-semibold">No scholarships found</p>
           <p className="text-muted text-sm mt-1">Try adjusting your filters</p>
         </div>

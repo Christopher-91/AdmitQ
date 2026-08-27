@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import api from '../../lib/api';
+import { BsBookHalf, BsSearch, BsCheck2 } from 'react-icons/bs';
 import '../DataPages.css';
 
 export default function Programs() {
@@ -34,13 +35,13 @@ export default function Programs() {
   return (
     <div className="page container">
       <div className="page-header">
-        <h1 className="page-title">📚 Browse Programs</h1>
+        <h1 className="page-title"><BsBookHalf style={{ verticalAlign: 'middle', marginRight: 8 }} /> Browse Programs</h1>
         <p className="page-subtitle">Find the perfect degree from top universities worldwide</p>
       </div>
 
       <div className="filters-bar animate-fadeInUp">
         <form onSubmit={(e) => { e.preventDefault(); fetchData(); }} className="search-bar" style={{ maxWidth: 400 }}>
-          <span className="search-icon">🔍</span>
+          <span className="search-icon"><BsSearch /></span>
           <input type="text" placeholder="Search programs, fields..." value={search} onChange={(e) => setSearch(e.target.value)} />
         </form>
 
@@ -127,7 +128,7 @@ export default function Programs() {
                 {p.scholarshipAvailable && (
                   <div className="program-detail">
                     <span className="program-detail-label">Scholarship</span>
-                    <span className="program-detail-value" style={{ color: 'var(--accent-400)' }}>Available ✓</span>
+                    <span className="program-detail-value" style={{ color: 'var(--accent-400)', display: 'inline-flex', alignItems: 'center', gap: 4 }}>Available <BsCheck2 /></span>
                   </div>
                 )}
               </div>
@@ -136,7 +137,7 @@ export default function Programs() {
         </div>
       ) : (
         <div className="empty-state card" style={{ padding: 64 }}>
-          <p style={{ fontSize: '2rem', marginBottom: 8 }}>📚</p>
+          <div style={{ fontSize: '2rem', marginBottom: 8 }}><BsBookHalf /></div>
           <p className="font-semibold">No programs found</p>
           <p className="text-muted text-sm mt-1">Try adjusting your filters</p>
         </div>

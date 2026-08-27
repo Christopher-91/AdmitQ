@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import toast from 'react-hot-toast';
+import { BsMortarboard, BsExclamationTriangleFill } from 'react-icons/bs';
 import './Auth.css';
 
 export default function Login() {
@@ -35,7 +36,7 @@ export default function Login() {
       <div className="auth-card animate-fadeInUp">
         <div className="auth-header">
           <Link to="/" className="auth-logo">
-            <span>🎓</span>
+            <BsMortarboard size={22} />
             <span className="logo-text">Admit<span className="logo-highlight">Q</span></span>
           </Link>
           <h1 className="auth-title">Welcome back</h1>
@@ -45,7 +46,7 @@ export default function Login() {
         <form onSubmit={handleSubmit} className="auth-form">
           {error && (
             <div className="auth-error animate-fadeIn">
-              <span>⚠️</span> {error}
+              <BsExclamationTriangleFill style={{ verticalAlign: 'middle', marginRight: 6 }} /> {error}
             </div>
           )}
 

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
+import { BsSearch, BsBullseye, BsCurrencyDollar, BsMortarboard, BsClipboard2, BsMap } from 'react-icons/bs';
 import './Landing.css';
 const HERO_STATS = [
   { value: '25+', label: 'Countries' },
@@ -9,12 +10,12 @@ const HERO_STATS = [
 ];
 
 const FEATURES = [
-  { icon: '🔍', title: 'Smart Discovery', desc: 'AI-powered matching across 25+ countries. Find programs that fit your profile, budget, and career goals.' },
-  { icon: '🎯', title: 'Match Scoring', desc: 'Safe / Target / Reach categorization for every program. Know your chances before you apply.' },
-  { icon: '💰', title: 'Cost Calculator', desc: 'Comprehensive cost breakdowns including tuition, living expenses, visa fees, and hidden costs.' },
-  { icon: '🎓', title: 'Scholarship Finder', desc: 'Discover scholarships you qualify for — from Fulbright to DAAD to university-specific awards.' },
-  { icon: '📋', title: 'Application Tracker', desc: 'Track every document, deadline, and application status in one organized dashboard.' },
-  { icon: '🗺️', title: 'Career Pathways', desc: 'Reverse-plan your education: start with your dream career and find the right degree path.' },
+  { icon: <BsSearch />, title: 'Smart Discovery', desc: 'AI-powered matching across 25+ countries. Find programs that fit your profile, budget, and career goals.' },
+  { icon: <BsBullseye />, title: 'Match Scoring', desc: 'Safe / Target / Reach categorization for every program. Know your chances before you apply.' },
+  { icon: <BsCurrencyDollar />, title: 'Cost Calculator', desc: 'Comprehensive cost breakdowns including tuition, living expenses, visa fees, and hidden costs.' },
+  { icon: <BsMortarboard />, title: 'Scholarship Finder', desc: 'Discover scholarships you qualify for — from Fulbright to DAAD to university-specific awards.' },
+  { icon: <BsClipboard2 />, title: 'Application Tracker', desc: 'Track every document, deadline, and application status in one organized dashboard.' },
+  { icon: <BsMap />, title: 'Career Pathways', desc: 'Reverse-plan your education: start with your dream career and find the right degree path.' },
 ];
 
 const COUNTRIES = [
@@ -136,7 +137,7 @@ export default function Landing() {
           {/* Search Bar */}
           <div className="hero-search animate-fadeInUp">
             <div className="search-bar" style={{ maxWidth: '100%' }}>
-              <span className="search-icon">🔍</span>
+              <span className="search-icon"><BsSearch /></span>
               <input
                 type="text"
                 placeholder="Search universities, programs, or countries..."
@@ -294,7 +295,7 @@ export default function Landing() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="navbar-logo">
-                <span className="logo-icon">🎓</span>
+                <span className="logo-icon"><BsMortarboard size={22} /></span>
                 <span className="logo-text">Admit<span className="logo-highlight">Q</span></span>
               </div>
               <p className="footer-tagline">

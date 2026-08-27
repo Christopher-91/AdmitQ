@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import api from '../../lib/api';
 import toast from 'react-hot-toast';
+import { BsLightbulb, BsAsterisk } from 'react-icons/bs';
 import './Profile.css';
 
 const COUNTRIES = [
@@ -306,7 +307,7 @@ export default function Profile() {
       </div>
 
       <div className="profile-info-banner animate-fadeInUp">
-        <span>💡</span>
+        <BsLightbulb style={{ verticalAlign: 'middle' }} />
         <span>A complete profile unlocks personalized <strong>university match scores</strong> on every university page. Fill in your GPA, budget, and desired field to see your match.</span>
       </div>
 
@@ -324,36 +325,36 @@ export default function Profile() {
           <p className="profile-section-desc">These fields count toward your profile completion score and help us personalise your experience.</p>
           <div className="profile-form-grid">
             <div className="form-group">
-              <label className="form-label">Nationality ⭐</label>
+              <label className="form-label">Nationality <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <select className="form-input" value={personal.nationality} onChange={e => setPersonal(p => ({ ...p, nationality: e.target.value }))}>
                 <option value="">Select nationality...</option>
                 {NATIONALITIES.map(n => <option key={n} value={n}>{n}</option>)}
               </select>
             </div>
             <div className="form-group">
-              <label className="form-label">Country of Residence ⭐</label>
+              <label className="form-label">Country of Residence <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <select className="form-input" value={personal.countryOfResidence} onChange={e => setPersonal(p => ({ ...p, countryOfResidence: e.target.value }))}>
                 <option value="">Select country...</option>
                 {COUNTRIES.map(c => <option key={c} value={c}>{c}</option>)}
               </select>
             </div>
             <div className="form-group">
-              <label className="form-label">Date of Birth ⭐</label>
+              <label className="form-label">Date of Birth <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <input className="form-input" type="date" value={personal.dateOfBirth} onChange={e => setPersonal(p => ({ ...p, dateOfBirth: e.target.value }))} />
             </div>
             <div className="form-group">
-              <label className="form-label">Preferred Language ⭐</label>
+              <label className="form-label">Preferred Language <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <select className="form-input" value={personal.preferredLanguage} onChange={e => setPersonal(p => ({ ...p, preferredLanguage: e.target.value }))}>
                 <option value="">Select language...</option>
                 {LANGUAGES.map(l => <option key={l} value={l}>{l}</option>)}
               </select>
             </div>
             <div className="form-group">
-              <label className="form-label">Phone Number ⭐</label>
+              <label className="form-label">Phone Number <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <input className="form-input" type="tel" placeholder="e.g. +91 98765 43210" value={personal.phone} onChange={e => setPersonal(p => ({ ...p, phone: e.target.value }))} />
             </div>
             <div className="form-group">
-              <label className="form-label">Career Goal ⭐</label>
+              <label className="form-label">Career Goal <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <select className="form-input" value={careerGoal} onChange={e => setCareerGoal(e.target.value)}>
                 <option value="">Select your goal career...</option>
                 {CAREER_GOALS.map(g => <option key={g} value={g}>{g}</option>)}
@@ -395,7 +396,7 @@ export default function Profile() {
               <input className="form-input" type="number" placeholder="e.g. 2025" min="2000" max="2030" value={academic.graduationYear} onChange={e => setAcademic(p => ({ ...p, graduationYear: e.target.value }))} />
             </div>
             <div className="form-group">
-              <label className="form-label">GPA / CGPA ⭐</label>
+              <label className="form-label">GPA / CGPA <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <div style={{ display: 'flex', gap: 10 }}>
                 <input className="form-input" type="number" step="0.01" placeholder="e.g. 3.7" value={academic.gpa} onChange={e => setAcademic(p => ({ ...p, gpa: e.target.value }))} style={{ flex: 2 }} />
                 <select className="form-input" value={academic.gpaScale} onChange={e => setAcademic(p => ({ ...p, gpaScale: e.target.value }))} style={{ flex: 1 }}>
@@ -435,14 +436,14 @@ export default function Profile() {
           <p className="profile-section-desc">Your desired field and budget directly power the university match score.</p>
           <div className="profile-form-grid">
             <div className="form-group">
-              <label className="form-label">Desired Degree ⭐</label>
+              <label className="form-label">Desired Degree <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <select className="form-input" value={preferences.desiredDegree} onChange={e => setPreferences(p => ({ ...p, desiredDegree: e.target.value }))}>
                 <option value="">Select degree...</option>
                 {DESIRED_DEGREES.map(d => <option key={d.value} value={d.value}>{d.label}</option>)}
               </select>
             </div>
             <div className="form-group">
-              <label className="form-label">Desired Field of Study ⭐</label>
+              <label className="form-label">Desired Field of Study <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <select className="form-input" value={preferences.desiredField} onChange={e => setPreferences(p => ({ ...p, desiredField: e.target.value }))}>
                 <option value="">Select field...</option>
                 {STUDY_FIELDS.map(f => <option key={f} value={f}>{f}</option>)}
@@ -453,7 +454,7 @@ export default function Profile() {
               <input className="form-input" placeholder="e.g. Machine Learning, Corporate Finance..." value={preferences.desiredSpecialization} onChange={e => setPreferences(p => ({ ...p, desiredSpecialization: e.target.value }))} />
             </div>
             <div className="form-group">
-              <label className="form-label">Annual Budget (Min) ⭐</label>
+              <label className="form-label">Annual Budget (Min) <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <div style={{ display: 'flex', gap: 10 }}>
                 <select className="form-input" value={preferences.budgetCurrency} onChange={e => setPreferences(p => ({ ...p, budgetCurrency: e.target.value }))} style={{ flex: 1 }}>
                   <option value="USD">USD</option>
@@ -466,7 +467,7 @@ export default function Profile() {
               </div>
             </div>
             <div className="form-group">
-              <label className="form-label">Annual Budget (Max) ⭐</label>
+              <label className="form-label">Annual Budget (Max) <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
               <input className="form-input" type="number" placeholder="e.g. 50000" value={preferences.budgetMax} onChange={e => setPreferences(p => ({ ...p, budgetMax: e.target.value }))} />
             </div>
             <div className="form-group">
@@ -519,14 +520,14 @@ export default function Profile() {
             <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: 16, color: 'var(--text-primary)' }}>Add a Test Score</h3>
             <div className="profile-form-grid">
               <div className="form-group">
-                <label className="form-label">Test Name ⭐</label>
+                <label className="form-label">Test Name <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
                 <select className="form-input" value={newScore.testName} onChange={e => setNewScore(p => ({ ...p, testName: e.target.value }))}>
                   <option value="">Select test...</option>
                   {TESTS.map(t => <option key={t} value={t}>{t}</option>)}
                 </select>
               </div>
               <div className="form-group">
-                <label className="form-label">Overall Score ⭐</label>
+                <label className="form-label">Overall Score <BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /></label>
                 <input className="form-input" type="number" step="0.5" placeholder="e.g. 7.5 (IELTS), 110 (TOEFL)" value={newScore.overallScore} onChange={e => setNewScore(p => ({ ...p, overallScore: e.target.value }))} />
               </div>
               <div className="form-group">
@@ -539,7 +540,7 @@ export default function Profile() {
             </button>
           </div>
           <div className="score-hint">
-            <strong>💡 Tips:</strong>
+            <strong><BsLightbulb style={{ verticalAlign: 'middle', marginRight: 4 }} /> Tips:</strong>
             <ul>
               <li>IELTS: scored 0–9 (most universities require 6.0–7.5)</li>
               <li>TOEFL iBT: scored 0–120 (most universities require 80–100)</li>
@@ -551,7 +552,7 @@ export default function Profile() {
       )}
 
       <div className="profile-footer animate-fadeInUp">
-        <p className="text-muted" style={{ fontSize: '0.9rem' }}>⭐ Fields marked with a star directly affect your university match score.</p>
+        <p className="text-muted" style={{ fontSize: '0.9rem' }}><BsAsterisk size={9} style={{ verticalAlign: 'middle', color: 'var(--primary-400)' }} /> Fields marked with a star directly affect your university match score.</p>
         <button className="btn btn-ghost" onClick={() => navigate('/universities')}>← Browse Universities</button>
       </div>
     </div>

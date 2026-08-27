@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import api from '../../lib/api';
 import { formatDegree } from '../../lib/formatters';
+import {
+  BsStarFill, BsCash, BsClipboard2, BsPaperclip, BsCheck2,
+  BsLightningCharge, BsMortarboard,
+} from 'react-icons/bs';
 import '../DataPages.css';
 
 export default function ScholarshipDetail() {
@@ -43,7 +47,10 @@ export default function ScholarshipDetail() {
             <div>
               <div style={{ display: 'flex', gap: 8, marginBottom: 12, alignItems: 'center' }}>
                 <span className={`badge ${scholarship.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`} style={{ fontSize: '0.85rem' }}>
-                  {scholarship.coverage === 'full' ? '✨ Full Scholarship' : '💵 Partial Scholarship'}
+                  {scholarship.coverage === 'full'
+                    ? <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}><BsStarFill size={12} /> Full Scholarship</span>
+                    : <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}><BsCash size={12} /> Partial Scholarship</span>
+                  }
                 </span>
                 {scholarship.country && <img src={`/flags/${scholarship.country.code.toLowerCase()}.webp`} alt={scholarship.country.name} style={{ width: '1.5rem', verticalAlign: 'middle' }} />}
               </div>
@@ -105,14 +112,14 @@ export default function ScholarshipDetail() {
 
             {scholarship.otherRequirements && (
               <div className="detail-section">
-                <h2 className="detail-section-title">📋 Eligibility Requirements</h2>
+                <h2 className="detail-section-title"><BsClipboard2 style={{ verticalAlign: 'middle', marginRight: 8 }} /> Eligibility Requirements</h2>
                 <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{scholarship.otherRequirements}</p>
               </div>
             )}
 
             {scholarship.requiredDocuments?.length > 0 && (
               <div className="detail-section">
-                <h2 className="detail-section-title">📎 Required Documents</h2>
+                <h2 className="detail-section-title"><BsPaperclip style={{ verticalAlign: 'middle', marginRight: 8 }} /> Required Documents</h2>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
                   {(Array.isArray(scholarship.requiredDocuments)
                     ? scholarship.requiredDocuments
@@ -121,7 +128,7 @@ export default function ScholarshipDetail() {
                       : [])
                   ).map((doc, i) => (
                     <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 14px', background: 'var(--bg-secondary)', borderRadius: 8, fontSize: '0.9rem' }}>
-                      <span style={{ color: 'var(--accent-400)', fontWeight: 700 }}>✓</span>
+                      <BsCheck2 style={{ color: 'var(--accent-400)', fontWeight: 700, flexShrink: 0 }} />
                       <span style={{ color: 'var(--text-secondary)' }}>{doc}</span>
                     </li>
                   ))}
@@ -133,7 +140,7 @@ export default function ScholarshipDetail() {
           {/* Sidebar */}
           <div className="detail-sidebar">
             <div className="card" style={{ padding: 20 }}>
-              <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem' }}>⚡ Quick Facts</h3>
+              <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: 6 }}><BsLightningCharge /> Quick Facts</h3>
               {[
                 { label: 'Provider', value: scholarship.provider },
                 { label: 'Coverage', value: scholarship.coverage === 'full' ? 'Full Scholarship' : 'Partial' },
@@ -149,7 +156,7 @@ export default function ScholarshipDetail() {
 
             {(scholarship.degreeEligibility?.length > 0 || scholarship.fieldEligibility?.length > 0 || scholarship.nationalityEligibility?.length > 0) && (
               <div className="card" style={{ padding: 20 }}>
-                <h3 style={{ fontWeight: 700, marginBottom: 12, fontSize: '0.95rem' }}>🎓 Eligibility</h3>
+                <h3 style={{ fontWeight: 700, marginBottom: 12, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: 6 }}><BsMortarboard /> Eligibility</h3>
                 {scholarship.degreeEligibility && (
                   <div style={{ marginBottom: 12 }}>
                     <p className="text-xs text-muted font-semibold mb-2">DEGREE LEVELS</p>

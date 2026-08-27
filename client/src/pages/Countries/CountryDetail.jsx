@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import api from '../../lib/api';
+import {
+  BsBank2, BsCurrencyDollar, BsStarFill, BsCash, BsClock,
+  BsPassport, BsBriefcase, BsRocketTakeoff, BsChatDots, BsLightningCharge,
+} from 'react-icons/bs';
 import '../DataPages.css';
 
 export default function CountryDetail() {
@@ -182,7 +186,7 @@ export default function CountryDetail() {
         {activeTab === 'universities' && (
           <div>
             <h2 className="detail-section-title" style={{ marginBottom: 24 }}>
-              🏛️ Universities in {country.name} ({country.universities?.length || 0})
+              <BsBank2 style={{ verticalAlign: 'middle', marginRight: 8 }} /> Universities in {country.name} ({country.universities?.length || 0})
             </h2>
             {country.universities?.length > 0 ? (
               <div className="cards-grid">
@@ -221,7 +225,7 @@ export default function CountryDetail() {
               </div>
             ) : (
               <div className="empty-state card" style={{ padding: 64, textAlign: 'center' }}>
-                <p style={{ fontSize: '2rem', marginBottom: 8 }}>🏛️</p>
+                <div style={{ fontSize: '2rem', marginBottom: 8 }}><BsBank2 /></div>
                 <p className="font-semibold">No universities listed yet</p>
               </div>
             )}
@@ -231,26 +235,29 @@ export default function CountryDetail() {
         {activeTab === 'scholarships' && (
           <div>
             <h2 className="detail-section-title" style={{ marginBottom: 24 }}>
-              💰 Scholarships in {country.name} ({country.scholarships?.length || 0})
+              <BsCurrencyDollar style={{ verticalAlign: 'middle', marginRight: 6 }} /> Scholarships in {country.name} ({country.scholarships?.length || 0})
             </h2>
             {country.scholarships?.length > 0 ? (
               <div className="cards-grid">
                 {country.scholarships.map(s => (
                   <Link key={s.id} to={`/scholarships/${s.slug}`} className="scholarship-card card">
                     <span className={`badge ${s.coverage === 'full' ? 'badge-accent' : 'badge-warning'}`}>
-                      {s.coverage === 'full' ? '✨ Full Scholarship' : '💵 Partial'}
+                      {s.coverage === 'full'
+                        ? <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><BsStarFill size={10} /> Full Scholarship</span>
+                        : <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><BsCash size={10} /> Partial</span>
+                      }
                     </span>
                     <h3 className="program-name">{s.name}</h3>
                     {s.amount_usd && <div className="scholarship-amount">Up to ${Number(s.amount_usd).toLocaleString()}</div>}
                     {s.deadline && (
-                      <p className="text-xs text-muted">⏰ Deadline: {new Date(s.deadline).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                      <p className="text-xs text-muted"><BsClock size={11} style={{ verticalAlign: 'middle', marginRight: 4 }} /> Deadline: {new Date(s.deadline).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
                     )}
                   </Link>
                 ))}
               </div>
             ) : (
               <div className="empty-state card" style={{ padding: 64, textAlign: 'center' }}>
-                <p style={{ fontSize: '2rem', marginBottom: 8 }}>💰</p>
+              <div style={{ fontSize: '2rem', marginBottom: 8 }}><BsCurrencyDollar /></div>
                 <p className="font-semibold">No scholarships listed for this country yet</p>
                 <p className="text-sm text-muted mt-1">Browse all scholarships</p>
                 <Link to="/scholarships" className="btn btn-primary" style={{ marginTop: 16 }}>View All Scholarships</Link>
@@ -264,28 +271,28 @@ export default function CountryDetail() {
             <div>
               {country.visa?.studentVisaInfo && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">🛂 Student Visa Information</h2>
+                  <h2 className="detail-section-title"><BsPassport style={{ verticalAlign: 'middle', marginRight: 8 }} /> Student Visa Information</h2>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{country.visa.studentVisaInfo}</p>
                 </div>
               )}
 
               {country.visa?.studentWorkRights && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">💼 Work Rights During Study</h2>
+                  <h2 className="detail-section-title"><BsBriefcase style={{ verticalAlign: 'middle', marginRight: 8 }} /> Work Rights During Study</h2>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{country.visa.studentWorkRights}</p>
                 </div>
               )}
 
               {country.visa?.postStudyWork && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">🚀 Post-Study Work Options</h2>
+                  <h2 className="detail-section-title"><BsRocketTakeoff style={{ verticalAlign: 'middle', marginRight: 8 }} /> Post-Study Work Options</h2>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{country.visa.postStudyWork}</p>
                 </div>
               )}
 
               {country.general?.languageRequirements && (
                 <div className="detail-section">
-                  <h2 className="detail-section-title">🗣️ Language Requirements</h2>
+                  <h2 className="detail-section-title"><BsChatDots style={{ verticalAlign: 'middle', marginRight: 8 }} /> Language Requirements</h2>
                   <p style={{ lineHeight: 1.7, color: 'var(--text-secondary)' }}>{country.general.languageRequirements}</p>
                 </div>
               )}
@@ -293,7 +300,7 @@ export default function CountryDetail() {
 
             <div className="detail-sidebar">
               <div className="card" style={{ padding: 20 }}>
-                <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem' }}>⚡ Quick Facts</h3>
+                <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: 6 }}><BsLightningCharge /> Quick Facts</h3>
                 {[
                   { label: 'Visa Cost', value: country.visa?.visaCostUsd ? `$${country.visa.visaCostUsd}` : '-' },
                   { label: 'Work Hours/Week', value: country.visa?.workHoursPerWeek ? `${country.visa.workHoursPerWeek} hrs` : '-' },

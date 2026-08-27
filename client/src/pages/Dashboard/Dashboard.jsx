@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import api from '../../lib/api';
+import {
+  BsBarChartLine, BsClipboard2, BsClock, BsBookmark,
+  BsBank2, BsBookHalf, BsCurrencyDollar, BsBullseye, BsCalculator, BsGlobe2,
+} from 'react-icons/bs';
 import './Dashboard.css';
 
 export default function Dashboard() {
@@ -44,7 +48,7 @@ export default function Dashboard() {
       {/* Greeting */}
       <div className="dashboard-greeting animate-fadeInUp">
         <div>
-          <h1 className="page-title">Welcome back, {user?.firstName} 👋</h1>
+          <h1 className="page-title">Welcome back, {user?.firstName}</h1>
           <p className="page-subtitle">Here's your education journey at a glance</p>
         </div>
         <Link to="/universities" className="btn btn-primary">
@@ -55,7 +59,7 @@ export default function Dashboard() {
       {/* Stats */}
       <div className="dashboard-stats stagger-children">
         <div className="stat-card">
-          <div className="stat-icon stat-icon-primary">📊</div>
+          <div className="stat-icon stat-icon-primary"><BsBarChartLine size={22} /></div>
           <div>
             <div className="stat-value">{profilePct}%</div>
             <div className="stat-label">Profile Complete</div>
@@ -68,7 +72,7 @@ export default function Dashboard() {
         </div>
 
         <div className="stat-card">
-          <div className="stat-icon stat-icon-accent">📋</div>
+          <div className="stat-icon stat-icon-accent"><BsClipboard2 size={22} /></div>
           <div>
             <div className="stat-value">{data?.applications?.total || 0}</div>
             <div className="stat-label">Applications</div>
@@ -76,7 +80,7 @@ export default function Dashboard() {
         </div>
 
         <div className="stat-card">
-          <div className="stat-icon stat-icon-warning">⏰</div>
+          <div className="stat-icon stat-icon-warning"><BsClock size={22} /></div>
           <div>
             <div className="stat-value">{data?.upcomingDeadlines?.length || 0}</div>
             <div className="stat-label">Upcoming Deadlines</div>
@@ -84,7 +88,7 @@ export default function Dashboard() {
         </div>
 
         <div className="stat-card">
-          <div className="stat-icon stat-icon-info">💾</div>
+          <div className="stat-icon stat-icon-info"><BsBookmark size={22} /></div>
           <div>
             <div className="stat-value">{totalSaved}</div>
             <div className="stat-label">Saved Items</div>
@@ -131,27 +135,27 @@ export default function Dashboard() {
           <h2 className="text-lg font-bold mb-4">Quick Actions</h2>
           <div className="quick-actions">
             <Link to="/universities" className="quick-action-card">
-              <span className="quick-action-icon">🏛️</span>
+              <span className="quick-action-icon"><BsBank2 size={22} /></span>
               <span className="quick-action-label">Find Universities</span>
             </Link>
             <Link to="/programs" className="quick-action-card">
-              <span className="quick-action-icon">📚</span>
+              <span className="quick-action-icon"><BsBookHalf size={22} /></span>
               <span className="quick-action-label">Browse Programs</span>
             </Link>
             <Link to="/scholarships" className="quick-action-card">
-              <span className="quick-action-icon">💰</span>
+              <span className="quick-action-icon"><BsCurrencyDollar size={22} /></span>
               <span className="quick-action-label">Find Scholarships</span>
             </Link>
             <Link to="/careers" className="quick-action-card">
-              <span className="quick-action-icon">🎯</span>
+              <span className="quick-action-icon"><BsBullseye size={22} /></span>
               <span className="quick-action-label">Career Paths</span>
             </Link>
             <Link to="/calculator" className="quick-action-card">
-              <span className="quick-action-icon">🧮</span>
+              <span className="quick-action-icon"><BsCalculator size={22} /></span>
               <span className="quick-action-label">Cost Calculator</span>
             </Link>
             <Link to="/countries" className="quick-action-card">
-              <span className="quick-action-icon">🌍</span>
+              <span className="quick-action-icon"><BsGlobe2 size={22} /></span>
               <span className="quick-action-label">Explore Countries</span>
             </Link>
           </div>
