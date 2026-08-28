@@ -60,6 +60,16 @@ const CAREER_GOALS = [
   'Nurse / Healthcare Professional', 'Public Policy Analyst', 'Journalist / Writer', 'Other',
 ];
 
+const normalizeGpaScale = (val) => {
+  if (!val) return '4.0';
+  const num = parseFloat(val);
+  if (num === 10) return '10.0';
+  if (num === 5) return '5.0';
+  if (num === 4) return '4.0';
+  if (num === 100) return '100';
+  return '4.0';
+};
+
 export default function Profile() {
   const { user, refreshProfile } = useAuth();
   const navigate = useNavigate();
@@ -97,7 +107,7 @@ export default function Profile() {
             currentMajor: d.academic.currentMajor || '',
             graduationYear: d.academic.graduationYear || '',
             gpa: d.academic.gpa || '',
-            gpaScale: d.academic.gpaScale || '4.0',
+            gpaScale: normalizeGpaScale(d.academic.gpaScale),
             class10Percentage: d.academic.class10Percentage || '',
             class12Percentage: d.academic.class12Percentage || '',
             bachelorsPercentage: d.academic.bachelorsPercentage || '',

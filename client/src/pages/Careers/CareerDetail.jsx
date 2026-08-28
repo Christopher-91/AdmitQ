@@ -5,7 +5,7 @@ import { formatDegree } from '../../lib/formatters';
 import { BsArrowLeft, BsBriefcase, BsGraphUpArrow, BsCashCoin, BsMortarboard, BsListCheck } from 'react-icons/bs';
 import {
   FcCommandLine, FcComboChart, FcAndroidOs, FcPrivacy,
-  FcEngineering, FcLineChart, FcMoneyTransfer, FcLike,
+  FcEngineering, FcLineChart, FcMoneyTransfer,
   FcMindMap, FcIdea
 } from 'react-icons/fc';
 import { FaStethoscope } from 'react-icons/fa6';
@@ -113,7 +113,7 @@ export default function CareerDetail() {
           <div>
             <div className="card" style={{ padding: 24, marginBottom: 24 }}>
               <h3 style={{ marginBottom: 16, borderBottom: '1px solid var(--border-primary)', paddingBottom: 12 }}>Career Data</h3>
-              
+
               <div style={{ marginBottom: 16 }}>
                 <span className="text-xs text-muted" style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>Typical Industries</span>
                 <div className="flex gap-2 flex-wrap mt-2">
@@ -129,7 +129,7 @@ export default function CareerDetail() {
                   <p className="mt-1 font-medium">{career.potentialEmployers.join(', ')}</p>
                 </div>
               )}
-              
+
               {career.recommendedCountries && career.recommendedCountries.length > 0 && (
                 <div style={{ marginBottom: 16 }}>
                   <span className="text-xs text-muted" style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>Best Countries for this Career</span>

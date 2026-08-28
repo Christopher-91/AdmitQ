@@ -11,7 +11,26 @@ import {
   BsClipboard2, BsClock, BsGlobe2, BsPaperclip, BsLightningCharge,
 
 } from 'react-icons/bs';
+import {
+  FcCommandLine, FcComboChart, FcAndroidOs, FcPrivacy,
+  FcEngineering, FcLineChart, FcMoneyTransfer,
+  FcMindMap, FcIdea
+} from 'react-icons/fc';
+import { FaStethoscope } from 'react-icons/fa6';
 import '../DataPages.css';
+
+const careerIconMap = {
+  'Software Engineer': <FcCommandLine />,
+  'Data Scientist': <FcComboChart />,
+  'Robotics Software Engineer': <FcAndroidOs />,
+  'Cybersecurity Engineer': <FcPrivacy />,
+  'Mechanical Engineer': <FcEngineering />,
+  'Business Analyst': <FcLineChart />,
+  'Financial Analyst': <FcMoneyTransfer />,
+  'Doctor (Physician)': <FaStethoscope color="#0d9488" />,
+  'AI/ML Researcher': <FcMindMap />,
+  'Product Manager': <FcIdea />,
+};
 
 // ── Client-side match calculation ─────────────────────────
 function computeMatch(profile, uni) {
@@ -22,14 +41,21 @@ function computeMatch(profile, uni) {
   const prefs = profile.preferences || {};
   const testScores = profile.testScores || [];
 
-  const gpa = parseFloat(academic.gpa) || null;
+  const rawGpa = parseFloat(academic.gpa) || null;
+  const gpaScale = parseFloat(academic.gpaScale) || 4.0;
+  
+  // 1. Universal GPA Normalization (Convert to 4.0 scale)
+  const gpa = rawGpa ? (rawGpa / gpaScale) * 4.0 : null;
+
   const desiredField = prefs.desiredField || academic.currentMajor || null;
   const budgetMax = parseFloat(prefs.budgetMax) || null;
+  
   const ielts = testScores.find(s => s.testName === 'IELTS')?.overallScore || null;
   const toefl = testScores.find(s => s.testName === 'TOEFL')?.overallScore || null;
+  const gre = testScores.find(s => s.testName === 'GRE')?.overallScore || null;
+  const gmat = testScores.find(s => s.testName === 'GMAT')?.overallScore || null;
 
-  // If none of the key fields are filled, don't show a match
-  if (!gpa && !desiredField && !budgetMax && !ielts && !toefl) return null;
+  if (!gpa && !desiredField && !budgetMax && !ielts && !toefl && !gre && !gmat) return null;
 
   const factors = {};
   let totalScore = 0;
@@ -37,81 +63,146 @@ function computeMatch(profile, uni) {
 
   // Academic
   if (gpa && uni.requirements?.minGpa) {
-    const ratio = gpa / uni.requirements.minGpa;
-    const score = Math.min(100, Math.round(ratio * 100));
-    factors.academic = { level: score >= 95 ? 'strong' : score >= 85 ? 'moderate' : 'difficult', score };
-    totalScore += score;
+    if (gpa >= uni.requirements.minGpa) {
+      const ratio = gpa / uni.requirements.minGpa;
+      const score = Math.min(100, Math.round(ratio * 100));
+      factors.academic = { level: score >= 95 ? 'strong' : score >= 85 ? 'moderate' : 'difficult', score, reason: null };
+      totalScore += score;
+    } else {
+      const ratio = gpa / uni.requirements.minGpa;
+      const score = Math.round(ratio * 60); // Severely penalize below minimum
+      factors.academic = { 
+        level: 'difficult', 
+        score, 
+        reason: `Your GPA (${gpa.toFixed(1)}/4.0) is below the minimum required (${Number(uni.requirements.minGpa).toFixed(1)}/4.0).` 
+      };
+      totalScore += score;
+    }
     count++;
   } else {
-    factors.academic = { level: 'unknown', score: null };
+    factors.academic = { level: 'unknown', score: null, reason: null };
   }
 
   // Program / Career fit
   if (desiredField && uni.faculties?.length > 0) {
     const fieldLower = desiredField.toLowerCase();
     const matched = uni.faculties.some(f => f.toLowerCase().includes(fieldLower) || fieldLower.includes(f.toLowerCase()));
-    factors.career = { level: matched ? 'strong' : 'difficult', score: matched ? 100 : 0 };
+    factors.career = { 
+      level: matched ? 'strong' : 'difficult', 
+      score: matched ? 100 : 0,
+      reason: matched ? null : 'This university does not strongly feature your desired field of study.'
+    };
     totalScore += matched ? 100 : 0;
     count++;
   } else {
-    factors.career = { level: 'unknown', score: null };
+    factors.career = { level: 'unknown', score: null, reason: null };
   }
 
   // Budget
   if (budgetMax && uni.financial?.avgTuitionUsd) {
     const totalCost = uni.financial.avgTuitionUsd + (uni.financial.avgLivingCostUsd || 0) * 12;
-    const ratio = budgetMax / totalCost;
-    const score = Math.min(100, Math.round(ratio * 100));
-    factors.budget = { level: score >= 100 ? 'strong' : score >= 80 ? 'moderate' : 'difficult', score };
-    totalScore += score;
+    if (budgetMax >= totalCost) {
+      const ratio = budgetMax / totalCost;
+      const score = Math.min(100, Math.round(ratio * 100));
+      factors.budget = { level: score >= 100 ? 'strong' : score >= 85 ? 'moderate' : 'difficult', score, reason: null };
+      totalScore += score;
+    } else {
+      const ratio = budgetMax / totalCost;
+      const score = Math.round(ratio * 70); // Penalize below budget
+      factors.budget = { 
+        level: 'difficult', 
+        score, 
+        reason: `Your budget is below the estimated total cost ($${totalCost.toLocaleString()}).` 
+      };
+      totalScore += score;
+    }
     count++;
   } else {
-    factors.budget = { level: 'unknown', score: null };
+    factors.budget = { level: 'unknown', score: null, reason: null };
   }
 
   // English requirement
   if ((ielts || toefl) && (uni.requirements?.minIelts || uni.requirements?.minToefl)) {
     let score = null;
     let level = null;
+    let reason = null;
     if (ielts && uni.requirements?.minIelts) {
-      score = Math.min(100, Math.round((ielts / uni.requirements.minIelts) * 100));
+      if (ielts >= uni.requirements.minIelts) {
+        score = Math.min(100, Math.round((ielts / uni.requirements.minIelts) * 100));
+      } else {
+        score = Math.round((ielts / uni.requirements.minIelts) * 60);
+        reason = `Your IELTS score (${ielts}) is below the required minimum (${uni.requirements.minIelts}).`;
+      }
     } else if (toefl && uni.requirements?.minToefl) {
-      score = Math.min(100, Math.round((toefl / uni.requirements.minToefl) * 100));
+      if (toefl >= uni.requirements.minToefl) {
+        score = Math.min(100, Math.round((toefl / uni.requirements.minToefl) * 100));
+      } else {
+        score = Math.round((toefl / uni.requirements.minToefl) * 60);
+        reason = `Your TOEFL score (${toefl}) is below the required minimum (${uni.requirements.minToefl}).`;
+      }
     }
 
     if (score !== null) {
       level = score >= 100 ? 'strong' : score >= 90 ? 'moderate' : 'difficult';
-      factors.requirements = { level, score };
+      factors.requirements = { 
+        level, 
+        score, 
+        reason: level === 'difficult' && !reason ? 'Your test scores are slightly below competitive averages.' : reason 
+      };
       totalScore += score;
       count++;
     } else {
-      factors.requirements = { level: 'unknown', score: null };
+      factors.requirements = { level: 'unknown', score: null, reason: null };
     }
   } else {
-    factors.requirements = { level: 'unknown', score: null };
+    factors.requirements = { level: 'unknown', score: null, reason: null };
   }
 
   if (count === 0) return null;
 
-  const overall = Math.round(totalScore / count);
+  let overall = Math.round(totalScore / count);
+
+  // 2. The "Competitiveness Penalty"
+  // Since acceptanceRate isn't explicitly in the DB yet, we use qsRanking as an accurate proxy.
+  // QS Top 20 is ~ < 10% acceptance. QS Top 50 is ~ < 20% acceptance.
+  let maxPossibleScore = 100;
+  if (uni.qsRanking) {
+    if (uni.qsRanking <= 20) maxPossibleScore = 75; // e.g. MIT, Stanford, Oxford
+    else if (uni.qsRanking <= 50) maxPossibleScore = 85; 
+    else if (uni.qsRanking <= 100) maxPossibleScore = 92;
+  }
+  
+  if (overall > maxPossibleScore) {
+    overall = maxPossibleScore;
+  }
+
+  // 3. Missing Data Penalties (Standardized Tests)
+  if (uni.requirements?.minGre && !gre) {
+    overall = Math.max(0, overall - 15); // 15% penalty for missing required GRE
+  }
+  if (uni.requirements?.minGmat && !gmat) {
+    overall = Math.max(0, overall - 15); // 15% penalty for missing required GMAT
+  }
+
   return { overall, factors };
 }
 
 function MatchIndicator({ factor }) {
+  if (!factor) return null;
   const config = {
-    strong: { dot: '●', label: 'Strong', color: 'var(--accent-500)' },
-    moderate: { dot: '●', label: 'Moderate', color: 'var(--warning-500)' },
-    difficult: { dot: '●', label: 'Difficult', color: 'var(--error-500)' },
-    unknown: { dot: '●', label: 'Unknown', color: 'var(--text-tertiary)' },
+    strong: { label: 'Strong', color: 'var(--accent-500)' },
+    moderate: { label: 'Moderate', color: 'var(--warning-500)' },
+    difficult: { label: 'Difficult', color: 'var(--error-500)' },
+    unknown: { label: 'Unknown', color: 'var(--text-tertiary)' },
   };
   const c = config[factor.level] || config.unknown;
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-      <span className={`match-indicator ${factor.level}`}>
-        <span style={{ color: c.color, fontSize: '0.7rem' }}>{c.dot}</span> {c.label}
+    <div style={{ display: 'flex', alignItems: 'center', gap: 6, justifyContent: 'flex-end', width: '100%' }}>
+      <span style={{ color: c.color, fontSize: '0.85rem', fontWeight: 600 }}>
+        {c.label}
       </span>
       {factor.score !== null && (
-        <span style={{ fontSize: '0.9rem', fontWeight: 700, color: c.color, width: '40px', textAlign: 'right' }}>
+        <span style={{ fontSize: '0.9rem', fontWeight: 800, color: c.color, textAlign: 'right' }}>
           {factor.score}%
         </span>
       )}
@@ -392,6 +483,25 @@ export default function UniversityDetail() {
                       <MatchIndicator factor={match.factors.requirements} />
                     </div>
                   </div>
+                  {(() => {
+                    const reasons = Object.values(match.factors)
+                      .filter(f => f?.level === 'difficult' && f.reason)
+                      .map(f => f.reason);
+                    
+                    if (reasons.length > 0) {
+                      return (
+                        <div style={{ marginTop: 24, padding: '16px', background: 'var(--bg-secondary)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-secondary)' }}>
+                          <h4 style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: 8, fontWeight: 700 }}>Areas of Concern</h4>
+                          <ul style={{ margin: 0, paddingLeft: 20, fontSize: '0.85rem', color: 'var(--text-tertiary)', lineHeight: 1.5 }}>
+                            {reasons.map((r, idx) => (
+                              <li key={idx} style={{ marginBottom: 6 }}>{r}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      );
+                    }
+                    return null;
+                  })()}
                 </div>
               ) : (
                 <div className="match-cta">
@@ -542,7 +652,7 @@ export default function UniversityDetail() {
                   <div className="career-outcomes-grid">
                     {relatedCareers.map(c => (
                       <Link key={c.id} to={`/careers/${c.slug}`} className="career-outcome-card">
-                        <div className="career-outcome-icon">{c.icon}</div>
+                        <div className="career-outcome-icon">{careerIconMap[c.name] || c.icon}</div>
                         <div className="career-outcome-name">{c.name}</div>
                         <div className="career-outcome-salary">Avg. ${(c.avgSalaryUsd || 0).toLocaleString()}/yr</div>
                       </Link>
