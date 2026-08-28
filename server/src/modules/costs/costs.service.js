@@ -7,7 +7,8 @@
 const EXCHANGE_RATES = {
   USD: 1, EUR: 0.92, GBP: 0.79, CAD: 1.36, AUD: 1.53,
   CHF: 0.87, SEK: 10.5, SGD: 1.34, JPY: 149.5, KRW: 1320,
-  NZD: 1.63, INR: 83.5,
+  NZD: 1.63, INR: 83.5, CNY: 7.23, DKK: 6.87, NOK: 10.82,
+  AED: 3.67, RUB: 91.50, MYR: 4.75, PLN: 3.98,
 };
 
 // Country-specific monthly cost baselines (USD)
@@ -27,6 +28,50 @@ const COUNTRY_COSTS = {
   'south-korea': { rent: 500, food: 250, transport: 50, insurance: 50, misc: 130 },
   'new-zealand': { rent: 900, food: 300, transport: 60, insurance: 100, misc: 160 },
   'italy': { rent: 600, food: 300, transport: 50, insurance: 100, misc: 140 },
+  'china': { rent: 400, food: 200, transport: 30, insurance: 50, misc: 100 },
+  'denmark': { rent: 800, food: 400, transport: 80, insurance: 0, misc: 200 },
+  'finland': { rent: 700, food: 350, transport: 70, insurance: 0, misc: 180 },
+  'norway': { rent: 900, food: 450, transport: 90, insurance: 0, misc: 250 },
+  'uae': { rent: 1100, food: 400, transport: 100, insurance: 150, misc: 250 },
+  'luxembourg': { rent: 1200, food: 450, transport: 0, insurance: 100, misc: 250 },
+  'belgium': { rent: 700, food: 350, transport: 60, insurance: 100, misc: 180 },
+  'austria': { rent: 750, food: 350, transport: 60, insurance: 100, misc: 180 },
+  'russia': { rent: 300, food: 150, transport: 20, insurance: 30, misc: 80 },
+  'spain': { rent: 600, food: 300, transport: 50, insurance: 80, misc: 150 },
+  'malaysia': { rent: 300, food: 150, transport: 30, insurance: 50, misc: 100 },
+  'portugal': { rent: 550, food: 250, transport: 50, insurance: 80, misc: 150 },
+  'poland': { rent: 450, food: 250, transport: 40, insurance: 60, misc: 120 },
+};
+
+const WORST_CASE_COSTS = {
+  'united-states': { rent: 2500, food: 700, transport: 200, insurance: 300, misc: 400 },
+  'united-kingdom': { rent: 2000, food: 600, transport: 150, insurance: 0, misc: 300 },
+  'canada': { rent: 2200, food: 600, transport: 150, insurance: 150, misc: 300 },
+  'germany': { rent: 1200, food: 500, transport: 100, insurance: 150, misc: 250 },
+  'netherlands': { rent: 1500, food: 600, transport: 100, insurance: 180, misc: 250 },
+  'australia': { rent: 2000, food: 600, transport: 150, insurance: 200, misc: 350 },
+  'ireland': { rent: 1800, food: 600, transport: 150, insurance: 150, misc: 300 },
+  'france': { rent: 1500, food: 500, transport: 100, insurance: 0, misc: 300 },
+  'switzerland': { rent: 2200, food: 800, transport: 150, insurance: 350, misc: 400 },
+  'sweden': { rent: 1400, food: 600, transport: 100, insurance: 0, misc: 250 },
+  'singapore': { rent: 2000, food: 600, transport: 150, insurance: 200, misc: 400 },
+  'japan': { rent: 1200, food: 500, transport: 150, insurance: 60, misc: 250 },
+  'south-korea': { rent: 1000, food: 450, transport: 100, insurance: 100, misc: 250 },
+  'new-zealand': { rent: 1600, food: 500, transport: 100, insurance: 150, misc: 300 },
+  'italy': { rent: 1200, food: 500, transport: 100, insurance: 150, misc: 250 },
+  'china': { rent: 1000, food: 400, transport: 80, insurance: 100, misc: 200 },
+  'denmark': { rent: 1400, food: 600, transport: 120, insurance: 0, misc: 300 },
+  'finland': { rent: 1200, food: 500, transport: 100, insurance: 0, misc: 250 },
+  'norway': { rent: 1500, food: 700, transport: 150, insurance: 0, misc: 350 },
+  'uae': { rent: 2000, food: 700, transport: 200, insurance: 250, misc: 400 },
+  'luxembourg': { rent: 1800, food: 700, transport: 0, insurance: 150, misc: 350 },
+  'belgium': { rent: 1300, food: 500, transport: 100, insurance: 150, misc: 250 },
+  'austria': { rent: 1300, food: 500, transport: 100, insurance: 150, misc: 250 },
+  'russia': { rent: 800, food: 400, transport: 80, insurance: 80, misc: 200 },
+  'spain': { rent: 1200, food: 500, transport: 100, insurance: 120, misc: 250 },
+  'malaysia': { rent: 800, food: 350, transport: 80, insurance: 100, misc: 200 },
+  'portugal': { rent: 1100, food: 450, transport: 90, insurance: 120, misc: 250 },
+  'poland': { rent: 900, food: 400, transport: 80, insurance: 100, misc: 200 },
 };
 
 export const calculateCosts = (data) => {
@@ -41,9 +86,12 @@ export const calculateCosts = (data) => {
     customTransport,
     customInsurance,
     customMisc,
+    estimationMode = 'average',
   } = data;
 
-  const baseCosts = COUNTRY_COSTS[countrySlug] || COUNTRY_COSTS['united-states'];
+  const baseCosts = estimationMode === 'worst-case' 
+    ? (WORST_CASE_COSTS[countrySlug] || WORST_CASE_COSTS['united-states'])
+    : (COUNTRY_COSTS[countrySlug] || COUNTRY_COSTS['united-states']);
   const rate = EXCHANGE_RATES[currency] || 1;
 
   const monthly = {
@@ -108,6 +156,8 @@ export const calculateCosts = (data) => {
       monthly: Object.entries(monthly).map(([key, value]) => ({ category: key, amountUsd: value, amount: convert(value) })),
       oneTime: Object.entries(oneTime).map(([key, value]) => ({ category: key, amountUsd: value, amount: convert(value) })),
     },
-    disclaimer: 'These are estimates based on average costs. Actual costs may vary. All amounts are approximate.',
+    disclaimer: estimationMode === 'worst-case' 
+      ? 'Note: The cost calculator is currently providing a worst-case scenario for your expenses to ensure safe financial planning. Actual costs may be significantly lower.'
+      : 'These are estimates based on average costs. Actual costs may vary. All amounts are approximate.',
   };
 };

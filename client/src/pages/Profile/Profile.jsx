@@ -63,7 +63,7 @@ const CAREER_GOALS = [
 export default function Profile() {
   const { user, refreshProfile } = useAuth();
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState('academic');
+  const [activeTab, setActiveTab] = useState('personal');
   const [saving, setSaving] = useState(false);
   const [profileData, setProfileData] = useState(null);
   const [loading, setLoading] = useState(true);
