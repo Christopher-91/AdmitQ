@@ -357,7 +357,7 @@ export default function UniversityDetail() {
           </Link>
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 24, flexWrap: 'wrap' }}>
             <div className="uni-logo" style={{ width: 72, height: 72, fontSize: '2rem', flexShrink: 0, padding: 0 }}>
-              <Logo website={uni.website} name={uni.name} slug={uni.slug} size={72} />
+              <Logo website={uni.website} name={uni.name} slug={uni.slug} logoUrl={uni.logoUrl} size={72} />
             </div>
             <div style={{ flex: 1, minWidth: 200 }}>
               <h1 className="detail-title">{uni.name}</h1>

@@ -163,7 +163,7 @@ export default function Universities() {
             <Link key={u.id} to={`/universities/${u.slug}`} state={{ fromParams: searchParams.toString() }} className="uni-card card">
               <div className="uni-card-header">
                 <div className="uni-logo">
-                  <Logo website={u.website} name={u.name} slug={u.slug} size={48} />
+                  <Logo website={u.website} name={u.name} slug={u.slug} logoUrl={u.logoUrl} size={48} />
                 </div>
                 <div className="flex-1">
                   <h3 className="uni-name">{u.name}</h3>

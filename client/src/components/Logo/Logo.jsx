@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Logo({ website, name, slug, size = 48 }) {
+export default function Logo({ website, name, slug, size = 48, logoUrl }) {
   const [errorLevel, setErrorLevel] = useState(0);
   
   const Placeholder = () => (
@@ -9,22 +9,11 @@ export default function Logo({ website, name, slug, size = 48 }) {
     </span>
   );
 
-  if (!website) {
-    return <Placeholder />;
-  }
-
-  let hostname = '';
-  try {
-    hostname = new URL(website).hostname.replace('www.', '');
-  } catch (e) {
-    return <Placeholder />;
-  }
-
-  // errorLevel 0: Local Image from Wikipedia Scraper
-  if (errorLevel === 0 && slug) {
+  // Level 0: Provided Database URL
+  if (errorLevel === 0 && logoUrl) {
     return (
       <img 
-        src={`/logos/${slug}.png`} 
+        src={logoUrl} 
         alt={name} 
         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
         onError={() => setErrorLevel(1)}
@@ -32,14 +21,33 @@ export default function Logo({ website, name, slug, size = 48 }) {
     );
   }
 
-  // errorLevel 1: Clearbit Logo
-  if (errorLevel === 1 || (errorLevel === 0 && !slug)) {
+  let hostname = '';
+  try {
+    if (website) hostname = new URL(website).hostname.replace('www.', '');
+  } catch (e) {
+    // Ignore error
+  }
+
+  // Level 1: Local Slug
+  if (errorLevel <= 1 && slug) {
+    return (
+      <img 
+        src={`/logos/${slug}.png`} 
+        alt={name} 
+        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+        onError={() => setErrorLevel(2)}
+      />
+    );
+  }
+
+  // Level 2: Clearbit
+  if (errorLevel <= 2 && hostname) {
     return (
       <img 
         src={`https://logo.clearbit.com/${hostname}?size=${size * 2}`} 
         alt={name} 
         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-        onError={() => setErrorLevel(2)}
+        onError={() => setErrorLevel(3)}
       />
     );
   }
