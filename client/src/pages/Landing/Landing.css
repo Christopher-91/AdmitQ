@@ -5,7 +5,7 @@
 /* ─── Hero ──────────────────────────────────────── */
 .hero {
   position: relative;
-  padding: 140px 0 60px; /* Increased top padding to clear fixed navbar */
+  padding: 200px 0 100px; /* Increased top padding to push content down, decreased bottom to keep height identical */
   overflow: hidden;
   background-image: linear-gradient(to left, rgba(10, 10, 26, 0.95) 0%, rgba(10, 10, 26, 0.75) 45%, rgba(10, 10, 26, 0.1) 100%), url('/images/hero-bg-3.jpg');
   background-size: cover;

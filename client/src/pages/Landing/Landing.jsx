@@ -131,26 +131,6 @@ export default function Landing() {
             find scholarships you qualify for, and track every application — all in one place.
           </p>
 
-          {/* Search Bar */}
-          <div className="hero-search animate-fadeInUp">
-            <div className="search-bar" style={{ maxWidth: '100%' }}>
-              <span className="search-icon"><BsSearch /></span>
-              <input
-                type="text"
-                placeholder="Search universities, programs, or countries..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' && searchQuery) {
-                    window.location.href = `/universities?search=${searchQuery}`;
-                  }
-                }}
-              />
-            </div>
-            <Link to="/register" className="btn btn-primary btn-lg hero-cta">
-              Search →
-            </Link>
-          </div>
 
           {/* Stats */}
           <div className="hero-stats">

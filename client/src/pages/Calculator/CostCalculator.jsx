@@ -52,7 +52,7 @@ const getCurrencyForNationality = (nationality) => {
 
 export default function CostCalculator() {
   const { user, isAuthenticated, refreshProfile } = useAuth();
-  
+
   const [countries, setCountries] = useState([]);
   const [countriesLoading, setCountriesLoading] = useState(true);
 
@@ -91,14 +91,14 @@ export default function CostCalculator() {
   }, [isAuthenticated, refreshProfile]);
 
   const selectedCountryCurrency = COUNTRY_CURRENCY_MAP[form.countrySlug] || 'USD';
-  
+
   // Smart currency sorting logic (Max 3 options)
   const displayCurrencies = useMemo(() => {
     const options = new Set();
-    
+
     // 1. Target country currency
     options.add(selectedCountryCurrency);
-    
+
     // 2. User's native currency (if logged in and known)
     if (isAuthenticated && user?.personal?.nationality) {
       const nativeCurrency = getCurrencyForNationality(user.personal.nationality);
@@ -106,10 +106,10 @@ export default function CostCalculator() {
         options.add(nativeCurrency);
       }
     }
-    
+
     // 3. USD (always added last if not already present)
     options.add('USD');
-    
+
     return Array.from(options);
   }, [selectedCountryCurrency, isAuthenticated, user]);
 
@@ -182,8 +182,8 @@ export default function CostCalculator() {
             <div className="form-group" style={{ gridColumn: '1 / -1' }}>
               <label className="form-label">Estimation Mode</label>
               <select className="form-input" value={form.estimationMode} onChange={update('estimationMode')} style={{ borderColor: form.estimationMode === 'worst-case' ? 'var(--warning-400)' : undefined }}>
-                <option value="average">National Average Costs (Standard)</option>
                 <option value="worst-case">Worst-Case Scenario (High Cost of Living)</option>
+                <option value="average">National Average Costs (Standard)</option>
               </select>
             </div>
 
@@ -227,8 +227,8 @@ export default function CostCalculator() {
                 <h3 className="font-bold mb-2">First Year Costs</h3>
                 <div className="calc-breakdown">
                   <div className="calc-row">
-                     <span className="calc-row-label">Tuition</span>
-                     <span className="calc-row-value">{result.currency} {result.firstYear.tuition.toLocaleString()}</span>
+                    <span className="calc-row-label">Tuition</span>
+                    <span className="calc-row-value">{result.currency} {result.firstYear.tuition.toLocaleString()}</span>
                   </div>
                   <div className="calc-row">
                     <span className="calc-row-label">Living Expenses</span>

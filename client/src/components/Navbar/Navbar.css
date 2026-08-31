@@ -29,7 +29,7 @@
 }
 
 .logo-text {
-  font-size: 1.85rem; /* Increased logo size further */
+  font-size: 2.15rem; /* Increased logo size further based on request */
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -0.03em;
@@ -269,7 +269,11 @@
 }
 
 .nav-landing-override .fluid-nav-item {
-  color: rgba(255, 255, 255, 0.85); /* Light text to stand out against dark hero */
+  color: #ffffff; /* Pure white text to stand out against dark hero */
+}
+
+.nav-landing-override .fluid-nav-item .fluid-nav-label {
+  opacity: 1; /* Remove the default fade from the labels */
 }
 
 .nav-landing-override .fluid-nav-item:hover {
