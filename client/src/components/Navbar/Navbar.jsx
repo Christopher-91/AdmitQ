@@ -10,6 +10,8 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [profileOpen, setProfileOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('admitq-theme');
     if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
@@ -20,6 +22,16 @@ export default function Navbar() {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem('admitq-theme', theme);
   }, [theme]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Toggle logo color after scrolling past the dark hero gradient (~400px)
+      setIsScrolled(window.scrollY > 400);
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial scroll position
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleLogout = async () => {
     await logout();
@@ -38,13 +50,15 @@ export default function Navbar() {
     { path: '/calculator', label: 'Calculator', icon: Calculator },
   ];
 
+  const isLandingTop = location.pathname === '/' && !isScrolled;
+
   return (
     <>
       {/* Top Header */}
       <nav className="navbar-top">
         <div className="navbar-inner container">
           <Link to="/" className="navbar-logo">
-            <span className="logo-text">Admit<span className="logo-highlight">Q</span></span>
+            <span className={`logo-text ${isLandingTop ? 'landing-override' : ''}`}>Admit<span className="logo-highlight">Q</span></span>
           </Link>
 
           <div className="navbar-actions">
@@ -111,7 +125,7 @@ export default function Navbar() {
       </nav>
 
       {/* Floating Fluid Glass Navigation */}
-      <div className="floating-nav-container">
+      <div className={`floating-nav-container ${isLandingTop ? 'nav-landing-override' : ''}`}>
         <nav className="fluid-glass-nav">
           {navLinks.map((link) => {
             const active = isActive(link.path);

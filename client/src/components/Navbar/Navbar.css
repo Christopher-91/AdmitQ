@@ -35,6 +35,10 @@
   letter-spacing: -0.03em;
 }
 
+.logo-text.landing-override {
+  color: #ffffff;
+}
+
 .logo-highlight {
   background: linear-gradient(135deg, var(--primary-400), var(--accent-400));
   -webkit-background-clip: text;
@@ -227,13 +231,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 18px; /* Increased vertical padding to 8px */
+  padding: 6px 18px; /* Reduced by 2px to compensate for larger font */
   border-radius: 100px;
   text-decoration: none;
-  color: var(--text-secondary);
+  color: var(--text-primary); /* Use primary text (dark/light adapting) instead of gray */
   transition: color 0.3s ease;
   z-index: 1;
   min-width: 72px;
+}
+
+[data-theme='light'] .fluid-nav-item {
+  color: #000000; /* Force completely black in light mode */
+}
+
+.nav-landing-override .fluid-nav-item {
+  color: rgba(255, 255, 255, 0.85); /* Light text to stand out against dark hero */
+}
+
+.nav-landing-override .fluid-nav-item:hover {
+  color: #ffffff;
 }
 
 .fluid-nav-item.active {
@@ -241,7 +257,12 @@
 }
 
 [data-theme='light'] .fluid-nav-item.active {
-  color: var(--primary-700);
+  color: #000000; /* Also black for active item in light mode */
+  font-weight: 800; /* Make active item bolder instead to stand out */
+}
+
+.nav-landing-override .fluid-nav-item.active {
+  color: #ffffff; /* Force white text for active item in landing hero */
 }
 
 [data-theme='dark'] .fluid-nav-item.active {
@@ -270,7 +291,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px; /* Increased gap to 3px */
+  gap: 2px; /* Reduced by 1px */
 }
 
 .fluid-nav-icon {
@@ -278,7 +299,7 @@
 }
 
 .fluid-nav-label {
-  font-size: 0.65rem; /* Restored label size to a middle ground */
+  font-size: 0.75rem; /* Increased label size for better readability */
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 0.02em;

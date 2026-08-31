@@ -7,16 +7,17 @@
   position: relative;
   padding: 140px 0 60px; /* Increased top padding to clear fixed navbar */
   overflow: hidden;
-  background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.15) 0%, rgba(248, 250, 252, 0.3) 85%, rgba(248, 250, 252, 1) 100%), url('/images/hero-bg.jpg');
+  background-image: linear-gradient(90deg, rgba(10, 10, 26, 0.95) 0%, rgba(10, 10, 26, 0.75) 45%, rgba(10, 10, 26, 0.1) 100%), url('/images/hero-bg-2.jpg');
   background-size: cover;
   background-position: center;
 }
 
 [data-theme='dark'] .hero {
-  background-image: linear-gradient(to bottom, rgba(10, 10, 26, 0.25) 0%, rgba(10, 10, 26, 0.4) 85%, rgba(10, 10, 26, 1) 100%), url('/images/hero-bg.jpg');
+  background-image: linear-gradient(90deg, rgba(10, 10, 26, 0.95) 0%, rgba(10, 10, 26, 0.75) 45%, rgba(10, 10, 26, 0.1) 100%), url('/images/hero-bg-2.jpg');
 }
 
 .hero-bg-orb {
+  display: none; /* Hidden to not clash with new dark gradient */
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
@@ -54,9 +55,9 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  text-align: center;
+  text-align: left; /* Aligned left */
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0; /* Removed auto centering */
 }
 
 .hero-badge {
@@ -85,7 +86,7 @@
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.04em;
-  color: var(--text-primary);
+  color: #ffffff; /* Forced white text */
   margin-bottom: 20px;
 }
 
@@ -106,11 +107,9 @@
 .hero-subtitle {
   font-size: 1.15rem;
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.9); /* Light text on dark bg */
   margin-bottom: 36px;
   max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Search */
@@ -118,7 +117,7 @@
   display: flex;
   gap: 12px;
   max-width: 680px;
-  margin: 0 auto 48px;
+  margin: 0 0 48px 0; /* Aligned left */
 }
 
 .hero-search .search-bar {
@@ -132,12 +131,12 @@
 /* Stats */
 .hero-stats {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Aligned left */
   gap: 48px;
 }
 
 .hero-stat {
-  text-align: center;
+  text-align: left; /* Aligned left */
   transition: all var(--transition-base);
 }
 
@@ -149,13 +148,13 @@
   display: block;
   font-size: 2rem;
   font-weight: 900;
-  color: var(--text-primary);
+  color: #ffffff; /* Forced white */
   letter-spacing: -0.03em;
 }
 
 .hero-stat-label {
   font-size: 0.8rem;
-  color: var(--text-tertiary);
+  color: rgba(255, 255, 255, 0.7); /* Forced light */
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 600;
