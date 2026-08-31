@@ -211,18 +211,18 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  background: rgba(255, 255, 255, 0.4);
+  background: transparent; /* Completely clear background */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Very subtle border */
   padding: 6px; /* Increased from 2px to 6px */
   border-radius: 100px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme='dark'] .fluid-glass-nav {
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent; /* Completely clear in dark mode */
+  border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
