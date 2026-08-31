@@ -65,13 +65,21 @@
   align-items: center;
   gap: 2px;
   padding: 4px;
-  background: var(--bg-glass);
-  border: 1px solid var(--border-primary);
+  background: rgba(255, 255, 255, 0.05); /* Match nav clear background */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Match nav subtle border */
   border-radius: var(--radius-full);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .theme-toggle {
+  background: rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .theme-option {
+  position: relative; /* Essential for the framer-motion layout component to snap correctly */
   display: grid;
   place-items: center;
   width: 36px;
@@ -81,7 +89,7 @@
   border-radius: 50%;
   background: transparent;
   color: var(--text-tertiary);
-  transition: background var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+  transition: color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .theme-option svg {
@@ -95,9 +103,25 @@
 }
 
 .theme-option.active {
-  background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
   color: white;
+  background: transparent; /* Background is now handled by motion.div */
+}
+
+.theme-active-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  z-index: 1; /* Below the icon */
+  background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
   box-shadow: 0 2px 8px rgba(79, 70, 229, 0.35);
+}
+
+.theme-icon-wrapper {
+  position: relative;
+  z-index: 2; /* Ensures the SVG sits above the sliding pill */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .theme-option:hover:not(.active) {
