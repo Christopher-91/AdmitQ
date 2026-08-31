@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { BsSearch, BsBullseye, BsMortarboard, BsClipboard2, BsMap, BsCurrencyExchange } from 'react-icons/bs';
+import { BsSearch, BsBullseye, BsMortarboard, BsClipboard2, BsMap, BsCurrencyExchange, BsPerson, BsSend } from 'react-icons/bs';
 import './Landing.css';
 const HERO_STATS = [
   { value: '25+', label: 'Countries' },
@@ -50,9 +50,9 @@ const COUNTRIES = [
 ];
 
 const STEPS = [
-  { num: '01', title: 'Build Your Profile', desc: 'Tell us about your education, scores, budget, and career aspirations. We\'ll do the heavy lifting.' },
-  { num: '02', title: 'Discover & Compare', desc: 'Browse personalized recommendations. Compare universities, costs, and requirements side by side.' },
-  { num: '03', title: 'Plan & Apply', desc: 'Track deadlines, manage documents, and submit applications — all from one dashboard.' },
+  { num: '1', icon: <BsPerson size={28} />, title: 'Build Your Profile', desc: 'Tell us about your education, scores, budget, and career aspirations. We\'ll do the heavy lifting.' },
+  { num: '2', icon: <BsSearch size={24} />, title: 'Discover & Compare', desc: 'Browse personalized recommendations. Compare universities, costs, and requirements side by side.' },
+  { num: '3', icon: <BsSend size={24} />, title: 'Plan & Apply', desc: 'Track deadlines, manage documents, and submit applications — all from one dashboard.' },
 ];
 
 export default function Landing() {
@@ -148,7 +148,7 @@ export default function Landing() {
               />
             </div>
             <Link to="/register" className="btn btn-primary btn-lg hero-cta">
-              Get Started →
+              Search →
             </Link>
           </div>
 
@@ -254,7 +254,10 @@ export default function Landing() {
           <div className="steps-grid">
             {STEPS.map((s, i) => (
               <div key={i} className="step-card">
-                <div className="step-num">{s.num}</div>
+                <div className="step-icon-wrapper">
+                  <div className="step-icon">{s.icon}</div>
+                  <div className="step-badge">{s.num}</div>
+                </div>
                 <h3 className="step-title">{s.title}</h3>
                 <p className="step-desc">{s.desc}</p>
                 {i < STEPS.length - 1 && <div className="step-connector" />}
