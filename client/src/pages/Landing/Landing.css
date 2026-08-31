@@ -5,8 +5,15 @@
 /* ─── Hero ──────────────────────────────────────── */
 .hero {
   position: relative;
-  padding: 80px 0 60px;
+  padding: 140px 0 60px; /* Increased top padding to clear fixed navbar */
   overflow: hidden;
+  background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.15) 0%, rgba(248, 250, 252, 0.3) 85%, rgba(248, 250, 252, 1) 100%), url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+[data-theme='dark'] .hero {
+  background-image: linear-gradient(to bottom, rgba(10, 10, 26, 0.25) 0%, rgba(10, 10, 26, 0.4) 85%, rgba(10, 10, 26, 1) 100%), url('/images/hero-bg.jpg');
 }
 
 .hero-bg-orb {
@@ -588,7 +595,7 @@
 
 /* ─── Responsive ────────────────────────────────── */
 @media (max-width: 768px) {
-  .hero { padding: 48px 0 40px; }
+  .hero { padding: 100px 0 40px; }
   .hero-title { font-size: 2.25rem; }
   .hero-subtitle { font-size: 1rem; }
   .hero-search { flex-direction: column; }

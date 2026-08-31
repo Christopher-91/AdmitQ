@@ -223,7 +223,7 @@ input, select, textarea {
 
 .page {
   min-height: calc(100vh - 72px);
-  padding: 32px 0;
+  padding: 110px 0 32px 0; /* Increased top padding so content clears the fixed top nav */
 }
 
 .page-header {

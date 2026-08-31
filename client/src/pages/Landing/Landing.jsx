@@ -118,10 +118,7 @@ export default function Landing() {
         <div className="hero-bg-orb hero-orb-3" />
 
         <div className="container hero-content">
-          <div className="hero-badge animate-fadeInUp">
-            <span className="hero-badge-dot" />
-            Trusted by 10,000+ students worldwide
-          </div>
+          {/* Hero badge removed as requested */}
 
           <h1 className="hero-title animate-fadeInUp">
             Your Global Education
