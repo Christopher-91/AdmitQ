@@ -442,8 +442,8 @@ CREATE TABLE deadlines (
   
   title           VARCHAR(300) NOT NULL,
   description     TEXT,
-  deadline_date   DATE NOT NULL,
-  deadline_type   deadline_type NOT NULL DEFAULT 'other',
+  deadline_date   TIMESTAMPTZ NOT NULL,
+  deadline_type   VARCHAR(50) NOT NULL DEFAULT 'other',
   
   reminder_days   INTEGER DEFAULT 7,  -- days before to remind
   is_completed    BOOLEAN NOT NULL DEFAULT FALSE,

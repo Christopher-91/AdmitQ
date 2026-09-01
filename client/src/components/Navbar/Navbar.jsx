@@ -123,6 +123,7 @@ export default function Navbar() {
                     </div>
                     <div className="dropdown-divider" />
                     <Link to="/dashboard" className="dropdown-item" onClick={() => setProfileOpen(false)}>Dashboard</Link>
+                    <Link to="/planner" className="dropdown-item" onClick={() => setProfileOpen(false)}>Planner</Link>
                     <Link to="/profile" className="dropdown-item" onClick={() => setProfileOpen(false)}>Profile</Link>
                     <Link to="/applications" className="dropdown-item" onClick={() => setProfileOpen(false)}>Applications</Link>
                     {user?.role === 'admin' && (

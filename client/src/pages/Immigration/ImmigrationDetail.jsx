@@ -181,7 +181,7 @@ export default function ImmigrationDetail() {
                   transition: 'all 0.2s'
                 }}
               >
-                {tab.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
+                {tab === 'pr-pathways' ? 'PR Pathways' : tab.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
               </button>
             ))}
           </div>

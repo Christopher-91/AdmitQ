@@ -20,6 +20,7 @@ import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Profile from './pages/Profile/Profile';
+import Planner from './pages/Planner/Planner';
 import Universities from './pages/Universities/Universities';
 import UniversityDetail from './pages/Universities/UniversityDetail';
 import Programs from './pages/Programs/Programs';
@@ -65,6 +66,7 @@ function App() {
 
           {/* Protected */}
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/planner" element={<ProtectedRoute><Planner /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
 
           {/* 404 */}

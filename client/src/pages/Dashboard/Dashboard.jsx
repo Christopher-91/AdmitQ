@@ -101,31 +101,33 @@ export default function Dashboard() {
         <div className="card dashboard-section">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-bold">Upcoming Deadlines</h2>
-            <Link to="/deadlines" className="btn btn-ghost btn-sm">View All →</Link>
+            <Link to="/planner" className="btn btn-ghost btn-sm">View All →</Link>
           </div>
 
           {data?.upcomingDeadlines?.length > 0 ? (
             <div className="deadline-list">
-              {data.upcomingDeadlines.map((d) => (
+              {data.upcomingDeadlines.map((d) => {
+                const daysRemaining = Math.ceil((new Date(d.deadlineDate) - new Date()) / (1000 * 60 * 60 * 24));
+                return (
                 <div key={d.id} className="deadline-item">
-                  <div className={`deadline-dot ${d.daysRemaining <= 7 ? 'urgent' : d.daysRemaining <= 30 ? 'soon' : 'normal'}`} />
+                  <div className={`deadline-dot ${daysRemaining <= 7 ? 'urgent' : daysRemaining <= 30 ? 'soon' : 'normal'}`} />
                   <div className="flex-1">
                     <p className="font-semibold text-sm">{d.title}</p>
                     <p className="text-xs text-muted">{d.universityName || 'Personal'}</p>
                   </div>
                   <div className="text-right">
-                    <p className={`font-bold text-sm ${d.daysRemaining <= 7 ? 'text-error' : ''}`}>
-                      {d.daysRemaining}d
+                    <p className={`font-bold text-sm ${daysRemaining <= 7 ? 'text-error' : ''}`}>
+                      {daysRemaining}d
                     </p>
                     <p className="text-xs text-muted">remaining</p>
                   </div>
                 </div>
-              ))}
+              )})}
             </div>
           ) : (
             <div className="empty-state">
               <p className="text-muted">No upcoming deadlines</p>
-              <Link to="/deadlines" className="btn btn-secondary btn-sm mt-2">Add Deadline</Link>
+              <Link to="/planner" className="btn btn-secondary btn-sm mt-2">Add Deadline</Link>
             </div>
           )}
         </div>

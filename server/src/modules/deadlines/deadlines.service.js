@@ -43,7 +43,6 @@ export const getUserDeadlines = async (userId, filters = {}) => {
       programName: row.program_name,
       universityName: row.university_name,
     } : null,
-    daysRemaining: Math.ceil((new Date(row.deadline_date) - new Date()) / (1000 * 60 * 60 * 24)),
   }));
 };
 

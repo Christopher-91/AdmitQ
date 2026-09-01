@@ -52,7 +52,6 @@ export const getDashboard = async (userId) => {
       id: d.id, title: d.title, deadlineDate: d.deadline_date,
       deadlineType: d.deadline_type, isCompleted: d.is_completed,
       programName: d.program_name, universityName: d.university_name,
-      daysRemaining: Math.ceil((new Date(d.deadline_date) - new Date()) / (1000 * 60 * 60 * 24)),
     })),
     saved: savedCounts,
     recommendationsAvailable: parseInt(recsAvailable.rows[0].count),
