@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
-import { Landmark, BookOpen, Globe2, Award, Briefcase, Calculator } from 'lucide-react';
+import { Landmark, BookOpen, Globe2, Award, Briefcase, Calculator, Plane } from 'lucide-react';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -45,6 +45,7 @@ export default function Navbar() {
     { path: '/universities', label: 'Universities', icon: Landmark },
     { path: '/programs', label: 'Programs', icon: BookOpen },
     { path: '/countries', label: 'Countries', icon: Globe2 },
+    { path: '/immigration', label: 'Immigration', icon: Plane },
     { path: '/scholarships', label: 'Scholarships', icon: Award },
     { path: '/careers', label: 'Careers', icon: Briefcase },
     { path: '/calculator', label: 'Calculator', icon: Calculator },

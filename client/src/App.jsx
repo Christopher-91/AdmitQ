@@ -26,6 +26,8 @@ import Programs from './pages/Programs/Programs';
 import ProgramDetail from './pages/Programs/ProgramDetail';
 import Countries from './pages/Countries/Countries';
 import CountryDetail from './pages/Countries/CountryDetail';
+import Immigration from './pages/Immigration/Immigration';
+import ImmigrationDetail from './pages/Immigration/ImmigrationDetail';
 import Scholarships from './pages/Scholarships/Scholarships';
 import ScholarshipDetail from './pages/Scholarships/ScholarshipDetail';
 import Careers from './pages/Careers/Careers';
@@ -53,6 +55,8 @@ function App() {
           <Route path="/programs/:slug" element={<ProgramDetail />} />
           <Route path="/countries" element={<Countries />} />
           <Route path="/countries/:slug" element={<CountryDetail />} />
+          <Route path="/immigration" element={<Immigration />} />
+          <Route path="/immigration/:slug" element={<ImmigrationDetail />} />
           <Route path="/scholarships" element={<Scholarships />} />
           <Route path="/scholarships/:slug" element={<ScholarshipDetail />} />
           <Route path="/careers" element={<Careers />} />

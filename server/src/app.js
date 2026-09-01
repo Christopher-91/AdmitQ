@@ -23,6 +23,7 @@ import savedRoutes from './modules/saved/saved.routes.js';
 import compareRoutes from './modules/compare/compare.routes.js';
 import costsRoutes from './modules/costs/costs.routes.js';
 import dashboardRoutes from './modules/dashboard/dashboard.routes.js';
+import immigrationRoutes from './modules/immigration/immigration.routes.js';
 
 const app = express();
 
@@ -102,6 +103,7 @@ app.use('/api/saved', savedRoutes);
 app.use('/api/compare', compareRoutes);
 app.use('/api/costs', costsRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/immigration', immigrationRoutes);
 
 // ─── 404 ────────────────────────────────────────
 app.use((req, res) => {
