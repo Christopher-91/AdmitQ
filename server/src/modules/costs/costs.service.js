@@ -9,6 +9,10 @@ const EXCHANGE_RATES = {
   CHF: 0.87, SEK: 10.5, SGD: 1.34, JPY: 149.5, KRW: 1320,
   NZD: 1.63, INR: 83.5, CNY: 7.23, DKK: 6.87, NOK: 10.82,
   AED: 3.67, RUB: 91.50, MYR: 4.75, PLN: 3.98,
+  AFN: 70.80, PKR: 278.50, BDT: 117.0, NGN: 1450.0,
+  IDR: 16000, PHP: 58.50, VND: 25400, THB: 36.50,
+  EGP: 47.50, TRY: 32.20, BRL: 5.15, MXN: 16.80,
+  ZAR: 18.50, KES: 131.0, GHS: 14.50, SAR: 3.75,
 };
 
 // Country-specific monthly cost baselines (USD)

@@ -34,6 +34,13 @@ const COUNTRY_CURRENCY_MAP = {
   'poland': 'PLN',
 };
 
+const ALL_CURRENCIES = [
+  'USD', 'EUR', 'GBP', 'CAD', 'AUD', 'CHF', 'SEK', 'SGD', 'JPY', 'KRW',
+  'NZD', 'INR', 'CNY', 'DKK', 'NOK', 'AED', 'RUB', 'MYR', 'PLN',
+  'AFN', 'PKR', 'BDT', 'NGN', 'IDR', 'PHP', 'VND', 'THB', 'EGP', 'TRY',
+  'BRL', 'MXN', 'ZAR', 'KES', 'GHS', 'SAR'
+];
+
 const getCurrencyForNationality = (nationality) => {
   if (!nationality) return null;
   const n = nationality.toLowerCase();
@@ -47,6 +54,22 @@ const getCurrencyForNationality = (nationality) => {
   if (n.includes('arab') || n.includes('emirati')) return 'AED';
   if (n.includes('russia')) return 'RUB';
   if (n.includes('poland') || n.includes('polish')) return 'PLN';
+  if (n.includes('afghan')) return 'AFN';
+  if (n.includes('pakistan')) return 'PKR';
+  if (n.includes('bangladesh')) return 'BDT';
+  if (n.includes('nigeria')) return 'NGN';
+  if (n.includes('indonesia')) return 'IDR';
+  if (n.includes('philippin')) return 'PHP';
+  if (n.includes('vietnam')) return 'VND';
+  if (n.includes('thai')) return 'THB';
+  if (n.includes('egypt')) return 'EGP';
+  if (n.includes('turk')) return 'TRY';
+  if (n.includes('brazil')) return 'BRL';
+  if (n.includes('mexic')) return 'MXN';
+  if (n.includes('south africa')) return 'ZAR';
+  if (n.includes('kenya')) return 'KES';
+  if (n.includes('ghana')) return 'GHS';
+  if (n.includes('saudi')) return 'SAR';
   return null;
 };
 
@@ -92,7 +115,7 @@ export default function CostCalculator() {
 
   const selectedCountryCurrency = COUNTRY_CURRENCY_MAP[form.countrySlug] || 'USD';
 
-  // Smart currency sorting logic (Max 3 options)
+  // Smart currency sorting logic (Max 3 options at top, then all others)
   const displayCurrencies = useMemo(() => {
     const options = new Set();
 
@@ -107,7 +130,7 @@ export default function CostCalculator() {
       }
     }
 
-    // 3. USD (always added last if not already present)
+    // 3. USD (always added)
     options.add('USD');
 
     return Array.from(options);

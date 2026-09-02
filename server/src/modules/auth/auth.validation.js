@@ -1,7 +1,7 @@
 import Joi from 'joi';
 
 export const registerSchema = Joi.object({
-  email: Joi.string().email().required().max(255),
+  email: Joi.string().email().required().trim().lowercase().max(255),
   password: Joi.string().min(8).max(128).required()
     .pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/)
     .message('Password must contain at least one uppercase letter, one lowercase letter, and one number'),
@@ -10,7 +10,7 @@ export const registerSchema = Joi.object({
 });
 
 export const loginSchema = Joi.object({
-  email: Joi.string().email().required(),
+  email: Joi.string().email().required().trim().lowercase(),
   password: Joi.string().required(),
 });
 
@@ -19,7 +19,7 @@ export const refreshSchema = Joi.object({
 });
 
 export const forgotPasswordSchema = Joi.object({
-  email: Joi.string().email().required(),
+  email: Joi.string().email().required().trim().lowercase(),
 });
 
 export const resetPasswordSchema = Joi.object({

@@ -2,17 +2,23 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import toast from 'react-hot-toast';
-import { BsMortarboard, BsExclamationTriangleFill } from 'react-icons/bs';
+import { BsMortarboard, BsExclamationTriangleFill, BsEye, BsEyeSlash } from 'react-icons/bs';
 import './Auth.css';
 
 export default function Register() {
   const { register } = useAuth();
   const navigate = useNavigate();
   const [form, setForm] = useState({
-    firstName: '', lastName: '', email: '', password: '', confirmPassword: '',
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -79,13 +85,75 @@ export default function Register() {
           </div>
 
           <div className="form-group">
-            <label className="form-label" htmlFor="reg-pass">Password</label>
-            <input id="reg-pass" type="password" className="form-input" placeholder="At least 8 characters" value={form.password} onChange={update('password')} required />
+            <label className="form-label" htmlFor="register-password">Password</label>
+            <div style={{ position: 'relative' }}>
+              <input
+                id="register-password"
+                type={showPassword ? "text" : "password"}
+                className="form-input"
+                placeholder="Create a password (min 8 chars)"
+                value={form.password}
+                onChange={(e) => setForm({ ...form, password: e.target.value })}
+                required
+                minLength={8}
+                style={{ paddingRight: '2.5rem' }}
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                style={{
+                  position: 'absolute',
+                  right: '0.75rem',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--text-muted)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center'
+                }}
+              >
+                {showPassword ? <BsEyeSlash size={18} /> : <BsEye size={18} />}
+              </button>
+            </div>
+            <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
+              Must contain at least 1 uppercase, 1 lowercase, and 1 number.
+            </p>
           </div>
 
           <div className="form-group">
-            <label className="form-label" htmlFor="reg-confirm">Confirm Password</label>
-            <input id="reg-confirm" type="password" className="form-input" placeholder="Re-enter your password" value={form.confirmPassword} onChange={update('confirmPassword')} required />
+            <label className="form-label" htmlFor="register-confirm">Confirm Password</label>
+            <div style={{ position: 'relative' }}>
+              <input
+                id="register-confirm"
+                type={showConfirmPassword ? "text" : "password"}
+                className="form-input"
+                placeholder="Confirm your password"
+                value={form.confirmPassword}
+                onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })}
+                required
+                style={{ paddingRight: '2.5rem' }}
+              />
+              <button
+                type="button"
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                style={{
+                  position: 'absolute',
+                  right: '0.75rem',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--text-muted)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center'
+                }}
+              >
+                {showConfirmPassword ? <BsEyeSlash size={18} /> : <BsEye size={18} />}
+              </button>
+            </div>
           </div>
 
           <button type="submit" className="btn btn-primary w-full btn-lg" disabled={loading}>

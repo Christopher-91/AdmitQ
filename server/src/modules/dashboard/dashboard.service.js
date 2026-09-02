@@ -26,7 +26,6 @@ export const getDashboard = async (userId) => {
      LEFT JOIN universities u ON u.id = a.university_id
      WHERE d.user_id = $1 AND d.is_completed = FALSE
        AND d.deadline_date >= CURRENT_DATE
-       AND d.deadline_date <= CURRENT_DATE + INTERVAL '30 days'
      ORDER BY d.deadline_date ASC LIMIT 5`, [userId]);
 
   // Saved items counts
