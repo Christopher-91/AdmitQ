@@ -41,70 +41,76 @@ export const getProfile = async (slug) => {
 };
 
 /**
- * Fetch live immigration news from GDELT DOC 2.0 API (cached 6h)
+ * Fetch live immigration news using Google News RSS (cached 6h)
  *
  * Returns an array of { title, url, domain, seendate } articles.
- * On failure/timeout, returns cached articles or an empty array.
  */
 export const getNews = async (slug) => {
-  const cacheKey = `immigration:news:${slug}`;
+  const cacheKey = `immigration:news:v2:${slug}`;
 
-  // Try to get from cache first (we'll need the stale value as fallback)
   return cacheGet(cacheKey, NEWS_CACHE_TTL, async () => {
     const profile = IMMIGRATION_DATA.find(p => p.countrySlug === slug);
     if (!profile) return [];
 
     const countryName = profile.countryName;
-    const queryTerms = encodeURIComponent(
-      `(student visa OR immigration OR "post-study work" OR "international students") AND ${countryName}`
-    );
-    const gdeltUrl = `https://api.gdeltproject.org/api/v2/doc/doc?query=${queryTerms}+sourcelang:eng&mode=artlist&maxrecords=10&format=json&sort=datedesc`;
+    const queryTerms = encodeURIComponent(`("student visa" OR immigration OR "international students") ${countryName}`);
+    const rssUrl = `https://news.google.com/rss/search?q=${queryTerms}&hl=en-US&gl=US&ceid=US:en`;
 
     try {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), GDELT_TIMEOUT_MS);
 
-      const response = await fetch(gdeltUrl, {
+      const response = await fetch(rssUrl, {
         signal: controller.signal,
-        headers: { 'User-Agent': 'AdmitQ/1.0' },
+        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
       });
       clearTimeout(timeoutId);
 
       if (!response.ok) {
-        console.warn(`GDELT returned ${response.status} for ${slug}`);
+        console.warn(`Google News returned ${response.status} for ${slug}`);
         return [];
       }
 
-      const data = await response.json();
-      const articles = data?.articles || [];
-
-      // Deduplicate by URL and sanitize
-      const seen = new Set();
+      const xml = await response.text();
+      const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)];
+      
       const results = [];
+      const seen = new Set();
 
-      for (const article of articles) {
-        if (!article.url || seen.has(article.url)) continue;
-        seen.add(article.url);
+      for (const itemMatch of items) {
+        const itemXml = itemMatch[1];
+        let title = itemXml.match(/<title>([\s\S]*?)<\/title>/)?.[1] || '';
+        const link = itemXml.match(/<link>([\s\S]*?)<\/link>/)?.[1] || '';
+        const pubDate = itemXml.match(/<pubDate>([\s\S]*?)<\/pubDate>/)?.[1] || null;
+
+        // Clean CDATA tags
+        title = title.replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1');
+        
+        // Google news titles often end with " - Publisher Name". We can leave it or try to parse domain from url.
+        // Google news links are redirect links, so we'll just say "Google News" or extract from title if possible.
+        const publisherMatch = title.match(/ - ([^-]+)$/);
+        const domain = publisherMatch ? publisherMatch[1].trim() : 'Google News';
+
+        if (!link || seen.has(link)) continue;
+        seen.add(link);
 
         results.push({
-          title: sanitizeTitle(article.title || ''),
-          url: article.url,
-          domain: article.domain || extractDomain(article.url),
-          seendate: article.seendate || null,
+          title: sanitizeTitle(title),
+          url: link,
+          domain: domain,
+          seendate: pubDate ? new Date(pubDate).toISOString() : null,
         });
 
-        if (results.length >= 6) break; // Cap at 6 articles
+        if (results.length >= 6) break;
       }
 
       return results;
     } catch (err) {
       if (err.name === 'AbortError') {
-        console.warn(`GDELT timeout for ${slug} (exceeded ${GDELT_TIMEOUT_MS}ms)`);
+        console.warn(`Google News timeout for ${slug}`);
       } else {
-        console.warn(`GDELT fetch error for ${slug}:`, err.message);
+        console.warn(`Google News fetch error for ${slug}:`, err.message);
       }
-      // Return empty — cacheGet will not cache an empty result from a failure
-      // if there's already cached data, it would have been returned before this function ran
       return [];
     }
   });
