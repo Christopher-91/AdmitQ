@@ -296,7 +296,9 @@ CREATE TABLE programs (
   name                VARCHAR(300) NOT NULL,
   slug                VARCHAR(350) NOT NULL,
   degree              degree_type NOT NULL,
+  degree_type         VARCHAR(20),          -- e.g. MSc, MBA, MEng, PhD, BSc, BA
   field               VARCHAR(150) NOT NULL,
+  department          VARCHAR(150),         -- e.g. 'School of Engineering'
   specialization      VARCHAR(150),
   
   -- Details
@@ -311,6 +313,7 @@ CREATE TABLE programs (
   application_deadline VARCHAR(100),
   application_deadline_date DATE,
   early_deadline_date DATE,
+  application_method  VARCHAR(100),         -- e.g. 'Uni-Assist', 'Direct Portal'
   
   -- Financial
   tuition_usd         NUMERIC(12,2),
@@ -338,7 +341,8 @@ CREATE TABLE programs (
   avg_salary_after_usd NUMERIC(12,2),
   
   -- Data verification
-  source_url          VARCHAR(500),
+  source_url          VARCHAR(500),         -- official program page URL
+  official_requirements_url VARCHAR(500),   -- separate URL for requirements/entry criteria
   last_verified       TIMESTAMPTZ,
   verification_status verification_status DEFAULT 'unverified',
   
@@ -348,6 +352,7 @@ CREATE TABLE programs (
   
   UNIQUE(university_id, slug)
 );
+
 
 -- ═══════════════════════════════════════════════════════════
 -- 7. SCHOLARSHIP TABLES

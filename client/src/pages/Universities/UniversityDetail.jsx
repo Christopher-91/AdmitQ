@@ -384,7 +384,7 @@ export default function UniversityDetail() {
               { label: 'Avg. Tuition', value: uni.financial?.avgTuitionUsd ? `$${uni.financial.avgTuitionUsd.toLocaleString()}/yr` : 'N/A' },
               { label: 'Total Students', value: uni.totalStudents ? uni.totalStudents.toLocaleString() : 'N/A' },
               { label: 'Intl. Students', value: uni.internationalStudentsPct ? `${uni.internationalStudentsPct}%` : 'N/A' },
-              { label: 'Programs', value: uni.programs?.length || 0 },
+              { label: 'Verified Programs', value: uni.verifiedProgramCount ?? 0 },
             ].map(stat => (
               <div key={stat.label}>
                 <div style={{ fontSize: '0.7rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>{stat.label}</div>
@@ -554,31 +554,103 @@ export default function UniversityDetail() {
 
             {/* ── 3. PROGRAMS ── */}
             <div className="decision-section">
-              <h2 className="decision-section-title"><BsMortarboard style={{ verticalAlign: 'middle', marginRight: 8 }} /> Programs ({uni.programs?.length || 0})</h2>
-              {uni.programs?.length > 0 ? (
-                <>
-                  <div className="programs-mini-grid">
-                    {uni.programs.slice(0, 6).map(p => (
-                      <Link key={p.id} to={`/programs/${p.slug}`} className="program-mini-card">
-                        <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
-                          <span className={`badge ${p.degree === 'masters' ? 'badge-primary' : p.degree === 'phd' ? 'badge-accent' : 'badge-warning'}`} style={{ fontSize: '0.65rem', padding: '2px 8px' }}>
-                            {formatDegree(p.degree)}
-                          </span>
+              {(() => {
+                const allPrograms = uni.programs || [];
+                const verifiedPrograms = allPrograms.filter(p => p.verificationStatus === 'verified');
+                const hasVerified = verifiedPrograms.length > 0;
+                const totalCount = allPrograms.length;
+
+                return (
+                  <>
+                    <h2 className="decision-section-title">
+                      <BsMortarboard style={{ verticalAlign: 'middle', marginRight: 8 }} />
+                      {hasVerified
+                        ? `${verifiedPrograms.length} Verified Program${verifiedPrograms.length !== 1 ? 's' : ''}`
+                        : 'Programs'}
+                    </h2>
+
+                    {/* Unverified catalog banner */}
+                    {!hasVerified && totalCount > 0 && (
+                      <div style={{
+                        display: 'flex', alignItems: 'flex-start', gap: '0.75rem',
+                        background: 'color-mix(in srgb, var(--warning-400, #f59e0b) 8%, transparent)',
+                        border: '1px solid color-mix(in srgb, var(--warning-400, #f59e0b) 25%, transparent)',
+                        borderRadius: '10px', padding: '0.75rem 1rem',
+                        marginBottom: '1rem', fontSize: '0.85rem',
+                        color: 'var(--text-secondary)',
+                      }}>
+                        <BsExclamationTriangleFill style={{ flexShrink: 0, marginTop: 2, color: '#f59e0b' }} />
+                        <span>
+                          <strong>Catalog under verification</strong> — Showing {totalCount} unverified
+                          record{totalCount !== 1 ? 's' : ''}. These programs are not confirmed
+                          against an official source.{' '}
+                          {uni.website && (
+                            <a href={uni.website} target="_blank" rel="noreferrer"
+                               style={{ color: 'var(--primary-300)' }}>
+                              Check the official university website ↗
+                            </a>
+                          )}
+                        </span>
+                      </div>
+                    )}
+
+                    {totalCount > 0 ? (
+                      <>
+                        <div className="programs-mini-grid">
+                          {allPrograms.slice(0, 6).map(p => (
+                            <Link key={p.id} to={`/programs/${p.slug}`} className="program-mini-card">
+                              <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
+                                <span
+                                  className={`badge ${p.degree === 'masters' ? 'badge-primary' : p.degree === 'phd' ? 'badge-accent' : 'badge-warning'}`}
+                                  style={{ fontSize: '0.65rem', padding: '2px 8px' }}
+                                >
+                                  {formatDegree(p.degree)}
+                                </span>
+                                {p.verificationStatus === 'verified' ? (
+                                  <span title="Verified against official source" style={{
+                                    fontSize: '0.6rem', fontWeight: 700,
+                                    color: 'var(--accent-400)',
+                                    background: 'color-mix(in srgb, var(--accent-400) 12%, transparent)',
+                                    border: '1px solid color-mix(in srgb, var(--accent-400) 30%, transparent)',
+                                    borderRadius: '999px', padding: '1px 6px',
+                                  }}>
+                                    ✓ Verified
+                                  </span>
+                                ) : (
+                                  <span title="Not yet verified against an official source" style={{
+                                    fontSize: '0.6rem', fontWeight: 600,
+                                    color: 'var(--text-muted)',
+                                    background: 'color-mix(in srgb, var(--text-muted) 8%, transparent)',
+                                    border: '1px solid color-mix(in srgb, var(--text-muted) 18%, transparent)',
+                                    borderRadius: '999px', padding: '1px 6px',
+                                  }}>
+                                    Unverified
+                                  </span>
+                                )}
+                              </div>
+                              <div className="program-mini-name">{p.name}</div>
+                              <div className="program-mini-meta">
+                                {p.field}{p.specialization ? ` · ${p.specialization}` : ''} · {p.durationLabel || '—'}
+                              </div>
+                            </Link>
+                          ))}
                         </div>
-                        <div className="program-mini-name">{p.name}</div>
-                        <div className="program-mini-meta">{p.field}{p.specialization ? ` · ${p.specialization}` : ''} · {p.durationLabel || '—'}</div>
-                      </Link>
-                    ))}
-                  </div>
-                  {uni.programs.length > 6 && (
-                    <div style={{ marginTop: 16, textAlign: 'center' }}>
-                      <Link to={`/programs?university=${slug}`} className="btn btn-ghost btn-sm">View All {uni.programs.length} Programs →</Link>
-                    </div>
-                  )}
-                </>
-              ) : (
-                <p style={{ color: 'var(--text-tertiary)', fontSize: '0.9rem' }}>No programs listed yet. Check the university website for details.</p>
-              )}
+                        {totalCount > 6 && (
+                          <div style={{ marginTop: 16, textAlign: 'center' }}>
+                            <Link to={`/programs?university=${slug}`} className="btn btn-ghost btn-sm">
+                              View All {totalCount} Programs →
+                            </Link>
+                          </div>
+                        )}
+                      </>
+                    ) : (
+                      <p style={{ color: 'var(--text-tertiary)', fontSize: '0.9rem' }}>
+                        Official program catalog currently being verified for this institution.
+                      </p>
+                    )}
+                  </>
+                );
+              })()}
             </div>
 
             {/* ── 4. STUDENT REALITY ── */}

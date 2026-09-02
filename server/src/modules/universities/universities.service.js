@@ -117,7 +117,8 @@ export const searchUniversities = async (filters = {}) => {
             u.min_gpa, u.min_ielts, u.min_toefl, u.founded_year,
             u.total_students, u.international_students_pct,
             c.name as country_name, c.code as country_code, c.flag_emoji,
-            (SELECT COUNT(*) FROM programs p WHERE p.university_id = u.id AND p.is_active = TRUE) as program_count
+            (SELECT COUNT(*) FROM programs p WHERE p.university_id = u.id AND p.is_active = TRUE AND p.verification_status = 'verified') as verified_program_count,
+            (SELECT COUNT(*) FROM programs p WHERE p.university_id = u.id AND p.is_active = TRUE) as total_program_count
      FROM universities u
      JOIN countries c ON c.id = u.country_id
      ${whereClause}
@@ -155,12 +156,14 @@ export const getUniversity = async (idOrSlug) => {
 
   const uni = result.rows[0];
 
-  // Get programs
+  // Get programs — always fetch from DB via university FK (SSOT)
   const programs = await query(
-    `SELECT id, name, slug, degree, field, specialization, duration_label,
-            tuition_usd, language, intakes, application_deadline, min_gpa, min_ielts
+    `SELECT id, name, slug, degree, degree_type, field, department, specialization,
+            duration_label, duration_months, delivery_mode, language,
+            tuition_usd, tuition_currency, intakes, application_deadline,
+            min_gpa, min_ielts, source_url, verification_status, last_verified
      FROM programs WHERE university_id = $1 AND is_active = TRUE
-     ORDER BY degree, field, name`,
+     ORDER BY verification_status DESC, degree, field, name`,
     [uni.id]
   );
 
@@ -198,7 +201,9 @@ function formatUniversityCard(row) {
     foundedYear: row.founded_year,
     totalStudents: row.total_students,
     internationalStudentsPct: row.international_students_pct,
-    programCount: parseInt(row.program_count) || 0,
+    // SSOT: surface both verified and total counts — never conflate the two
+    verifiedProgramCount: parseInt(row.verified_program_count) || 0,
+    totalProgramCount: parseInt(row.total_program_count) || 0,
     country: {
       name: row.country_name,
       code: row.country_code,
@@ -259,20 +264,32 @@ function formatUniversityDetail(uni, programs, scholarships) {
       lastVerified: uni.last_verified,
       verificationStatus: uni.verification_status,
     },
+    // SSOT: expose verified vs total program counts separately
+    verifiedProgramCount: programs.filter(p => p.verification_status === 'verified').length,
+    totalProgramCount: programs.length,
     programs: programs.map(p => ({
+
       id: p.id,
       name: p.name,
       slug: p.slug,
       degree: p.degree,
+      degreeType: p.degree_type,
       field: p.field,
+      department: p.department,
       specialization: p.specialization,
       durationLabel: p.duration_label,
-      tuitionUsd: p.tuition_usd,
+      durationMonths: p.duration_months,
+      studyMode: p.delivery_mode,
       language: p.language,
+      tuitionUsd: p.tuition_usd,
+      tuitionCurrency: p.tuition_currency,
       intakes: p.intakes,
       applicationDeadline: p.application_deadline,
       minGpa: p.min_gpa,
       minIelts: p.min_ielts,
+      sourceUrl: p.source_url,
+      verificationStatus: p.verification_status,
+      lastVerified: p.last_verified,
     })),
     scholarships: scholarships.map(s => ({
       id: s.id,
