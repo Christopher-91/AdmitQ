@@ -1,0 +1,10 @@
+UPDATE universities SET logo_url = '/wuhan-university-logo.png' WHERE name ILIKE '%Wuhan University%';
+UPDATE universities SET logo_url = '/uestc-logo.png' WHERE name ILIKE '%University of Electronic Science and Technology of China%';
+UPDATE universities SET logo_url = '/xidian-university-logo.png' WHERE name ILIKE '%Xidian University%';
+UPDATE universities SET logo_url = '/sichuan-university-logo.png' WHERE name ILIKE '%Sichuan University%';
+UPDATE universities SET logo_url = '/sun-yat-sen-university-logo.png' WHERE name ILIKE '%Sun Yat-sen University%';
+UPDATE universities SET logo_url = '/shandong-university-logo.png' WHERE name ILIKE '%Shandong University%';
+UPDATE universities SET logo_url = '/xiamen-university-logo.png' WHERE name ILIKE '%Xiamen University%';
+UPDATE universities SET logo_url = '/tongji-university-logo.png' WHERE name ILIKE '%Tongji University%';
+UPDATE universities SET logo_url = '/nankai-university-logo.png' WHERE name ILIKE '%Nankai University%';
+UPDATE universities SET logo_url = '/central-south-university-logo.png' WHERE name ILIKE '%Central South University%';
