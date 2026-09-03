@@ -40,11 +40,11 @@ export default function Logo({ website, name, slug, size = 48, logoUrl }) {
     );
   }
 
-  // Level 2: Clearbit
+  // Level 2: Icon Horse Fallback (Faster than Clearbit)
   if (errorLevel <= 2 && hostname) {
     return (
       <img 
-        src={`https://logo.clearbit.com/${hostname}?size=${size * 2}`} 
+        src={`https://icon.horse/icon/${hostname}`} 
         alt={name} 
         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
         onError={() => setErrorLevel(3)}
