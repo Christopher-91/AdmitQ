@@ -32,6 +32,18 @@ const config = {
   cors: {
     origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
   },
+
+  google: {
+    clientId: process.env.GOOGLE_CLIENT_ID || '',
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
+  },
+
+  apple: {
+    clientId: process.env.APPLE_CLIENT_ID || '',       // Your Apple Services ID
+    teamId: process.env.APPLE_TEAM_ID || '',
+    keyId: process.env.APPLE_KEY_ID || '',
+    privateKey: process.env.APPLE_PRIVATE_KEY || '',   // Paste .p8 content here with \n
+  },
 };
 
 // Validate critical config in production

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
+import UserAvatar from '../UserAvatar/UserAvatar';
 import { Landmark, BookOpen, Globe2, Award, Briefcase, Calculator, Plane } from 'lucide-react';
 import './Navbar.css';
 
@@ -107,12 +108,13 @@ export default function Navbar() {
             
             {isAuthenticated ? (
               <div className="profile-menu-wrapper">
-                <button
+              <button
                   className="profile-trigger"
                   onClick={() => setProfileOpen(!profileOpen)}
                   onBlur={() => setTimeout(() => setProfileOpen(false), 200)}
+                  style={{ padding: 0, background: 'none', border: 'none', cursor: 'pointer', borderRadius: '50%' }}
                 >
-                  {user?.firstName?.[0]}{user?.lastName?.[0]}
+                  <UserAvatar user={user} size={36} showBadge />
                 </button>
 
                 {profileOpen && (

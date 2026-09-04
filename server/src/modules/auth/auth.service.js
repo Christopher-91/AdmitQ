@@ -1,6 +1,7 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
+import { OAuth2Client } from 'google-auth-library';
 import config from '../../config/index.js';
 import { query } from '../../config/database.js';
 import {
@@ -9,6 +10,8 @@ import {
   UnauthorizedError,
   NotFoundError,
 } from '../../middleware/errorHandler.js';
+
+const googleClient = new OAuth2Client(config.google?.clientId);
 
 const SALT_ROUNDS = 12;
 
@@ -257,5 +260,188 @@ function formatUser(user) {
     lastName: user.last_name,
     role: user.role,
     emailVerified: user.email_verified || false,
+    avatarUrl: user.avatar_url || null,
+    authProvider: user.auth_provider || 'local',
   };
 }
+
+/**
+ * OAuth login — Google or Apple
+ * Finds or creates a user from an OAuth provider payload.
+ * Safely handles account linking and Apple's name-only-on-first-login rule.
+ */
+export const oauthLogin = async ({ provider, profile }) => {
+  const {
+    providerAccountId, // unique ID from the provider
+    email,            // may be private relay for Apple
+    firstName,        // Apple: only present on first login
+    lastName,         // Apple: only present on first login
+    avatarUrl,        // Google: profile picture URL
+    idToken,
+  } = profile;
+
+  // 1. Check if OAuth account already exists
+  const existingOAuth = await query(
+    'SELECT user_id FROM oauth_accounts WHERE provider = $1 AND provider_account_id = $2',
+    [provider, providerAccountId]
+  );
+
+  if (existingOAuth.rows.length > 0) {
+    const userId = existingOAuth.rows[0].user_id;
+
+    // Update avatar_url for Google (may change)
+    if (avatarUrl && provider === 'google') {
+      await query('UPDATE users SET avatar_url = $1 WHERE id = $2', [avatarUrl, userId]);
+    }
+
+    // Update oauth_accounts token
+    await query(
+      `UPDATE oauth_accounts SET id_token = $1, updated_at = NOW()
+       WHERE provider = $2 AND provider_account_id = $3`,
+      [idToken || null, provider, providerAccountId]
+    );
+
+    await query('UPDATE users SET last_login = NOW() WHERE id = $1', [userId]);
+
+    const userResult = await query(
+      'SELECT id, email, first_name, last_name, role, is_active, email_verified, avatar_url, auth_provider FROM users WHERE id = $1',
+      [userId]
+    );
+
+    if (!userResult.rows[0].is_active) {
+      throw new UnauthorizedError('Account has been deactivated');
+    }
+
+    const user = userResult.rows[0];
+    const tokens = generateTokens(user);
+    await storeRefreshToken(user.id, tokens.refreshToken);
+    return { user: formatUser(user), ...tokens };
+  }
+
+  // 2. No existing OAuth account — check if user with same email exists
+  let user;
+  if (email && !email.includes('@privaterelay.appleid.com')) {
+    const existingUser = await query(
+      'SELECT id, email, first_name, last_name, role, is_active, email_verified, avatar_url, auth_provider FROM users WHERE email = $1',
+      [email.toLowerCase()]
+    );
+
+    if (existingUser.rows.length > 0) {
+      // Link OAuth provider to existing account
+      user = existingUser.rows[0];
+      if (!user.is_active) throw new UnauthorizedError('Account has been deactivated');
+
+      await query(
+        `INSERT INTO oauth_accounts (user_id, provider, provider_account_id, id_token)
+         VALUES ($1, $2, $3, $4)`,
+        [user.id, provider, providerAccountId, idToken || null]
+      );
+
+      // Update avatar and mark email as verified via OAuth
+      const updates = ['last_login = NOW()', 'email_verified = TRUE'];
+      const params = [user.id];
+      if (avatarUrl && !user.avatar_url) {
+        params.unshift(avatarUrl);
+        updates.unshift(`avatar_url = $${params.length - 1}`);
+      }
+      await query(`UPDATE users SET ${updates.join(', ')} WHERE id = $${params.length}`, params);
+
+      const updatedUser = await query(
+        'SELECT id, email, first_name, last_name, role, is_active, email_verified, avatar_url, auth_provider FROM users WHERE id = $1',
+        [user.id]
+      );
+      user = updatedUser.rows[0];
+      const tokens = generateTokens(user);
+      await storeRefreshToken(user.id, tokens.refreshToken);
+      return { user: formatUser(user), ...tokens };
+    }
+  }
+
+  // 3. Brand new user — create account
+  // CRITICAL: Apple only sends name on first login. Use it if present.
+  const safeFirstName = firstName || email?.split('@')[0] || 'User';
+  const safeLastName = lastName || '';
+
+  const newUserResult = await query(
+    `INSERT INTO users (email, first_name, last_name, role, email_verified, avatar_url, auth_provider)
+     VALUES ($1, $2, $3, 'student', TRUE, $4, $5)
+     RETURNING id, email, first_name, last_name, role, is_active, email_verified, avatar_url, auth_provider`,
+    [
+      email ? email.toLowerCase() : null,
+      safeFirstName,
+      safeLastName,
+      avatarUrl || null,
+      provider,
+    ]
+  );
+
+  user = newUserResult.rows[0];
+
+  // Create student profile
+  await query('INSERT INTO student_profiles (user_id) VALUES ($1)', [user.id]);
+
+  // Link OAuth account
+  await query(
+    `INSERT INTO oauth_accounts (user_id, provider, provider_account_id, id_token)
+     VALUES ($1, $2, $3, $4)`,
+    [user.id, provider, providerAccountId, idToken || null]
+  );
+
+  const tokens = generateTokens(user);
+  await storeRefreshToken(user.id, tokens.refreshToken);
+  return { user: formatUser(user), ...tokens };
+};
+
+/**
+ * Verify a Google token — handles both:
+ * 1. ID token (credential) from Google One Tap
+ * 2. access_token + userInfo from implicit OAuth flow
+ */
+export const verifyGoogleToken = async (credential, userInfo = null) => {
+  // If we received userInfo directly (implicit flow), use it
+  if (userInfo && userInfo.sub) {
+    return {
+      providerAccountId: userInfo.sub,
+      email: userInfo.email,
+      firstName: userInfo.given_name,
+      lastName: userInfo.family_name,
+      avatarUrl: userInfo.picture,
+      idToken: credential,
+      emailVerified: userInfo.email_verified,
+    };
+  }
+
+  // Otherwise treat credential as a Google ID token and verify it
+  if (!config.google?.clientId) {
+    throw new BadRequestError('Google Sign-In is not configured. Add GOOGLE_CLIENT_ID to .env');
+  }
+  try {
+    const ticket = await googleClient.verifyIdToken({
+      idToken: credential,
+      audience: config.google.clientId,
+    });
+    const payload = ticket.getPayload();
+    return {
+      providerAccountId: payload.sub,
+      email: payload.email,
+      firstName: payload.given_name,
+      lastName: payload.family_name,
+      avatarUrl: payload.picture,
+      idToken: credential,
+      emailVerified: payload.email_verified,
+    };
+  } catch (err) {
+    throw new UnauthorizedError('Invalid Google token');
+  }
+};
+
+/**
+ * Get connected OAuth providers for a user
+ */
+export const getConnectedProviders = async (userId) => {
+  const result = await query(
+    'SELECT provider, created_at FROM oauth_accounts WHERE user_id = $1',
+    [userId]
+  );
+  return result.rows;
+};

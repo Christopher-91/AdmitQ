@@ -31,23 +31,44 @@ export function AuthProvider({ children }) {
     }
   }, []);
 
-  const login = useCallback(async (email, password) => {
-    const res = await api.post('/auth/login', { email, password });
-    const { user: userData, accessToken, refreshToken } = res.data.data;
+  const _storeSession = (userData, accessToken, refreshToken) => {
     localStorage.setItem('accessToken', accessToken);
     localStorage.setItem('refreshToken', refreshToken);
     localStorage.setItem('user', JSON.stringify(userData));
     setUser(userData);
+  };
+
+  const login = useCallback(async (email, password) => {
+    const res = await api.post('/auth/login', { email, password });
+    const { user: userData, accessToken, refreshToken } = res.data.data;
+    _storeSession(userData, accessToken, refreshToken);
     return userData;
   }, []);
 
   const register = useCallback(async (data) => {
     const res = await api.post('/auth/register', data);
     const { user: userData, accessToken, refreshToken } = res.data.data;
-    localStorage.setItem('accessToken', accessToken);
-    localStorage.setItem('refreshToken', refreshToken);
-    localStorage.setItem('user', JSON.stringify(userData));
-    setUser(userData);
+    _storeSession(userData, accessToken, refreshToken);
+    return userData;
+  }, []);
+
+  /**
+   * Google Sign-In — receives the credential (ID token) from @react-oauth/google
+   */
+  const loginWithGoogle = useCallback(async (credential) => {
+    const res = await api.post('/auth/google', { credential });
+    const { user: userData, accessToken, refreshToken } = res.data.data;
+    _storeSession(userData, accessToken, refreshToken);
+    return userData;
+  }, []);
+
+  /**
+   * Apple Sign-In scaffold — will be functional once Apple credentials are configured
+   */
+  const loginWithApple = useCallback(async ({ identityToken, authorizationCode, user: appleUser }) => {
+    const res = await api.post('/auth/apple', { identityToken, authorizationCode, user: appleUser });
+    const { user: userData, accessToken, refreshToken } = res.data.data;
+    _storeSession(userData, accessToken, refreshToken);
     return userData;
   }, []);
 
@@ -77,7 +98,11 @@ export function AuthProvider({ children }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, register, logout, refreshProfile, isAuthenticated: !!user }}>
+    <AuthContext.Provider value={{
+      user, loading, login, register, logout, refreshProfile,
+      loginWithGoogle, loginWithApple,
+      isAuthenticated: !!user
+    }}>
       {children}
     </AuthContext.Provider>
   );

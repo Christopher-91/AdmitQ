@@ -1,14 +1,15 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link, useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import api from '../../lib/api';
 import Logo from '../../components/Logo/Logo';
+import UserAvatar from '../../components/UserAvatar/UserAvatar';
 import { formatDegree } from '../../lib/formatters';
 import {
   BsBullseye, BsCashCoin, BsMortarboard, BsPeopleFill,
   BsChatSquareDots, BsHouseDoor, BsForkKnife, BsBusFront, BsBox,
-  BsStarFill, BsCash, BsExclamationTriangleFill, BsCheckCircleFill,
-  BsClipboard2, BsClock, BsGlobe2, BsPaperclip, BsLightningCharge,
+  BsStarFill, BsStarHalf, BsCash, BsExclamationTriangleFill, BsCheckCircleFill,
+  BsClipboard2, BsClock, BsGlobe2, BsPaperclip, BsLightningCharge, BsShieldCheck,
 
 } from 'react-icons/bs';
 import {
@@ -17,6 +18,7 @@ import {
   FcMindMap, FcIdea
 } from 'react-icons/fc';
 import { FaStethoscope } from 'react-icons/fa6';
+import toast from 'react-hot-toast';
 import '../DataPages.css';
 
 const careerIconMap = {
@@ -31,6 +33,280 @@ const careerIconMap = {
   'AI/ML Researcher': <FcMindMap />,
   'Product Manager': <FcIdea />,
 };
+
+// ── Reviews ────────────────────────────────────────
+
+function StarRating({ value, onChange, max = 5 }) {
+  const [hovered, setHovered] = useState(0);
+  return (
+    <div style={{ display: 'flex', gap: 4 }}>
+      {Array.from({ length: max }, (_, i) => i + 1).map(star => (
+        <button
+          key={star}
+          type="button"
+          onClick={() => onChange && onChange(star)}
+          onMouseEnter={() => onChange && setHovered(star)}
+          onMouseLeave={() => onChange && setHovered(0)}
+          style={{ background: 'none', border: 'none', cursor: onChange ? 'pointer' : 'default', padding: 0, lineHeight: 1 }}
+        >
+          <BsStarFill
+            size={onChange ? 22 : 14}
+            color={(hovered || value) >= star ? '#f59e0b' : 'var(--border-primary)'}
+          />
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function ReviewCard({ review }) {
+  const formattedDate = new Date(review.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+  return (
+    <div style={{
+      background: 'var(--surface-1)', border: '1px solid var(--border-primary)',
+      borderRadius: 'var(--radius-lg)', padding: '20px', display: 'flex', flexDirection: 'column', gap: 12,
+    }}>
+      {/* Author row */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <UserAvatar user={review.author} size={38} showBadge />
+          <div>
+            <div style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-primary)' }}>
+              {review.author.displayName}
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.75rem', color: 'var(--text-tertiary)' }}>
+              {/* Authenticated badge — separate from "Verified Student" */}
+              {(review.author.authProvider === 'google' || review.author.authProvider === 'apple') && (
+                <span style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 3,
+                  background: 'rgba(99,102,241,0.12)', color: 'var(--primary-400)',
+                  borderRadius: 99, padding: '2px 8px', fontSize: '0.7rem', fontWeight: 600,
+                }}>
+                  <BsShieldCheck size={10} /> Authenticated
+                </span>
+              )}
+              {review.isVerifiedStudent && (
+                <span style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 3,
+                  background: 'rgba(16,185,129,0.12)', color: '#10b981',
+                  borderRadius: 99, padding: '2px 8px', fontSize: '0.7rem', fontWeight: 600,
+                }}>
+                  <BsCheckCircleFill size={10} /> Verified Student
+                </span>
+              )}
+              <span>{formattedDate}</span>
+            </div>
+          </div>
+        </div>
+        <StarRating value={review.rating} max={5} />
+      </div>
+
+      {/* Review body */}
+      {review.title && <p style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--text-primary)', margin: 0 }}>{review.title}</p>}
+      <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', margin: 0, lineHeight: 1.6 }}>{review.body}</p>
+
+      {(review.pros || review.cons) && (
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          {review.pros && (
+            <div style={{ fontSize: '0.8rem', color: '#10b981', background: 'rgba(16,185,129,0.07)', borderRadius: 8, padding: '8px 12px' }}>
+              <strong>👍 Pros:</strong> {review.pros}
+            </div>
+          )}
+          {review.cons && (
+            <div style={{ fontSize: '0.8rem', color: '#f59e0b', background: 'rgba(245,158,11,0.07)', borderRadius: 8, padding: '8px 12px' }}>
+              <strong>⚠️ Cons:</strong> {review.cons}
+            </div>
+          )}
+        </div>
+      )}
+
+      {review.programStudied && (
+        <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)' }}>
+          📚 {review.programStudied}{review.yearAttended ? ` · ${review.yearAttended}` : ''}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ReviewsSection({ uniSlug, user, isAuthenticated }) {
+  const [reviews, setReviews] = useState([]);
+  const [stats, setStats] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
+  const [showForm, setShowForm] = useState(false);
+  const [form, setForm] = useState({ rating: 0, title: '', body: '', pros: '', cons: '', programStudied: '', yearAttended: '' });
+  const [formError, setFormError] = useState('');
+
+  const loadReviews = useCallback(async () => {
+    try {
+      const res = await api.get(`/universities/${uniSlug}/reviews?limit=20`);
+      setReviews(res.data.data.reviews || []);
+      setStats(res.data.data.stats || null);
+    } catch { /* silent */ }
+    finally { setLoading(false); }
+  }, [uniSlug]);
+
+  useEffect(() => { loadReviews(); }, [loadReviews]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormError('');
+    if (!form.rating) { setFormError('Please select a star rating'); return; }
+    if (!form.body || form.body.trim().length < 20) { setFormError('Review must be at least 20 characters'); return; }
+    setSubmitting(true);
+    try {
+      await api.post(`/universities/${uniSlug}/reviews`, form);
+      toast.success('Your review has been posted!');
+      setShowForm(false);
+      setForm({ rating: 0, title: '', body: '', pros: '', cons: '', programStudied: '', yearAttended: '' });
+      loadReviews();
+    } catch (err) {
+      setFormError(err.response?.data?.error?.message || 'Failed to submit review');
+    } finally { setSubmitting(false); }
+  };
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      {/* Stats row */}
+      {stats && stats.totalCount > 0 && (
+        <div style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-primary)', lineHeight: 1 }}>
+              {stats.avgRating.toFixed(1)}
+            </div>
+            <StarRating value={Math.round(stats.avgRating)} max={5} />
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginTop: 4 }}>{stats.totalCount} review{stats.totalCount !== 1 ? 's' : ''}</div>
+          </div>
+          <div style={{ flex: 1, minWidth: 180 }}>
+            {[5,4,3,2,1].map(star => (
+              <div key={star} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 3 }}>
+                <span style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', width: 10 }}>{star}</span>
+                <BsStarFill size={10} color="#f59e0b" />
+                <div style={{ flex: 1, height: 6, background: 'var(--border-primary)', borderRadius: 99, overflow: 'hidden' }}>
+                  <div style={{ height: '100%', background: '#f59e0b', borderRadius: 99, width: `${stats.totalCount ? (stats.distribution[star] / stats.totalCount) * 100 : 0}%` }} />
+                </div>
+                <span style={{ fontSize: '0.7rem', color: 'var(--text-tertiary)', width: 16 }}>{stats.distribution[star]}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Write review CTA */}
+      {isAuthenticated && !showForm && (
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={() => setShowForm(true)}
+          style={{ alignSelf: 'flex-start' }}
+        >
+          ✍️ Write a Review
+        </button>
+      )}
+      {!isAuthenticated && (
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)' }}>
+          <a href="/login" style={{ color: 'var(--primary-400)', fontWeight: 600 }}>Sign in</a> to share your experience at this university.
+        </p>
+      )}
+
+      {/* Review form */}
+      {showForm && isAuthenticated && (
+        <div style={{
+          background: 'var(--surface-1)', border: '1px solid var(--primary-400)',
+          borderRadius: 'var(--radius-lg)', padding: '24px',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+            <UserAvatar user={user} size={36} showBadge />
+            <div>
+              <div style={{ fontWeight: 700, fontSize: '0.9rem' }}>{user?.firstName} {user?.lastName}</div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)' }}>
+                Your name and photo are locked to your account — they cannot be changed per review.
+              </div>
+            </div>
+          </div>
+
+          {formError && (
+            <div style={{ padding: '10px 14px', background: 'rgba(244,63,94,0.1)', border: '1px solid rgba(244,63,94,0.2)', borderRadius: 8, fontSize: '0.85rem', color: 'var(--error-400)', marginBottom: 16 }}>
+              {formError}
+            </div>
+          )}
+
+          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+            <div>
+              <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 600, display: 'block', marginBottom: 6 }}>Overall Rating *</label>
+              <StarRating value={form.rating} onChange={r => setForm(f => ({ ...f, rating: r }))} max={5} />
+            </div>
+
+            <div>
+              <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 600, display: 'block', marginBottom: 6 }}>Title (optional)</label>
+              <input className="form-input" placeholder="Sum up your experience..." value={form.title} onChange={e => setForm(f => ({ ...f, title: e.target.value }))} maxLength={200} />
+            </div>
+
+            <div>
+              <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 600, display: 'block', marginBottom: 6 }}>Your Experience *</label>
+              <textarea
+                className="form-input"
+                placeholder="Share your honest experience — academics, social life, career support, and more. Min 20 characters."
+                value={form.body}
+                onChange={e => setForm(f => ({ ...f, body: e.target.value }))}
+                rows={4}
+                style={{ resize: 'vertical', fontFamily: 'inherit' }}
+              />
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+              <div>
+                <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 600, display: 'block', marginBottom: 6 }}>Pros (optional)</label>
+                <textarea className="form-input" placeholder="What did you love?" value={form.pros} onChange={e => setForm(f => ({ ...f, pros: e.target.value }))} rows={2} style={{ resize: 'none', fontFamily: 'inherit' }} />
+              </div>
+              <div>
+                <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 600, display: 'block', marginBottom: 6 }}>Cons (optional)</label>
+                <textarea className="form-input" placeholder="What could be better?" value={form.cons} onChange={e => setForm(f => ({ ...f, cons: e.target.value }))} rows={2} style={{ resize: 'none', fontFamily: 'inherit' }} />
+              </div>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+              <div>
+                <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 600, display: 'block', marginBottom: 6 }}>Program Studied (optional)</label>
+                <input className="form-input" placeholder="e.g. MSc Computer Science" value={form.programStudied} onChange={e => setForm(f => ({ ...f, programStudied: e.target.value }))} />
+              </div>
+              <div>
+                <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 600, display: 'block', marginBottom: 6 }}>Year Attended (optional)</label>
+                <input className="form-input" type="number" placeholder="e.g. 2023" value={form.yearAttended} onChange={e => setForm(f => ({ ...f, yearAttended: e.target.value }))} min="1950" max={new Date().getFullYear() + 2} />
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', gap: 10, justifyContent: 'flex-end' }}>
+              <button type="button" className="btn btn-ghost" onClick={() => setShowForm(false)}>Cancel</button>
+              <button type="submit" className="btn btn-primary" disabled={submitting}>
+                {submitting ? 'Submitting...' : 'Submit Review'}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
+
+      {/* Reviews list */}
+      {loading ? (
+        <div style={{ color: 'var(--text-tertiary)', fontSize: '0.9rem' }}>Loading reviews...</div>
+      ) : reviews.length === 0 ? (
+        <div style={{ padding: '24px', textAlign: 'center', background: 'var(--surface-1)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-primary)' }}>
+          <div style={{ fontSize: '2rem', marginBottom: 8 }}>🎓</div>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            No reviews yet. Be the first to share your experience!
+          </p>
+        </div>
+      ) : (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+          {reviews.map(r => <ReviewCard key={r.id} review={r} />)}
+        </div>
+      )}
+    </div>
+  );
+}
+
+
 
 // ── Client-side match calculation ─────────────────────────
 function computeMatch(profile, uni) {
@@ -679,10 +955,7 @@ export default function UniversityDetail() {
                   ))}
                 </div>
               </div>
-              <div className="coming-soon-card" style={{ padding: 20 }}>
-                <span className="coming-soon-badge">Coming Soon</span>
-                <p className="coming-soon-desc">Detailed student reviews and experiences will be available soon.</p>
-              </div>
+              <ReviewsSection uniSlug={slug} user={user} isAuthenticated={isAuthenticated} />
             </div>
 
             {/* ── 5. COMMUNITY ── */}

@@ -91,3 +91,82 @@
 .auth-terms {
   margin-top: -8px;
 }
+
+/* ─── OAuth Buttons ─────────────────── */
+.auth-oauth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.auth-oauth-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 20px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  border: 1px solid var(--border-primary);
+  background: var(--surface-1);
+  color: var(--text-primary);
+}
+
+.auth-oauth-btn:hover {
+  background: var(--surface-2);
+  border-color: var(--border-secondary);
+  transform: translateY(-1px);
+}
+
+.auth-oauth-btn:active {
+  transform: translateY(0);
+}
+
+.auth-oauth-btn--google {
+  background: #fff;
+  color: #1f1f1f;
+  border-color: #dadce0;
+}
+
+.auth-oauth-btn--google:hover {
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.auth-oauth-btn--apple {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.auth-oauth-btn--apple:hover {
+  background: #1a1a1a;
+}
+
+.auth-oauth-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-primary);
+}
