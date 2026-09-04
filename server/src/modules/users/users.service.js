@@ -6,7 +6,7 @@ import { NotFoundError } from '../../middleware/errorHandler.js';
  */
 export const getProfile = async (userId) => {
   const userResult = await query(
-    `SELECT u.id, u.email, u.first_name, u.last_name, u.role, u.email_verified, u.avatar_url, u.created_at,
+    `SELECT u.id, u.email, u.first_name, u.last_name, u.role, u.email_verified, u.avatar_url, u.auth_provider, u.created_at,
             sp.date_of_birth, sp.nationality, sp.country_of_residence, sp.preferred_language, sp.phone,
             sp.current_education_level, sp.school_university, sp.current_degree, sp.current_major,
             sp.graduation_year, sp.gpa, sp.gpa_scale, sp.class_10_percentage, sp.class_12_percentage,
@@ -52,6 +52,7 @@ export const getProfile = async (userId) => {
     role: user.role,
     emailVerified: user.email_verified,
     avatarUrl: user.avatar_url,
+    authProvider: user.auth_provider || 'local',
     createdAt: user.created_at,
     personal: {
       dateOfBirth: user.date_of_birth,
