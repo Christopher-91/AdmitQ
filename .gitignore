@@ -35,3 +35,4 @@ uploads/*
 # Docker volumes
 pgdata/
 redisdata/
+.neon

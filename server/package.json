@@ -11,6 +11,7 @@
     "seed": "node src/config/seed.js",
     "scrape": "node src/services/scraper/index.js",
     "db:reset": "node src/config/reset.js",
+    "build": "echo 'No build required for backend'",
     "test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests"
   },
   "dependencies": {
