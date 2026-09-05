@@ -5935,6 +5935,7 @@ const newChinaUnis = [
     "city": "Chinese City",
     "stateProvince": "Chinese Province",
     "website": "https://www.zhejiang.edu.cn",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/Zhejiang_University_Logo.svg/1200px-Zhejiang_University_Logo.svg.png",
     "universityType": "public",
     "foundedYear": 1891,
     "description": "A top public university located in China.",
