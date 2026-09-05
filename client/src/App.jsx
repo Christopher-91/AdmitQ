@@ -34,6 +34,8 @@ import ScholarshipDetail from './pages/Scholarships/ScholarshipDetail';
 import Careers from './pages/Careers/Careers';
 import CareerDetail from './pages/Careers/CareerDetail';
 import CostCalculator from './pages/Calculator/CostCalculator';
+import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
+import TermsOfService from './pages/Legal/TermsOfService';
 
 import './index.css';
 
@@ -63,6 +65,8 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/careers/:slug" element={<CareerDetail />} />
           <Route path="/calculator" element={<CostCalculator />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
 
           {/* Protected */}
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
