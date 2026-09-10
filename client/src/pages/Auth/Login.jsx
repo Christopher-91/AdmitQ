@@ -15,12 +15,6 @@ const GoogleIcon = () => (
   </svg>
 );
 
-const AppleIcon = () => (
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.39.07 2.36.75 3.18.75.78 0 2.26-.93 3.81-.79 1.68.14 2.94.73 3.72 1.95-3.29 2.04-2.72 6.55.67 8.17-.75 1.61-1.45 3.05-3.38 2.8zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
-  </svg>
-);
-
 const GOOGLE_CONFIGURED = !!import.meta.env.VITE_GOOGLE_CLIENT_ID && import.meta.env.VITE_GOOGLE_CLIENT_ID !== 'YOUR_GOOGLE_CLIENT_ID_HERE';
 
 export default function Login() {
@@ -86,13 +80,6 @@ export default function Login() {
     flow: 'implicit',
   });
 
-  const handleApple = () => {
-    toast('Apple Sign-In requires Apple Developer credentials.\nAdd them to your .env to enable.', {
-      icon: '🍎',
-      duration: 4000,
-    });
-  };
-
   return (
     <div className="auth-page">
       <div className="auth-card animate-fadeInUp">
@@ -118,16 +105,6 @@ export default function Login() {
             {oauthLoading === 'google' ? 'Signing in...' : 'Continue with Google'}
           </button>
 
-          <button
-            id="apple-login-btn"
-            type="button"
-            className="auth-oauth-btn auth-oauth-btn--apple"
-            onClick={handleApple}
-            disabled={oauthLoading === 'apple'}
-          >
-            <AppleIcon />
-            Sign in with Apple
-          </button>
         </div>
 
         <div className="auth-divider">or sign in with email</div>
