@@ -7,13 +7,13 @@
   position: relative;
   padding: 200px 0 100px;
   overflow: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/hero-bg-4.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/hero-bg-5.jpg');
   background-size: cover;
   background-position: center;
 }
 
 [data-theme='dark'] .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('/images/hero-bg-4.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('/images/hero-bg-5.jpg');
 }
 
 .hero-bg-orb {
