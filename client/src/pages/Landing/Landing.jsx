@@ -123,7 +123,7 @@ export default function Landing() {
           <h1 className="hero-title animate-fadeInUp">
             Your Global Education
             <br />
-            Journey <span className="hero-gradient">Starts Here</span>
+            Journey Starts Here
           </h1>
 
           <p className="hero-subtitle animate-fadeInUp">
