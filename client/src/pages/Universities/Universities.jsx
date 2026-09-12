@@ -182,7 +182,7 @@ export default function Universities() {
                 )}
                 <div className="uni-meta-item">
                   <span className="uni-meta-label">Avg. Tuition</span>
-                  <span className="uni-meta-value">${(u.avgTuitionUsd || 0).toLocaleString()}/yr</span>
+                  <span className="uni-meta-value">${(u.avgTuitionUsd || 0).toLocaleString('en-US')}/yr</span>
                 </div>
                 <div className="uni-meta-item">
                   <span className="uni-meta-label">Programs</span>

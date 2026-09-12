@@ -63,7 +63,7 @@ export default function CountryDetail() {
             {[
               { label: 'Universities', value: country.universities?.length || 0 },
               { label: 'Avg. Tuition', value: `$${((country.costs?.avgTuitionMinUsd || 0) / 1000).toFixed(0)}k–$${((country.costs?.avgTuitionMaxUsd || 0) / 1000).toFixed(0)}k/yr` },
-              { label: 'Avg. Living Cost', value: country.costs?.avgLivingCostUsd ? `$${country.costs.avgLivingCostUsd.toLocaleString()}/mo` : 'N/A' },
+              { label: 'Avg. Living Cost', value: country.costs?.avgLivingCostUsd ? `$${country.costs.avgLivingCostUsd.toLocaleString('en-US')}/mo` : 'N/A' },
               { label: 'Work Hours', value: country.visa?.workHoursPerWeek ? `${country.visa.workHoursPerWeek}hrs/wk` : 'N/A' },
             ].map(stat => (
               <div key={stat.label}>
@@ -158,8 +158,8 @@ export default function CountryDetail() {
                 <h3 style={{ fontWeight: 700, marginBottom: 16, fontSize: '0.95rem' }}>Cost Overview</h3>
                 {[
                   { label: 'Tuition Range', value: `$${((country.costs?.avgTuitionMinUsd || 0) / 1000).toFixed(0)}k–$${((country.costs?.avgTuitionMaxUsd || 0) / 1000).toFixed(0)}k/yr` },
-                  { label: 'Avg. Living Cost', value: country.costs?.avgLivingCostUsd ? `$${country.costs.avgLivingCostUsd.toLocaleString()}/mo` : '-' },
-                  { label: 'Avg. Rent', value: country.costs?.avgRentUsd ? `$${country.costs.avgRentUsd.toLocaleString()}/mo` : '-' },
+                  { label: 'Avg. Living Cost', value: country.costs?.avgLivingCostUsd ? `$${country.costs.avgLivingCostUsd.toLocaleString('en-US')}/mo` : '-' },
+                  { label: 'Avg. Rent', value: country.costs?.avgRentUsd ? `$${country.costs.avgRentUsd.toLocaleString('en-US')}/mo` : '-' },
                   { label: 'Currency', value: country.costs?.currency || '-' },
                   { label: 'Visa Cost', value: country.visa?.visaCostUsd ? `$${country.visa.visaCostUsd}` : '-' },
                 ].map(item => (
@@ -210,7 +210,7 @@ export default function CountryDetail() {
                       )}
                       <div className="uni-meta-item">
                         <span className="uni-meta-label">Avg. Tuition</span>
-                        <span className="uni-meta-value">${(u.avgTuitionUsd || 0).toLocaleString()}/yr</span>
+                        <span className="uni-meta-value">${(u.avgTuitionUsd || 0).toLocaleString('en-US')}/yr</span>
                       </div>
                       <div className="uni-meta-item">
                         <span className="uni-meta-label">Programs</span>
@@ -248,7 +248,7 @@ export default function CountryDetail() {
                       }
                     </span>
                     <h3 className="program-name">{s.name}</h3>
-                    {s.amount_usd && <div className="scholarship-amount">Up to ${Number(s.amount_usd).toLocaleString()}</div>}
+                    {s.amount_usd && <div className="scholarship-amount">Up to ${Number(s.amount_usd).toLocaleString('en-US')}</div>}
                     {s.deadline && (
                       <p className="text-xs text-muted"><BsClock size={11} style={{ verticalAlign: 'middle', marginRight: 4 }} /> Deadline: {new Date(s.deadline).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
                     )}

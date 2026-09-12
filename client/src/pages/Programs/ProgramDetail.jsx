@@ -59,7 +59,7 @@ export default function ProgramDetail() {
 
           <div style={{ display: 'flex', gap: 32, marginTop: 24, flexWrap: 'wrap' }}>
             {[
-              { label: 'Tuition', value: program.tuitionUsd ? `$${program.tuitionUsd.toLocaleString()}/yr` : 'N/A' },
+              { label: 'Tuition', value: program.tuitionUsd ? `$${program.tuitionUsd.toLocaleString('en-US')}/yr` : 'N/A' },
               { label: 'Duration', value: program.durationLabel || 'N/A' },
               { label: 'Language', value: program.language || 'English' },
               { label: 'Intakes', value: (program.intakes || []).join(', ') || 'N/A' },

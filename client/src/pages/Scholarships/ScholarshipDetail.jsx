@@ -70,7 +70,7 @@ export default function ScholarshipDetail() {
               <div>
                 <div style={{ fontSize: '0.7rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Scholarship Amount</div>
                 <div style={{ fontSize: '1.8rem', fontWeight: 900, color: 'var(--accent-400)', marginTop: 2 }}>
-                  Up to ${scholarship.amountUsd.toLocaleString()}
+                  Up to ${scholarship.amountUsd.toLocaleString('en-US')}
                 </div>
               </div>
             )}
@@ -145,7 +145,7 @@ export default function ScholarshipDetail() {
               {[
                 { label: 'Provider', value: scholarship.provider },
                 { label: 'Coverage', value: scholarship.coverage === 'full' ? 'Full Scholarship' : 'Partial' },
-                { label: 'Amount', value: scholarship.amountUsd ? `$${scholarship.amountUsd.toLocaleString()} (${scholarship.amountCurrency || 'USD'})` : '-' },
+                { label: 'Amount', value: scholarship.amountUsd ? `$${scholarship.amountUsd.toLocaleString('en-US')} (${scholarship.amountCurrency || 'USD'})` : '-' },
                 { label: 'Minimum GPA', value: scholarship.minGpa ? `${scholarship.minGpa}` : 'Not specified' },
               ].map(item => (
                 <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border-secondary)', fontSize: '0.875rem' }}>

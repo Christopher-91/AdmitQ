@@ -152,7 +152,7 @@ export default function CareerDetail() {
                       </div>
                       <div className="flex gap-2 mt-3 flex-wrap">
                         <span className="badge badge-primary">{formatDegree(p.degree)}</span>
-                        {p.tuitionUsd && <span className="badge bg-secondary">${p.tuitionUsd.toLocaleString()}/yr</span>}
+                        {p.tuitionUsd && <span className="badge bg-secondary">${p.tuitionUsd.toLocaleString('en-US')}/yr</span>}
                       </div>
                     </Link>
                   ))}

@@ -388,7 +388,7 @@ function computeMatch(profile, uni) {
       factors.budget = { 
         level: 'difficult', 
         score, 
-        reason: `Your budget is below the estimated total cost ($${totalCost.toLocaleString()}).` 
+        reason: `Your budget is below the estimated total cost ($${totalCost.toLocaleString('en-US')}).` 
       };
       totalScore += score;
     }
@@ -616,7 +616,7 @@ export default function UniversityDetail() {
   // Dynamic description generation
   const generatedDesc = `Established in ${uni.foundedYear || 'its founding year'}, ${uni.name} is a leading ${uni.universityType || 'higher education'} institution located in ${uni.city || 'its vibrant city'}, ${uni.country?.name}. ` +
     (uni.faculties?.length > 0 ? `It is highly recognized globally for its exceptional academic programs, particularly in ${uni.faculties.slice(0, 3).join(', ')}. ` : '') +
-    (uni.totalStudents ? `The university is home to approximately ${uni.totalStudents.toLocaleString()} students, fostering a diverse and vibrant campus life. ` : '') +
+    (uni.totalStudents ? `The university is home to approximately ${uni.totalStudents.toLocaleString('en-US')} students, fostering a diverse and vibrant campus life. ` : '') +
     (uni.internationalStudentsPct ? `With an international student body comprising ${uni.internationalStudentsPct}% of its population, it offers a truly global perspective and an inclusive environment for students from all over the world.` : '');
 
   const finalDescription = (uni.description && uni.description.length > 200)
@@ -657,8 +657,8 @@ export default function UniversityDetail() {
           {/* Quick Stats */}
           <div style={{ display: 'flex', gap: 32, marginTop: 28, flexWrap: 'wrap' }}>
             {[
-              { label: 'Avg. Tuition', value: uni.financial?.avgTuitionUsd ? `$${uni.financial.avgTuitionUsd.toLocaleString()}/yr` : 'N/A' },
-              { label: 'Total Students', value: uni.totalStudents ? uni.totalStudents.toLocaleString() : 'N/A' },
+              { label: 'Avg. Tuition', value: uni.financial?.avgTuitionUsd ? `$${uni.financial.avgTuitionUsd.toLocaleString('en-US')}/yr` : 'N/A' },
+              { label: 'Total Students', value: uni.totalStudents ? uni.totalStudents.toLocaleString('en-US') : 'N/A' },
               { label: 'Intl. Students', value: uni.internationalStudentsPct ? `${uni.internationalStudentsPct}%` : 'N/A' },
               { label: 'Verified Programs', value: uni.verifiedProgramCount ?? 0 },
             ].map(stat => (
@@ -798,12 +798,12 @@ export default function UniversityDetail() {
                 <div className="afford-comparison">
                   <div className="afford-item">
                     <div className="afford-item-label">Estimated Annual Cost</div>
-                    <div className="afford-item-value">${totalAnnualCost.toLocaleString()}</div>
+                    <div className="afford-item-value">${totalAnnualCost.toLocaleString('en-US')}</div>
                   </div>
                   <div className="afford-vs">vs</div>
                   <div className="afford-item">
                     <div className="afford-item-label">Your Budget</div>
-                    <div className="afford-item-value">{userBudget ? `$${userBudget.toLocaleString()}` : '—'}</div>
+                    <div className="afford-item-value">{userBudget ? `$${userBudget.toLocaleString('en-US')}` : '—'}</div>
                   </div>
                 </div>
                 {budgetDiffPct !== null ? (
@@ -976,14 +976,14 @@ export default function UniversityDetail() {
                 {livingCosts.map(c => (
                   <div key={c.label} className="living-cost-item">
                     <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>{c.icon} {c.label}</span>
-                    <span>{c.value ? `$${c.value.toLocaleString()}/mo` : '—'}</span>
+                    <span>{c.value ? `$${c.value.toLocaleString('en-US')}/mo` : '—'}</span>
                   </div>
                 ))}
               </div>
               {uni.financial?.avgLivingCostUsd && (
                 <div style={{ marginTop: 16, padding: '14px 16px', borderRadius: 'var(--radius-md)', background: 'var(--bg-secondary)', border: '1px solid var(--border-secondary)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: 600 }}>Total Monthly</span>
-                  <span style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--primary-300)' }}>${uni.financial.avgLivingCostUsd.toLocaleString()}/mo</span>
+                  <span style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--primary-300)' }}>${uni.financial.avgLivingCostUsd.toLocaleString('en-US')}/mo</span>
                 </div>
               )}
             </div>
@@ -999,7 +999,7 @@ export default function UniversityDetail() {
                       <Link key={c.id} to={`/careers/${c.slug}`} className="career-outcome-card">
                         <div className="career-outcome-icon">{careerIconMap[c.name] || c.icon}</div>
                         <div className="career-outcome-name">{c.name}</div>
-                        <div className="career-outcome-salary">Avg. ${(c.avgSalaryUsd || 0).toLocaleString()}/yr</div>
+                        <div className="career-outcome-salary">Avg. ${(c.avgSalaryUsd || 0).toLocaleString('en-US')}/yr</div>
                       </Link>
                     ))}
                   </div>
@@ -1027,7 +1027,7 @@ export default function UniversityDetail() {
                           {s.coverage === 'full' ? <><BsStarFill size={9} /> Full</> : <><BsCash size={9} /> Partial</>}
                         </span>
                         <div className="scholarship-mini-name">{s.name}</div>
-                        {s.amountUsd && <div className="scholarship-mini-amount">Up to ${s.amountUsd.toLocaleString()}</div>}
+                        {s.amountUsd && <div className="scholarship-mini-amount">Up to ${s.amountUsd.toLocaleString('en-US')}</div>}
                       </Link>
                     ))}
                   </div>

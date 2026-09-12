@@ -223,7 +223,7 @@ export default function CostCalculator() {
               <div className="calc-result-card">
                 <p className="text-sm text-muted font-semibold">Total Program Cost</p>
                 <p className="calc-total">
-                  {result.currency} {result.totalProgram.total.toLocaleString()}
+                  {result.currency} {result.totalProgram.total.toLocaleString('en-US')}
                 </p>
                 <p className="text-xs text-muted mt-1">
                   Over {result.durationMonths} months ({(result.durationMonths / 12).toFixed(1)} years)
@@ -236,12 +236,12 @@ export default function CostCalculator() {
                   {Object.entries(result.monthly).filter(([k]) => k !== 'total').map(([key, value]) => (
                     <div key={key} className="calc-row">
                       <span className="calc-row-label">{key}</span>
-                      <span className="calc-row-value">{result.currency} {value.toLocaleString()}</span>
+                      <span className="calc-row-value">{result.currency} {value.toLocaleString('en-US')}</span>
                     </div>
                   ))}
                   <div className="calc-row" style={{ borderBottom: 'none', fontWeight: 700 }}>
                     <span>Monthly Total</span>
-                    <span style={{ color: 'var(--primary-300)' }}>{result.currency} {result.monthly.total.toLocaleString()}</span>
+                    <span style={{ color: 'var(--primary-300)' }}>{result.currency} {result.monthly.total.toLocaleString('en-US')}</span>
                   </div>
                 </div>
               </div>
@@ -251,19 +251,19 @@ export default function CostCalculator() {
                 <div className="calc-breakdown">
                   <div className="calc-row">
                     <span className="calc-row-label">Tuition</span>
-                    <span className="calc-row-value">{result.currency} {result.firstYear.tuition.toLocaleString()}</span>
+                    <span className="calc-row-value">{result.currency} {result.firstYear.tuition.toLocaleString('en-US')}</span>
                   </div>
                   <div className="calc-row">
                     <span className="calc-row-label">Living Expenses</span>
-                    <span className="calc-row-value">{result.currency} {result.firstYear.living.toLocaleString()}</span>
+                    <span className="calc-row-value">{result.currency} {result.firstYear.living.toLocaleString('en-US')}</span>
                   </div>
                   <div className="calc-row">
                     <span className="calc-row-label">One-time Costs</span>
-                    <span className="calc-row-value">{result.currency} {result.firstYear.oneTimeCosts.toLocaleString()}</span>
+                    <span className="calc-row-value">{result.currency} {result.firstYear.oneTimeCosts.toLocaleString('en-US')}</span>
                   </div>
                   <div className="calc-row" style={{ borderBottom: 'none', fontWeight: 700 }}>
                     <span>First Year Total</span>
-                    <span style={{ color: 'var(--accent-400)' }}>{result.currency} {result.firstYear.total.toLocaleString()}</span>
+                    <span style={{ color: 'var(--accent-400)' }}>{result.currency} {result.firstYear.total.toLocaleString('en-US')}</span>
                   </div>
                 </div>
               </div>

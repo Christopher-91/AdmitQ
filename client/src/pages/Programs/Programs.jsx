@@ -70,7 +70,7 @@ const COUNTRY_OPTIONS = [
 // ── Helpers ──────────────────────────────────────────
 function formatTuition(tuitionUsd, tuitionPer) {
   if (tuitionUsd == null) return null;
-  const formatted = `$${Number(tuitionUsd).toLocaleString()}`;
+  const formatted = `$${Number(tuitionUsd).toLocaleString('en-US')}`;
   const per = tuitionPer === 'total' ? 'total' : tuitionPer === 'semester' ? '/sem' : '/yr';
   return `${formatted}${per}`;
 }
@@ -156,7 +156,7 @@ export default function Programs() {
           {COUNTRY_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
         </select>
 
-        <span className="filter-count text-sm text-muted">{total.toLocaleString()} programs</span>
+        <span className="filter-count text-sm text-muted">{total.toLocaleString('en-US')} programs</span>
       </div>
 
       {loading ? (

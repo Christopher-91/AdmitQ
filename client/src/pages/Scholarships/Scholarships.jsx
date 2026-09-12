@@ -88,7 +88,7 @@ export default function Scholarships() {
 
               {s.amountUsd && (
                 <div className="scholarship-amount">
-                  Up to ${Number(s.amountUsd).toLocaleString()}
+                  Up to ${Number(s.amountUsd).toLocaleString('en-US')}
                 </div>
               )}
 
