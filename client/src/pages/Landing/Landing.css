@@ -5,15 +5,15 @@
 /* ─── Hero ──────────────────────────────────────── */
 .hero {
   position: relative;
-  padding: 200px 0 100px; /* Increased top padding to push content down, decreased bottom to keep height identical */
+  padding: 200px 0 100px;
   overflow: hidden;
-  background-image: linear-gradient(to left, rgba(10, 10, 26, 0.95) 0%, rgba(10, 10, 26, 0.75) 45%, rgba(10, 10, 26, 0.1) 100%), url('/images/hero-bg-4.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/hero-bg-4.jpg');
   background-size: cover;
   background-position: center;
 }
 
 [data-theme='dark'] .hero {
-  background-image: linear-gradient(to left, rgba(10, 10, 26, 0.95) 0%, rgba(10, 10, 26, 0.75) 45%, rgba(10, 10, 26, 0.1) 100%), url('/images/hero-bg-4.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('/images/hero-bg-4.jpg');
 }
 
 .hero-bg-orb {
@@ -55,9 +55,9 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  text-align: right; /* Aligned right */
+  text-align: center;
   max-width: 800px;
-  margin: 0 0 0 auto; /* Push to the right */
+  margin: 0 auto;
 }
 
 .hero-badge {
@@ -110,17 +110,17 @@
   font-weight: 300;
   line-height: 1.7;
   letter-spacing: 0.01em;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0 0 40px auto;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 auto 40px auto;
   max-width: 640px;
 }
 
 .hero-search {
   display: flex;
-  justify-content: flex-end; /* Align contents to right */
+  justify-content: center;
   gap: 12px;
-  max-width: 560px; /* Reduced from 680px to make it shorter horizontally */
-  margin: 0 0 48px auto; /* Aligned right */
+  max-width: 560px;
+  margin: 0 auto 48px auto;
 }
 
 .hero-search .search-bar {
@@ -134,7 +134,7 @@
 /* Stats */
 .hero-stats {
   display: flex;
-  justify-content: flex-end; /* Aligned right */
+  justify-content: center;
   gap: 48px;
 }
 
