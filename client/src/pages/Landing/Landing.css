@@ -83,10 +83,10 @@
 
 .hero-title {
   font-family: 'Inter', -apple-system, sans-serif;
-  font-size: 4rem;
-  font-weight: 400;
+  font-size: 4.5rem;
+  font-weight: 800;
   line-height: 1.1;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.02em;
   color: #ffffff;
   margin-bottom: 20px;
 }
