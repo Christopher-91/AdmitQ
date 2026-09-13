@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   AdmitQ Design System
+   Neverland Design System
    Premium dark-mode-first design with glassmorphism
    ═══════════════════════════════════════════════════════════ */
 
@@ -81,8 +81,8 @@
   --shadow-glow-accent: 0 0 20px rgba(16, 185, 129, 0.15);
 
   /* ─── Typography ──────────────────────────────────────── */
-  --font-sans: 'SatoshiNumbers', -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-  --font-numbers: satoshi, "satoshi Fallback", Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'SatoshiNumbers', "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-numbers: 'SatoshiNumbers', "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
   /* ─── Spacing ─────────────────────────────────────────── */
@@ -167,6 +167,17 @@ body::before {
     radial-gradient(ellipse 60% 40% at 20% 80%, rgba(99, 102, 241, 0.06), transparent);
   pointer-events: none;
   z-index: 0;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blinking-dot {
+  color: var(--primary-400);
+  animation: blink 1s infinite;
 }
 
 #root {
