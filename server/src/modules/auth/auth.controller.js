@@ -47,7 +47,7 @@ export const resetPassword = asyncHandler(async (req, res) => {
 
 /**
  * POST /auth/google
- * Receives the Google ID token from the frontend and exchanges it for an Neverland JWT.
+ * Receives the Google ID token from the frontend and exchanges it for an Metron JWT.
  */
 export const googleLogin = asyncHandler(async (req, res) => {
   const { credential, userInfo } = req.body;

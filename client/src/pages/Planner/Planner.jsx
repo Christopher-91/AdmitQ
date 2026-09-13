@@ -201,7 +201,7 @@ export default function Planner() {
       { title: "Request Letters of Recommendation", monthsBefore: 2, type: "LOR", hint: "Give your professors at least 4 weeks notice" },
       { title: "Finalize Statement of Purpose (SOP)", monthsBefore: 1.5, type: "SOP", hint: "Have it reviewed by peers or mentors" },
       { title: "Gather Transcripts & Documents", monthsBefore: 1, type: "Documents", hint: "Get official translations if necessary" },
-      { title: "Submit Application (Neverland Buffer)", monthsBefore: 0.5, type: "Submission", hint: "Submit early to avoid server crashes" },
+      { title: "Submit Application (Metron Buffer)", monthsBefore: 0.5, type: "Submission", hint: "Submit early to avoid server crashes" },
     ];
 
     const milestones = template.map(t => {

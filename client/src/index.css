@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   Neverland Design System
+   Metron Design System
    Premium dark-mode-first design with glassmorphism
    ═══════════════════════════════════════════════════════════ */
 
@@ -176,8 +176,12 @@ body::before {
 }
 
 .blinking-dot {
-  color: var(--primary-400);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-400);
   animation: blink 1s infinite;
+  margin-left: 2px;
 }
 
 #root {

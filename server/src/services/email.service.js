@@ -31,13 +31,13 @@ const transporter = createTransporter();
 
 export const sendOTP = async (to, otp) => {
   const mailOptions = {
-    from: `"Neverland Support" <${process.env.SMTP_USER || 'noreply@neverland.com'}>`,
+    from: `"Metron Support" <${process.env.SMTP_USER || 'noreply@metron.com'}>`,
     to,
-    subject: 'Your Neverland Verification Code',
+    subject: 'Your Metron Verification Code',
     text: `Your verification code is: ${otp}. This code expires in 10 minutes.`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eaeaea; border-radius: 10px;">
-        <h2 style="color: #6366f1; text-align: center;">Welcome to Neverland!</h2>
+        <h2 style="color: #6366f1; text-align: center;">Welcome to Metron!</h2>
         <p style="font-size: 16px; color: #333;">Thank you for registering. Please use the following 6-digit code to verify your email address:</p>
         <div style="text-align: center; margin: 30px 0;">
           <span style="font-size: 32px; font-weight: bold; letter-spacing: 5px; color: #111; padding: 15px 30px; background-color: #f5f5f5; border-radius: 8px;">

@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
         <section style={{ marginBottom: '2rem' }}>
           <h2 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>1. Information We Collect</h2>
           <p className="text-secondary" style={{ lineHeight: 1.6 }}>
-            When you use Neverland and sign in via Google, we collect basic profile information
+            When you use Metron and sign in via Google, we collect basic profile information
             such as your name, email address, and profile picture (where available). This information
             is strictly used to create and manage your user account.
           </p>

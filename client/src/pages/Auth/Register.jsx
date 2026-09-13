@@ -56,7 +56,7 @@ export default function Register() {
         localStorage.setItem('accessToken', accessToken);
         localStorage.setItem('refreshToken', refreshToken);
         localStorage.setItem('user', JSON.stringify(user));
-        toast.success('Welcome to Neverland!');
+        toast.success('Welcome to Metron!');
         window.location.href = '/dashboard';
       } catch (err) {
         toast.error(err.message || 'Google sign-up failed');
@@ -111,7 +111,7 @@ export default function Register() {
     setLoading(true);
     try {
       await verifyOtp(form.email, otp);
-      toast.success('Account verified! Welcome to Neverland 🎓');
+      toast.success('Account verified! Welcome to Metron 🎓');
       navigate('/dashboard', { replace: true });
     } catch (err) {
       setError(err.response?.data?.error?.message || 'Invalid verification code');
@@ -137,7 +137,7 @@ export default function Register() {
         <div className="auth-header">
           <Link to="/" className="auth-logo">
             <BsMortarboard size={22} />
-            <span className="logo-text">Neverland<span className="blinking-dot">.</span></span>
+            <span className="logo-text">Metron<span className="blinking-dot"></span></span>
           </Link>
           <h1 className="auth-title">
             {step === 1 ? 'Create your account' : 'Verify your email'}

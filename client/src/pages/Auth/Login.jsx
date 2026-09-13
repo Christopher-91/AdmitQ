@@ -86,7 +86,7 @@ export default function Login() {
         <div className="auth-header">
           <Link to="/" className="auth-logo">
             <BsMortarboard size={22} />
-            <span className="logo-text">Neverland<span className="blinking-dot">.</span></span>
+            <span className="logo-text">Metron<span className="blinking-dot"></span></span>
           </Link>
           <h1 className="auth-title">Welcome back</h1>
           <p className="auth-subtitle">Sign in to continue your education journey</p>

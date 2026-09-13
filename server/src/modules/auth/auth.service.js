@@ -4,7 +4,7 @@ import crypto from 'crypto';
 import { OAuth2Client } from 'google-auth-library';
 import config from '../../config/index.js';
 import { query } from '../../config/database.js';
-import { sendOTP } from '../services/email.service.js';
+import { sendOTP } from '../../services/email.service.js';
 import {
   BadRequestError,
   ConflictError,
