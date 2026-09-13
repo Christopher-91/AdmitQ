@@ -47,6 +47,11 @@ export function AuthProvider({ children }) {
 
   const register = useCallback(async (data) => {
     const res = await api.post('/auth/register', data);
+    return res.data.data; // returns { success, email, message }
+  }, []);
+
+  const verifyOtp = useCallback(async (email, otp) => {
+    const res = await api.post('/auth/verify-otp', { email, otp });
     const { user: userData, accessToken, refreshToken } = res.data.data;
     _storeSession(userData, accessToken, refreshToken);
     return userData;
@@ -100,7 +105,7 @@ export function AuthProvider({ children }) {
   return (
     <AuthContext.Provider value={{
       user, loading, login, register, logout, refreshProfile,
-      loginWithGoogle, loginWithApple,
+      loginWithGoogle, loginWithApple, verifyOtp,
       isAuthenticated: !!user
     }}>
       {children}

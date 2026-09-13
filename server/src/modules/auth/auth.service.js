@@ -4,6 +4,7 @@ import crypto from 'crypto';
 import { OAuth2Client } from 'google-auth-library';
 import config from '../../config/index.js';
 import { query } from '../../config/database.js';
+import { sendOTP } from '../services/email.service.js';
 import {
   BadRequestError,
   ConflictError,
@@ -46,25 +47,21 @@ export const register = async ({ email, password, firstName, lastName }) => {
     [user.id]
   );
 
-  // Generate tokens
-  const tokens = generateTokens(user);
-  await storeRefreshToken(user.id, tokens.refreshToken);
-
-  // Generate email verification token (console log for dev)
-  const verificationToken = crypto.randomBytes(32).toString('hex');
+  // Generate 6-digit email verification token
+  const verificationToken = Math.floor(100000 + Math.random() * 900000).toString();
   await query(
     `INSERT INTO email_verifications (user_id, token, expires_at)
-     VALUES ($1, $2, NOW() + INTERVAL '24 hours')`,
+     VALUES ($1, $2, NOW() + INTERVAL '10 minutes')`,
     [user.id, verificationToken]
   );
 
-  if (config.env === 'development') {
-    console.log(`📧 Email verification link: /verify-email?token=${verificationToken}`);
-  }
+  // Send the OTP via email
+  await sendOTP(user.email, verificationToken);
 
   return {
-    user: formatUser(user),
-    ...tokens,
+    success: true,
+    email: user.email,
+    message: 'Verification code sent to your email',
   };
 };
 
@@ -79,7 +76,7 @@ export const login = async ({ email, password }) => {
   );
 
   if (result.rows.length === 0) {
-    throw new UnauthorizedError('Invalid email or password');
+    throw new NotFoundError('This email does not exist.');
   }
 
   const user = result.rows[0];
@@ -90,7 +87,11 @@ export const login = async ({ email, password }) => {
 
   const isValid = await bcrypt.compare(password, user.password_hash);
   if (!isValid) {
-    throw new UnauthorizedError('Invalid email or password');
+    throw new UnauthorizedError('Invalid password');
+  }
+
+  if (!user.email_verified) {
+    throw new UnauthorizedError('Email not verified. Please verify your email first.');
   }
 
   // Update last login
@@ -104,6 +105,64 @@ export const login = async ({ email, password }) => {
     user: formatUser(user),
     ...tokens,
   };
+};
+
+/**
+ * Verify OTP
+ */
+export const verifyOtp = async (email, otp) => {
+  const result = await query('SELECT * FROM users WHERE email = $1', [email.toLowerCase()]);
+  if (result.rows.length === 0) throw new NotFoundError('User not found');
+  const user = result.rows[0];
+
+  const verificationResult = await query(
+    `SELECT * FROM email_verifications 
+     WHERE user_id = $1 AND token = $2 AND expires_at > NOW()
+     ORDER BY expires_at DESC LIMIT 1`,
+    [user.id, otp]
+  );
+
+  if (verificationResult.rows.length === 0) {
+    throw new BadRequestError('Invalid or expired verification code');
+  }
+
+  // Mark as verified
+  await query('UPDATE users SET email_verified = true WHERE id = $1', [user.id]);
+  await query('DELETE FROM email_verifications WHERE user_id = $1', [user.id]);
+
+  // Generate tokens since they are now verified
+  const tokens = generateTokens(user);
+  await storeRefreshToken(user.id, tokens.refreshToken);
+
+  return {
+    user: formatUser(user),
+    ...tokens,
+  };
+};
+
+/**
+ * Resend OTP
+ */
+export const resendOtp = async (email) => {
+  const result = await query('SELECT * FROM users WHERE email = $1', [email.toLowerCase()]);
+  if (result.rows.length === 0) throw new NotFoundError('User not found');
+  const user = result.rows[0];
+
+  if (user.email_verified) throw new BadRequestError('Email is already verified');
+
+  // Delete old ones
+  await query('DELETE FROM email_verifications WHERE user_id = $1', [user.id]);
+
+  const verificationToken = Math.floor(100000 + Math.random() * 900000).toString();
+  await query(
+    `INSERT INTO email_verifications (user_id, token, expires_at)
+     VALUES ($1, $2, NOW() + INTERVAL '10 minutes')`,
+    [user.id, verificationToken]
+  );
+
+  await sendOTP(user.email, verificationToken);
+
+  return { success: true, message: 'Verification code resent' };
 };
 
 /**

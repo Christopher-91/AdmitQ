@@ -12,6 +12,16 @@ export const login = asyncHandler(async (req, res) => {
   successResponse(res, result);
 });
 
+export const verifyOtp = asyncHandler(async (req, res) => {
+  const result = await authService.verifyOtp(req.body.email, req.body.otp);
+  successResponse(res, result);
+});
+
+export const resendOtp = asyncHandler(async (req, res) => {
+  const result = await authService.resendOtp(req.body.email);
+  successResponse(res, result);
+});
+
 export const refresh = asyncHandler(async (req, res) => {
   const result = await authService.refreshAccessToken(req.body.refreshToken);
   successResponse(res, result);

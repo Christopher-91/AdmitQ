@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useGoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../../context/AuthContext';
+import api from '../../lib/api';
 import toast from 'react-hot-toast';
 import { BsMortarboard, BsExclamationTriangleFill, BsEye, BsEyeSlash } from 'react-icons/bs';
 import './Auth.css';
@@ -18,7 +19,7 @@ const GoogleIcon = () => (
 const GOOGLE_CONFIGURED = !!import.meta.env.VITE_GOOGLE_CLIENT_ID && import.meta.env.VITE_GOOGLE_CLIENT_ID !== 'YOUR_GOOGLE_CLIENT_ID_HERE';
 
 export default function Register() {
-  const { register } = useAuth();
+  const { register, verifyOtp } = useAuth();
   const navigate = useNavigate();
   const [form, setForm] = useState({
     firstName: '',
@@ -32,6 +33,10 @@ export default function Register() {
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  
+  // OTP flow state
+  const [step, setStep] = useState(1);
+  const [otp, setOtp] = useState('');
 
   const googleLogin = useGoogleLogin({
     onSuccess: async (tokenResponse) => {
@@ -79,18 +84,48 @@ export default function Register() {
 
     setLoading(true);
     try {
-      await register({
+      const res = await register({
         firstName: form.firstName,
         lastName: form.lastName,
         email: form.email,
         password: form.password,
       });
-      toast.success('Account created! Welcome to AdmitQ 🎓');
-      navigate('/dashboard', { replace: true });
+      toast.success(res.message || 'Verification code sent!');
+      setStep(2);
     } catch (err) {
       setError(err.response?.data?.error?.message || 'Registration failed');
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleOtpSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    
+    if (otp.length !== 6) {
+      setError('Please enter a valid 6-digit code');
+      return;
+    }
+
+    setLoading(true);
+    try {
+      await verifyOtp(form.email, otp);
+      toast.success('Account verified! Welcome to AdmitQ 🎓');
+      navigate('/dashboard', { replace: true });
+    } catch (err) {
+      setError(err.response?.data?.error?.message || 'Invalid verification code');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleResendOtp = async () => {
+    try {
+      await api.post('/auth/resend-otp', { email: form.email });
+      toast.success('A new verification code has been sent!');
+    } catch (err) {
+      toast.error(err.response?.data?.error?.message || 'Failed to resend code');
     }
   };
 
@@ -104,11 +139,19 @@ export default function Register() {
             <BsMortarboard size={22} />
             <span className="logo-text">Admit<span className="logo-highlight">Q</span></span>
           </Link>
-          <h1 className="auth-title">Create your account</h1>
-          <p className="auth-subtitle">Start your education journey today — it's free</p>
+          <h1 className="auth-title">
+            {step === 1 ? 'Create your account' : 'Verify your email'}
+          </h1>
+          <p className="auth-subtitle">
+            {step === 1 
+              ? "Start your education journey today — it's free" 
+              : `We sent a 6-digit code to ${form.email}`}
+          </p>
         </div>
 
-        <div className="auth-oauth">
+        {step === 1 ? (
+          <>
+            <div className="auth-oauth">
           <button
             id="google-register-btn"
             type="button"
@@ -223,9 +266,38 @@ export default function Register() {
           </p>
         </form>
 
-        <p className="auth-footer">
-          Already have an account? <Link to="/login" className="auth-link">Sign in</Link>
-        </p>
+            <p className="auth-footer-text">
+              Already have an account? <Link to="/login" className="auth-link">Sign in</Link>
+            </p>
+          </>
+        ) : (
+          <form onSubmit={handleOtpSubmit} className="auth-form animate-fadeIn">
+            {error && <div className="auth-error"><BsExclamationTriangleFill style={{ verticalAlign: 'middle', marginRight: 6 }} /> {error}</div>}
+            
+            <div className="form-group">
+              <label className="form-label" htmlFor="verify-otp">6-Digit Code</label>
+              <input 
+                id="verify-otp" 
+                type="text" 
+                className="form-input" 
+                placeholder="123456" 
+                value={otp} 
+                onChange={(e) => setOtp(e.target.value.replace(/\\D/g, '').slice(0, 6))} 
+                required 
+                autoFocus
+                style={{ fontSize: '1.5rem', letterSpacing: '8px', textAlign: 'center', padding: '15px' }}
+              />
+            </div>
+            
+            <button type="submit" className="auth-submit-btn" disabled={loading || otp.length !== 6}>
+              {loading ? 'Verifying...' : 'Verify & Continue'}
+            </button>
+            
+            <p className="auth-footer-text" style={{ marginTop: '20px' }}>
+              Didn't receive the code? <button type="button" onClick={handleResendOtp} className="auth-link" style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}>Resend code</button>
+            </p>
+          </form>
+        )}
       </div>
     </div>
   );

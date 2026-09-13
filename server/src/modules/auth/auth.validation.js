@@ -28,3 +28,12 @@ export const resetPasswordSchema = Joi.object({
     .pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/)
     .message('Password must contain at least one uppercase letter, one lowercase letter, and one number'),
 });
+
+export const verifyOtpSchema = Joi.object({
+  email: Joi.string().email().required().trim().lowercase(),
+  otp: Joi.string().length(6).required(),
+});
+
+export const resendOtpSchema = Joi.object({
+  email: Joi.string().email().required().trim().lowercase(),
+});
