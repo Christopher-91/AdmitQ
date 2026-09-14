@@ -5,6 +5,7 @@ import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute, PublicRoute } from './router/ProtectedRoute';
 import Navbar from './components/Navbar/Navbar';
 import { BsCompass } from 'react-icons/bs';
+import { Analytics } from '@vercel/analytics/react';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -100,6 +101,7 @@ function App() {
           }}
         />
       </AuthProvider>
+      <Analytics />
     </Router>
   );
 }
