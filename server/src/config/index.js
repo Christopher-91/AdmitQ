@@ -30,7 +30,9 @@ const config = {
   },
 
   cors: {
-    origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
+    origin: process.env.CORS_ORIGIN 
+      ? process.env.CORS_ORIGIN.split(',') 
+      : ['http://localhost:5173', 'http://localhost:5174', 'https://hmdll.vercel.app'],
   },
 
   google: {
