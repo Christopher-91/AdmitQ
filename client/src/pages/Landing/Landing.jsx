@@ -275,7 +275,7 @@ export default function Landing() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="navbar-logo">
-                <span className="logo-text">Metron<span className="blinking-dot"></span></span>
+                <span className="logo-text">HMdll<span className="blinking-dot"></span></span>
               </div>
               <p className="footer-tagline">
                 Helping students make informed education decisions across 25+ countries.
@@ -302,7 +302,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© {new Date().getFullYear()} Metron. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} HMdll. All rights reserved.</p>
           </div>
         </div>
       </footer>

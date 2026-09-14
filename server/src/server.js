@@ -7,7 +7,7 @@ app.listen(PORT, () => {
   console.log(`
 ╔═══════════════════════════════════════════════════╗
 ║                                                   ║
-║     🎓 Metron API Server                         ║
+║     🎓 HMdll API Server                         ║
 ║     Environment: ${config.env.padEnd(32)}║
 ║     Port: ${String(PORT).padEnd(39)}║
 ║     API: http://localhost:${PORT}/api${' '.repeat(15)}║

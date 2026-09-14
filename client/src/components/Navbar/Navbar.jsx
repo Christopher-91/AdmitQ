@@ -14,14 +14,14 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem('metron-theme');
+    const savedTheme = localStorage.getItem('hmdll-theme');
     if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
     return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   });
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    localStorage.setItem('metron-theme', theme);
+    localStorage.setItem('hmdll-theme', theme);
   }, [theme]);
 
   useEffect(() => {
@@ -60,7 +60,7 @@ export default function Navbar() {
       <nav className="navbar-top">
         <div className="navbar-inner container">
           <Link to="/" className="navbar-logo">
-            <span className={`logo-text ${isLandingTop ? 'landing-override' : ''}`}>Metron<span className="blinking-dot"></span></span>
+            <span className={`logo-text ${isLandingTop ? 'landing-override' : ''}`}>HMdll<span className="blinking-dot"></span></span>
           </Link>
 
           <div className="navbar-actions">
